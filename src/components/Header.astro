@@ -4,13 +4,21 @@ import { SITE_TITLE } from '../consts';
 ---
 
 <header>
-	<nav>
-		<a href="/"><img src="/red-arrow-logo.webp" alt="Red Arrow Logo" class="h-20"></a>
-		<div class="internal-links flex gap-8">
+	<div class="h-10 w-screen bg-black mb-4">
+		<div class="container mx-auto flex max-w-[80rem] items-center h-full justify-between">
+			<p class="text-white font-medium">PHONE: (754) 423-2159</p>
+			<p class="text-white cursor-pointer">Student Log In</p>
+		</div>
+	</div>
+	<nav class="container mx-auto flex max-w-[80rem] justify-between mb-10">
+		<a href="/" class="flex flex-shrink-0">
+			<img src="/red-arrow-logo.webp" alt="Red Arrow Logo" class="h-20 flex-shrink-0">
+		</a>
+		<div class="flex gap-8 items-center">
 			<!-- <HeaderLink href="/blog">Flight Program</HeaderLink> -->
 			<div class="relative">
-				<p class="flight-program nav-link cursor-pointer" data-link-container="flight-program-links">Flight Program</p>
-				<ul class="flight-program-links links-container absolute bg-white p-5 hidden flex-col gap-2 w-52">
+				<p class="flight-program nav-link cursor-pointer hover:border-b-2 border-main-red" data-link-container="flight-program-links">Flight Program</p>
+				<ul class="flight-program-links links-container absolute bg-white hidden p-5 flex-col gap-2 w-52">
 					<li>New to flying?</li>
 					<li>Training Courses</li>
 					<li>University Program</li>
@@ -20,8 +28,8 @@ import { SITE_TITLE } from '../consts';
 			</div>
 
 			<div class="relative">
-				<p class="resources nav-link cursor-pointer" data-link-container="resources-links">Resources</p>
-				<ul class="resources-links links-container absolute bg-white p-5 hidden flex-col gap-2 w-52">
+				<p class="resources nav-link cursor-pointer hover:border-b-2 border-main-red" data-link-container="resources-links">Resources</p>
+				<ul class="resources-links links-container absolute bg-white hidden p-5 flex-col gap-2 w-52">
 					<li>FAA Exam Center</li>
 					<li>Financing</li>
 					<li>Maintenance</li>
@@ -29,8 +37,8 @@ import { SITE_TITLE } from '../consts';
 			</div>
 
 			<div class="relative">
-				<p class="about nav-link cursor-pointer" data-link-container="about-links">About Us</p>
-				<ul class="about-links links-container absolute bg-white p-5 hidden flex-col gap-2 w-36">
+				<p class="about nav-link cursor-pointer hover:border-b-2 border-main-red" data-link-container="about-links">About Us</p>
+				<ul class="about-links links-container absolute bg-white hidden p-5 flex-col gap-2 w-36">
 					<li>Our Story</li>
 					<li>Our Team</li>
 					<li>Our Fleet</li>
@@ -39,13 +47,15 @@ import { SITE_TITLE } from '../consts';
 			</div>
 
 			<div class="relative">
-				<p class="discovery nav-link cursor-pointer">Discovery Flight</p>
+				<p class="discovery nav-link cursor-pointer hover:border-b-2 border-main-red">Discovery Flight</p>
 			</div>
+
+			<button class="bg-main-red px-4 py-3 rounded-sm font-semibold text-white">BOOK NOW</button>
 			<!-- <HeaderLink href="/about">About</HeaderLink>
 			<HeaderLink href="/about">About</HeaderLink>
 			<HeaderLink href="/about">About</HeaderLink> -->
 		</div>
-		<div class="social-links">
+		<!-- <div class="social-links">
 			<a href="https://m.webtoo.ls/@astro" target="_blank">
 				<span class="sr-only">Follow Astro on Mastodon</span>
 				<svg viewBox="0 0 16 16" aria-hidden="true" width="32" height="32"
@@ -73,50 +83,9 @@ import { SITE_TITLE } from '../consts';
 					></path></svg
 				>
 			</a>
-		</div>
+		</div> -->
 	</nav>
 	<script>
 		import "../scripts/navbar.js";
 	</script>
 </header>
-<style>
-	header {
-		margin: 0;
-		padding: 0 1em;
-		background: white;
-		box-shadow: 0 2px 8px rgba(var(--black), 5%);
-	}
-	h2 {
-		margin: 0;
-		font-size: 1em;
-	}
-
-	h2 a,
-	h2 a.active {
-		text-decoration: none;
-	}
-	nav {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-	}
-	nav a {
-		padding: 1em 0.5em;
-		color: var(--black);
-		border-bottom: 4px solid transparent;
-		text-decoration: none;
-	}
-	nav a.active {
-		text-decoration: none;
-		border-bottom-color: var(--accent);
-	}
-	.social-links,
-	.social-links a {
-		display: flex;
-	}
-	@media (max-width: 720px) {
-		.social-links {
-			display: none;
-		}
-	}
-</style>
