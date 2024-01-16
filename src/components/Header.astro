@@ -6,10 +6,44 @@ import { SITE_TITLE } from '../consts';
 <header>
 	<nav>
 		<a href="/"><img src="/red-arrow-logo.webp" alt="Red Arrow Logo" class="h-20"></a>
-		<div class="internal-links">
-			<HeaderLink href="/">Home</HeaderLink>
-			<HeaderLink href="/blog">Blog</HeaderLink>
+		<div class="internal-links flex gap-8">
+			<!-- <HeaderLink href="/blog">Flight Program</HeaderLink> -->
+			<div class="relative">
+				<p class="flight-program nav-link cursor-pointer" data-link-container="flight-program-links">Flight Program</p>
+				<ul class="flight-program-links links-container absolute bg-white p-5 hidden flex-col gap-2 w-52">
+					<li>New to flying?</li>
+					<li>Training Courses</li>
+					<li>University Program</li>
+					<li>International Program</li>
+					<li>Military / Rotor Transition</li>
+				</ul>
+			</div>
+
+			<div class="relative">
+				<p class="resources nav-link cursor-pointer" data-link-container="resources-links">Resources</p>
+				<ul class="resources-links links-container absolute bg-white p-5 hidden flex-col gap-2 w-52">
+					<li>FAA Exam Center</li>
+					<li>Financing</li>
+					<li>Maintenance</li>
+				</ul>
+			</div>
+
+			<div class="relative">
+				<p class="about nav-link cursor-pointer" data-link-container="about-links">About Us</p>
+				<ul class="about-links links-container absolute bg-white p-5 hidden flex-col gap-2 w-36">
+					<li>Our Story</li>
+					<li>Our Team</li>
+					<li>Our Fleet</li>
+					<li>Blog</li>
+				</ul>
+			</div>
+
+			<div class="relative">
+				<p class="discovery nav-link cursor-pointer">Discovery Flight</p>
+			</div>
+			<!-- <HeaderLink href="/about">About</HeaderLink>
 			<HeaderLink href="/about">About</HeaderLink>
+			<HeaderLink href="/about">About</HeaderLink> -->
 		</div>
 		<div class="social-links">
 			<a href="https://m.webtoo.ls/@astro" target="_blank">
@@ -41,6 +75,9 @@ import { SITE_TITLE } from '../consts';
 			</a>
 		</div>
 	</nav>
+	<script>
+		import "../scripts/navbar.js";
+	</script>
 </header>
 <style>
 	header {
