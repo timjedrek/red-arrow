@@ -10,3 +10,72 @@ export const ADDRESS_STATE = 'NM';
 export const ADDRESS_ZIP = '88008';
 export const PHONE_NUMBER = '(575) 201-6160';
 export const EMAIL_ADDRESS = 'info@flyredarrow.com';
+
+export const flightPrograms = {
+  name: "Flight Programs",
+  className: "flight-programs",
+  submenu: [
+    {
+      name: "New to flying?",
+      link: "/flight-programs/new-to-flying"
+    },
+    {
+      name: "Training Courses",
+      link: "/flight-programs/training-courses"
+    },
+    {
+      name: "University Program",
+      link: "/flight-programs/university-program"
+    },
+    {
+      name: "International Program",
+      link: "/flight-programs/international-program"
+    },
+    {
+      name: "Military / Rotor Transition",
+      link: "/flight-programs/military-rotor-transition"
+    }
+  ],
+}
+
+export const resources = {
+  name: "Resources",
+  className: "resources",
+  submenu: [
+    {
+      name: "FAA Exam Center",
+      link: "/resources/faa-exam-center"
+    },
+    {
+      name: "Financing",
+      link: "/resources/financing"
+    },
+    {
+      name: "Maintenance",
+      link: "/resources/maintenance"
+    }
+  ],
+}
+
+export const about = {
+  name: "About",
+  className: "about",
+  submenu: [
+    {
+      name: "Our Story",
+      link: "/about/our-story"
+    },
+    {
+      name: "Our Team",
+      link: "/about/our-team"
+    },
+    {
+      name: "Our Fleet",
+      link: "/about/our-fleet"
+    },
+    {
+      name: "Blog",
+      link: "/about/blog"
+    }
+  ],
+}
