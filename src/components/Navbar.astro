@@ -1,0 +1,29 @@
+---
+import HeaderLink from "./HeaderLink.astro";
+import { flightPrograms, resources, about } from "../consts.ts";
+import NavLink from "./NavLink.astro";
+---
+
+<nav class="bg-black">
+  <div class="mx-auto flex max-w-[80rem] justify-between p-5">
+    <a href="/" class="flex flex-shrink-0">
+      <img src="/red-arrow-logo.webp" alt="Red Arrow Logo" class="h-20 flex-shrink-0">
+    </a>
+    <div class="flex gap-8 items-center">
+
+      <NavLink object={flightPrograms} />
+      <NavLink object={resources} />
+      <NavLink object={about} />
+
+      <div class="relative">
+        <HeaderLink href="/discovery-flight" class="discovery nav-link cursor-pointer text-xl text-white p-5 hover:border-b-2 border-main-red">Discovery Flight</HeaderLink>
+      </div>
+
+      <button class="btn-red">BOOK NOW</button>
+    </div>
+  </div>
+</nav>
+
+<script>
+  import "../scripts/navbar.js";
+</script>
