@@ -22,49 +22,81 @@ const flightPrograms = [
     link: "/flight-programs/military-rotor-transition"
   }
 ]
+
+const resources = [
+  {
+    name: "FAA Exam Center",
+    link: "/resources/faa-exam-center"
+  },
+  {
+    name: "Financing",
+    link: "/resources/financing"
+  },
+  {
+    name: "Maintenance",
+    link: "/resources/maintenance"
+  }
+]
+
+const about = [
+  {
+    name: "Our Story",
+    link: "/about/our-story"
+  },
+  {
+    name: "Our Team",
+    link: "/about/our-team"
+  },
+  {
+    name: "Our Fleet",
+    link: "/about/our-fleet"
+  },
+  {
+    name: "Blog",
+    link: "/about/blog"
+  }
+]
 ---
-<nav class="mx-auto flex max-w-[80rem] justify-between p-5">
-  <a href="/" class="flex flex-shrink-0">
-    <img src="/red-arrow-logo.webp" alt="Red Arrow Logo" class="h-20 flex-shrink-0">
-  </a>
-  <div class="flex gap-8 items-center">
-    <!-- <HeaderLink href="/blog">Flight Program</HeaderLink> -->
-    <div class="relative">
-      <p class="flight-programs nav-link cursor-pointer hover:border-b-2 border-main-red" data-link-container="flight-programs-links">Flight Programs</p>
-      <ul class="flight-programs-links links-container absolute bg-white hidden p-5 flex-col gap-2 w-52">
-        {flightPrograms.map((fp) => (
-          <HeaderLink href={fp.link} class="hover:border-b-2 border-main-red">{fp.name}</HeaderLink>
-        ))}
-      </ul>
-    </div>
 
-    <div class="relative">
-      <p class="resources nav-link cursor-pointer hover:border-b-2 border-main-red" data-link-container="resources-links">Resources</p>
-      <ul class="resources-links links-container absolute bg-white hidden p-5 flex-col gap-2 w-52">
-        <li>FAA Exam Center</li>
-        <li>Financing</li>
-        <li>Maintenance</li>
-      </ul>
-    </div>
+<nav class="bg-black">
+  <div class="mx-auto flex max-w-[80rem] justify-between p-5">
+    <a href="/" class="flex flex-shrink-0">
+      <img src="/red-arrow-logo.webp" alt="Red Arrow Logo" class="h-20 flex-shrink-0">
+    </a>
+    <div class="flex gap-8 items-center">
+      <div class="relative">
+        <p class="flight-programs nav-link cursor-pointer text-xl text-white p-5 hover:border-b-2 border-main-red" data-link-container="flight-programs-links">Flight Programs</p>
+        <ul class="flight-programs-links links-container absolute bg-white hidden p-5 flex-col gap-2 w-60">
+          {flightPrograms.map((fp) => (
+            <HeaderLink href={fp.link} class="hover:border-b-2 border-main-red">{fp.name}</HeaderLink>
+          ))}
+        </ul>
+      </div>
 
-    <div class="relative">
-      <p class="about nav-link cursor-pointer hover:border-b-2 border-main-red" data-link-container="about-links">About Us</p>
-      <ul class="about-links links-container absolute bg-white hidden p-5 flex-col gap-2 w-36">
-        <li>Our Story</li>
-        <li>Our Team</li>
-        <li>Our Fleet</li>
-        <li>Blog</li>
-      </ul>
-    </div>
+      <div class="relative">
+        <p class="resources nav-link cursor-pointer text-xl text-white p-5 hover:border-b-2 border-main-red" data-link-container="resources-links">Resources</p>
+        <ul class="resources-links links-container absolute bg-white hidden p-5 flex-col gap-2 w-52">
+          {resources.map((resource) => (
+            <HeaderLink href={resource.link} class="hover:border-b-2 border-main-red">{resource.name}</HeaderLink>
+          ))}
+        </ul>
+      </div>
 
-    <div class="relative">
-      <p class="discovery nav-link cursor-pointer hover:border-b-2 border-main-red">Discovery Flight</p>
-    </div>
+      <div class="relative">
+        <p class="about nav-link cursor-pointer text-xl text-white p-5 hover:border-b-2 border-main-red" data-link-container="about-links">About Us</p>
+        <ul class="about-links links-container absolute bg-white hidden p-5 flex-col gap-2 w-36">
+          {about.map((aboutLink) => (
+            <HeaderLink href={aboutLink.link} class="hover:border-b-2 border-main-red">{aboutLink.name}</HeaderLink>
+          ))}
+        </ul>
+      </div>
 
-    <button class="bg-main-red px-4 py-3 rounded-sm font-semibold text-white">BOOK NOW</button>
-    <!-- <HeaderLink href="/about">About</HeaderLink>
-    <HeaderLink href="/about">About</HeaderLink>
-    <HeaderLink href="/about">About</HeaderLink> -->
+      <div class="relative">
+        <p class="discovery nav-link cursor-pointer text-xl text-white p-5 hover:border-b-2 border-main-red">Discovery Flight</p>
+      </div>
+
+      <button class="btn-red">BOOK NOW</button>
+    </div>
   </div>
 </nav>
 
