@@ -33,13 +33,13 @@ const flightPrograms = [
       <p class="flight-programs nav-link cursor-pointer hover:border-b-2 border-main-red" data-link-container="flight-programs-links">Flight Programs</p>
       <ul class="flight-programs-links links-container absolute bg-white hidden p-5 flex-col gap-2 w-52">
         {flightPrograms.map((fp) => (
-          <HeaderLink href={fp.link} class="hover:border-b-2 border-main-red active:border-b-2">{fp.name}</HeaderLink>
+          <HeaderLink href={fp.link} class="hover:border-b-2 border-main-red">{fp.name}</HeaderLink>
         ))}
       </ul>
     </div>
 
     <div class="relative">
-      <p class="resources nav-link cursor-pointer hover:border-b-2 border-main-red active:border-b-2" data-link-container="resources-links">Resources</p>
+      <p class="resources nav-link cursor-pointer hover:border-b-2 border-main-red" data-link-container="resources-links">Resources</p>
       <ul class="resources-links links-container absolute bg-white hidden p-5 flex-col gap-2 w-52">
         <li>FAA Exam Center</li>
         <li>Financing</li>
