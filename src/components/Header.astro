@@ -1,16 +1,22 @@
 ---
 import HeaderLink from './HeaderLink.astro';
 import { SITE_TITLE } from '../consts';
+import { Icon } from 'astro-icon/components'
 ---
 
 <header>
-	<div class="h-10 w-screen bg-black mb-4">
+	<div class="h-10 w-screen bg-black mb-5">
 		<div class="container mx-auto flex max-w-[80rem] items-center h-full justify-between">
-			<p class="text-white font-medium">PHONE: (754) 423-2159</p>
+			<div class="flex items-center gap-3">
+				<p class="text-white font-medium">PHONE: (754) 423-2159</p>
+				<Icon name="entypo-social:facebook-with-circle" class="text-white text-2xl" />
+				<Icon name="entypo-social:instagram-with-circle" class="text-white text-2xl" />
+				<Icon name="entypo-social:linkedin-with-circle" class="text-white text-2xl" />
+			</div>
 			<p class="text-white cursor-pointer">Student Log In</p>
 		</div>
 	</div>
-	<nav class="container mx-auto flex max-w-[80rem] justify-between mb-10">
+	<nav class="container mx-auto flex max-w-[80rem] justify-between mb-10 pb-5">
 		<a href="/" class="flex flex-shrink-0">
 			<img src="/red-arrow-logo.webp" alt="Red Arrow Logo" class="h-20 flex-shrink-0">
 		</a>
