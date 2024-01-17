@@ -8,6 +8,7 @@ export default {
       },
       backgroundImage : {
         'home' : "url('/img/cessna-pilot-center-el-paso-tx.webp')",
+        'two-cessna' : "url('/img/two-cessna-red-arrow-KDNA-santa-teresa.webp')",
       },
       height: theme => ({
         'screen-1/2': '50vh',

@@ -3,10 +3,10 @@
 
 export const SITE_TITLE = 'Red Arrow Flight Academy | El Paso, TX';
 export const SITE_DESCRIPTION = 'Welcome to my website!';
-export const ADDRESS = '';
+export const ADDRESS = '8063 Airport Rd';
 export const ADDRESS2 = '';
-export const ADDRESS_CITY = '';
-export const ADDRESS_STATE = '';
-export const ADDRESS_ZIP = '';
-export const PHONE_NUMBER = '';
-export const EMAIL_ADDRESS = '';
+export const ADDRESS_CITY = 'Santa Teresa';
+export const ADDRESS_STATE = 'NM';
+export const ADDRESS_ZIP = '88008';
+export const PHONE_NUMBER = '(575) 201-6160';
+export const EMAIL_ADDRESS = 'info@flyredarrow.com';
