@@ -17,8 +17,25 @@ function toggleNavLink(navLink) {
   }
 }
 
+function closeOpenLinkContainers() {
+  document.querySelectorAll('.links-container').forEach(linkContainer => {
+    linkContainer.classList.add('hidden');
+    linkContainer.classList.remove('flex');
+  });
+}
+
 navLinks.forEach(navLink => {
-  navLink.addEventListener('click', () => {
+  navLink.addEventListener('click', (event) => {
+    event.stopPropagation();
     toggleNavLink(navLink);
   });
+});
+
+document.addEventListener('click', (event) => {
+  const isNavLink = event.target.matches('.nav-link') || event.target.closest('.nav-link');
+  const isLinkContainer = event.target.matches('.links-container') || event.target.closest('.links-container');
+
+  if (!isNavLink && !isLinkContainer) {
+    closeOpenLinkContainers();
+  }
 });
