@@ -12,9 +12,14 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 	</head>
 	<body>
 		<Header title={SITE_TITLE} />
-      <header class="h-screen-3/4 bg-black flex flex-col items-center justify-center">
-        <h1>Become a Pilot</h1>
-        <h2>Cessna Pilot Center Located in Santa Teresa, NM</h2>
+      <header class="relative h-screen-3/4 bg-home bg-cover bg-center bg-black flex flex-col items-center justify-center">
+        <!-- bg-overlay to darken -->
+        <div class="absolute bg-black/50 w-full h-full"></div>
+        <!-- Text -->
+        <div class="text-white text-center z-10">
+          <h1 class="text-5xl font-bold tracking-wider">Become a Pilot</h1>
+          <h2 class="text-3xl pt-5">Cessna Pilot Center Flight School in Santa Teresa, NM</h2>
+        </div>
       </header>
 		<Footer />
 	</body>

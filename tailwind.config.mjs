@@ -7,7 +7,7 @@ export default {
         'main-red': '#993333',
       },
       backgroundImage : {
-        //'CLASS' : "url('URL-TO-IMAGE')",
+        'home' : "url('/img/cessna-pilot-center-el-paso-tx.webp')",
       },
       height: theme => ({
         'screen-1/2': '50vh',
