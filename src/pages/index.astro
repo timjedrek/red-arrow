@@ -3,6 +3,8 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import DiscoveryFlightCTA from '../components/DiscoveryFlightCTA.astro';
+import ContactUs from '../components/ContactUs.astro';
 ---
 
 <!doctype html>
@@ -10,41 +12,168 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
-	<body>
-		<Header title={SITE_TITLE} />
-		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
-				template serves as a lightweight, minimally-styled starting point for anyone looking to build
-				a personal website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/pages/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to <a href="https://docs.astro.build/"
-					>read the docs
-				</a> or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out <a
-					href="https://github.com/Charca/astro-blog-template"
-					>astro-blog-template
-				</a> by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
-		</main>
-		<Footer />
+	<body class="">
+    <div class="z-50 sticky top-0 bg-white shadow-2xl">
+		  <Header title={SITE_TITLE} />
+    </div>
+    
+    <!-- Header -->
+    <header class="relative h-screen-3/4 bg-home bg-cover bg-center bg-black flex flex-col items-center justify-center">
+      <!-- bg-overlay to darken -->
+      <div class="absolute bg-black/50 w-full h-full z-0"></div>
+      <!-- Text -->
+      <div class="text-white text-center z-10">
+        <h1 class="text-5xl font-bold tracking-tighter">Become an Airline Pilot</h1>
+        <h2 class="text-3xl pt-5 tracking-wide">Cessna Pilot Center Flight School in Santa Teresa, NM</h2>
+      </div>
+    </header>
+      
+    <!-- Section 1 -->
+    <section class="flex flex-col-reverse lg:flex-row bg-gradient-to-br from-white to-gray-200">
+      <div class="lg:w-1/2 flex flex-col items-center py-10">
+        <img src="" alt="image goes here" class="w-3/4 h-[500px]">
+      </div>
+      <div class="lg:w-1/2 flex flex-col items-center py-10">
+        <div class="max-w-2xl px-10">
+          <h2 class="text-3xl font-semibold text-center tracking-tight">Flight Programs</h2>
+          <h3 class="pt-10 text-xl italic">Sub heading Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum officiis doloribus laborum saepe ipsum libero adipisci possimus quis quaerat dolore aut impedit ea assumenda</h3>
+          <div class="text-gray-800 tracking-wider">
+            <p class="pt-10">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum pariatur cum velit quaerat provident fugit. At quibusdam eius voluptas earum facilis dolores minus reiciendis nesciunt, porro nemo sequi commodi! Amet.
+            </p>
+            <p class="pt-10">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum pariatur cum velit quaerat provident fugit. At quibusdam eius voluptas earum facilis dolores minus reiciendis nesciunt, porro nemo sequi commodi! Amet.
+            </p>
+          </div>
+          <a href="" class="">
+            <div class="btn-red my-10">
+              Flight Programs
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Section 2 -->
+    <section class="flex flex-col-reverse lg:flex-row-reverse bg-gradient-to-br from-main-red to-red-900 text-white">
+      <div class="lg:w-1/2 flex flex-col items-center py-10">
+        <img src="" alt="image goes here" class="w-3/4 h-[500px]">
+      </div>
+      <div class="lg:w-1/2 flex flex-col items-center py-10">
+        <div class="max-w-2xl px-10">
+          <h2 class="text-3xl font-semibold text-center tracking-tight">How To Become A Pilot</h2>
+          <h3 class="pt-10 text-xl italic">Sub heading Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum officiis doloribus laborum saepe ipsum libero adipisci possimus quis quaerat dolore aut impedit ea assumenda</h3>
+          <div class="text-gray-100 tracking-wider">
+            <p class="pt-10">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum pariatur cum velit quaerat provident fugit. At quibusdam eius voluptas earum facilis dolores minus reiciendis nesciunt, porro nemo sequi commodi! Amet.
+            </p>
+            <p class="pt-10">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum pariatur cum velit quaerat provident fugit. 
+              You can <a href="" class="hover:underline text-black text-xl font-semibold">become a pilot</a> today.  Visit Red Arrow Flight Acedemy and fly with an instructor on a discovery flight today.
+            </p>
+          </div>
+          <a href="" class="">
+            <div class="btn-black my-10">
+              Discovery Flight
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3 -->
+    <section class="flex flex-col-reverse lg:flex-row bg-gradient-to-br from-white to-gray-200">
+      <div class="lg:w-1/2 flex flex-col items-center py-10">
+        <img src="" alt="image goes here" class="w-3/4 h-[500px]">
+      </div>
+      <div class="lg:w-1/2 flex flex-col items-center py-10">
+        <div class="max-w-2xl px-10">
+          <h2 class="text-3xl font-semibold text-center tracking-tight">Military Rotor Transition Pilot</h2>
+          <h3 class="pt-10 text-xl italic">Sub heading Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum officiis doloribus laborum saepe ipsum libero adipisci possimus quis quaerat dolore aut impedit ea assumenda</h3>
+          <div class="text-gray-800 tracking-wider">
+            <p class="pt-10">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum pariatur cum velit quaerat provident fugit. At quibusdam eius voluptas earum facilis dolores minus reiciendis nesciunt, porro nemo sequi commodi! Amet.
+            </p>
+            <p class="pt-10">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum pariatur cum velit quaerat provident fugit. At quibusdam eius voluptas earum facilis dolores minus reiciendis nesciunt, porro nemo sequi commodi! Amet.
+            </p>
+          </div>
+          <a href="" class="">
+            <div class="btn-red my-10">
+              Military Pilots
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Section 4 -->
+    <section class="flex flex-col-reverse lg:flex-row-reverse bg-gradient-to-br from-main-red to-red-900 text-white">
+      <div class="lg:w-1/2 flex flex-col items-center py-10">
+        <img src="" alt="image goes here" class="w-3/4 h-[500px]">
+      </div>
+      <div class="lg:w-1/2 flex flex-col items-center py-10">
+        <div class="max-w-2xl px-10">
+          <h2 class="text-3xl font-semibold text-center tracking-tight">International Student Pilots</h2>
+          <h3 class="pt-10 text-xl italic">Sub heading Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum officiis doloribus laborum saepe ipsum libero adipisci possimus quis quaerat dolore aut impedit ea assumenda</h3>
+          <div class="text-gray-100 tracking-wider">
+            <p class="pt-10">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum pariatur cum velit quaerat provident fugit. At quibusdam eius voluptas earum facilis dolores minus reiciendis nesciunt, porro nemo sequi commodi! Amet.
+            </p>
+            <p class="pt-10">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum pariatur cum velit quaerat provident fugit. At quibusdam eius voluptas earum facilis dolores minus reiciendis nesciunt, porro nemo sequi commodi! Amet.
+            </p>
+            <p class="pt-10">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum pariatur cum velit quaerat provident fugit. At quibusdam eius voluptas earum facilis dolores minus reiciendis nesciunt, porro nemo sequi commodi! Amet.
+            </p>
+          </div>
+          <a href="">
+            <div class="btn-black my-10">
+              M1 Visa Application
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5 -->
+    <section class="flex flex-col-reverse lg:flex-row bg-gradient-to-br from-white to-gray-200">
+      <div class="lg:w-1/2 flex flex-col items-center py-10">
+        <img src="" alt="image goes here" class="w-3/4 h-[500px]">
+      </div>
+      <div class="lg:w-1/2 flex flex-col items-center py-10">
+        <div class="max-w-2xl px-10">
+          <h2 class="text-3xl font-semibold text-center tracking-tight">We Are Red Arrow Flight Academy</h2>
+          <h3 class="pt-10 text-xl italic">Sub heading Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum officiis doloribus laborum saepe ipsum libero adipisci possimus quis quaerat dolore aut impedit ea assumenda</h3>
+          <div class="text-gray-800 tracking-wider">
+            <p class="pt-10">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum pariatur cum velit quaerat provident fugit. At quibusdam eius voluptas earum facilis dolores minus reiciendis nesciunt, porro nemo sequi commodi! Amet.
+            </p>
+            <p class="pt-10">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum pariatur cum velit quaerat provident fugit. At quibusdam eius voluptas earum facilis dolores minus reiciendis nesciunt, porro nemo sequi commodi! Amet.
+            </p>
+            <p class="pt-10">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum pariatur cum velit quaerat provident fugit. At quibusdam eius voluptas earum facilis dolores minus reiciendis nesciunt, porro nemo sequi commodi! Amet.
+            </p>
+          </div>
+          <a href="" class="max-w-min">
+            <div class="btn-red my-10">
+              Why Red Arrow?
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action Banner -->
+    <DiscoveryFlightCTA/>
+
+    <!-- Contact Us Form -->
+    <ContactUs />
+
+    <Footer />
 	</body>
+
+
+
 </html>
