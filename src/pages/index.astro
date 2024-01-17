@@ -12,32 +12,157 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 	</head>
 	<body>
 		<Header title={SITE_TITLE} />
+      
+    <!-- Header -->
       <header class="relative h-screen-3/4 bg-home bg-cover bg-center bg-black flex flex-col items-center justify-center">
         <!-- bg-overlay to darken -->
         <div class="absolute bg-black/50 w-full h-full"></div>
         <!-- Text -->
         <div class="text-white text-center z-10">
-          <h1 class="text-5xl font-bold tracking-wider">Become a Pilot</h1>
-          <h2 class="text-3xl pt-5">Cessna Pilot Center Flight School in Santa Teresa, NM</h2>
+          <h1 class="text-5xl font-bold tracking-tighter">Become an Airline Pilot</h1>
+          <h2 class="text-3xl pt-5 tracking-wide">Cessna Pilot Center Flight School in Santa Teresa, NM</h2>
         </div>
       </header>
-      <section class="flex lg:flex-row">
+      
+      <!-- Section 1 -->
+      <section class="flex flex-col-reverse lg:flex-row">
         <div class="lg:w-1/2 flex flex-col items-center py-10">
           <img src="" alt="image goes here" class="w-3/4 h-[500px]">
         </div>
         <div class="lg:w-1/2 flex flex-col items-center py-10">
-          <h2 class="text-3xl font-semibold">Flight Programs</h2>
-          <p class="px-5 max-w-2xl pt-10">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum pariatur cum velit quaerat provident fugit. At quibusdam eius voluptas earum facilis dolores minus reiciendis nesciunt, porro nemo sequi commodi! Amet.
-          </p>
-          <p class="px-5 max-w-2xl pt-10">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum pariatur cum velit quaerat provident fugit. At quibusdam eius voluptas earum facilis dolores minus reiciendis nesciunt, porro nemo sequi commodi! Amet.
-          </p>
-          <p class="px-5 max-w-2xl pt-10">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum pariatur cum velit quaerat provident fugit. At quibusdam eius voluptas earum facilis dolores minus reiciendis nesciunt, porro nemo sequi commodi! Amet.
-          </p>
+          <div class="max-w-2xl px-10">
+            <h2 class="text-3xl font-semibold text-center tracking-tight">Flight Programs</h2>
+            <h3 class="pt-10 text-xl italic">Sub heading Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum officiis doloribus laborum saepe ipsum libero adipisci possimus quis quaerat dolore aut impedit ea assumenda</h3>
+            <div class="text-gray-800 tracking-wider">
+              <p class="pt-10">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum pariatur cum velit quaerat provident fugit. At quibusdam eius voluptas earum facilis dolores minus reiciendis nesciunt, porro nemo sequi commodi! Amet.
+              </p>
+              <p class="pt-10">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum pariatur cum velit quaerat provident fugit. At quibusdam eius voluptas earum facilis dolores minus reiciendis nesciunt, porro nemo sequi commodi! Amet.
+              </p>
+              <p class="pt-10">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum pariatur cum velit quaerat provident fugit. At quibusdam eius voluptas earum facilis dolores minus reiciendis nesciunt, porro nemo sequi commodi! Amet.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
+      
+      <!-- Section 2 -->
+      <section class="flex flex-col-reverse lg:flex-row-reverse bg-main-red text-white">
+        <div class="lg:w-1/2 flex flex-col items-center py-10">
+          <img src="" alt="image goes here" class="w-3/4 h-[500px]">
+        </div>
+        <div class="lg:w-1/2 flex flex-col items-center py-10">
+          <div class="max-w-2xl px-10">
+            <h2 class="text-3xl font-semibold text-center tracking-tight">How To Become A Pilot</h2>
+            <h3 class="pt-10 text-xl italic">Sub heading Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum officiis doloribus laborum saepe ipsum libero adipisci possimus quis quaerat dolore aut impedit ea assumenda</h3>
+            <div class="text-gray-100 tracking-wider">
+              <p class="pt-10">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum pariatur cum velit quaerat provident fugit. At quibusdam eius voluptas earum facilis dolores minus reiciendis nesciunt, porro nemo sequi commodi! Amet.
+              </p>
+              <p class="pt-10">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum pariatur cum velit quaerat provident fugit. At quibusdam eius voluptas earum facilis dolores minus reiciendis nesciunt, porro nemo sequi commodi! Amet.
+              </p>
+              <p class="pt-10">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum pariatur cum velit quaerat provident fugit. At quibusdam eius voluptas earum facilis dolores minus reiciendis nesciunt, porro nemo sequi commodi! Amet.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 3 -->
+      <section class="flex flex-col-reverse lg:flex-row">
+        <div class="lg:w-1/2 flex flex-col items-center py-10">
+          <img src="" alt="image goes here" class="w-3/4 h-[500px]">
+        </div>
+        <div class="lg:w-1/2 flex flex-col items-center py-10">
+          <div class="max-w-2xl px-10">
+            <h2 class="text-3xl font-semibold text-center tracking-tight">Military Rotor Transition Pilot</h2>
+            <h3 class="pt-10 text-xl italic">Sub heading Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum officiis doloribus laborum saepe ipsum libero adipisci possimus quis quaerat dolore aut impedit ea assumenda</h3>
+            <div class="text-gray-800 tracking-wider">
+              <p class="pt-10">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum pariatur cum velit quaerat provident fugit. At quibusdam eius voluptas earum facilis dolores minus reiciendis nesciunt, porro nemo sequi commodi! Amet.
+              </p>
+              <p class="pt-10">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum pariatur cum velit quaerat provident fugit. At quibusdam eius voluptas earum facilis dolores minus reiciendis nesciunt, porro nemo sequi commodi! Amet.
+              </p>
+              <p class="pt-10">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum pariatur cum velit quaerat provident fugit. At quibusdam eius voluptas earum facilis dolores minus reiciendis nesciunt, porro nemo sequi commodi! Amet.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Section 4 -->
+      <section class="flex flex-col-reverse lg:flex-row-reverse bg-main-red text-white">
+        <div class="lg:w-1/2 flex flex-col items-center py-10">
+          <img src="" alt="image goes here" class="w-3/4 h-[500px]">
+        </div>
+        <div class="lg:w-1/2 flex flex-col items-center py-10">
+          <div class="max-w-2xl px-10">
+            <h2 class="text-3xl font-semibold text-center tracking-tight">International Student Pilots</h2>
+            <h3 class="pt-10 text-xl italic">Sub heading Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum officiis doloribus laborum saepe ipsum libero adipisci possimus quis quaerat dolore aut impedit ea assumenda</h3>
+            <div class="text-gray-100 tracking-wider">
+              <p class="pt-10">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum pariatur cum velit quaerat provident fugit. At quibusdam eius voluptas earum facilis dolores minus reiciendis nesciunt, porro nemo sequi commodi! Amet.
+              </p>
+              <p class="pt-10">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum pariatur cum velit quaerat provident fugit. At quibusdam eius voluptas earum facilis dolores minus reiciendis nesciunt, porro nemo sequi commodi! Amet.
+              </p>
+              <p class="pt-10">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum pariatur cum velit quaerat provident fugit. At quibusdam eius voluptas earum facilis dolores minus reiciendis nesciunt, porro nemo sequi commodi! Amet.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 5 -->
+      <section class="flex flex-col-reverse lg:flex-row">
+        <div class="lg:w-1/2 flex flex-col items-center py-10">
+          <img src="" alt="image goes here" class="w-3/4 h-[500px]">
+        </div>
+        <div class="lg:w-1/2 flex flex-col items-center py-10">
+          <div class="max-w-2xl px-10">
+            <h2 class="text-3xl font-semibold text-center tracking-tight">We Are Red Arrow Flight Academy</h2>
+            <h3 class="pt-10 text-xl italic">Sub heading Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum officiis doloribus laborum saepe ipsum libero adipisci possimus quis quaerat dolore aut impedit ea assumenda</h3>
+            <div class="text-gray-800 tracking-wider">
+              <p class="pt-10">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum pariatur cum velit quaerat provident fugit. At quibusdam eius voluptas earum facilis dolores minus reiciendis nesciunt, porro nemo sequi commodi! Amet.
+              </p>
+              <p class="pt-10">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum pariatur cum velit quaerat provident fugit. At quibusdam eius voluptas earum facilis dolores minus reiciendis nesciunt, porro nemo sequi commodi! Amet.
+              </p>
+              <p class="pt-10">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum pariatur cum velit quaerat provident fugit. At quibusdam eius voluptas earum facilis dolores minus reiciendis nesciunt, porro nemo sequi commodi! Amet.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Call to Action Banner -->
+      <section class="flex flex-col items-center bg-gradient-to-bl from-gray-800 to-black text-white">
+        <div class="lg:w-1/2 flex flex-col items-center py-10">
+          <div class="max-w-2xl px-10">
+            <h2 class="text-3xl font-semibold text-center tracking-tight">Book a Discovery Flight</h2>
+            <h3 class="pt-10 text-xl italic">Sub heading Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum officiis doloribus laborum saepe ipsum libero adipisci possimus quis quaerat dolore aut impedit ea assumenda</h3>
+            <div class="text-gray-200 tracking-wider">
+              <p class="pt-10">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum pariatur cum velit quaerat provident fugit. At quibusdam eius voluptas earum facilis dolores minus reiciendis nesciunt, porro nemo sequi commodi! Amet.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Us Form -->
+
+
+
 		<Footer />
 	</body>
 
