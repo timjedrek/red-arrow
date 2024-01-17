@@ -1,0 +1,73 @@
+---
+import HeaderLink from "./HeaderLink.astro";
+const flightPrograms = [
+  {
+    name: "New to flying?",
+    link: "/flight-programs/new-to-flying"
+  },
+  {
+    name: "Training Courses",
+    link: "/flight-programs/training-courses"
+  },
+  {
+    name: "University Program",
+    link: "/flight-programs/university-program"
+  },
+  {
+    name: "International Program",
+    link: "/flight-programs/international-program"
+  },
+  {
+    name: "Military / Rotor Transition",
+    link: "/flight-programs/military-rotor-transition"
+  }
+]
+---
+<nav class="mx-auto flex max-w-[80rem] justify-between p-5">
+  <a href="/" class="flex flex-shrink-0">
+    <img src="/red-arrow-logo.webp" alt="Red Arrow Logo" class="h-20 flex-shrink-0">
+  </a>
+  <div class="flex gap-8 items-center">
+    <!-- <HeaderLink href="/blog">Flight Program</HeaderLink> -->
+    <div class="relative">
+      <p class="flight-programs nav-link cursor-pointer hover:border-b-2 border-main-red" data-link-container="flight-programs-links">Flight Programs</p>
+      <ul class="flight-programs-links links-container absolute bg-white hidden p-5 flex-col gap-2 w-52">
+        {flightPrograms.map((fp) => (
+          <HeaderLink href={fp.link} class="hover:border-b-2 border-main-red active:border-b-2">{fp.name}</HeaderLink>
+        ))}
+      </ul>
+    </div>
+
+    <div class="relative">
+      <p class="resources nav-link cursor-pointer hover:border-b-2 border-main-red active:border-b-2" data-link-container="resources-links">Resources</p>
+      <ul class="resources-links links-container absolute bg-white hidden p-5 flex-col gap-2 w-52">
+        <li>FAA Exam Center</li>
+        <li>Financing</li>
+        <li>Maintenance</li>
+      </ul>
+    </div>
+
+    <div class="relative">
+      <p class="about nav-link cursor-pointer hover:border-b-2 border-main-red" data-link-container="about-links">About Us</p>
+      <ul class="about-links links-container absolute bg-white hidden p-5 flex-col gap-2 w-36">
+        <li>Our Story</li>
+        <li>Our Team</li>
+        <li>Our Fleet</li>
+        <li>Blog</li>
+      </ul>
+    </div>
+
+    <div class="relative">
+      <p class="discovery nav-link cursor-pointer hover:border-b-2 border-main-red">Discovery Flight</p>
+    </div>
+
+    <button class="bg-main-red px-4 py-3 rounded-sm font-semibold text-white">BOOK NOW</button>
+    <!-- <HeaderLink href="/about">About</HeaderLink>
+    <HeaderLink href="/about">About</HeaderLink>
+    <HeaderLink href="/about">About</HeaderLink> -->
+  </div>
+</nav>
+
+<script>
+  import "../scripts/navbar.js";
+</script>
