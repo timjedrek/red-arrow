@@ -1,0 +1,14 @@
+---
+const { object } = Astro.props
+import HeaderLink from "./HeaderLink.astro"
+---
+<div>
+  <p class=`${object.mobileClassName} nav-link cursor-pointer text-xl text-white py-4 hover:border-b-2 border-main-red whitespace-nowrap` data-link-container=`${object.mobileClassName}-links`>{object.name}</p>
+  <ul class=`${object.mobileClassName}-links links-container text-white hidden p-5 flex-col gap-4 w-60 text-lg`>
+    {object.submenu.map((item) => (
+      <div>
+        <HeaderLink href={item.link} class="hover:border-b-2 border-main-red">{item.name}</HeaderLink>
+      </div>
+    ))}
+  </ul>
+</div>
