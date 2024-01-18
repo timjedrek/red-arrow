@@ -1,9 +1,14 @@
 ---
 const { object } = Astro.props
 import HeaderLink from "./HeaderLink.astro"
+import { Icon } from 'astro-icon/components'
 ---
 <div>
-  <p class=`${object.mobileClassName} nav-link cursor-pointer text-xl text-white py-4 hover:border-b-2 border-main-red whitespace-nowrap` data-link-container=`${object.mobileClassName}-links`>{object.name}</p>
+  <div class=`${object.mobileClassName} nav-link cursor-pointer text-xl text-white py-4 hover:border-b-2 border-main-red whitespace-nowrap flex justify-between items center` data-link-container=`${object.mobileClassName}-links`>
+    <p class=>{object.name}</p>
+    <Icon name="ic:baseline-plus" class=`${object.mobileClassName}-expand text-white text-2xl` />
+    <Icon name="ic:baseline-minus" class=`${object.mobileClassName}-collapse text-white text-2xl hidden` />
+  </div>
   <ul class=`${object.mobileClassName}-links links-container text-white hidden p-5 flex-col gap-4 w-60 text-lg`>
     {object.submenu.map((item) => (
       <div>

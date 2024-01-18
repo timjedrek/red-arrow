@@ -51,7 +51,8 @@ function toggleNavIcons() {
 }
 
 function toggleMobileMenu() {
-  mobileMenu.classList.toggle('hidden');
+  mobileMenu.classList.toggle('-top-64');
+  mobileMenu.classList.toggle('top-20');
 }
 
 mobileMenuButton.addEventListener('click', (event) => {
