@@ -39,3 +39,22 @@ document.addEventListener('click', (event) => {
     closeOpenLinkContainers();
   }
 });
+
+const mobileMenuButton = document.querySelector('.mobile-menu-button');
+const mobileMenu = document.getElementById('mobile-menu');
+const xIcon = document.getElementById('x-icon');
+const hamburgerIcon = document.getElementById('hamburger-icon');
+
+function toggleNavIcons() {
+  xIcon.classList.toggle('hidden');
+  hamburgerIcon.classList.toggle('hidden');
+}
+
+function toggleMobileMenu() {
+  mobileMenu.classList.toggle('hidden');
+}
+
+mobileMenuButton.addEventListener('click', (event) => {
+  toggleNavIcons();
+  toggleMobileMenu();
+});

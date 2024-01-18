@@ -3,7 +3,7 @@ const { object } = Astro.props
 import HeaderLink from "./HeaderLink.astro"
 ---
 <div class="relative">
-  <p class=`${object.className} nav-link cursor-pointer text-xl text-white py-5 px-2 hover:border-b-2 border-main-red` data-link-container=`${object.className}-links`>{object.name}</p>
+  <p class=`${object.className} nav-link cursor-pointer text-xl text-white py-5 hover:border-b-2 border-main-red whitespace-nowrap` data-link-container=`${object.className}-links`>{object.name}</p>
   <ul class=`${object.className}-links links-container absolute bg-white hidden p-5 flex-col gap-2 w-60`>
     {object.submenu.map((item) => (
       <HeaderLink href={item.link} class="hover:border-b-2 border-main-red">{item.name}</HeaderLink>
