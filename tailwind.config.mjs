@@ -18,6 +18,15 @@ export default {
         'screen-4/5': '80vh',
         'screen-mobile' : '92vh', //depends on menu height
       }),
+      keyframes: {
+        wiggle: {
+          '0%, 100%': { transform: 'rotate(-3deg)' },
+          '50%': { transform: 'rotate(3deg)' },
+        }
+      },
+      animation: {
+        wiggle: 'wiggle 1s ease-in-out infinite',
+      }
 		},
 	},
 	plugins: [],
