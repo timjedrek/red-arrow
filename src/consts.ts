@@ -14,6 +14,7 @@ export const EMAIL_ADDRESS = 'info@flyredarrow.com';
 export const flightPrograms = {
   name: "Flight Programs",
   className: "flight-programs",
+  mobileClassName: "flight-programs-mobile",
   submenu: [
     {
       name: "New to flying?",
@@ -41,6 +42,7 @@ export const flightPrograms = {
 export const resources = {
   name: "Resources",
   className: "resources",
+  mobileClassName: "resources-mobile",
   submenu: [
     {
       name: "FAA Exam Center",
@@ -60,6 +62,7 @@ export const resources = {
 export const about = {
   name: "About",
   className: "about",
+  mobileClassName: "about-mobile",
   submenu: [
     {
       name: "Our Story",

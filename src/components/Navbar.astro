@@ -2,24 +2,61 @@
 import HeaderLink from "./HeaderLink.astro";
 import { flightPrograms, resources, about } from "../consts.ts";
 import NavLink from "./NavLink.astro";
+import MobileNavLink from "./MobileNavLink.jsx";
 ---
 
-<nav class="bg-black">
-  <div class="mx-auto flex max-w-[80rem] justify-between p-5">
-    <a href="/" class="flex flex-shrink-0">
-      <img src="/red-arrow-logo.webp" alt="Red Arrow Logo" class="h-20 flex-shrink-0">
-    </a>
-    <div class="flex gap-8 items-center">
+<nav class="relative">
+  <div class="bg-black">
+    <div class="mx-auto max-w-7xl px-4">
+      <div class="relative flex h-20 lg:h-28 items-center justify-between">
+        
+        <div class="flex flex-1 items-center justify-between">
+          <a href="/" class="flex flex-shrink-0 items-center">
+            <img src="/red-arrow-logo.webp" alt="Red Arrow Logo" class="h-14 lg:h-20 w-auto">
+          </a>
+          <div class="hidden lg:ml-6 lg:block">
+            <div class="flex gap-5 xl:gap-10 items-center">
+              <NavLink object={flightPrograms} />
+              <NavLink object={resources} />
+              <NavLink object={about} />
+              <div>
+                <HeaderLink href="/discovery-flight" class="discovery nav-link cursor-pointer text-xl text-white py-5 hover:border-b-2 border-main-red whitespace-nowrap">Discovery Flight</HeaderLink>
+              </div>
+              <button class="btn-red">BOOK NOW</button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="absolute inset-y-0 right-0 flex items-center lg:hidden">
+          <!-- Mobile menu button-->
+          <button type="button" class="mobile-menu-button relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+            <span class="absolute -inset-0.5"></span>
+            <span class="sr-only">Open main menu</span>
 
-      <NavLink object={flightPrograms} />
-      <NavLink object={resources} />
-      <NavLink object={about} />
+            <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" id="x-icon">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
 
-      <div class="relative">
-        <HeaderLink href="/discovery-flight" class="discovery nav-link cursor-pointer text-xl text-white p-5 hover:border-b-2 border-main-red">Discovery Flight</HeaderLink>
+            <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" id="hamburger-icon">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
       </div>
+    </div>
 
-      <button class="btn-red">BOOK NOW</button>
+    <!-- Mobile menu, show/hide based on menu state. -->
+  </div>
+
+  <div class="-top-64 lg:hidden absolute w-full bg-black -z-10 transition-[top]" id="mobile-menu">
+    <div class="px-4 pb-3 pt-2 flex flex-col">
+      <MobileNavLink client:load menuItem={flightPrograms} />
+      <MobileNavLink client:load menuItem={resources} />
+      <MobileNavLink client:load menuItem={about} />
+      <!-- <MobileNavLink object={resources} />
+      <MobileNavLink object={about} /> -->
+      <HeaderLink href="/discovery-flight" class="discovery nav-link cursor-pointer text-xl text-white py-5 hover:border-b-2 border-main-red whitespace-nowrap">Discovery Flight</HeaderLink>
+      <button class="btn-red place-self-center">BOOK NOW</button>
     </div>
   </div>
 </nav>
