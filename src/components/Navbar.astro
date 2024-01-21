@@ -2,7 +2,7 @@
 import HeaderLink from "./HeaderLink.astro";
 import { flightPrograms, resources, about } from "../consts.ts";
 import NavLink from "./NavLink.astro";
-import MobileNavLink from "./MobileNavLink.jsx";
+import MobileNavBar from "./MobileNavBar.jsx";
 const { pathname } = Astro.url;
 ---
 
@@ -51,9 +51,7 @@ const { pathname } = Astro.url;
 
   <div class="-top-64 lg:hidden absolute w-full bg-black -z-10 transition-[top]" id="mobile-menu">
     <div class="px-4 pb-3 pt-2 flex flex-col">
-      <MobileNavLink client:load menuItem={flightPrograms} pathname={pathname} />
-      <MobileNavLink client:load menuItem={resources} pathname={pathname} />
-      <MobileNavLink client:load menuItem={about} pathname={pathname} />
+      <MobileNavBar client:load pathname={pathname} />
       <!-- <MobileNavLink object={resources} />
       <MobileNavLink object={about} /> -->
       <HeaderLink href="/discovery-flight" class="discovery nav-link cursor-pointer text-xl text-white py-5 hover:border-b-2 border-main-red whitespace-nowrap">Discovery Flight</HeaderLink>
