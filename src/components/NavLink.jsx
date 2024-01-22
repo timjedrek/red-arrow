@@ -2,19 +2,19 @@ const NavLink = ({ menuItem, pathname, toggled, onShow }) => {
   const isActive = menuItem.submenu.some((item) => item.link === pathname);
   return (
     <div className="relative">
-      <button
+      <a
         id={menuItem.name}
         onClick={onShow}
-        className={`text-xl w-full flex items-center justify-between text-white py-5 hover:border-b-2 border-main-red whitespace-nowrap ${
+        className={`cursor-pointer text-xl text-white py-5 hover:border-b-2 border-main-red whitespace-nowrap ${
           isActive ? "border-b-2" : ""
         }`}
       >
         {menuItem.name}
-      </button>
+      </a>
       <div
         className={`overflow-hidden text-white ${
           toggled ? "max-h-96" : "max-h-0"
-        } transition-[max-height] duration-300 ease-in-out absolute bg-black flex flex-col whitespace-nowrap`}
+        } transition-[max-height] duration-300 ease-in-out absolute bg-black flex flex-col whitespace-nowrap top-12`}
       >
         {menuItem.submenu.map((item) => (
           <a

@@ -56,7 +56,9 @@ const Navbar = ({ pathname }) => {
                   <div>
                     <a
                       href="/discovery-flight"
-                      className="discovery nav-link cursor-pointer text-xl text-white py-5 hover:border-b-2 border-main-red whitespace-nowrap"
+                      className={`cursor-pointer text-xl text-white py-5 hover:border-b-2 border-main-red whitespace-nowrap ${
+                        pathname === "/discovery-flight" ? "border-b-2" : ""
+                      }`}
                     >
                       Discovery Flight
                     </a>
@@ -122,11 +124,13 @@ const Navbar = ({ pathname }) => {
           <MobileNavBar pathname={pathname} />
           <a
             href="/discovery-flight"
-            className="discovery nav-link cursor-pointer text-xl text-white py-5 hover:border-b-2 border-main-red whitespace-nowrap"
+            className={`cursor-pointer text-xl text-white py-5 hover:border-b-2 border-main-red whitespace-nowrap ${
+              pathname === "/discovery-flight" ? "border-b-2" : ""
+            }`}
           >
             Discovery Flight
           </a>
-          <button className="btn-red place-self-center">BOOK NOW</button>
+          <button className="btn-red place-self-center mt-5">BOOK NOW</button>
         </div>
       </div>
     </nav>
