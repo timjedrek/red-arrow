@@ -28,7 +28,7 @@ const MobileNavLink = ({ menuItem, pathname, toggled, onShow }) => {
           <li key={item.name} className="m-4">
             <a
               href={item.link}
-              className={`hover:border-b-2 border-main-red ${
+              className={`hover:border-b-2 border-main-red text-xl ${
                 item.link === pathname ? "border-b-2" : ""
               }`}
             >
