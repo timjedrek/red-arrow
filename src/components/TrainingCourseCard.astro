@@ -1,0 +1,16 @@
+---
+const { image, description } = Astro.props;
+---
+
+<div
+  class="flex bg-gradient-to-tr from-gray-800 to-black text-white flex-col p-2 rounded-xl hover:scale-105 transition-[transform] duration-300 ease-in-out cursor-pointer shadow-lg shadow-black"
+>
+  <img
+    src={image.src}
+    alt="Propeller plane at Dona Ana County International Jetport (KDNA)"
+    class="rounded-xl h-64 w-full object-cover"
+  />
+  <p class="text-xl font-medium text-center py-3">
+    {description}
+  </p>
+</div>
