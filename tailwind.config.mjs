@@ -7,7 +7,8 @@ export default {
         "main-red": "#993333",
       },
       backgroundImage: {
-        home: "url('/img/cessna-pilot-center-el-paso-tx.webp')",
+        "home": "url('/img/cessna-pilot-center-el-paso-tx.webp')",
+        "home-mobile": "url('/img/cessna-pilot-center-el-paso-tx-mobile.webp')",
         "two-cessna": "url('/img/two-cessna-red-arrow-KDNA-santa-teresa.webp')",
         "training-courses": "url('/img/training-courses-banner.webp')",
       },
