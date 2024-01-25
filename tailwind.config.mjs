@@ -9,7 +9,11 @@ export default {
       backgroundImage: {
         home: "url('/img/cessna-pilot-center-el-paso-tx.webp')",
         "two-cessna": "url('/img/two-cessna-red-arrow-KDNA-santa-teresa.webp')",
-        "training-courses": "url('/img/training-courses-banner.webp')",
+        "training-courses":
+          "url('/img/training-courses/training-courses-banner.webp')",
+        "discovery-flight":
+          "url('/img/discovery-flight/discovery-flight-banner.webp')",
+        "cfi-and-student": "url('/img/discovery-flight/cfi-and-student.webp')",
       },
       height: (theme) => ({
         "screen-1/2": "50vh",
