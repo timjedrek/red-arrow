@@ -8,10 +8,10 @@ const { image, alt, title, description, reverse = false } = Astro.props;
   <img
     src={image.src}
     alt={alt}
-    class="h-72 rounded-full aspect-square object-cover shadow-lg shadow-black"
+    class="h-56 lg:h-72 rounded-full aspect-square object-cover shadow-lg shadow-black"
   />
 
-  <div class="px-10 flex flex-col items-center">
+  <div class="p-10 flex flex-col items-center">
     <h2 class="text-3xl font-semibold text-center tracking-tight">
       {title}
     </h2>
