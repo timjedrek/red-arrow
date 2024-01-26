@@ -12,6 +12,7 @@ export default {
         "two-cessna": "url('/img/two-cessna-red-arrow-KDNA-santa-teresa.webp')",
         "training-courses": "url('/img/training-courses-banner.webp')",
         "our-story": "url('/img/our-story/banner.webp')",
+        "our-team": "url('/img/our-team/banner.webp')",
       },
       height: (theme) => ({
         "screen-1/2": "50vh",
