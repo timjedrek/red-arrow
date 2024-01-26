@@ -1,6 +1,120 @@
 ---
+import DiscoveryFlightCTA from "../../components/DiscoveryFlightCTA.astro";
+import ContactUs from "../../components/ContactUs.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import OurStoryImage from "../../../public/img/our-story/our-story.webp";
 ---
 
 <BaseLayout>
+  <header
+    class="relative h-screen-3/4 bg-our-story bg-cover bg-center bg-black flex flex-col items-center justify-center"
+  >
+    <div class="absolute bg-black/50 w-full h-full z-0"></div>
+    <div class="text-white text-center z-10">
+      <h1 class="text-5xl font-bold tracking-tighter">The Red Arrow Story</h1>
+      <h2 class="text-3xl pt-5 tracking-wide">
+        How we came to be who we are today.
+      </h2>
+      <button class="mt-5 btn-red">Contact Us</button>
+    </div>
+  </header>
+
+  <section
+    class="flex flex-col-reverse items-center lg:flex-row-reverse px-10 bg-gradient-to-br from-white to-gray-200"
+  >
+    <div class="lg:w-1/2 flex flex-col items-center py-10">
+      <img
+        src={OurStoryImage.src}
+        alt="The tail of an airplane at Red Arrow Flight Academy with its logo"
+        class="h-[500px] aspect-square object-cover"
+      />
+    </div>
+    <div class="lg:w-1/2 flex flex-col items-center pt-10">
+      <div class="max-w-2xl px-10">
+        <h2 class="text-3xl font-semibold text-center tracking-tight">
+          About Red Arrow Flight Academy
+        </h2>
+        <div class="text-gray-800 tracking-wider">
+          <p class="pt-10">
+            Founded in 2013 by Tomas and Elsa Peralta, Red Arrow Flight Academy
+            has evolved into a leading institution for aviation training in the
+            region. We recently celebrated our 10th anniversary and are proud to
+            continue as a pillar in the local aviation community of El Paso and
+            Santa Teresa, leading the next generation of pilots. If you’re
+            looking for top-tier flight instruction, then look no further.
+          </p>
+          <p class="pt-10">
+            Red Arrow Flight Academy takes pride in being the only flight school
+            in the area equipped with an Advanced Aviation Training Device
+            (AATD) Redbird Full-Motion Simulator. This state-of-the-art
+            simulator provides students with a realistic and immersive training
+            experience, enhancing their skills and confidence before taking to
+            the skies. We also offer a Military Rotor Transition program (RTAG),
+            designed for individuals transitioning from military service to
+            civilian flight training. This specialized program acknowledges the
+            unique skills and experiences of military personnel, offering a
+            seamless pathway to a career in aviation.
+          </p>
+          <p class="pt-10">
+            Red Arrow Flight Academy is the sole Part 141-certified flight
+            school in the region, a Cessna Pilot Training Center, an FAA Exam
+            Center, and host to a Designated Pilot Examiner (DPE) for Part 61
+            flight students.
+          </p>
+          <p class="pt-10">
+            Our roots run deep in the local community. Founders Tomas and Elsa
+            Peralta, have fostered a culture of inclusivity and support since
+            our inception. Here, we feel more like a close-knit family with an
+            affection for aviation rather than solely a flight school. We hope
+            you grant us the opportunity to bring you into the Red Arrow family
+            soon!
+          </p>
+        </div>
+        <a href="/flight-programs/training-courses" class="">
+          <div class="btn-red mt-10 lg:my-10">Join the Family</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section
+    class="flex flex-col-reverse items-center px-10 lg:flex-row bg-gradient-to-br from-main-red to-red-900 text-white"
+  >
+    <div class="lg:w-1/2 flex flex-col items-center py-10 h-[30rem] w-full">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3388.202989003412!2d-106.70098032426517!3d31.873896774053986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ddfb9c5519af0d%3A0x84f5ecbe927b654d!2sRed%20Arrow%20Flight%20Academy!5e0!3m2!1sen!2sar!4v1706029855988!5m2!1sen!2sar"
+        class="w-full h-full max-w-2xl"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="lg:w-1/2 flex flex-col items-center py-10">
+      <div class="max-w-2xl px-10">
+        <h2 class="text-3xl font-semibold text-center tracking-tight">
+          Our Location
+        </h2>
+        <h3 class="pt-10 text-xl italic">
+          Located at Dona Ana Country International Jetport (KDNA) in Santa
+          Teresa, New Mexico, U.S.A
+        </h3>
+        <div class="text-gray-100 tracking-wider">
+          <p class="pt-10">
+            Embark on the exciting journey to becoming a pilot with Red Arrow
+            Flight Academy by following these structured steps:
+          </p>
+          <p class="pt-10">
+            By taking a structured approach to pilot training, you’ll soon be up
+            in the air on your own, able to reach further than ever before.
+          </p>
+        </div>
+        <a href="/discovery-flight" class="">
+          <div class="btn-black mt-10">Visit the Us Today</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <DiscoveryFlightCTA />
+
+  <ContactUs />
 </BaseLayout>
