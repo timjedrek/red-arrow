@@ -22,7 +22,7 @@ import TrainingCourseCard from "../../components/TrainingCourseCard.astro";
         Our Pilot Training Courses
       </h1>
       <h2 class="text-3xl pt-5 tracking-wide">
-        From PPL to Airline to Military, you’ll find it here with Red Arrow
+        From PPL to advanced training, you’ll find it here with Red Arrow
         Flight Academy
       </h2>
       <a href="#contact-us"
@@ -32,19 +32,19 @@ import TrainingCourseCard from "../../components/TrainingCourseCard.astro";
   </header>
 
   <section
-    class="flex flex-col items-center bg-gradient-to-br from-white to-gray-200 p-10"
+    class="flex flex-col items-center bg-gradient-to-br from-white to-gray-200 p-5 lg:p-10"
   >
     <h2 class="text-3xl font-semibold text-center tracking-tight">
       Pilot Training Program Structure
     </h2>
-    <h3 class="pt-10 text-xl italic">
+    <h3 class="pt-10 text-xl italic text-center">
       We offer both accelerated and flexible training programs to fit your
       schedule and goals.
     </h3>
     <div
-      class="flex flex-col lg:flex-row gap-16 max-w-7xl my-12 items-center lg:items-stretch"
+      class="flex flex-col lg:flex-row gap-16 max-w-7xl lg:my-12 items-center lg:items-stretch"
     >
-      <div class="shadow-xl shadow-gray-400 py-10 px-14 bg-white">
+      <div class="lg:shadow-xl shadow-gray-400 py-10 px-14 lg:bg-white">
         <h4 class="text-2xl font-semibold p-5 pt-0 text-center uppercase">
           Accelerated Track
         </h4>
@@ -69,7 +69,7 @@ import TrainingCourseCard from "../../components/TrainingCourseCard.astro";
             <p class="font-medium text-xl pb-1">Move Quickly</p>
             <p>
               If you can commit the required amount of hours to airtime, we’ve
-              had students complete training in as little as 8 weeks. Depending
+              had students complete private pilot training in as little as 8 weeks. Depending
               on weather conditions, we cannot guarantee this, but we can
               certainly move as quickly as possible to get you into the air.
             </p>
@@ -87,7 +87,7 @@ import TrainingCourseCard from "../../components/TrainingCourseCard.astro";
           </li>
         </ul>
       </div>
-      <div class="shadow-xl shadow-gray-400 py-10 px-14 bg-white">
+      <div class="lg:shadow-xl shadow-gray-400 pb-10 lg:py-10 px-14 lg:bg-white">
         <h4 class="text-2xl font-semibold p-5 pt-0 text-center uppercase">
           Flexible Learning
         </h4>
@@ -117,7 +117,7 @@ import TrainingCourseCard from "../../components/TrainingCourseCard.astro";
               your training. All training courses require a minimum number of
               hours of practice, so if you don’t fly as often, it may take
               longer to complete. That being said, we’ve had students complete
-              training from anywhere between 2 and 18 months.
+              private pilot training from anywhere between 2 and 18 months.
             </p>
           </li>
           <li>
@@ -132,7 +132,7 @@ import TrainingCourseCard from "../../components/TrainingCourseCard.astro";
         </ul>
       </div>
     </div>
-    <button class="btn-red px-12">Start Now</button>
+    <button class="btn-red px-12 mb-16 lg:mb-0">Start Now</button>
   </section>
 
   <section
@@ -148,27 +148,39 @@ import TrainingCourseCard from "../../components/TrainingCourseCard.astro";
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 py-10">
       <TrainingCourseCard
         image={PrivatePilotImage}
-        description="Private Pilot License"
+        description="Private Pilot Certificate"
+        alt="Cessna 172 at Red Arrow Santa Teresa, NM"
+        link="private-pilot"
       />
       <TrainingCourseCard
         image={InstrumentPanelRatingImage}
-        description="Instrument Panel Rating"
+        description="Instrument Rating"
+        alt="Simulator AATD being used for instrument training Las Cruces, NM"
+        link="instrument-rating"
       />
       <TrainingCourseCard
         image={CommercialPilotImage}
-        description="Commercial Pilot License"
+        description="Commercial Pilot Certificate"
+        alt="Red Arrow Flight Academy graduate flying corporate charter"
+        link="commercial-pilot"
       />
       <TrainingCourseCard
         image={CertifiedFlightInstructorImage}
         description="Certified Flight Instructor (CFI)"
+        alt="Become a CFI at Red Arrow Flight Academy and teach student pilots from El Paso, TX"
+        link="certified-flight-instructor-cfi"
       />
       <TrainingCourseCard
         image={CertifiedFlightInstructorInstrumentImage}
         description="Certified Flight Instructor Instrument (CFII)"
+        alt="Become a CFII at Red Arrow Flight Academy and mentor instrument pilots"
+        link="certified-flight-instructor-instrument-cfii"
       />
       <TrainingCourseCard
         image={MilitaryRotorTransitionImage}
         description="Military Rotor/Transition"
+        alt="Many of our students come from Ft. Bliss and complete their pilot training at Red Arrow Flight Academy"
+        link="military-rotor-transition"
       />
     </div>
   </section>
