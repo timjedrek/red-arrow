@@ -1,0 +1,19 @@
+---
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts.js";
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import FooterHome from "../components/FooterHome.astro";
+---
+
+<html lang="en" class="scroll-smooth">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body class="relative">
+    <Header />
+    <main>
+      <slot />
+    </main>
+    <FooterHome />
+  </body>
+</html>
