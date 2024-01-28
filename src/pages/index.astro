@@ -1,14 +1,14 @@
 ---
 import DiscoveryFlightCTA from '../components/DiscoveryFlightCTA.astro';
 import ContactUs from '../components/ContactUs.astro';
-import BaseLayout from '../layouts/BaseLayout.astro';
+import HomeLayout from '../layouts/HomeLayout.astro';
 import TrainingProgramImage from '../../public/img/training-program.webp';
 import DiscoveryFlightImage from '../../public/img/discovery-flight.webp';
 import MilitaryProgramImage from '../../public/img/military-program.webp';
 import InternationalProgramImage from '../../public/img/international-program.webp';
 ---
 
-<BaseLayout>
+<HomeLayout>
   <!-- Header -->
   <header
     class="relative h-screen-3/4 bg-home-mobile lg:bg-home bg-cover bg-center bg-black flex flex-col items-center justify-center"
@@ -17,8 +17,8 @@ import InternationalProgramImage from '../../public/img/international-program.we
     <div class="absolute bg-black/50 w-full h-full z-0"></div>
     <!-- Text -->
     <div class="text-white text-center z-10">
-      <h1 class="text-5xl font-bold tracking-tighter">
-        Become a Pilot with Red Arrow Flight Academy
+      <h1 class="text-5xl font-bold tracking-tight">
+        Become a Pilot
       </h1>
       <h2 class="text-3xl pt-5 tracking-wide">
         Your Cessna Pilot Center Flight School in Santa Teresa, NM
@@ -29,11 +29,11 @@ import InternationalProgramImage from '../../public/img/international-program.we
 
   <!-- Section 1 -->
   <section class="flex flex-col-reverse items-center lg:flex-row bg-gradient-to-br from-white to-gray-200">
-    <div class="lg:w-1/2 flex flex-col items-center py-10">
-      <img src={TrainingProgramImage.src} alt="CFI gazes into the rotating propellers of a Cessna 172 at Red Arrow Flight Academy" class="h-[500px]">
+    <div class="lg:w-1/2 flex flex-col items-center lg:py-10">
+      <img src={TrainingProgramImage.src} alt="CFI gazes into the rotating propellers of a Cessna 172 at Red Arrow Flight Academy" class="h-[500px] object-cover" loading="lazy">
     </div>
     <div class="lg:w-1/2 flex flex-col items-center py-10">
-      <div class="max-w-2xl px-10">
+      <div class="max-w-2xl px-5 lg:px-10">
         <h2 class="text-3xl font-semibold text-center tracking-tight">Our Flight Training</h2>
         <h3 class="pt-10 text-xl italic">Navigate the skies with confidence through Red Arrow Flight Academy's tailored training programs.</h3>
         <div class="text-gray-800 tracking-wider">
@@ -41,10 +41,10 @@ import InternationalProgramImage from '../../public/img/international-program.we
             Every beginner pilot’s training starts with the Private Pilot program, where we help build a solid foundation of comprehensive knowledge and hands-on experience. From there, you can transition seamlessly into the Instrument Rating program, allowing you to take on more complex weather and flight paths.
           </p>
           <p class="pt-10">
-            Our Commercial Pilot program will equip aspiring aviators with the skills needed for a successful career in flight. If you aspire to teach flight practices one day too, you have the opportunity to undergo our Certified Flight Instructor (CFI) training to eventually train the next generation of pilots in the greater El Paso area.
+            Our Commercial Pilot program will equip aspiring aviators with the skills needed for a successful career in flight. If you aspire to teach future pilots as well, you have the opportunity to undergo our Certified Flight Instructor (CFI) training to train the next generation of pilots in the greater El Paso area.  Gain experience and start your career at Red Arrow Flight Academy.
           </p>
           <p class="pt-10">
-            At Red Arrow, we have accelerated and flexible training programs to accommodate your unique schedule. Each program will be a blend of simulator and hands-on training. Immerse yourself in a transformative learning experience that prepares you for the skies ahead.
+            At Red Arrow, we have accelerated and flexible training programs to accommodate your unique schedule and goals. Each program will be a blend of simulator and hands-on training. Immerse yourself in a transformative learning experience that prepares you for a future in aviation.  Many of our graduates have moved on to the airlines and other exciting career opportunities.
           </p>
         </div>
         <a href="/flight-programs/training-courses" class="">
@@ -58,11 +58,11 @@ import InternationalProgramImage from '../../public/img/international-program.we
 
   <!-- Section 2 -->
   <section class="flex flex-col-reverse items-center lg:flex-row-reverse bg-gradient-to-br from-main-red to-red-900 text-white">
-    <div class="lg:w-1/2 flex flex-col items-center py-10">
-      <img src={DiscoveryFlightImage.src} alt="CFI and student pilot in front of a Cessna 172 at the Dona Ana County International Jetport (KDNA)" class="mr-10">
+    <div class="lg:w-1/2 flex flex-col items-center lg:py-10">
+      <img src={DiscoveryFlightImage.src} alt="CFI and student pilot in front of a Cessna 172 at the Dona Ana County International Jetport (KDNA)" class="lg:mr-10">
     </div>
     <div class="lg:w-1/2 flex flex-col items-center py-10">
-      <div class="max-w-2xl px-10">
+      <div class="max-w-2xl px-5 lg:px-10">
         <h2 class="text-3xl font-semibold text-center tracking-tight">How to Become a Pilot</h2>
         <h3 class="pt-10 text-xl italic">It’s as easy as 1-2-3!</h3>
         <div class="text-gray-100 tracking-wider">
@@ -72,10 +72,10 @@ import InternationalProgramImage from '../../public/img/international-program.we
           <ol class="pt-10 list-decimal pl-10 flex flex-col gap-2">
             <li><span class="font-semibold">Register Your Interest:</span> Enroll in Red Arrow's Private Pilot Program to receive comprehensive knowledge and hands-on experience guided by seasoned instructors.</li>
             <li><span class="font-semibold">Learn the Ins-and-Outs:</span> Immerse yourself in hands-on flight training and Red Arrow's tailored ground school education, gaining expertise in navigation, weather patterns, and regulations.</li>
-            <li><span class="font-semibold">Take Flight:</span> Successfully complete the FAA written exam, a practical flight test with a Red Arrow instructor, and receive your Private Pilot License. This achievement marks the beginning of further advancements in your aviation evolution.</li>
+            <li><span class="font-semibold">Pass Exams:</span> Successfully complete the FAA written exam, a practical flight test with a FAA Designated Pilot Examiner (DPE), and receive your Private Pilot License. This achievement marks the beginning of further advancements in your aviation evolution.</li>
           </ol>
           <p class="pt-10">
-            By taking a structured approach to pilot training, you’ll soon be up in the air on your own, able to reach further than ever before.
+            By choosing our structured approach to pilot training, you’ll soon be up in the air on your own, and closer to succeeding in your aviation goals than ever before.
           </p>
         </div>
         <a href="/discovery-flight" class="">
@@ -89,16 +89,16 @@ import InternationalProgramImage from '../../public/img/international-program.we
 
   <!-- Section 3 -->
   <section class="flex flex-col-reverse items-center lg:flex-row bg-gradient-to-br from-white to-gray-200">
-    <div class="lg:w-1/2 flex flex-col items-center py-10">
-      <img src={MilitaryProgramImage.src} alt="Fleet of Sikorsky CH-53K King Stallion helicopters over KDNA at Red Arrow Flight Academy" class="h-[500px]">
+    <div class="lg:w-1/2 flex flex-col items-center lg:py-10">
+      <img src={MilitaryProgramImage.src} alt="Fleet of Sikorsky CH-53K King Stallion helicopters over KDNA at Red Arrow Flight Academy" class="h-[500px] object-cover" loading="lazy">
     </div>
     <div class="lg:w-1/2 flex flex-col items-center py-10">
-      <div class="max-w-2xl px-10">
+      <div class="max-w-2xl px-5 lg:px-10">
         <h2 class="text-3xl font-semibold text-center tracking-tight">Our Military Programs</h2>
-        <h3 class="pt-10 text-xl italic">As the only Part 141-certified flight school in the region, we specialize in providing military programs for our students.</h3>
+        <h3 class="pt-10 text-xl italic">As the only Part 141 certified flight school in the region, we specialize in providing airplane pilot training programs for our military students.</h3>
         <div class="text-gray-800 tracking-wider">
           <p class="pt-10">
-            At Red Arrow Flight Academy, we have the advantage of being the sole Part 141 flight school around, allowing us to offer unparalleled specialized military programs and benefits to our students. Whether you're transitioning from military service to aviation or seeking additional certifications, our programs are designed to cater to your unique needs.
+            At Red Arrow Flight Academy, we have the advantage of being the sole Part 141 flight school around, allowing us to offer unparalleled specialized programs and benefits to our students, especially those that have served in the military. Whether you're transitioning from military service to aviation or seeking additional certifications, our programs are designed to cater to your unique needs.
           </p>
           <p class="pt-10">
             Our specialized military programs include:
@@ -123,11 +123,11 @@ import InternationalProgramImage from '../../public/img/international-program.we
 
   <!-- Section 4 -->
   <section class="flex flex-col-reverse items-center lg:flex-row-reverse bg-gradient-to-br from-main-red to-red-900 text-white">
-    <div class="lg:w-1/2 flex flex-col items-center py-10">
-      <img src={InternationalProgramImage.src} alt="Propeller plane flying above the El Paso mountains" class="h-[500px]">
+    <div class="lg:w-1/2 flex flex-col items-center lg:py-10">
+      <img src={InternationalProgramImage.src} alt="Propeller plane flying above the El Paso mountains" class="h-[500px] object-cover" loading="lazy">
     </div>
     <div class="lg:w-1/2 flex flex-col items-center py-10">
-      <div class="max-w-2xl px-10">
+      <div class="max-w-2xl px-5 lg:px-10">
         <h2 class="text-3xl font-semibold text-center tracking-tight">International Students</h2>
         <h3 class="pt-10 text-xl italic">For international students and foreign pilot licenses.</h3>
         <div class="text-gray-100 tracking-wider">
@@ -142,8 +142,12 @@ import InternationalProgramImage from '../../public/img/international-program.we
           </p>
         </div>
         <a href="">
-          <div class="btn-black my-10">
+          <div class="btn-black my-10 hidden lg:block">
             Explore the International Program
+          </div>
+          <!-- Too much text in button was causing overflow-->
+          <div class="btn-black my-10 lg:hidden">
+            International Program
           </div>
         </a>
       </div>
@@ -152,11 +156,11 @@ import InternationalProgramImage from '../../public/img/international-program.we
 
   <!-- Section 5 -->
   <section class="flex flex-col-reverse items-center lg:flex-row bg-gradient-to-br from-white to-gray-200">
-    <div class="lg:w-1/2 flex flex-col items-center py-10">
-      <img src="" alt="The Red Arrow Academy Team at Dona Ana County International Jetport (KDNA)" class="h-[500px]">
+    <div class="lg:w-1/2 flex flex-col items-center lg:py-10">
+      <img src="" alt="The Red Arrow Academy Team at Dona Ana County International Jetport (KDNA)" class="h-[500px] object-cover" loading="lazy">
     </div>
     <div class="lg:w-1/2 flex flex-col items-center py-10">
-      <div class="max-w-2xl px-10">
+      <div class="max-w-2xl px-5 lg:px-10">
         <h2 class="text-3xl font-semibold text-center tracking-tight">We Are Red Arrow Flight Academy</h2>
         <h3 class="pt-10 text-xl italic">Come get to know our elite team of CFIs and staff.</h3>
         <div class="text-gray-800 tracking-wider">
@@ -188,4 +192,4 @@ import InternationalProgramImage from '../../public/img/international-program.we
 
   <!-- Contact Us Form -->
   <ContactUs />
-</BaseLayout>
+</HomeLayout>
