@@ -2,7 +2,7 @@
 
 ---
 
-<form class="mx-auto max-w-xl pb-10" id="contactForm" action="https://usebasin.com/f/d5eca44afead" method="POST">
+<form class="mx-auto max-w-xl pb-10" id="contact_form"  method="POST" onsubmit="validateForm(this);">
   <div class="grid grid-cols-1 gap-x-8 gap-y-2 sm:grid-cols-2">
     <div>
       <!-- <label for="first-name" class="block text-sm leading-6 text-white">First name</label> -->
@@ -22,7 +22,7 @@
         <input type="email" name="email" id="email" autocomplete="email" placeholder="Email Address" required class="block w-full py-2 text-white shadow-sm ring-inset ring-gray-300 placeholder:text-gray-300 bg-transparent border-b-[1px] border-gray-300 sm:text-sm sm:leading-6 outline-none">
       </div>
     </div>
-    <p class="hidden">
+    <p class="ohno">
       <label>
         Don't fill this out if you're human: <input name="confirm-email" />
       </label>
@@ -71,3 +71,25 @@
     <button type="submit" class="btn-black">Contact Us</button>
   </div>
 </form>
+
+<script>
+
+(window as any).validateForm = validateForm;
+function validateForm(form) {
+  var x = document.forms["contact_form"]["confirm-email"].value;
+  if ( x == "" || x == null ){ // if the honeypot was ignored, it's a hu-mon
+    form.action="https://usebasin.com/f/d5eca44afead"; // link to process form and redirect to thank you
+  }
+  else{ // the honeypot was filled in, it's a robot
+    form.action="https://flyredarrow.com/contact-confirmation" // link directly to thank you without actually processing form    
+    return false;
+    }
+}
+
+</script>
+
+<style>
+  .ohno {
+    @apply hidden;
+  }
+</style>
