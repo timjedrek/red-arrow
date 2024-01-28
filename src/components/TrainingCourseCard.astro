@@ -1,5 +1,5 @@
 ---
-const { image, description } = Astro.props;
+const { image, description, alt } = Astro.props;
 ---
 
 <div
@@ -7,7 +7,7 @@ const { image, description } = Astro.props;
 >
   <img
     src={image.src}
-    alt="Propeller plane at Dona Ana County International Jetport (KDNA)"
+    alt={alt}
     class="rounded-xl h-64 w-full object-cover"
   />
   <p class="text-xl font-medium text-center py-3">
