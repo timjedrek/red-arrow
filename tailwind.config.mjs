@@ -12,7 +12,7 @@ export default {
         "two-cessna": "url('/img/two-cessna-red-arrow-KDNA-santa-teresa.webp')",
         "our-story": "url('/img/our-story/banner.webp')",
         "training-courses":
-          "url('/img/training-courses/training-courses-banner.webp')",
+          "url('/img/cessna-outside-hangar-juarez-mx.webp')",
         "discovery-flight":
           "url('/img/discovery-flight/discovery-flight-banner.webp')",
         "cfi-and-student": "url('/img/discovery-flight/cfi-and-student.webp')",
