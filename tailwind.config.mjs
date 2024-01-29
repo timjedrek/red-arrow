@@ -11,6 +11,7 @@ export default {
         "home-mobile": "url('/img/cessna-pilot-center-el-paso-tx-mobile.webp')",
         "two-cessna": "url('/img/two-cessna-red-arrow-KDNA-santa-teresa.webp')",
         "our-story": "url('/img/our-story/banner.webp')",
+        "our-team": "url('/img/our-team/banner.webp')",
         "training-courses":
           "url('/img/cessna-outside-hangar-juarez-mx.webp')",
         "discovery-flight":

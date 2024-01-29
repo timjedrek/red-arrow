@@ -3,6 +3,7 @@ import DiscoveryFlightCTA from "../../components/DiscoveryFlightCTA.astro";
 import ContactUs from "../../components/ContactUs.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import OurStoryImage from "../../../public/img/our-story/our-story.webp";
+import Location from "../../components/Location.astro";
 ---
 
 <BaseLayout>
@@ -76,42 +77,7 @@ import OurStoryImage from "../../../public/img/our-story/our-story.webp";
     </div>
   </section>
 
-  <section
-    class="flex flex-col-reverse items-center px-10 lg:flex-row bg-gradient-to-br from-main-red to-red-900 text-white"
-  >
-    <div class="lg:w-1/2 flex flex-col items-center py-10 h-[30rem] w-full">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3388.202989003412!2d-106.70098032426517!3d31.873896774053986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ddfb9c5519af0d%3A0x84f5ecbe927b654d!2sRed%20Arrow%20Flight%20Academy!5e0!3m2!1sen!2sar!4v1706029855988!5m2!1sen!2sar"
-        class="w-full h-full max-w-2xl"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-    <div class="lg:w-1/2 flex flex-col items-center py-10">
-      <div class="max-w-2xl px-10">
-        <h2 class="text-3xl font-semibold text-center tracking-tight">
-          Our Location
-        </h2>
-        <h3 class="pt-10 text-xl italic">
-          Located at Dona Ana Country International Jetport (KDNA) in Santa
-          Teresa, New Mexico, U.S.A.
-        </h3>
-        <div class="text-gray-100 tracking-wider">
-          <p class="pt-10">
-            Embark on the exciting journey to becoming a pilot with Red Arrow
-            Flight Academy by following these structured steps:
-          </p>
-          <p class="pt-10">
-            By taking our structured approach to pilot training, you’ll soon be up
-            in the air on your own and accomplishing your aviation goals.
-          </p>
-        </div>
-        <a href="/discovery-flight" class="">
-          <div class="btn-black mt-10">Visit the Us Today</div>
-        </a>
-      </div>
-    </div>
-  </section>
+  <Location />
 
   <DiscoveryFlightCTA />
 
