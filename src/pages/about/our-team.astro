@@ -1,6 +1,45 @@
 ---
+import DiscoveryFlightCTA from "../../components/DiscoveryFlightCTA.astro";
+import ContactUs from "../../components/ContactUs.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import TeamMemberCard from "../../components/TeamMemberCard.astro";
+import { teamMembers } from "../../consts";
+import Location from "../../components/Location.astro";
 ---
 
 <BaseLayout>
+  <header
+    class="relative h-screen-3/4 bg-our-team bg-cover bg-center bg-black flex flex-col items-center justify-center"
+  >
+    <div class="absolute bg-black/50 w-full h-full z-0"></div>
+    <div class="text-white text-center z-10">
+      <h1 class="text-5xl font-bold tracking-tighter">
+        The People Behind Red Arrow
+      </h1>
+      <h2 class="text-3xl pt-5 tracking-wide">
+        Our elite flight instruction team in Santa Teresa, NM
+      </h2>
+      <button class="mt-5 btn-red">Meet Red Arrow</button>
+    </div>
+  </header>
+
+  <section
+    class="flex flex-col items-center px-10 bg-gradient-to-br from-white to-gray-200 py-10"
+  >
+    <h2 class="text-3xl font-semibold text-center tracking-tight">
+      Leadership Team
+    </h2>
+
+    {teamMembers.map((member) => <TeamMemberCard teamMember={member} />)}
+
+    <a href="/flight-programs/training-courses" class="">
+      <div class="btn-red">Get in Touch</div>
+    </a>
+  </section>
+
+  <Location />
+
+  <DiscoveryFlightCTA />
+
+  <ContactUs />
 </BaseLayout>
