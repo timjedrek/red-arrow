@@ -1,9 +1,9 @@
 ---
-
+const { bgColorRed = true } = Astro.props;
 ---
 
 <section
-  class="flex flex-col-reverse items-center px-10 lg:flex-row bg-gradient-to-br from-main-red to-red-900 text-white"
+  class={`flex flex-col-reverse items-center px-10 lg:flex-row bg-gradient-to-br ${bgColorRed ? "from-main-red to-red-900 text-white" : "from-white to-gray-200 text-black"} `}
 >
   <div class="lg:w-1/2 flex flex-col items-center py-10 h-[30rem] w-full">
     <iframe

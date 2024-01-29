@@ -5,10 +5,10 @@ import ContactUs from "../../components/ContactUs.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import Location from "../../components/Location.astro";
 
-import RedBirdImage from "../../../public/img/our-fleet/red-bird.webp";
-
 import { fleet } from "../../data/fleet";
+import { simulators } from "../../data/simulators";
 import FleetCard from "../../components/FleetCard.astro";
+import SimulatorCard from "../../components/SimulatorCard.astro";
 ---
 
 <BaseLayout>
@@ -37,7 +37,21 @@ import FleetCard from "../../components/FleetCard.astro";
     {fleet.map((plane) => <FleetCard plane={plane} />)}
   </section>
 
-  <Location />
+  <section
+    class="flex flex-col items-center px-10 bg-gradient-to-br from-main-red to-red-900 py-10 text-white"
+  >
+    <h2 class="text-3xl font-semibold text-center tracking-tight">
+      Our Simulators
+    </h2>
+    <h3 class="pt-10 text-xl italic">
+      Prices may change, contact us for current prices. Prices do not include
+      tax.
+    </h3>
+
+    {simulators.map((simulator) => <SimulatorCard simulator={simulator} />)}
+  </section>
+
+  <Location bgColorRed={false} />
 
   <DiscoveryFlightCTA />
 
