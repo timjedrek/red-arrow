@@ -31,6 +31,7 @@
   "devDependencies": {
     "@iconify-json/entypo-social": "^1.1.8",
     "@iconify-json/ic": "^1.1.17",
+    "@iconify-json/tabler": "^1.1.104",
     "prettier": "^3.2.4",
     "prettier-plugin-astro": "^0.13.0"
   }

@@ -12,8 +12,8 @@ export default {
         "two-cessna": "url('/img/two-cessna-red-arrow-KDNA-santa-teresa.webp')",
         "our-story": "url('/img/our-story/banner.webp')",
         "our-team": "url('/img/our-team/banner.webp')",
-        "training-courses":
-          "url('/img/cessna-outside-hangar-juarez-mx.webp')",
+        "our-fleet": "url('/img/our-fleet/banner.webp')",
+        "training-courses": "url('/img/cessna-outside-hangar-juarez-mx.webp')",
         "discovery-flight":
           "url('/img/discovery-flight/discovery-flight-banner.webp')",
         "cfi-and-student": "url('/img/discovery-flight/cfi-and-student.webp')",
