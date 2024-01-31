@@ -1,6 +1,98 @@
 ---
+import ContactUs from "../../components/ContactUs.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import DiscoveryFlightCTA from "../../components/DiscoveryFlightCTA.astro";
 ---
 
 <BaseLayout>
+  <header
+    class="relative h-screen-3/4 bg-university-program bg-cover bg-center bg-white flex flex-col items-center justify-center"
+  >
+    <div class="absolute bg-black/70 w-full h-full z-0"></div>
+
+    <div class="text-white text-center z-10">
+      <h1 class="text-5xl font-bold tracking-tighter">University Program</h1>
+      <h2 class="text-3xl pt-5 tracking-wide">
+        Our partnership with Purdue Global
+      </h2>
+      <a href="#contact-us"
+        ><button class="mt-5 btn-red bg-[#c28e0e]">Start Now</button></a
+      >
+    </div>
+  </header>
+
+  <section class="flex flex-col items-center text-white bg-[#c28e0e] p-10">
+    <div class="max-w-5xl px-10 lg:w-1/2 flex flex-col items-center py-10">
+      <h2 class="text-3xl font-semibold text-center tracking-tight">
+        Purdue Global + Red Arrow
+      </h2>
+      <h3 class="pt-10 text-xl italic">
+        For the benefit of those who wish to turn aviation into their career via
+        university-level instruction.
+      </h3>
+      <div class="tracking-wider">
+        <p class="pt-10">
+          Discover an aviation career through our University Program in
+          collaboration with Purdue University Global. This partnership brings
+          together the flexibility and affordability of Purdue Global with the
+          renowned aviation program of Purdue University. As a student at Red
+          Arrow Flight Academy, you have the exclusive opportunity to pursue
+          online bachelor's degrees in professional flight or aviation
+          management.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-gradient-to-br from-white to-gray-200 p-10">
+    <div class="flex flex-col max-w-6xl mx-auto">
+      <div class="max-w-xl p-10">
+        <h2 class="text-3xl font-semibold text-center tracking-tight">
+          Benefits of the Program
+        </h2>
+        <p class="pt-10">
+          <span class="font-semibold">BS in Professional Flight:</span> Complete
+          your professional flight degree online in 2–3 years, saving up to $28,400
+          in tuition. You can seamlessly integrate your degree pursuit with flight
+          training or full-time flight instructor work.
+        </p>
+        <p class="pt-10">
+          <span class="font-semibold">BS in Aviation Management:</span> Develop managerial-level
+          skills in aviation operations and business management through this 100%
+          online program. Eligible transfer credits are accepted for FAA certificate
+          and rating holders.
+        </p>
+      </div>
+
+      <div class="max-w-xl p-10 self-end">
+        <h2 class="text-3xl font-semibold text-center tracking-tight">
+          Why Choose Purdue Global?
+        </h2>
+        <p class="pt-10">
+          <span class="font-semibold">Partner School Tuition Reduction:</span> Enjoy
+          a 20% tuition reduction on undergraduate programs and a 14% reduction on
+          graduate programs, along with included textbooks for undergraduate programs.
+        </p>
+        <p class="pt-10">
+          <span class="font-semibold">Adult-Centric Approach:</span> Benefit from
+          flexible learning options, a generous transfer credit policy, and personalized
+          support tailored to adult learners.
+        </p>
+        <p class="pt-10">
+          <span class="font-semibold">Nationally Ranked and Respected:</span> Join
+          Purdue Global, part of the esteemed Purdue University system, recognized
+          as one of the world's most prestigious research universities.
+        </p>
+      </div>
+
+      <h3 class="p-10 text-xl italic text-center max-w-3xl self-center">
+        Seize the opportunity to shape your aviation future by enrolling now or
+        visiting RedArrow.PurdueGlobal.edu. Launch your career with the combined
+        excellence of Red Arrow Flight Academy and Purdue University Global.
+      </h3>
+    </div>
+  </section>
+
+  <DiscoveryFlightCTA />
+  <ContactUs />
 </BaseLayout>
