@@ -13,6 +13,7 @@ export default {
         "our-story": "url('/img/our-story/banner.webp')",
         "our-team": "url('/img/our-team/banner.webp')",
         "our-fleet": "url('/img/our-fleet/banner.webp')",
+        "new-to-flying": "url('/img/new-to-flying/banner.jpg')",
         "training-courses": "url('/img/cessna-outside-hangar-juarez-mx.webp')",
         "discovery-flight":
           "url('/img/discovery-flight/discovery-flight-banner.webp')",
