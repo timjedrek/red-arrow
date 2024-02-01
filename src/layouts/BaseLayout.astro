@@ -4,13 +4,13 @@ import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 
-const { pageTitle, pageDescription, pageImage } = Astro.props;
+const { pageTitle, pageDescription, pageImage, pageKeywords } = Astro.props;
 
 ---
 
 <html lang="en" class="scroll-smooth">
   <head>
-    <BaseHead title={pageTitle} description={pageDescription} image={pageImage}/>
+    <BaseHead title={pageTitle} description={pageDescription} image={pageImage} keywords={pageKeywords}/>
   </head>
   <body class="relative">
     <Header />

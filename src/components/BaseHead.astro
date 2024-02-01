@@ -2,20 +2,22 @@
 // Import the global.css file here so that it is included on
 // all pages through the use of the <BaseHead /> component.
 import '../styles/global.css';
-import { SITE_TITLE, SITE_DESCRIPTION, OG_IMAGE } from "../consts.js";
+import { SITE_TITLE, SITE_DESCRIPTION, OG_IMAGE, SITE_KEYWORDS } from "../consts.js";
 
 
 interface Props {
 	title: string;
 	description: string;
 	image: string;
+  keywords: string;
 }
 
-const { title, description, image } = Astro.props;
+const { title, description, image, keywords } = Astro.props;
 
 let pageTitle = title;
 let pageDescription = description;
 let pageImage = image;
+let pageKeywords = keywords;
 
 // Custom Titles
 let holderTitle = SITE_TITLE
@@ -38,6 +40,12 @@ if (pageImage != null) {
 };
 const newImage = holderImage
 
+// Custom keywords
+let holderKeywords = SITE_KEYWORDS
+if (pageKeywords != null) {
+  holderKeywords = pageKeywords;
+};
+const newKeywords = holderKeywords
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 ---
@@ -76,6 +84,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 <title>{newTitle}</title>
 <meta name="title" content={newTitle} />
 <meta name="description" content={newDesc} />
+<meta name="keywords" content={newKeywords} />
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website" />
