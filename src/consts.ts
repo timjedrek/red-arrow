@@ -1,8 +1,12 @@
 // Place any global data in this file.
 // You can import this data from anywhere in your site by using the `import` keyword.
 
+//Default SEO
 export const SITE_TITLE = "Red Arrow Flight Academy | El Paso, TX";
 export const SITE_DESCRIPTION = "Red Arrow Flight Academy provides aviation training for the El Paso, Santa Teresa, and Las Cruces areas. Our flight school reflects our commitment to offering cost effective and secure pathways for aspiring pilots, including private pilot, instrument, commercial, and international student programs. Whether you're utilizing the GI Bill or pursuing a lifelong dream, we ensure a comprehensive and safe journey to earn your wings.";
+export const OG_IMAGE = "/red-arrow-logo.webp"
+
+//Customer NAP info
 export const ADDRESS = "8063 Airport Rd";
 export const ADDRESS2 = "";
 export const ADDRESS_CITY = "Santa Teresa";
