@@ -3,11 +3,28 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts.js";
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+
+const { pageTitle, pageDescription } = Astro.props;
+
+// Custom Titles
+let holderTitle = SITE_TITLE
+if (pageTitle != null) {
+  holderTitle = pageTitle;
+}; 
+const newTitle = holderTitle;
+
+// Custom Description
+let holderDesc = SITE_DESCRIPTION
+if (pageDescription != null) {
+  holderDesc = pageDescription;
+};
+const newDesc = holderDesc
+
 ---
 
 <html lang="en" class="scroll-smooth">
   <head>
-    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    <BaseHead title={newTitle} description={holderDesc} />
   </head>
   <body class="relative">
     <Header />
