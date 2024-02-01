@@ -1,6 +1,131 @@
 ---
-import BaseLayout from "../../layouts/BaseLayout.astro";
+import DiscoveryFlightCTA from "../../components/DiscoveryFlightCTA.astro";
+import ContactUs from "../../components/ContactUs.astro";
+import HomeLayout from "../../layouts/HomeLayout.astro";
 ---
 
-<BaseLayout>
-</BaseLayout>
+<HomeLayout>
+  <!-- Header -->
+  <header
+    class="relative h-screen-3/4 bg-our-story bg-cover bg-center bg-black flex flex-col items-center justify-center"
+  >
+    <!-- bg-overlay to darken -->
+    <div class="absolute bg-black/50 w-full h-full z-0"></div>
+    <!-- Text -->
+    <div class="text-white text-center z-10">
+      <h1 class="text-5xl font-bold tracking-tight">
+        International Programs & Services
+      </h1>
+      <h2 class="text-3xl pt-5 tracking-wide">
+        Learn about obtaining your M-1 Visa for flight training or how to
+        convert your foreign pilot’s license.
+      </h2>
+      <button class="mt-5 btn-red">Start Now</button>
+    </div>
+  </header>
+
+  <section
+    class="flex flex-col items-center bg-gradient-to-br from-white to-gray-200"
+  >
+    <div class="max-w-5xl px-10 lg:w-1/2 flex flex-col items-center py-10">
+      <h2 class="text-3xl font-semibold text-center tracking-tight">
+        M-1 Visa for International Students
+      </h2>
+      <h3 class="pt-10 text-xl italic">
+        How to Obtain an M-1 Visa with Red Arrow Flight Academy.
+      </h3>
+      <div class="tracking-wider">
+        <p class="pt-10">
+          Embarking on flight training in the U.S. as an international student
+          is a thrilling journey. At Red Arrow Flight Academy, we guide you
+          through the process of obtaining your M-1 Visa with a clear
+          step-by-step approach:
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section
+    class="flex flex-col items-center bg-gradient-to-br from-main-red to-red-900 text-white"
+  >
+    <div class="max-w-5xl px-10 lg:w-1/2 flex flex-col items-center py-10">
+      <h2 class="text-3xl font-semibold text-center tracking-tight">
+        Convert Your Foreign Pilot License
+      </h2>
+      <h3 class="pt-10 text-xl italic">
+        Follow these steps to fly in the U.S.A. with international training:
+      </h3>
+      <div class="tracking-wider">
+        <p class="pt-10">
+          International students with existing pilot licenses can seamlessly
+          convert them to fly in the U.S. by adhering to these steps:
+        </p>
+        <ol class="pt-10 list-decimal pl-10 flex flex-col gap-2">
+          <li>
+            Complete <a
+              href="../../../public/files/FAA-form-8060-71.pdf"
+              download="FAA-form-8060-71.pdf"
+              class="underline">FAA Form 8060-71</a
+            >
+          </li>
+          <ul class="list-disc pl-5">
+            <li>
+              Fill out the Verification of Authenticity of Foreign License and
+              Medical Certification Form
+            </li>
+          </ul>
+          <li>Document Copies</li>
+          <ul class="list-disc pl-5">
+            <li>
+              Make enlarged copies of your Private Pilot License and Medical
+              Certificate.
+            </li>
+          </ul>
+          <li>Submit Forms and Documents to the FAA</li>
+          <ul class="list-disc pl-5">
+            <li>Send the completed form and required documents to the FAA.</li>
+          </ul>
+          <li>Create an IACRA Account</li>
+          <ul class="list-disc pl-5">
+            <li>
+              Create an account with IACRA and submit the necessary information.
+            </li>
+          </ul>
+          <li>
+            Confirm the Certification Request with the Civil Aviation Authority
+          </li>
+          <ul class="list-disc pl-5">
+            <li>
+              Contact your home country’s <a
+                href="https://en.wikipedia.org/wiki/Civil_aviation_authority"
+                class="underline"
+                target="_blank"
+                rel="noopener noreferrer">Civil Aviation</a
+              > Authority to confirm receipt and processing of the verification request.
+            </li>
+          </ul>
+          <li>
+            Receive a Letter of Authenticity and Obtain an FAA Medical
+            Certificate
+          </li>
+          <ul class="list-disc pl-5">
+            <li>
+              Upon approval, receive the Letter of Authenticity from the FAA,
+              authorizing the acquisition of a temporary certificate.
+            </li>
+            <li>
+              Pass a medical examination upon arrival in the U.S. to qualify for
+              an FAA Medical Certificate.
+            </li>
+          </ul>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action Banner -->
+  <DiscoveryFlightCTA />
+
+  <!-- Contact Us Form -->
+  <ContactUs />
+</HomeLayout>
