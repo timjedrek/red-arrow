@@ -2,6 +2,7 @@
 import DiscoveryFlightCTA from "../../components/DiscoveryFlightCTA.astro";
 import ContactUs from "../../components/ContactUs.astro";
 import HomeLayout from "../../layouts/HomeLayout.astro";
+import InternationalProgramSteps from "../../components/InternationProgramSteps.jsx";
 ---
 
 <HomeLayout>
@@ -43,6 +44,8 @@ import HomeLayout from "../../layouts/HomeLayout.astro";
         </p>
       </div>
     </div>
+
+    <InternationalProgramSteps client:load />
   </section>
 
   <section
@@ -63,9 +66,9 @@ import HomeLayout from "../../layouts/HomeLayout.astro";
         <ol class="pt-10 list-decimal pl-10 flex flex-col gap-2">
           <li>
             Complete <a
-              href="../../../public/files/FAA-form-8060-71.pdf"
-              download="FAA-form-8060-71.pdf"
-              class="underline">FAA Form 8060-71</a
+              href="../../../public/files/faa-form-8060-71.pdf"
+              download="faa-form-8060-71.pdf"
+              class="underline hover:text-blue-500">FAA Form 8060-71</a
             >
           </li>
           <ul class="list-disc pl-5">
@@ -98,7 +101,7 @@ import HomeLayout from "../../layouts/HomeLayout.astro";
             <li>
               Contact your home country’s <a
                 href="https://en.wikipedia.org/wiki/Civil_aviation_authority"
-                class="underline"
+                class="underline hover:text-blue-500"
                 target="_blank"
                 rel="noopener noreferrer">Civil Aviation</a
               > Authority to confirm receipt and processing of the verification request.
