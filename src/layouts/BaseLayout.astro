@@ -1,36 +1,16 @@
 ---
-import { SITE_TITLE, SITE_DESCRIPTION, OG_IMAGE } from "../consts.js";
+
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 
 const { pageTitle, pageDescription, pageImage } = Astro.props;
 
-// Custom Titles
-let holderTitle = SITE_TITLE
-if (pageTitle != null) {
-  holderTitle = pageTitle;
-}; 
-const newTitle = holderTitle;
-
-// Custom Description
-let holderDesc = SITE_DESCRIPTION
-if (pageDescription != null) {
-  holderDesc = pageDescription;
-};
-const newDesc = holderDesc
-
-// Custom OG IMG
-let holderImage = OG_IMAGE
-if (pageImage != null) {
-  holderImage = pageImage;
-};
-const newImage = holderImage
 ---
 
 <html lang="en" class="scroll-smooth">
   <head>
-    <BaseHead title={newTitle} description={newDesc} image={newImage}/>
+    <BaseHead title={pageTitle} description={pageDescription} image={pageImage}/>
   </head>
   <body class="relative">
     <Header />
