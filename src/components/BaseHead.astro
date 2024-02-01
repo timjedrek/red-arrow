@@ -2,16 +2,52 @@
 // Import the global.css file here so that it is included on
 // all pages through the use of the <BaseHead /> component.
 import '../styles/global.css';
+import { SITE_TITLE, SITE_DESCRIPTION, OG_IMAGE, SITE_KEYWORDS } from "../consts.js";
+
 
 interface Props {
 	title: string;
 	description: string;
-	image?: string;
+	image: string;
+  keywords: string;
 }
 
-const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const { title, description, image, keywords } = Astro.props;
 
-const { title, description, image = '/blog-placeholder-1.jpg' } = Astro.props;
+let pageTitle = title;
+let pageDescription = description;
+let pageImage = image;
+let pageKeywords = keywords;
+
+// Custom Titles
+let holderTitle = SITE_TITLE
+if (pageTitle != null) {
+  holderTitle = pageTitle;
+}; 
+const newTitle = holderTitle;
+
+// Custom Description
+let holderDesc = SITE_DESCRIPTION
+if (pageDescription != null) {
+  holderDesc = pageDescription;
+};
+const newDesc = holderDesc
+
+// Custom OG IMG
+let holderImage = OG_IMAGE
+if (pageImage != null) {
+  holderImage = pageImage;
+};
+const newImage = holderImage
+
+// Custom keywords
+let holderKeywords = SITE_KEYWORDS
+if (pageKeywords != null) {
+  holderKeywords = pageKeywords;
+};
+const newKeywords = holderKeywords
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 ---
 
 <!-- Site Created By:    
@@ -45,23 +81,24 @@ const { title, description, image = '/blog-placeholder-1.jpg' } = Astro.props;
 <link rel="canonical" href={canonicalURL} />
 
 <!-- Primary Meta Tags -->
-<title>{title}</title>
-<meta name="title" content={title} />
-<meta name="description" content={description} />
+<title>{newTitle}</title>
+<meta name="title" content={newTitle} />
+<meta name="description" content={newDesc} />
+<meta name="keywords" content={newKeywords} />
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website" />
 <meta property="og:url" content={Astro.url} />
-<meta property="og:title" content={title} />
-<meta property="og:description" content={description} />
-<meta property="og:image" content={new URL(image, Astro.url)} />
+<meta property="og:title" content={newTitle} />
+<meta property="og:description" content={newDesc} />
+<meta property="og:image" content={new URL(newImage, Astro.url)} />
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:url" content={Astro.url} />
-<meta property="twitter:title" content={title} />
-<meta property="twitter:description" content={description} />
-<meta property="twitter:image" content={new URL(image, Astro.url)} />
+<meta property="twitter:title" content={newTitle} />
+<meta property="twitter:description" content={newDesc} />
+<meta property="twitter:image" content={new URL(newImage, Astro.url)} />
 
 <!-- Google tag (gtag.js) -->
 <script type="text/partytown" async src="https://www.googletagmanager.com/gtag/js?id=G-84N22Y2BJ1"></script>

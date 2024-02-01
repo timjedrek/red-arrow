@@ -1,13 +1,14 @@
 ---
-import { SITE_TITLE, SITE_DESCRIPTION } from "../consts.js";
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import FooterHome from "../components/FooterHome.astro";
+
+const { pageTitle, pageDescription, pageImage, pageKeywords } = Astro.props;
 ---
 
 <html lang="en" class="scroll-smooth">
   <head>
-    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    <BaseHead title={pageTitle} description={pageDescription} image={pageImage} keywords={pageKeywords}/>
   </head>
   <body class="relative">
     <Header />
