@@ -15,6 +15,7 @@ export default {
         "our-fleet": "url('/img/our-fleet/banner.webp')",
         "new-to-flying": "url('/img/new-to-flying/banner.jpg')",
         "university-program": "url('/img/university-program/banner.webp')",
+        financing: "url('/img/financing/banner.webp')",
         "training-courses": "url('/img/cessna-outside-hangar-juarez-mx.webp')",
         "discovery-flight":
           "url('/img/discovery-flight/discovery-flight-banner.webp')",
