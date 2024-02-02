@@ -9,6 +9,7 @@ import CertifiedFlightInstructorImage from "../../../public/img/training-courses
 import CertifiedFlightInstructorInstrumentImage from "../../../public/img/training-courses/cfi-instrument.webp";
 import MilitaryRotorTransitionImage from "../../../public/img/training-courses/military.webp";
 import TrainingCourseCard from "../../components/TrainingCourseCard.astro";
+import TrainingCourseList from "../../components/TrainingCourseList.jsx";
 ---
 
 <BaseLayout>
@@ -22,8 +23,8 @@ import TrainingCourseCard from "../../components/TrainingCourseCard.astro";
         Our Pilot Training Courses
       </h1>
       <h2 class="text-3xl pt-5 tracking-wide">
-        From PPL to advanced training, you’ll find it here with Red Arrow
-        Flight Academy
+        From PPL to advanced training, you’ll find it here with Red Arrow Flight
+        Academy
       </h2>
       <a href="#contact-us"
         ><button class="mt-5 btn-red">Train with Us</button></a
@@ -69,9 +70,10 @@ import TrainingCourseCard from "../../components/TrainingCourseCard.astro";
             <p class="font-medium text-xl pb-1">Move Quickly</p>
             <p>
               If you can commit the required amount of hours to airtime, we’ve
-              had students complete private pilot training in as little as 8 weeks. Depending
-              on weather conditions, we cannot guarantee this, but we can
-              certainly move as quickly as possible to get you into the air.
+              had students complete private pilot training in as little as 8
+              weeks. Depending on weather conditions, we cannot guarantee this,
+              but we can certainly move as quickly as possible to get you into
+              the air.
             </p>
           </li>
           <li>
@@ -87,7 +89,9 @@ import TrainingCourseCard from "../../components/TrainingCourseCard.astro";
           </li>
         </ul>
       </div>
-      <div class="lg:shadow-xl shadow-gray-400 pb-10 lg:py-10 px-14 lg:bg-white">
+      <div
+        class="lg:shadow-xl shadow-gray-400 pb-10 lg:py-10 px-14 lg:bg-white"
+      >
         <h4 class="text-2xl font-semibold p-5 pt-0 text-center uppercase">
           Flexible Learning
         </h4>
@@ -183,6 +187,16 @@ import TrainingCourseCard from "../../components/TrainingCourseCard.astro";
         link="military-rotor-transition"
       />
     </div>
+  </section>
+
+  <section
+    class="flex flex-col items-center bg-gradient-to-br from-main-red to-red-900 text-white p-10"
+  >
+    <h2 class="text-3xl font-semibold text-center tracking-tight">
+      Our Training Courses
+    </h2>
+
+    <TrainingCourseList client:load />
   </section>
 
   <DiscoveryFlightCTA />
