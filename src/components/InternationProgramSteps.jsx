@@ -140,12 +140,12 @@ const InternationProgramSteps = () => {
             <li>
               Enroll on{" "}
               <a
-                href="https://www.flightschoolcandidates.gov"
+                href="https://www.fts.tsa.dhs.gov/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="underline hover:text-blue-500"
               >
-                www.flightschoolcandidates.gov
+                FTSP
               </a>{" "}
               and apply for training requests based on your chosen program.
             </li>
