@@ -18,6 +18,7 @@ export default {
         "international-program":
           "url('/img/international-program/banner.webp')",
         "faa-exam-center": "url('/img/faa-exam-center/banner.webp')",
+        financing: "url('/img/financing/banner.webp')",
         "training-courses": "url('/img/cessna-outside-hangar-juarez-mx.webp')",
         "discovery-flight":
           "url('/img/discovery-flight/discovery-flight-banner.webp')",
