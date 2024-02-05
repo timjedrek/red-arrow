@@ -1,7 +1,64 @@
 ---
+import DiscoveryFlightCTA from "../../components/DiscoveryFlightCTA.astro";
+import ContactUs from "../../components/ContactUs.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout>
-  Military
+  <!-- Header -->
+  <header
+    class="relative h-screen-3/4 bg-military bg-cover bg-center bg-black flex flex-col items-center justify-center"
+  >
+    <!-- bg-overlay to darken -->
+    <div class="absolute bg-black/50 w-full h-full z-0"></div>
+    <!-- Text -->
+    <div class="text-white text-center z-10">
+      <h1 class="text-5xl font-bold tracking-tight">
+        Military / Rotor Transition Program
+      </h1>
+      <h2 class="text-3xl pt-5 tracking-wide">
+        Add-on your RTAG Rating with Red Arrow
+      </h2>
+      <button class="mt-5 btn-red">Enroll Today</button>
+    </div>
+  </header>
+
+  <section
+    class="flex flex-col items-center bg-gradient-to-br from-white to-gray-200"
+  >
+    <div class="max-w-5xl px-10 lg:w-1/2 flex flex-col items-center py-10">
+      <h2 class="text-3xl font-semibold text-center tracking-tight">
+        Our Military Programs
+      </h2>
+      <h3 class="pt-10 text-xl italic">
+        Add-on your Military / Rotor Transition Rating with Red Arrow
+      </h3>
+      <div class="tracking-wider">
+        <p class="pt-10">
+          Red Arrow Flight Academy welcomes military and civilian helicopter
+          pilots to our specialized Military / Rotor Transition Program. Whether
+          you're a military aviator looking to expand your skill set or a
+          civilian helicopter pilot seeking a transition to fixed-wing aircraft,
+          our program is designed to accommodate your needs. Add-on training
+          options include Private Pilot, Instrument Rating, and Commercial Pilot
+          certifications.
+        </p>
+        <p class="pt-10">
+          For financial assistance, we proudly participate in the Army
+          Credentialing Assistance program, offering support for education and
+          professional development. Additionally, the COOL Program provides
+          annual grants ranging from $1,000 to $4,000. Take the next step in
+          your aviation journey and enroll with Red Arrow to seamlessly
+          transition to a rewarding career in civilian aviation.
+        </p>
+      </div>
+    </div>
+    <button class="m-5 btn-red">Enroll Today</button>
+  </section>
+
+  <!-- Call to Action Banner -->
+  <DiscoveryFlightCTA />
+
+  <!-- Contact Us Form -->
+  <ContactUs />
 </BaseLayout>
