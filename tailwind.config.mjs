@@ -16,6 +16,9 @@ export default {
         maintenance: "url('/img/maintenance/banner.webp')",
         "new-to-flying": "url('/img/new-to-flying/banner.jpg')",
         "university-program": "url('/img/university-program/banner.webp')",
+        "international-program":
+          "url('/img/international-program/banner.webp')",
+        "faa-exam-center": "url('/img/faa-exam-center/banner.webp')",
         financing: "url('/img/financing/banner.webp')",
         "training-courses": "url('/img/cessna-outside-hangar-juarez-mx.webp')",
         "discovery-flight":
