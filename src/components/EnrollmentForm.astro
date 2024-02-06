@@ -1,0 +1,53 @@
+---
+
+---
+
+<form id="enrollmentForm">
+
+  <h1>Enrollment Form:</h1>
+  
+  
+  <div class="tab"> Fields
+    <p><input required placeholder="First name..." type="text" name="first-name" id="first-name" autocomplete="given-name" ></p>
+    <p><input required placeholder="Last name..." type="text" name="last-name" id="last-name" autocomplete="family-name"></p>
+    <p><input required placeholder="E-mail..." type="email" name="email" id="email" autocomplete="email" ></p>
+
+    <p class="ohno">
+      <label>
+        Don't fill this out if you're human: <input name="confirm-email" />
+      </label>
+    </p>
+
+
+    <p><input required placeholder="Phone..." type="tel" name="phone-number" id="phone-number" autocomplete="tel" ></p>
+    <p><textarea required placeholder="What is your goal?" name="goal" id="goal" rows="4"></textarea></p>
+  </div>
+    
+  <div style="overflow:auto;">
+      <button class="btn-red" type="submit">Submit</button>
+  </div>
+
+  
+  </form>
+
+  <script>
+
+    (window as any).validateForm = validateForm;
+    function validateForm(form) {
+      var x = document.forms["enrollmentForm"]["confirm-email"].value;
+      if ( x == "" || x == null ){ // if the honeypot was ignored, it's a hu-mon
+        form.action=""; // link to process form and redirect to thank you
+      }
+      else{ // the honeypot was filled in, it's a robot
+        form.action="https://flyredarrow.com/enroll-confirmation" // link directly to thank you without actually processing form    
+        return false;
+        }
+    }
+    
+    </script>
+
+  <style>
+    .ohno {
+      @apply hidden;
+    }
+  </style>
