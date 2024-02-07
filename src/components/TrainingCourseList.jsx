@@ -69,7 +69,7 @@ const TrainingCourseList = () => {
                 <h4 className="text-5xl font-bold tracking-tighter text-center">
                   {courses[selectedId].banner_title}
                 </h4>
-                <h5 class="text-3xl pt-5 tracking-wide text-center">
+                <h5 className="text-3xl pt-5 tracking-wide text-center">
                   {courses[selectedId].banner_subtitle}
                 </h5>
               </div>

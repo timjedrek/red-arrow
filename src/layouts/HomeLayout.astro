@@ -1,5 +1,4 @@
 ---
-import { ViewTransitions } from "astro:transitions";
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import FooterHome from "../components/FooterHome.astro";
@@ -15,9 +14,8 @@ const { pageTitle, pageDescription, pageImage, pageKeywords } = Astro.props;
       image={pageImage}
       keywords={pageKeywords}
     />
-    <ViewTransitions />
   </head>
-  <body class="relative">
+  <body class="relative font-robotoSlab">
     <Header />
     <main>
       <slot />

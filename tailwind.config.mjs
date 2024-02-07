@@ -7,8 +7,7 @@ export default {
         "main-red": "#993333",
       },
       backgroundImage: {
-        home: "url('/img/cessna-pilot-center-el-paso-tx.webp')",
-        "home-mobile": "url('/img/cessna-pilot-center-el-paso-tx-mobile.webp')",
+        home: "url('/img/cessna-outside-hangar-juarez-mx.webp')",
         "two-cessna": "url('/img/two-cessna-red-arrow-KDNA-santa-teresa.webp')",
         "our-story": "url('/img/our-story/banner.webp')",
         "our-team": "url('/img/our-team/banner.webp')",
@@ -42,6 +41,9 @@ export default {
       },
       animation: {
         wiggle: "wiggle 1s ease-in-out infinite",
+      },
+      fontFamily: {
+        robotoSlab: ["Roboto Slab", "sans-serif"],
       },
     },
   },
