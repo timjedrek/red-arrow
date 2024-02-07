@@ -1,6 +1,5 @@
 ---
 import Banner from "./Banner.astro";
-// import Navbar from './Navbar.astro';
 import Navbar from "./Navbar.jsx";
 const { pathname } = Astro.url;
 ---
@@ -11,9 +10,9 @@ const { pathname } = Astro.url;
 </header>
 
 <script>
-  let prevScrollpos = window.pageYOffset;
+  let prevScrollpos = window.scrollY;
   window.onscroll = function () {
-    let currentScrollPos = window.pageYOffset;
+    let currentScrollPos = window.scrollY;
     if (prevScrollpos > currentScrollPos) {
       document.getElementById("navbar")?.classList.add("lg:h-28");
       document.getElementById("navbar")?.classList.remove("lg:h-24");
