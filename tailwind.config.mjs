@@ -20,7 +20,7 @@ export default {
           "url('/img/international-program/banner.webp')",
         "faa-exam-center": "url('/img/faa-exam-center/banner.webp')",
         financing: "url('/img/financing/banner.webp')",
-        "training-courses": "url('/img/cessna-outside-hangar-juarez-mx.webp')",
+        "training-courses": "url('/img/training-courses/banner.webp')",
         "discovery-flight":
           "url('/img/discovery-flight/discovery-flight-banner.webp')",
         "cfi-and-student": "url('/img/discovery-flight/cfi-and-student.webp')",
