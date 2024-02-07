@@ -2,9 +2,6 @@
 import DiscoveryFlightCTA from "../../components/DiscoveryFlightCTA.astro";
 import ContactUs from "../../components/ContactUs.astro";
 import HomeLayout from "../../layouts/HomeLayout.astro";
-import JetFlyingImage from "../../../public/img/new-to-flying/jet-flying.jpg";
-import StudentImage from "../../../public/img/new-to-flying/student-passes-checkride.webp";
-import InstrumentPanelImage from "../../../public/img/new-to-flying/instrument-panel.webp";
 import AircraftPropellerImage from "../../../public/img/new-to-flying/aircraft-propeller.webp";
 import RedArrowFleetImage from "../../../public/img/new-to-flying/red-arrow-fleet.webp";
 ---
@@ -17,12 +14,12 @@ import RedArrowFleetImage from "../../../public/img/new-to-flying/red-arrow-flee
     <!-- bg-overlay to darken -->
     <div class="absolute bg-black/50 w-full h-full z-0"></div>
     <!-- Text -->
-    <div class="text-white text-center z-10">
+    <div class="text-white text-center z-10 flex flex-col items-center gap-4">
       <h1 class="text-5xl font-bold tracking-tight">New to Flying?</h1>
-      <h2 class="text-3xl pt-5 tracking-wide">
+      <h2 class="text-3xl tracking-wide">
         Get to know what pilot training is all about
       </h2>
-      <button class="mt-5 btn-red">Visit the Academy</button>
+      <a href="#contactUs" class="btn-red">Visit the Academy</a>
     </div>
   </header>
 
@@ -32,7 +29,7 @@ import RedArrowFleetImage from "../../../public/img/new-to-flying/red-arrow-flee
   >
     <div class="lg:w-1/2 flex flex-col items-center lg:py-10">
       <img
-        src={JetFlyingImage.src}
+        src="/img/new-to-flying/cessna-student.webp"
         alt="Jet flying through clouds"
         class="h-[400px] object-cover"
         loading="lazy"
@@ -62,7 +59,7 @@ import RedArrowFleetImage from "../../../public/img/new-to-flying/red-arrow-flee
           </p>
         </div>
         <a href="/flight-programs/training-courses" class="">
-          <div class="btn-red my-10">Visit School</div>
+          <div class="btn-red my-10">Visit Red Arrow</div>
         </a>
       </div>
     </div>
@@ -74,7 +71,7 @@ import RedArrowFleetImage from "../../../public/img/new-to-flying/red-arrow-flee
   >
     <div class="lg:w-1/2 flex flex-col items-center lg:py-10">
       <img
-        src={StudentImage.src}
+        src="/img/new-to-flying/instrument-panel.webp"
         alt="Student passes checkride at Red Arrow Flight Academy"
         class="lg:mr-10"
       />
@@ -93,7 +90,7 @@ import RedArrowFleetImage from "../../../public/img/new-to-flying/red-arrow-flee
           </p>
           <ol class="pt-10 list-decimal pl-10 flex flex-col gap-2">
             <li>
-              <span class="font-semibold">Step 1: Enrollment</span> Kickstart your
+              <span class="font-semibold">Step: Enrollment</span> Kickstart your
               flight training by enrolling in our Private Pilot Program. Begin the
               process by filling out our application form and emailing the required
               documents to info@flyredarrow.com. For in-person enrollment, bring
@@ -101,46 +98,45 @@ import RedArrowFleetImage from "../../../public/img/new-to-flying/red-arrow-flee
               birth certificate).
             </li>
             <li>
-              <span class="font-semibold">Step 2: Paperwork and Flight Kit</span
-              > Upon arriving at our office, our front desk team will assist you
-              in completing additional paperwork and integrating you into our online
-              system. You'll receive a flight kit, including a backpack with an online
-              ground course and essential materials for your at-home training.
+              <span class="font-semibold">Step: Paperwork and Flight Kit</span> Upon
+              arriving at our office, our front desk team will assist you in completing
+              additional paperwork and integrating you into our online system. You'll
+              receive a flight kit, including a backpack with an online ground course
+              and essential materials for your at-home training.
             </li>
             <li>
-              <span class="font-semibold">Step 3: Instructor Match</span> Once the
+              <span class="font-semibold">Step: Instructor Match</span> Once the
               paperwork is complete, we'll match you with an experienced CFI who
               will guide you through the remaining stages of the program. Your instructor
               will become your mentor, providing personalized instruction tailored
               to your learning style and pace.
             </li>
             <li>
-              <span class="font-semibold">Step 4: Ground School Education</span>
+              <span class="font-semibold">Step: Ground School Education</span>
               Immerse yourself in our comprehensive ground school education. Learn
               the ins and outs of aviation, covering navigation, weather patterns,
               regulations, and more. This foundational knowledge is essential for
               a well-rounded understanding of flying
             </li>
             <li>
-              <span class="font-semibold">Step 5: Hands-On Flight Training</span
-              > Transition from the classroom to hands-on flight training. Experience
-              the feeling of taking control of the aircraft under the guidance of
-              your instructor. Master basic maneuvers and gain confidence in handling
-              the aircraft.
+              <span class="font-semibold">Step: Hands-On Flight Training</span> Transition
+              from the classroom to hands-on flight training. Experience the feeling
+              of taking control of the aircraft under the guidance of your instructor.
+              Master basic maneuvers and gain confidence in handling the aircraft.
             </li>
             <li>
-              <span class="font-semibold">Step 6: Solo Flight</span> Achieve a significant
+              <span class="font-semibold">Step: Solo Flight</span> Achieve a significant
               milestone by completing your first solo flight. This transformative
               experience marks your growing independence and proficiency as a pilot.
             </li>
             <li>
-              <span class="font-semibold">Step 7: FAA Written Exam</span> Complete
+              <span class="font-semibold">Step: FAA Written Exam</span> Complete
               the FAA written exam, demonstrating your theoretical understanding
               of aviation. Prepare with the guidance of your instructor to ensure
               success.
             </li>
             <li>
-              <span class="font-semibold">Step 8: Checkride</span> Undergo a checkride
+              <span class="font-semibold">Step: Checkride</span> Undergo a checkride
               with a Red Arrow instructor. This test assesses your ability to apply
               theoretical knowledge and execute practical flying skills.
             </li>
@@ -166,7 +162,7 @@ import RedArrowFleetImage from "../../../public/img/new-to-flying/red-arrow-flee
   >
     <div class="lg:w-1/2 flex flex-col items-center lg:py-10">
       <img
-        src={InstrumentPanelImage.src}
+        src="/img/new-to-flying/student-passes-checkride.webp"
         alt="Instrument panel of a Cessna aircraft over El Paso, TX"
         class="h-[500px] object-cover"
         loading="lazy"
@@ -187,7 +183,7 @@ import RedArrowFleetImage from "../../../public/img/new-to-flying/red-arrow-flee
             guide you to success in the next evolution of your pilot journey.
           </p>
         </div>
-        <a href="flight-programs/military-rotor-transition" class="">
+        <a href="/flight-programs/training-courses" class="">
           <div class="btn-red my-10">Our Training Programs</div>
         </a>
       </div>
@@ -200,7 +196,7 @@ import RedArrowFleetImage from "../../../public/img/new-to-flying/red-arrow-flee
   >
     <div class="lg:w-1/2 flex flex-col items-center lg:py-10">
       <img
-        src={AircraftPropellerImage.src}
+        src="/img/new-to-flying/aircraft-propeller.webp"
         alt="Propeller of an aircraft in black and white"
         class="h-[500px] object-cover"
         loading="lazy"
@@ -223,13 +219,24 @@ import RedArrowFleetImage from "../../../public/img/new-to-flying/red-arrow-flee
             as it takes some students longer than others to advance through
             training.
           </p>
-          <p class="pt-10">
-            <span class="font-semibold">Estimated Flight Training Costs:</span> Private
-            Pilot License: Estimated $12,000 to $18,000. Commercial Pilot License
-            (with no prior experience): Approximately $84,000 for Private Pilot License,
-            Instrument Rating, and Commercial License. Commercial Pilot License (with
-            PPL): Estimated around $67,000 for Instrument and Commercial Ratings.
-          </p>
+          <p class="pt-10">Estimated Flight Training Costs:</p>
+          <ul class="list-disc ml-5 flex flex-col gap-1">
+            <li>
+              <span class="font-semibold">Private Pilot License:</span> Estimated
+              $12,000 to $18,000
+            </li>
+            <li>
+              <span class="font-semibold"
+                >Commercial Pilot License (with no prior experience):</span
+              > Approximately $84,000 for Private Pilot License, Instrument Rating,
+              and Commercial License
+            </li>
+            <li>
+              <span class="font-semibold"
+                >Commercial Pilot License (with PPL):</span
+              > Estimated around $67,000 for Instrument and Commercial Ratings
+            </li>
+          </ul>
           <p class="pt-10">
             <span class="font-semibold">Financial Support:</span> As a Part 141 flight
             school, Red Arrow is uniquely positioned to accept those leveraging their
@@ -239,6 +246,9 @@ import RedArrowFleetImage from "../../../public/img/new-to-flying/red-arrow-flee
             For other financing options, please take a look at our Financing page.
           </p>
         </div>
+        <a href="/resources/financing" class="">
+          <div class="btn-black my-10">Financing Options</div>
+        </a>
       </div>
     </div>
   </section>
@@ -297,7 +307,7 @@ import RedArrowFleetImage from "../../../public/img/new-to-flying/red-arrow-flee
             certifications essential for pursuing your dream career.
           </p>
         </div>
-        <a href="" class="max-w-min">
+        <a href="/about/our-story" class="max-w-min">
           <div class="btn-red my-10">Why Red Arrow?</div>
         </a>
       </div>
