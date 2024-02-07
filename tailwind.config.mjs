@@ -43,7 +43,7 @@ export default {
         wiggle: "wiggle 1s ease-in-out infinite",
       },
       fontFamily: {
-        robotoSlab: ["Roboto Slab", "sans-serif"],
+        urbanist: ["Urbanist", "sans-serif"],
       },
     },
   },
