@@ -23,13 +23,17 @@ const Navbar = ({ pathname }) => {
     <nav className="relative">
       <div className="bg-black">
         <div className="mx-auto max-w-7xl px-4">
-          <div className="relative flex h-20 lg:h-28 items-center justify-between">
+          <div
+            className="relative flex h-20 lg:h-28 items-center justify-between transition-all"
+            id="navbar"
+          >
             <div className="flex flex-1 items-center justify-between">
               <a href="/" className="flex flex-shrink-0 items-center">
                 <img
                   src="/red-arrow-logo.webp"
                   alt="Red Arrow Logo"
-                  className="h-14 lg:h-20 w-auto"
+                  className="h-14 lg:h-20 w-auto transition-all"
+                  id="navbar-image"
                 />
               </a>
               <div className="hidden lg:ml-6 lg:block">
