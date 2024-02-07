@@ -13,7 +13,7 @@ export default {
         "our-team": "url('/img/our-team/banner.webp')",
         "our-fleet": "url('/img/our-fleet/banner.webp')",
         maintenance: "url('/img/maintenance/banner.webp')",
-        military: "url('/img/military/banner.jpg')",
+        military: "url('/img/military/banner.webp')",
         "new-to-flying": "url('/img/new-to-flying/banner.jpg')",
         "university-program": "url('/img/university-program/banner.webp')",
         "international-program":
