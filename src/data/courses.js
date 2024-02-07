@@ -46,22 +46,8 @@ export const courses = [
   {
     id: "3",
     imagePath: "/img/training-courses/cfi.webp",
-    alt: "Become a CFI at Red Arrow Flight Academy and teach student pilots from El Paso, TX",
+    alt: "CFI climbing on a plane at KDNA",
     title: "Certified Flight Instructor (CFI)",
-    banner_title: "How to Earn Your Private",
-    banner_subtitle: "Explore the initial stages of pilot training",
-    content: [
-      "Unlock the skies and become the Pilot in Command (PIC) with the Private Pilot License (PPL) at Red Arrow Flight Academy. This certificate grants you the authority to operate aircraft for non-commercial purposes, allowing you to embark on personal and leisure flights with confidence. The PPL program involves training, covering a minimum of 40 hours of flight time, both solo and instructor-guided, ensuring you're well-prepared for the responsibilities that come with flying.",
-      "Designed for individuals aiming to fly for non-commercial purposes, this program covers essential aviation principles, regulations, and practical flying experiences. With a structured curriculum, you'll progressively advance from foundational topics to mastering the skills needed for safe and confident flight. Your schedule, dedicated to flight training, will optimize your learning experience, ensuring consistent progress in becoming a skilled aviator. It all culminates with a written exam and a medical check before you’re in the air.",
-      "Earning a Private Pilot License is a strategic move that comes with multiple advantages. While it doesn't permit commercial activities, the PPL enhances safety by instilling the necessary skills to operate aircraft with confidence. It opens the door to personal and leisure flights, allowing you to explore the joy of flying at your convenience. Additionally, a PPL sets the foundation for future aviation endeavors and is a significant milestone in your journey toward advanced pilot certifications.",
-      "Ready to embark on the exciting journey of becoming a certified pilot? The Private Pilot License program at Red Arrow Flight Academy offers expert instruction and a structured learning environment. Contact us today to enroll and take the first step toward realizing your dream of flying aircraft with skill and confidence.",
-    ],
-  },
-  {
-    id: "4",
-    imagePath: "/img/training-courses/cfi-instrument.webp",
-    alt: "Become a CFII at Red Arrow Flight Academy and mentor instrument pilots",
-    title: "Certified Flight Instructor Instrument (CFII)",
     banner_title: "How to Become a Certified Flight Instructor",
     banner_subtitle: "Teach the next generation of pilots",
     content: [
@@ -69,6 +55,21 @@ export const courses = [
       "CFI training at Red Arrow immerses you in instruction, covering essential aspects of aviation education, effective communication, and hands-on teaching techniques. Our CFI training program is designed to equip you with the tools and expertise necessary to guide the next generation of pilots. Dive into a curriculum that focuses on effective teaching methods and fosters a supportive environment for your growth as an instructor. Connect with the Red Arrow team, explore our facilities, and review the detailed syllabus to kickstart your fulfilling journey as a CFI.",
       "Becoming a CFI is more than a career choice; it's an opportunity to make a lasting impact on the aviation community. Discover if becoming a CFI is the right path for you. If you're nearing 250 hours and contemplating your next steps after commercial pilot training, consider the rewarding path of becoming a CFI. At Red Arrow, we understand the importance of aligning your career goals with your aspirations. Explore if instructing is right for you by answering essential questions. Do you find joy in teaching others? Do you have a passion for aviation and safety? If your answers align with these, CFI training at Red Arrow is your opportunity to leave a positive legacy in aviation.",
       "Initiate your CFI training journey by reaching out to the Red Arrow team. Explore our facilities, connect with our team, and review the syllabus to kickstart your career as a mentor and coach in aviation. Your journey to becoming a Certified Flight Instructor begins with Red Arrow. Contact our team today to start your training and become a mentor to aspiring pilots. Explore our state-of-the-art facilities, connect with experienced instructors, and take the first step toward shaping the future of aviation. Enroll today and make a lasting impact as a CFI.",
+    ],
+  },
+  {
+    id: "4",
+    imagePath: "/img/training-courses/cfi-instrument.webp",
+    alt: "Become a CFII at Red Arrow Flight Academy and mentor instrument pilots",
+    title: "Certified Flight Instructor Instrument (CFII)",
+    banner_title: "How to Become a Certified Flight Instructor (Instrument)",
+    banner_subtitle:
+      "Max out your pilot-instruction potential with an instrument rating add-on",
+    content: [
+      "A Certified Flight Instructor Instrument (CFII) is an expert in instrument flight, mentoring student pilots to become proficient in flying under instrument flight rules (IFR). As a CFII, you go beyond traditional flight instruction by specializing in instrument flight. Red Arrow's CFII program equips you to guide aspiring pilots in mastering the intricacies of instrument flying. By adding this certification to your repertoire, you become a vital resource for students seeking to enhance their skills and navigate the skies confidently in various conditions.",
+      "Red Arrow's CFII training program immerses you in instruction, focusing on aviation education, effective communication, and hands-on teaching techniques tailored specifically for instrument flight. Prepare to delve into a curriculum designed to enhance your instructional abilities in the realm of instrument flight. Red Arrow provides the tools and expertise necessary to foster a supportive environment for your growth as a CFII. Connect with our team, explore our facilities, and review the detailed syllabus to kickstart your journey toward becoming a proficient instrument flight instructor.",
+      "Becoming a CFII is more than an additional certification; it's a commitment to elevating aviation education and safety. Explore the reasons why adding an instrument rating to your teaching certificate is a strategic career move. The CFII rating allows you to share your expertise in instrument flying, offering valuable insights to aspiring pilots. Flight instruction transcends the act of flying; it involves effective communication, patience, and mentorship through complex concepts. If you find fulfillment in witnessing your students succeed and take pride in their accomplishments, obtaining your CFII could be the logical next step in your instructional journey.",
+      "Initiate your journey as a Certified Flight Instructor Instrument by reaching out to the Red Arrow team. Explore our facilities, connect with our team, and review the syllabus to kickstart your career as a mentor in instrument flight. Your path to becoming a proficient CFII begins with Red Arrow. Contact our team today to start your training and become a mentor to aspiring pilots seeking instrument proficiency. Explore our state-of-the-art facilities, connect with experienced instructors, and take the first step toward shaping the future of aviation with an instrument rating. Enroll today and make an impact as a CFII.",
     ],
   },
   {

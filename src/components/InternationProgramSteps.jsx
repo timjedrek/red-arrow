@@ -19,8 +19,6 @@ const InternationProgramSteps = () => {
       navigation
       pagination={pagination}
       scrollbar={{ draggable: true }}
-      onSwiper={(swiper) => console.log(swiper)}
-      onSlideChange={() => console.log("slide change")}
       className="w-full px-10"
     >
       <SwiperSlide className="p-12">
@@ -64,7 +62,7 @@ const InternationProgramSteps = () => {
                 <a
                   href="../../public/files/international-students-requirements-m1.pdf"
                   download="international-students-requirements-m1.pdf"
-                  class="underline hover:text-blue-500"
+                  className="underline hover:text-blue-500"
                 >
                   International Students Requirements M-1
                 </a>
@@ -73,7 +71,7 @@ const InternationProgramSteps = () => {
                 <a
                   href="../../public/files/affidavit-of-financial-support-ver1.pdf"
                   download="international-students-requirements-m1.pdf"
-                  class="underline hover:text-blue-500"
+                  className="underline hover:text-blue-500"
                 >
                   Affidavit of Financial Suport ver1
                 </a>
@@ -82,7 +80,7 @@ const InternationProgramSteps = () => {
                 <a
                   href="../../public/files/financial-declaration-ver1.pdf"
                   download="financial-declaration-ver1.pdf"
-                  class="underline hover:text-blue-500"
+                  className="underline hover:text-blue-500"
                 >
                   Financial Declaration ver1
                 </a>

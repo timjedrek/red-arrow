@@ -17,7 +17,6 @@ const Navbar = ({ pathname }) => {
     } else {
       setOpenSubmenu(e.target.id);
     }
-    console.log(openSubmenu);
   };
 
   return (
