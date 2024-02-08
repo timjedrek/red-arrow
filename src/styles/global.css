@@ -21,11 +21,11 @@
 }
 
 .swiper-button-next {
-  @apply lg:right-12 !important;
+  @apply lg:right-24 xl:right-44 2xl:right-72 !important;
 }
 
 .swiper-button-prev {
-  @apply lg:left-12 !important;
+  @apply lg:left-24 xl:left-44 2xl:left-72 !important;
 }
 
 .swiper-pagination-bullet {
@@ -34,4 +34,24 @@
 
 .swiper-slide {
   @apply h-auto !important;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
