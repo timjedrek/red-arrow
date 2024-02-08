@@ -7,7 +7,10 @@ const TrainingCourseList = () => {
   const [selectedId, setSelectedId] = useState(null);
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 py-10 relative">
+    <div
+      className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 py-10 relative"
+      id="courseList"
+    >
       {courses.slice(0, 5).map((course) => (
         <motion.div
           className="flex bg-gradient-to-br from-white to-gray-200 text-black flex-col rounded-xl cursor-pointer shadow-lg"
