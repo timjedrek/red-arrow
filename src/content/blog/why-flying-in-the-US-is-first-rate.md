@@ -3,7 +3,7 @@ title: "Why Flying in the US is First-Rate"
 description: "Lorem ipsum dolor sit amet"
 pubDate: "Dec 22 2020"
 heroImage: "/first-post.webp"
-author: "dromwriters"
+author: "Elsa Peralta"
 readingTime: "2 min"
 ---
 
