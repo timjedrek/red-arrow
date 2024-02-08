@@ -14,18 +14,20 @@ import RecreationalFlight from "../../../public/img/discovery-flight/recreationa
   >
     <div class="absolute bg-black/50 w-full h-full z-0"></div>
 
-    <div class="text-white text-center z-10">
+    <div
+      class="text-white text-center z-10 flex flex-col items-center gap-4 px-5"
+    >
       <h1 class="text-5xl font-bold tracking-tighter">Fly with Us</h1>
-      <h2 class="text-3xl pt-5 tracking-wide">
+      <h2 class="text-3xl tracking-wide">
         A discovery flight is your opportunity to understand if flight training
         is as exciting for you as it is for us!
       </h2>
-      <a href="#contact-us"><button class="mt-5 btn-red">Book Now</button></a>
+      <a href="#contact-us"><button class="btn-red">Book Now</button></a>
     </div>
   </header>
 
   <section
-    class="flex flex-col items-center bg-gradient-to-br from-white to-gray-200 p-10"
+    class="flex flex-col items-center bg-gradient-to-br from-white to-gray-200"
   >
     <div class="max-w-5xl px-10 lg:w-1/2 flex flex-col items-center py-10">
       <h2 class="text-3xl font-semibold text-center tracking-tight">
@@ -81,7 +83,7 @@ import RecreationalFlight from "../../../public/img/discovery-flight/recreationa
   </section>
 
   <section
-    class="bg-gradient-to-br from-white to-gray-200 p-10 flex flex-col items-center"
+    class="bg-gradient-to-br from-white to-gray-200 flex flex-col items-center py-10"
   >
     <FlightOption
       image={DiscoveryFlightImage}
@@ -104,7 +106,7 @@ import RecreationalFlight from "../../../public/img/discovery-flight/recreationa
       reverse={true}
     />
     <a href="" class="">
-      <div class="btn-red my-10">Book a Flight</div>
+      <div class="btn-red">Book a Flight</div>
     </a>
   </section>
 

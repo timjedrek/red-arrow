@@ -12,7 +12,7 @@ const MobileNavLink = ({ menuItem, pathname, toggled, onShow }) => {
           isActive ? "border-b-2" : ""
         }`}
       >
-        <p>{menuItem.name}</p>
+        <p className="pointer-events-none">{menuItem.name}</p>
         {toggled ? (
           <FaMinus className="mr-3 pointer-events-none" />
         ) : (
