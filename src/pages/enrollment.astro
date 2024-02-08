@@ -1,9 +1,19 @@
 ---
-import HomeLayout from '../layouts/HomeLayout.astro';
+import FooterHome from '../components/FooterHome.astro';
 import EnrollmentForm from '../components/EnrollmentForm.astro';
 ---
 
-  <h1 class="text-3xl">This is a form page</h1>
-  <div class="grid place-items-center">
-    <EnrollmentForm />
+
+
+  
+  <div class="grid place-items-center py-10 h-screen bg-gradient-to-br from-black to-red-950 text-white">
+    <header class="grid place-items-center">
+      <h1 class="text-3xl text-center">Start the enrollment process at <span class="text-main-red">Red Arrow</span></h1>
+      <p class="italic text-center pt-5">Fill out the form below and let's start flying!  A Red Arrow team member will get in touch with you and walk you through the steps to become a pilot.</p>
+    </header>
+    <div class="bg-white text-black p-5 max-w-2xl rounded-xl">
+      <EnrollmentForm />
+    </div>
   </div>
+
+  <FooterHome />
