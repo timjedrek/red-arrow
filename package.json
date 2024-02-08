@@ -23,6 +23,7 @@
     "alpinejs": "^3.13.5",
     "astro": "^4.1.2",
     "astro-icon": "^1.0.2",
+    "framer-motion": "^11.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^5.0.1",
@@ -31,8 +32,10 @@
   },
   "devDependencies": {
     "@iconify-json/entypo-social": "^1.1.8",
+    "@iconify-json/healthicons": "^1.1.17",
     "@iconify-json/ic": "^1.1.17",
     "@iconify-json/tabler": "^1.1.104",
+    "@tailwindcss/typography": "^0.5.10",
     "prettier": "^3.2.4",
     "prettier-plugin-astro": "^0.13.0"
   }
