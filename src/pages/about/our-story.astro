@@ -4,6 +4,7 @@ import ContactUs from "../../components/ContactUs.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import OurStoryImage from "../../../public/img/our-story/our-story.webp";
 import Location from "../../components/Location.astro";
+import Section from "../../components/Section.astro";
 ---
 
 <BaseLayout>
@@ -20,62 +21,57 @@ import Location from "../../components/Location.astro";
     </div>
   </header>
 
-  <section
-    class="flex flex-col-reverse items-center lg:flex-row-reverse px-10 bg-gradient-to-br from-white to-gray-200"
-  >
-    <div class="lg:w-1/2 flex flex-col items-center py-10">
+  <Section reverse={false}>
+    <div slot="image" class="flex flex-col items-center justify-center gap-5">
       <img
         src={OurStoryImage.src}
         alt="The tail of an airplane at Red Arrow Flight Academy with its logo"
-        class="h-[500px] aspect-square object-cover"
+        class="h-[550px] aspect-square object-cover"
       />
+      <a href="/flight-programs/training-courses" class="">
+        <div class="btn-red">Join the Family</div>
+      </a>
     </div>
-    <div class="lg:w-1/2 flex flex-col items-center pt-10">
-      <div class="max-w-2xl px-10">
-        <h2 class="text-3xl font-semibold text-center tracking-tight">
-          About Red Arrow Flight Academy
-        </h2>
-        <div class="text-gray-800 tracking-wider">
-          <p class="pt-10">
-            Founded in 2013 by Tomas and Elsa Peralta, Red Arrow Flight Academy
-            has evolved into a leading institution for aviation training in the
-            region. We recently celebrated our 10th anniversary and are proud to
-            continue as a pillar in the local aviation community of El Paso and
-            Santa Teresa, leading the next generation of pilots. If you’re
-            looking for top-tier flight instruction, then look no further.
-          </p>
-          <p class="pt-10">
-            Red Arrow Flight Academy takes pride in being the only flight school
-            in the area equipped with an Advanced Aviation Training Device
-            (AATD) Redbird Full-Motion Simulator. This state of the art
-            simulator provides students with a realistic and immersive training
-            experience, enhancing their skills and confidence before taking to
-            the skies. We also offer a Military Rotor Transition program (RTAG),
-            designed for individuals transitioning from military service to
-            civilian flight training. This specialized program acknowledges the
-            unique skills and experiences of military personnel, offering a
-            seamless pathway to a career in aviation.
-          </p>
-          <p class="pt-10">
-            Red Arrow Flight Academy is the sole Part 141 certified flight
-            school in the region, a Cessna Pilot Training Center, an FAA Exam
-            Center, and host of a Designated Pilot Examiner (DPE) for Part 61
-            flight students.
-          </p>
-          <p class="pt-10">
-            Our roots run deep in the local community. Founders Tomas and Elsa
-            Peralta, have fostered a culture of family and support since
-            our inception. Here, we feel more like a close knit family with an
-            affection for aviation rather than solely a flight school. We invite you to the 
-            opportunity of joining the Red Arrow family!
-          </p>
-        </div>
-        <a href="/flight-programs/training-courses" class="">
-          <div class="btn-red mt-10 lg:my-10">Join the Family</div>
-        </a>
+    <div slot="content" class="max-w-2xl px-10">
+      <h2 class="text-3xl font-semibold text-center tracking-tight">
+        About Red Arrow Flight Academy
+      </h2>
+      <div class="text-gray-800 tracking-wider">
+        <p class="pt-10">
+          Founded in 2013 by Tomas and Elsa Peralta, Red Arrow Flight Academy
+          has evolved into a leading institution for aviation training in the
+          region. We recently celebrated our 10th anniversary and are proud to
+          continue as a pillar in the local aviation community of El Paso and
+          Santa Teresa, leading the next generation of pilots. If you’re looking
+          for top-tier flight instruction, then look no further.
+        </p>
+        <p class="pt-5">
+          Red Arrow Flight Academy takes pride in being the only flight school
+          in the area equipped with an Advanced Aviation Training Device (AATD)
+          Redbird Full-Motion Simulator. This state of the art simulator
+          provides students with a realistic and immersive training experience,
+          enhancing their skills and confidence before taking to the skies. We
+          also offer a Military Rotor Transition program (RTAG), designed for
+          individuals transitioning from military service to civilian flight
+          training. This specialized program acknowledges the unique skills and
+          experiences of military personnel, offering a seamless pathway to a
+          career in aviation.
+        </p>
+        <p class="pt-5">
+          Red Arrow Flight Academy is the sole Part 141 certified flight school
+          in the region, a Cessna Pilot Training Center, an FAA Exam Center, and
+          host of a Designated Pilot Examiner (DPE) for Part 61 flight students.
+        </p>
+        <p class="pt-5">
+          Our roots run deep in the local community. Founders Tomas and Elsa
+          Peralta, have fostered a culture of family and support since our
+          inception. Here, we feel more like a close knit family with an
+          affection for aviation rather than solely a flight school. We invite
+          you to the opportunity of joining the Red Arrow family!
+        </p>
       </div>
     </div>
-  </section>
+  </Section>
 
   <Location />
 
