@@ -8,22 +8,3 @@ const { pathname } = Astro.url;
 <header class="z-50 sticky top-0 shadow-2xl">
   <Navbar pathname={pathname} client:load />
 </header>
-
-<script>
-  let prevScrollpos = window.scrollY;
-  window.onscroll = function () {
-    let currentScrollPos = window.scrollY;
-    if (prevScrollpos > currentScrollPos) {
-      document.getElementById("navbar")?.classList.add("lg:h-28");
-      document.getElementById("navbar")?.classList.remove("lg:h-24");
-      document.getElementById("navbar-image")?.classList.add("lg:h-20");
-      document.getElementById("navbar-image")?.classList.remove("lg:h-16");
-    } else {
-      document.getElementById("navbar")?.classList.add("lg:h-24");
-      document.getElementById("navbar")?.classList.remove("lg:h-28");
-      document.getElementById("navbar-image")?.classList.add("lg:h-16");
-      document.getElementById("navbar-image")?.classList.remove("lg:h-20");
-    }
-    prevScrollpos = currentScrollPos;
-  };
-</script>
