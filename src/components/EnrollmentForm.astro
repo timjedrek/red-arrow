@@ -4,10 +4,7 @@
 
 <form id="enrollmentForm"  method="POST" onsubmit="validateForm(this);">
 
-  <h1>Enrollment Form:</h1>
-  
-  
-  <div class="tab"> Fields
+  <div class="tab">
     <p><input required placeholder="First name..." type="text" name="first-name" id="first-name" autocomplete="given-name" ></p>
     <p><input required placeholder="Last name..." type="text" name="last-name" id="last-name" autocomplete="family-name"></p>
     <p><input required placeholder="E-mail..." type="email" name="email" id="email" autocomplete="email" ></p>
@@ -23,32 +20,45 @@
     <p><textarea required placeholder="What is your goal?" name="goal" id="goal" rows="4"></textarea></p>
   </div>
     
-  <div style="overflow:auto;">
-      <button class="btn-red" type="submit">Submit</button>
+  <div class="btn-red" >
+      <button type="submit">Submit</button>
   </div>
 
   
-  </form>
+</form>
 
-  <script>
+<script>
 
-    (window as any).validateForm = validateForm;
-    function validateForm(form) {
-      var x = document.forms["enrollmentForm"]["confirm-email"].value;
-      if ( x == "" || x == null ){ // if the honeypot was ignored, it's a hu-mon
-        form.action="https://services.leadconnectorhq.com/hooks/6Qxcfy0WWndWLURxYvBB/webhook-trigger/ed06f489-4a7d-41ac-947f-eddac0287574"; // link to process form and redirect to thank you
-        
-      }
-      else{ // the honeypot was filled in, it's a robot
-        form.action="https://flyredarrow.com/enroll-confirmation" // link directly to thank you without actually processing form    
-        return false;
-        }
+  (window as any).validateForm = validateForm;
+  function validateForm(form) {
+    var x = document.forms["enrollmentForm"]["confirm-email"].value;
+    if ( x == "" || x == null ){ // if the honeypot was ignored, it's a hu-mon
+      form.action="https://services.leadconnectorhq.com/hooks/6Qxcfy0WWndWLURxYvBB/webhook-trigger/ed06f489-4a7d-41ac-947f-eddac0287574"; // link to process form and redirect to thank you
+      
     }
-    
-    </script>
+    else{ // the honeypot was filled in, it's a robot
+      form.action="https://flyredarrow.com/enroll-confirmation" // link directly to thank you without actually processing form    
+      return false;
+      }
+  }
+  
+  </script>
 
   <style>
     .ohno {
       @apply hidden;
+    }
+
+    input, textarea{
+      @apply my-3 border py-2 px-1 rounded-md w-full
+    }
+
+    #enrollmentForm {
+      @apply m-0
+    }
+
+    /* @layer components in the global css file not loading this class.. :/ */
+    .btn-red {
+      @apply w-min whitespace-nowrap text-center text-lg bg-main-red text-white px-5 py-3 rounded-md uppercase font-semibold hover:scale-105 hover:shadow-xl duration-200 hover:bg-red-800;
     }
   </style>
