@@ -61,32 +61,39 @@ import PplProcess from "../../components/PplProcess.jsx";
     </div>
   </Section>
 
-  <Section red={true}>
-    <img
-      slot="image"
-      src="/img/new-to-flying/instrument-panel.webp"
-      alt="Student passes checkride at Red Arrow Flight Academy"
-      class="h-80 lg:h-[550px] object-cover"
-    />
-    <div slot="content" class="max-w-2xl flex flex-col items-center">
+  <section
+    class="bg-gradient-to-br py-10 px-5 from-main-red to-red-900 text-white"
+  >
+    <div
+      class="max-w-5xl px-10 lg:w-1/2 flex flex-col items-center py-10 mx-auto"
+    >
       <h2 class="text-3xl font-semibold text-center tracking-tight">
         It All Starts with Your PPL
       </h2>
 
-      <div class="text-gray-100 tracking-wider">
-        <p class="pt-5">
-          Becoming a certified pilot with Red Arrow Flight Academy, like many
-          other achievements, has a process. Here's a breakdown of the key
-          stages in your path to obtaining a Private Pilot Certificate (PPL):
-        </p>
-
-        <PplProcess client:visible />
-      </div>
-      <a href="/discovery-flight" class="">
-        <div class="btn-black my-10">Book a Discovery Flight</div>
-      </a>
+      <h3 class="pt-10 text-xl italic text-center">
+        Becoming a certified pilot with Red Arrow Flight Academy, like many
+        other achievements, has a process. Here's a breakdown of the key stages
+        in your path to obtaining a Private Pilot Certificate (PPL):
+      </h3>
     </div>
-  </Section>
+    <div
+      class="flex flex-col-reverse lg:flex-row-reverse max-w-7xl px-5 mx-auto gap-10"
+    >
+      <img
+        src="/img/new-to-flying/instrument-panel.webp"
+        alt="Student passes checkride at Red Arrow Flight Academy"
+        class="h-80 lg:h-[530px] object-cover lg:flex-1 max-w-2xl mx-auto"
+      />
+
+      <div class="max-w-2xl flex flex-col items-center lg:flex-1 mx-auto">
+        <PplProcess client:visible />
+        <a href="/discovery-flight" class="">
+          <div class="btn-black mt-10">Book a Discovery Flight</div>
+        </a>
+      </div>
+    </div>
+  </section>
 
   <Section reverse={true}>
     <img

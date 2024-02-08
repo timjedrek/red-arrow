@@ -13,7 +13,7 @@ const PplProcess = () => {
   };
 
   return (
-    <div className="lg:pl-10 mt-5 flex flex-col gap-2 ">
+    <div className="flex flex-col gap-2 ">
       {pplProcess.map((step) => (
         <PplStep
           key={step.title}
