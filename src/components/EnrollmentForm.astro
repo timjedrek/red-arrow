@@ -5,9 +5,9 @@
 <form id="enrollmentForm"  method="POST" onsubmit="validateForm(this);">
 
   <div class="tab">
-    <p><input required placeholder="First name..." type="text" name="first-name" id="first-name" autocomplete="given-name" ></p>
-    <p><input required placeholder="Last name..." type="text" name="last-name" id="last-name" autocomplete="family-name"></p>
-    <p><input required placeholder="E-mail..." type="email" name="email" id="email" autocomplete="email" ></p>
+    <p><input required placeholder="First name" type="text" name="first-name" id="first-name" autocomplete="given-name" ></p>
+    <p><input required placeholder="Last name" type="text" name="last-name" id="last-name" autocomplete="family-name"></p>
+    <p><input required placeholder="E-mail" type="email" name="email" id="email" autocomplete="email" ></p>
 
     <p class="ohno">
       <label>
@@ -16,7 +16,7 @@
     </p>
 
 
-    <p><input required placeholder="Phone..." type="tel" name="phone-number" id="phone-number" autocomplete="tel" ></p>
+    <p><input required placeholder="Phone" type="tel" name="phone-number" id="phone-number" autocomplete="tel" ></p>
     <p><textarea required placeholder="What is your goal?" name="goal" id="goal" rows="4"></textarea></p>
   </div>
     
@@ -50,7 +50,7 @@
     }
 
     input, textarea{
-      @apply my-3 border py-2 px-1 rounded-md w-full
+      @apply my-3 border py-2 pl-3 rounded-md w-full
     }
 
     #enrollmentForm {
