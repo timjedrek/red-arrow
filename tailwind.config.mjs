@@ -14,7 +14,7 @@ export default {
         "our-fleet": "url('/img/our-fleet/banner.webp')",
         maintenance: "url('/img/maintenance/banner.webp')",
         military: "url('/img/military/banner.webp')",
-        "new-to-flying": "url('/img/new-to-flying/banner.jpg')",
+        "new-to-flying": "url('/img/new-to-flying/banner.webp')",
         "university-program": "url('/img/university-program/banner.webp')",
         "international-program":
           "url('/img/international-program/banner.webp')",
