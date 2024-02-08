@@ -30,11 +30,15 @@ import SimulatorCard from "../../components/SimulatorCard.astro";
   <section
     class="flex flex-col items-center px-10 bg-gradient-to-br from-white to-gray-200 py-10"
   >
-    <h2 class="text-3xl font-semibold text-center tracking-tight">Our Fleet</h2>
-    <h3 class="pt-10 text-xl italic">
-      All airplanes are subject to fuel surcharge. Prices may change, contact us
-      for current prices. Prices do not include tax.
-    </h3>
+    <div class="max-w-2xl">
+      <h2 class="text-3xl font-semibold text-center tracking-tight">
+        Our Fleet
+      </h2>
+      <h3 class="pt-10 text-xl italic text-center">
+        All airplanes are subject to fuel surcharge. Prices may change, contact
+        us for current prices. Prices do not include tax.
+      </h3>
+    </div>
 
     {fleet.map((plane) => <FleetCard plane={plane} />)}
   </section>
