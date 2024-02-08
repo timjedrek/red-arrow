@@ -7,10 +7,13 @@ const TrainingCourseList = () => {
   const [selectedId, setSelectedId] = useState(null);
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 py-10 relative">
+    <div
+      className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 py-10 relative"
+      id="courseList"
+    >
       {courses.slice(0, 5).map((course) => (
         <motion.div
-          className="flex bg-black text-white flex-col rounded-xl cursor-pointer shadow-lg"
+          className="flex bg-gradient-to-br from-white to-gray-200 text-black flex-col rounded-xl cursor-pointer shadow-lg"
           layoutId={course.id}
           onClick={() => {
             setSelectedId(course.id);
@@ -33,7 +36,7 @@ const TrainingCourseList = () => {
 
       <motion.a
         href="/flight-programs/military-rotor-transition"
-        className="flex bg-black text-white flex-col rounded-xl cursor-pointer shadow-lg"
+        className="flex bg-gradient-to-br from-white to-gray-200 text-black flex-col rounded-xl cursor-pointer shadow-lg"
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
       >
@@ -69,7 +72,7 @@ const TrainingCourseList = () => {
                 <h4 className="text-5xl font-bold tracking-tighter text-center">
                   {courses[selectedId].banner_title}
                 </h4>
-                <h5 class="text-3xl pt-5 tracking-wide text-center">
+                <h5 className="text-3xl pt-5 tracking-wide text-center">
                   {courses[selectedId].banner_subtitle}
                 </h5>
               </div>

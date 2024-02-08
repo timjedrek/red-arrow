@@ -8,9 +8,14 @@ const { pageTitle, pageDescription, pageImage, pageKeywords } = Astro.props;
 
 <html lang="en" class="scroll-smooth">
   <head>
-    <BaseHead title={pageTitle} description={pageDescription} image={pageImage} keywords={pageKeywords}/>
+    <BaseHead
+      title={pageTitle}
+      description={pageDescription}
+      image={pageImage}
+      keywords={pageKeywords}
+    />
   </head>
-  <body class="relative">
+  <body class="relative font-urbanist">
     <Header />
     <main>
       <slot />
