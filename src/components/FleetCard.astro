@@ -16,10 +16,10 @@ function camelCaseToTitleCase(str) {
 <div
   class="flex flex-col p-5 my-3 w-full text-white md:w-2/3 lg:flex-row lg:gap-5 lg:max-w-5xl lg:min-w-[55rem]"
 >
-  <div>
+  <div class="aspect-square w-full lg:w-[40rem]">
     <img
       src={plane.image.src}
-      class="aspect-square object-cover object-left bg-white w-full lg:w-[40rem]"
+      class=`object-cover object-${plane.imageAlignment} bg-white w-full h-full`
       alt={plane.alt}
     />
     <div
