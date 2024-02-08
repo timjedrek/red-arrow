@@ -7,21 +7,20 @@ export default {
         "main-red": "#993333",
       },
       backgroundImage: {
-        home: "url('/img/cessna-pilot-center-el-paso-tx.webp')",
-        "home-mobile": "url('/img/cessna-pilot-center-el-paso-tx-mobile.webp')",
+        home: "url('/img/cessna-outside-hangar-juarez-mx.webp')",
         "two-cessna": "url('/img/two-cessna-red-arrow-KDNA-santa-teresa.webp')",
         "our-story": "url('/img/our-story/banner.webp')",
         "our-team": "url('/img/our-team/banner.webp')",
         "our-fleet": "url('/img/our-fleet/banner.webp')",
         maintenance: "url('/img/maintenance/banner.webp')",
-        military: "url('/img/military/banner.jpg')",
-        "new-to-flying": "url('/img/new-to-flying/banner.jpg')",
+        military: "url('/img/military/banner.webp')",
+        "new-to-flying": "url('/img/new-to-flying/banner.webp')",
         "university-program": "url('/img/university-program/banner.webp')",
         "international-program":
           "url('/img/international-program/banner.webp')",
         "faa-exam-center": "url('/img/faa-exam-center/banner.webp')",
         financing: "url('/img/financing/banner.webp')",
-        "training-courses": "url('/img/cessna-outside-hangar-juarez-mx.webp')",
+        "training-courses": "url('/img/training-courses/banner.webp')",
         "discovery-flight":
           "url('/img/discovery-flight/discovery-flight-banner.webp')",
         "cfi-and-student": "url('/img/discovery-flight/cfi-and-student.webp')",
@@ -42,6 +41,9 @@ export default {
       },
       animation: {
         wiggle: "wiggle 1s ease-in-out infinite",
+      },
+      fontFamily: {
+        urbanist: ["Urbanist", "sans-serif"],
       },
     },
   },

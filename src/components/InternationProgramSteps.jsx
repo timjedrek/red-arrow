@@ -19,19 +19,17 @@ const InternationProgramSteps = () => {
       navigation
       pagination={pagination}
       scrollbar={{ draggable: true }}
-      onSwiper={(swiper) => console.log(swiper)}
-      onSlideChange={() => console.log("slide change")}
       className="w-full px-10"
     >
       <SwiperSlide className="p-12">
         <div className="flex flex-col mx-auto max-w-[50rem] gap-5">
           <h4 className="font-semibold text-xl">Step 1: Pre-Application</h4>
           <ol className="list-decimal flex flex-col gap-2">
-            <li>
+            <li class="font-medium">
               Fill out the "Pre-Application" form to request your I-20. Ensure
               all information matches your identification exactly.
             </li>
-            <li>
+            <li class="font-medium">
               Fill out the "Credit Card Authorization" form and email it with
               your "Pre-Application" form to eperalta@flyredarrow.com.
             </li>
@@ -58,13 +56,13 @@ const InternationProgramSteps = () => {
               <li>Cancellation 19-10 days in advance: $200 refund.</li>
               <li>Cancellation 9-0 days in advance: $0 refund.</li>
             </ol>
-            <li>Download all files below:</li>
+            <li class="font-medium">Download all files below:</li>
             <ol className="list-disc pl-5">
               <li>
                 <a
                   href="../../public/files/international-students-requirements-m1.pdf"
                   download="international-students-requirements-m1.pdf"
-                  class="underline hover:text-blue-500"
+                  className="underline hover:text-blue-500"
                 >
                   International Students Requirements M-1
                 </a>
@@ -73,7 +71,7 @@ const InternationProgramSteps = () => {
                 <a
                   href="../../public/files/affidavit-of-financial-support-ver1.pdf"
                   download="international-students-requirements-m1.pdf"
-                  class="underline hover:text-blue-500"
+                  className="underline hover:text-blue-500"
                 >
                   Affidavit of Financial Suport ver1
                 </a>
@@ -82,7 +80,7 @@ const InternationProgramSteps = () => {
                 <a
                   href="../../public/files/financial-declaration-ver1.pdf"
                   download="financial-declaration-ver1.pdf"
-                  class="underline hover:text-blue-500"
+                  className="underline hover:text-blue-500"
                 >
                   Financial Declaration ver1
                 </a>
@@ -95,7 +93,7 @@ const InternationProgramSteps = () => {
         <div className="flex flex-col mx-auto max-w-[50rem] gap-5">
           <h4 className="font-semibold text-xl">Step 2: Obtain Visa</h4>
           <ol className="list-decimal flex flex-col gap-2">
-            <li>
+            <li class="font-medium">
               Upon receiving your I-20 by mail, pay the SEVIS processing fee of
               $235
             </li>
@@ -116,7 +114,7 @@ const InternationProgramSteps = () => {
               <li>Pay the fee by credit card.</li>
               <li>Print a copy of the payment for your records.</li>
             </ol>
-            <li>
+            <li class="font-medium">
               Make an appointment at the U.S. Embassy/Consulate and pay the fee
               over the phone via credit card.
             </li>
@@ -127,7 +125,7 @@ const InternationProgramSteps = () => {
         <div className="flex flex-col mx-auto max-w-[50rem] gap-5">
           <h4 className="font-semibold text-xl">Step 3: TSA Requirements</h4>
           <ol className="list-decimal flex flex-col gap-2">
-            <li>
+            <li class="font-medium">
               Email{" "}
               <a
                 href="mailto:eperalta@flyredarrow.com"
@@ -137,7 +135,7 @@ const InternationProgramSteps = () => {
               </a>{" "}
               before proceeding.
             </li>
-            <li>
+            <li class="font-medium">
               Enroll on{" "}
               <a
                 href="https://www.fts.tsa.dhs.gov/"
@@ -192,12 +190,14 @@ const InternationProgramSteps = () => {
         <div className="flex flex-col mx-auto max-w-[50rem] gap-5">
           <h4 className="font-semibold text-xl">Step 4: Travel Arrangements</h4>
           <ol className="list-decimal flex flex-col gap-2">
-            <li>
+            <li class="font-medium">
               Purchase airline tickets to El Paso International Airport (ELP) or
               Ciudad Juarez International Airport (CJS) if coming from Mexico.
             </li>
-            <li>Explore housing options on apartments.com/el-paso-tx.</li>
-            <li>
+            <li class="font-medium">
+              Explore housing options on apartments.com/el-paso-tx.
+            </li>
+            <li class="font-medium">
               Arrange rental cars; Enterprise Rent-A-Car is available with a
               local contact at 915-779-2260.
             </li>
