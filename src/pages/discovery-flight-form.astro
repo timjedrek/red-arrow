@@ -1,0 +1,39 @@
+---
+import FooterHome from "../components/FooterHome.astro";
+import DiscoveryForm from "../components/DiscoveryForm.astro";
+import BaseHead from "../components/BaseHead.astro";
+
+const { pageTitle, pageDescription, pageImage, pageKeywords } = Astro.props;
+---
+
+<html lang="en" class="scroll-smooth">
+  <head>
+    <BaseHead
+      title={pageTitle}
+      description={pageDescription}
+      image={pageImage}
+      keywords={pageKeywords}
+    />
+  </head>
+  <div
+    class="grid place-items-center py-10 lg:pb-24 bg-gradient-to-br from-black to-red-950 text-white"
+  >
+    <header class="grid place-items-center">
+      <h1 class="text-3xl text-center">
+        Discovery flight at <span class="text-red-400">Red Arrow</span>
+      </h1>
+      <p class="italic text-center pt-5 text-gray-300">
+        Fill out the form below and let's start flying! A Red Arrow team member
+        will get in touch with you and walk you through the next steps on
+        getting you in the air.
+      </p>
+    </header>
+    <div class="bg-white text-black m-5 p-5 max-w-2xl w-full rounded-xl">
+      <div class="">
+        <DiscoveryForm />
+      </div>
+    </div>
+  </div>
+
+  <FooterHome />
+</html>
