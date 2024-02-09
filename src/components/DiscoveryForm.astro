@@ -3,7 +3,7 @@
 ---
 
 <form
-  id="enrollmentForm"
+  id="discoveryForm"
   method="POST"
   onsubmit="validateForm(this);"
   data-astro-reload
@@ -74,11 +74,11 @@
 <script>
   (window as any).validateForm = validateForm;
   function validateForm(form) {
-    var x = document.forms["enrollmentForm"]["confirm-email"].value;
+    var x = document.forms["discoveryForm"]["confirm-email"].value;
     if (x == "" || x == null) {
       // if the honeypot was ignored, it's a hu-mon
       form.action =
-        "https://services.leadconnectorhq.com/hooks/6Qxcfy0WWndWLURxYvBB/webhook-trigger/ed06f489-4a7d-41ac-947f-eddac0287574"; // link to process form and redirect to thank you
+        "https://services.leadconnectorhq.com/hooks/6Qxcfy0WWndWLURxYvBB/webhook-trigger/82224472-6bdb-4a5b-8bce-ac984d058d62"; // link to process form and redirect to thank you
     } else {
       // the honeypot was filled in, it's a robot
       form.action = "https://flyredarrow.com/enroll-confirmation"; // link directly to thank you without actually processing form
@@ -97,7 +97,7 @@
     @apply my-3 border py-2 pl-3 rounded-md w-full ring-0 outline-none focus:border-main-red;
   }
 
-  #enrollmentForm {
+  #discoveryForm {
     @apply m-0;
   }
 

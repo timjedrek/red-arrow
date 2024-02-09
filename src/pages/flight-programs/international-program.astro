@@ -8,27 +8,31 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 <BaseLayout>
   <!-- Header -->
   <header
-    class="relative h-screen-3/4 bg-international-program bg-cover bg-center bg-black flex flex-col items-center justify-center"
+    class="relative h-screen-3/4 bg-international-program bg-cover bg-bottom bg-black flex flex-col items-center justify-center"
   >
     <!-- bg-overlay to darken -->
     <div class="absolute bg-black/50 w-full h-full z-0"></div>
     <!-- Text -->
-    <div class="text-white text-center z-10">
+    <div
+      class="text-white text-center z-10 flex flex-col items-center gap-4 px-5"
+    >
       <h1 class="text-5xl font-bold tracking-tight">
         International Programs & Services
       </h1>
-      <h2 class="text-3xl pt-5 tracking-wide">
+      <h2 class="text-3xl tracking-wide">
         Learn about obtaining your M-1 Visa for flight training or how to
         convert your foreign pilot’s license
       </h2>
-      <button class="mt-5 btn-red">Start Now</button>
+      <a href="/enrollment">
+        <button class="btn-red">Start Now</button>
+      </a>
     </div>
   </header>
 
   <section
     class="flex flex-col items-center bg-gradient-to-br from-white to-gray-200"
   >
-    <div class="max-w-5xl px-10 lg:w-1/2 flex flex-col items-center py-10">
+    <div class="max-w-5xl px-10 lg:w-1/2 flex flex-col items-center py-10 pb-0">
       <h2 class="text-3xl font-semibold text-center tracking-tight">
         M-1 Visa for International Students
       </h2>

@@ -2,7 +2,7 @@
 import DiscoveryFlightCTA from "../../components/DiscoveryFlightCTA.astro";
 import ContactUs from "../../components/ContactUs.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import DiscoveryFlightImage from "../../../public/img/discovery-flight/discovery-flight-image.webp";
+import DiscoveryFlightImage from "../../../public/img/discovery-flight/discovery-flight-image-2.webp";
 import FlightOption from "../../components/FlightOption.astro";
 import SimulatorTestImage from "../../../public/img/discovery-flight/cfi.webp";
 import RecreationalFlight from "../../../public/img/discovery-flight/recreational-flight.webp";
@@ -14,35 +14,46 @@ import RecreationalFlight from "../../../public/img/discovery-flight/recreationa
   >
     <div class="absolute bg-black/50 w-full h-full z-0"></div>
 
-    <div class="text-white text-center z-10">
+    <div
+      class="text-white text-center z-10 flex flex-col items-center gap-4 px-5"
+    >
       <h1 class="text-5xl font-bold tracking-tighter">Fly with Us</h1>
-      <h2 class="text-3xl pt-5 tracking-wide">
-        A discovery flight is your opportunity to understand if flight training
-        is as exciting for you as it is for us!
+      <h2 class="text-3xl tracking-wide">
+        Discover if flying is as exciting for you as it is for us!
       </h2>
-      <a href="#contact-us"><button class="mt-5 btn-red">Book Now</button></a>
+      <a href="#contact-us"><button class="btn-red">Book Now</button></a>
     </div>
   </header>
 
   <section
-    class="flex flex-col items-center bg-gradient-to-br from-white to-gray-200 p-10"
+    class="flex flex-col items-center bg-gradient-to-br from-white to-gray-200"
   >
     <div class="max-w-5xl px-10 lg:w-1/2 flex flex-col items-center py-10">
       <h2 class="text-3xl font-semibold text-center tracking-tight">
         What is a Discovery Flight?
       </h2>
-      <h3 class="pt-10 text-xl italic">
+      <h3 class="pt-10 text-xl italic text-center">
         Discover the thrill of flight with a Red Arrow Discovery Flight—an
         exhilarating experience designed to give you a taste of life as a pilot.
       </h3>
       <div class="tracking-wider">
-        <p class="pt-10">
-          During this introductory flight, you'll take to the skies with one of
-          our skilled instructors, gaining hands-on control of the aircraft and
-          experiencing the joy of aviation. Whether you're pursuing a career in
-          flying or simply curious about the wonders of flight, our Discovery
-          Flight is the perfect first step. Soar above Texas and New Mexico,
-          explore local landmarks, and ignite your passion for aviation.
+        <p class="pt-5">
+          Take part in one of our discovery flights, designed to familiarize you
+          with the possibilities of pilot training and an introduction to the
+          intricacies of aviation to see if the prospect of being a pilot
+          resonates with you.
+        </p>
+        <p class="pt-5">
+          As you soar through the Texas skies with a Red Arrow instructor,
+          you’ll get the chance to see our local points of interest like the El
+          Paso Mountain Star, the volcanic crater known as the Kilbourne Hole,
+          Downtown El Paso from above, the expansive landscapes of West El Paso,
+          and even the distinctive landmarks like Canutillo High School's blue
+          football field. If you book during the fall, you can also enjoy the
+          seasonal La Union Corn Maze.
+        </p>
+        <p class="pt-5">
+          Come fly with us today and see the world from our perspective.
         </p>
       </div>
     </div>
@@ -71,7 +82,7 @@ import RecreationalFlight from "../../../public/img/discovery-flight/recreationa
   </section>
 
   <section
-    class="bg-gradient-to-br from-white to-gray-200 p-10 flex flex-col items-center"
+    class="bg-gradient-to-br from-white to-gray-200 flex flex-col items-center py-10"
   >
     <FlightOption
       image={DiscoveryFlightImage}
@@ -94,7 +105,7 @@ import RecreationalFlight from "../../../public/img/discovery-flight/recreationa
       reverse={true}
     />
     <a href="" class="">
-      <div class="btn-red my-10">Book a Flight</div>
+      <div class="btn-red">Book a Flight</div>
     </a>
   </section>
 

@@ -22,6 +22,7 @@ export const fleet = [
       equipment: "Garmin 430, Aspen Avionics PFD",
       rentalPrice: "$157 / hour",
     },
+    imageAlignment: "left",
   },
   {
     name: "Skittles",
@@ -36,6 +37,7 @@ export const fleet = [
       equipment: "G5, Garmin 430",
       rentalPrice: "$148 / hour",
     },
+    imageAlignment: "left",
   },
   {
     name: "Echo",
@@ -50,6 +52,7 @@ export const fleet = [
       equipment: "Garmin 430Was, Dual G5",
       rentalPrice: "$148 / hour",
     },
+    imageAlignment: "right",
   },
   {
     name: "5YX",
@@ -64,6 +67,7 @@ export const fleet = [
       equipment: "Aspen, Garmin 650,Avionics, S-Tec Autopilot",
       rentalPrice: "$162 / hour",
     },
+    imageAlignment: "left",
   },
   {
     name: "Woodstock",
@@ -78,6 +82,7 @@ export const fleet = [
       equipment: "2 Garmin G5, Garming 650 GPS",
       rentalPrice: "$165 / hour",
     },
+    imageAlignment: "center",
   },
   {
     name: "N242TW",
@@ -92,6 +97,7 @@ export const fleet = [
       equipment: " 2 Garmin G1000, Airconditioning",
       rentalPrice: "$186 / hour",
     },
+    imageAlignment: "left",
   },
   {
     name: "Chip",
@@ -106,6 +112,7 @@ export const fleet = [
       equipment: "2 Garmin G5, Garming 650 GPS, S-Tec Autopilot",
       rentalPrice: "$167 / hour",
     },
+    imageAlignment: "right",
   },
   {
     name: "Dale",
@@ -120,6 +127,7 @@ export const fleet = [
       equipment: "Garming 650 GPS",
       rentalPrice: "$161 / hour",
     },
+    imageAlignment: "center",
   },
   {
     name: "N3180U",
@@ -134,5 +142,6 @@ export const fleet = [
       equipment: "Garmin 496",
       rentalPrice: "$189 / hour",
     },
+    imageAlignment: "left",
   },
 ];

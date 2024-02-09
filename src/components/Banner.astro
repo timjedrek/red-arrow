@@ -1,5 +1,6 @@
 ---
 import { Icon } from "astro-icon/components";
+import { PHONE_NUMBER } from "../consts";
 ---
 
 <div class="h-8 lg:h-10 w-full bg-main-red">
@@ -7,7 +8,10 @@ import { Icon } from "astro-icon/components";
     class="mx-auto flex max-w-[80rem] items-center h-full justify-between px-4"
   >
     <div class="flex items-center gap-3">
-      <p class="text-white text-lg lg:text-xl font-medium">(575) 201-6160</p>
+      <a
+        href=`tel:${PHONE_NUMBER}`
+        class="text-white text-lg lg:text-xl font-medium">{PHONE_NUMBER}</a
+      >
       <div class="hidden lg:flex gap-2">
         <a
           href="https://www.facebook.com/redarrowflightacademy/"
