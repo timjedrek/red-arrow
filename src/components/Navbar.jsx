@@ -66,7 +66,13 @@ const Navbar = ({ pathname }) => {
                       Discovery Flight
                     </a>
                   </div>
-                  <button className="btn-red">BOOK NOW</button>
+                  <a
+                    href="/discovery-flight-form"
+                    target="_blank"
+                    class="btn-red"
+                  >
+                    BOOK NOW
+                  </a>
                 </div>
               </div>
             </div>
@@ -133,7 +139,13 @@ const Navbar = ({ pathname }) => {
           >
             Discovery Flight
           </a>
-          <button className="btn-red place-self-center mt-5">BOOK NOW</button>
+          <a
+            href="/discovery-flight-form"
+            target="_blank"
+            class="btn-red place-self-center mt-5"
+          >
+            BOOK NOW
+          </a>
         </div>
       </div>
     </nav>

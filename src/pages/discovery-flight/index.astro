@@ -1,11 +1,11 @@
 ---
-import DiscoveryFlightCTA from "../../components/DiscoveryFlightCTA.astro";
 import ContactUs from "../../components/ContactUs.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import DiscoveryFlightImage from "../../../public/img/discovery-flight/discovery-flight-image-2.webp";
 import FlightOption from "../../components/FlightOption.astro";
 import SimulatorTestImage from "../../../public/img/discovery-flight/cfi.webp";
 import RecreationalFlight from "../../../public/img/discovery-flight/recreational-flight.webp";
+import EnrollNowCTA from "../../components/EnrollNowCTA.astro";
 ---
 
 <BaseLayout>
@@ -21,7 +21,9 @@ import RecreationalFlight from "../../../public/img/discovery-flight/recreationa
       <h2 class="text-3xl tracking-wide">
         Discover if flying is as exciting for you as it is for us!
       </h2>
-      <a href="#contact-us"><button class="btn-red">Book Now</button></a>
+      <a href="/discovery-flight-form" target="_blank"
+        ><button class="btn-red">Book Now</button></a
+      >
     </div>
   </header>
 
@@ -104,45 +106,12 @@ import RecreationalFlight from "../../../public/img/discovery-flight/recreationa
       description="Are you or someone you know curious about what El Paso looks like from above? Be it a birthday, anniversary, or unique date, we would love to take you and your loved ones up for a bird’s eye view."
       reverse={true}
     />
-    <a href="" class="">
+    <a href="/discovery-flight-form" target="_blank">
       <div class="btn-red">Book a Flight</div>
     </a>
   </section>
 
-  <section
-    class="flex flex-col items-center bg-gradient-to-bl from-gray-800 to-black text-white"
-  >
-    <div class="lg:w-1/2 flex flex-col items-center py-10">
-      <div class="max-w-5xl px-10">
-        <h2 class="text-3xl font-semibold text-center tracking-tight">
-          What is a Discovery Flight?
-        </h2>
-        <div class="text-gray-200 tracking-wider">
-          <p class="pt-10">
-            Booking your Red Arrow Discovery Flight is a simple process. Start
-            by filling out our online form, and providing your contact
-            information and preferred date for the flight. Our team will then
-            get in touch with you to confirm availability and finalize the
-            details.
-          </p>
-          <p class="pt-10">
-            If you prefer a more direct approach, feel free to call our office
-            during business hours, and we'll guide you through the booking
-            process over the phone.
-          </p>
-          <p class="pt-10">
-            Whether you're an aspiring pilot or looking for a unique experience,
-            we're here to make your Discovery Flight reservation seamless and
-            enjoyable.
-          </p>
-        </div>
-      </div>
-      <a href="" class="">
-        <div class="btn-red my-10">Book a Flight</div>
-      </a>
-    </div>
-    <img />
-  </section>
+  <EnrollNowCTA />
 
   <ContactUs />
 </BaseLayout>
