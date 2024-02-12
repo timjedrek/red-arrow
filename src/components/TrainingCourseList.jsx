@@ -99,7 +99,13 @@ const TrainingCourseList = () => {
                   <h6 className="font-semibold">Get started today</h6>
                   <p className="text-sm">{courses[selectedId].content[3]}</p>
                 </div>
-                <button className="btn-red mx-auto my-5">Enroll Today</button>
+                <a
+                  href="/enrollment"
+                  target="_blank"
+                  className="btn-red mx-auto my-5"
+                >
+                  Enroll Today
+                </a>
               </div>
             </motion.div>
             <motion.button
