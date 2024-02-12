@@ -3,7 +3,7 @@ title: "Why Flying in the US is First-Rate"
 description: ""
 pubDate: "Dec 22 2020"
 heroImage: "/why-flying-in-the-US-is-first-rate.webp"
-author: "dromwriters"
+author: "Tomas Peralta"
 readingTime: "2 min"
 ---
 
