@@ -5,7 +5,9 @@
 <form
   class="mx-auto max-w-xl pb-10"
   method="POST"
-  onsubmit="validateForm(this);"
+  id="contact_form"
+  action=""
+  data-astro-reload
 >
   <div class="grid grid-cols-1 gap-x-8 gap-y-2 sm:grid-cols-2">
     <div>
@@ -124,18 +126,65 @@
 </form>
 
 <script>
-  (window as any).validateForm = validateForm;
-  function validateForm(form) {
-    var x = document.forms["contact_form"]["confirm-email"].value;
-    if (x == "" || x == null) {
-      // if the honeypot was ignored, it's a hu-mon
-      form.action = "https://usebasin.com/f/d5eca44afead"; // link to process form and redirect to thank you
+  // Wait for the DOM content to be fully loaded
+  document.addEventListener("DOMContentLoaded", function () {
+    // Get the contact form element
+    const contactForm = document.getElementById(
+      "contact_form",
+    ) as HTMLFormElement;
+
+    // Check if the contact form element exists
+    if (contactForm !== null) {
+      // Add submit event listener to the contact form
+      contactForm.addEventListener("submit", function (event) {
+        // Prevent the default form submission
+        event.preventDefault();
+
+        // Serialize the form data
+        const formData = new FormData(contactForm);
+
+        // Check the value of the honeypot field
+        const confirmEmailValue = formData.get("confirm-email");
+        if (confirmEmailValue === "" || confirmEmailValue === null) {
+          // If the honeypot field is empty, it's a human
+          // Set the form action to the URL for processing the form and redirecting to thank you
+          contactForm.action =
+            "https://services.leadconnectorhq.com/hooks/6Qxcfy0WWndWLURxYvBB/webhook-trigger/b753d9d9-1a9d-465f-84d0-31b0d9822501";
+        }
+
+        // Convert FormData to URLSearchParams
+        const urlSearchParams = new URLSearchParams();
+        for (const pair of formData.entries()) {
+          urlSearchParams.append(pair[0], pair[1] as string);
+        }
+
+        // Send an AJAX request to submit the form
+        const xhr = new XMLHttpRequest();
+        xhr.open("POST", contactForm.action);
+        xhr.setRequestHeader(
+          "Content-Type",
+          "application/x-www-form-urlencoded",
+        );
+        xhr.onload = function () {
+          // Check if the request was successful (status 200)
+          if (xhr.status === 200) {
+            // Redirect the user after a successful form submission
+            window.location.href = "/contact-confirmation";
+          } else {
+            // Handle errors if any
+            console.error("Form submission failed:", xhr.statusText);
+          }
+        };
+        xhr.onerror = function () {
+          // Handle network errors
+          console.error("Network error occurred while submitting the form.");
+        };
+        xhr.send(urlSearchParams);
+      });
     } else {
-      // the honeypot was filled in, it's a robot
-      form.action = "https://flyredarrow.com/contact-confirmation"; // link directly to thank you without actually processing form
-      return false;
+      console.error("Contact form element not found.");
     }
-  }
+  });
 </script>
 
 <style>
