@@ -2,8 +2,8 @@
 title: "How to Use the GI Bill for Flight Training"
 description: "To embark on your flight training journey using the GI Bill, several prerequisites must be met. Primarily, eligibility hinges on your qualification for either the Post-9/11 GI Bill or the Montgomery GI Bill. Holding a private pilot’s license and possessing a valid second-class medical certificate (or a first-class one for pursuing an Airline Transport Pilot certificate) are pivotal requirements to unlock these benefits. Notably, Survivors’ and Dependents’ Educational Assistance (DEA) doesn’t extend to flight training benefits under the GI Bill."
 pubDate: "Feb 6, 2024"
-heroImage: "./img/military/military.webp"
-author: "Elsa Peralta"
+heroImage: "/img/military/military.webp"
+author: "dromwriters"
 readingTime: "2 min"
 ---
 
