@@ -3,7 +3,7 @@ title: "How the world opens up when you become a pilot"
 description: "There are a few things that can open up the world like becoming a pilot. When you are soaring through the sky, you are breaking more than horizons. Pilots receive multiple benefits, in addition to traveling throughout countries. Here are just a few ways in which pilot life will open your world."
 pubDate: "Dec 29 2020"
 heroImage: "/how-the-world-opens-up-when-you-become-a-pilot.webp"
-author: "dromwriters"
+author: "Tomas Peralta"
 readingTime: "2 min"
 ---
 
