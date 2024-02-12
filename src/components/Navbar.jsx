@@ -69,7 +69,7 @@ const Navbar = ({ pathname }) => {
                   <a
                     href="/discovery-flight-form"
                     target="_blank"
-                    class="btn-red"
+                    className="btn-red"
                   >
                     BOOK NOW
                   </a>
@@ -142,7 +142,7 @@ const Navbar = ({ pathname }) => {
           <a
             href="/discovery-flight-form"
             target="_blank"
-            class="btn-red place-self-center mt-5"
+            className="btn-red place-self-center mt-5"
           >
             BOOK NOW
           </a>

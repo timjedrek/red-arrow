@@ -10,12 +10,7 @@ for (let i = 0; i < 15; i++) {
 }
 ---
 
-<form
-  id="discoveryForm"
-  method="POST"
-  onsubmit="validateForm(this);"
-  data-astro-reload
->
+<form id="discovery_form" method="POST" action="" data-astro-reload>
   <div class="tab">
     <p>
       <input
@@ -218,19 +213,65 @@ for (let i = 0; i < 15; i++) {
   </div>
 
   <script>
-    (window as any).validateForm = validateForm;
-    function validateForm(form) {
-      var x = document.forms["discoveryForm"]["confirm-email"].value;
-      if (x == "" || x == null) {
-        // if the honeypot was ignored, it's a hu-mon
-        form.action =
-          "https://services.leadconnectorhq.com/hooks/6Qxcfy0WWndWLURxYvBB/webhook-trigger/82224472-6bdb-4a5b-8bce-ac984d058d62"; // link to process form and redirect to thank you
+    // Wait for the DOM content to be fully loaded
+    document.addEventListener("DOMContentLoaded", function () {
+      // Get the discovery form element
+      const discoveryForm = document.getElementById(
+        "discovery_form",
+      ) as HTMLFormElement;
+
+      // Check if the discovery form element exists
+      if (discoveryForm !== null) {
+        // Add submit event listener to the discovery form
+        discoveryForm.addEventListener("submit", function (event) {
+          // Prevent the default form submission
+          event.preventDefault();
+
+          // Serialize the form data
+          const formData = new FormData(discoveryForm);
+
+          // Check the value of the honeypot field
+          const confirmEmailValue = formData.get("confirm-email");
+          if (confirmEmailValue === "" || confirmEmailValue === null) {
+            // If the honeypot field is empty, it's a human
+            // Set the form action to the URL for processing the form and redirecting to thank you
+            discoveryForm.action =
+              "https://services.leadconnectorhq.com/hooks/6Qxcfy0WWndWLURxYvBB/webhook-trigger/82224472-6bdb-4a5b-8bce-ac984d058d62";
+          }
+
+          // Convert FormData to URLSearchParams
+          const urlSearchParams = new URLSearchParams();
+          for (const pair of formData.entries()) {
+            urlSearchParams.append(pair[0], pair[1] as string);
+          }
+
+          // Send an AJAX request to submit the form
+          const xhr = new XMLHttpRequest();
+          xhr.open("POST", discoveryForm.action);
+          xhr.setRequestHeader(
+            "Content-Type",
+            "application/x-www-form-urlencoded",
+          );
+          xhr.onload = function () {
+            // Check if the request was successful (status 200)
+            if (xhr.status === 200) {
+              // Redirect the user after a successful form submission
+              window.location.href = "/discovery-confirmation";
+            } else {
+              // Handle errors if any
+              console.error("Form submission failed:", xhr.statusText);
+            }
+          };
+          xhr.onerror = function () {
+            // Handle network errors
+            console.error("Network error occurred while submitting the form.");
+          };
+          xhr.send(urlSearchParams);
+        });
       } else {
-        // the honeypot was filled in, it's a robot
-        form.action = "https://flyredarrow.com/enroll-confirmation"; // link directly to thank you without actually processing form
-        return false;
+        console.error("Discovery form element not found.");
       }
-    }
+    });
 
     const dayRadioButtons = document.querySelectorAll(
       'input[type="radio"][name="day-option"]',
