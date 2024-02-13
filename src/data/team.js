@@ -1,4 +1,4 @@
-export const teamMembers = [
+export const leadershipTeam = [
   {
     name: "Tomas Peralta",
     title: "Chief Flight Instructor | Founder",
@@ -49,8 +49,111 @@ export const teamMembers = [
       "As a student pilot at Red Arrow, Danielle is taking her first steps toward realizing her dream of becoming a pilot. Her determination to learn and excel in the world of aviation is nothing short of inspiring. She is driven by a deep-seated passion for flight, and there's no looking back on the path she's chosen. Danielle has set her sights on an ambitious goal - to become an instructor right here at Red Arrow once she completes her flight training. Her commitment to passing on her knowledge and love for aviation to future pilots is a testament to her dedication.",
       "While the exact direction her aviation journey will take her after instruction remains undecided, one thing is certain: Danielle wants to continue flying. Her desire and motivation to achieve her goals shine brightly, and Red Arrow is proud to have her as an integral part of the team. Danielle represents the embodiment of dreams taking flight, and her journey is a source of inspiration for all who share her passion for aviation.",
     ],
-    image: "/img/our-team/danielle-nelson.webp",
+    image: "/img/our-team/placeholder.webp",
     alt: "Dispatch Manager Danielle Nelson at Red Arrow Flight Academy",
     email: "dnelson@flyredarrow.com",
+  },
+];
+
+export const flightTeam = [
+  {
+    name: "Rob Yadouga",
+    title: "Assistant Chief Flight Instructor",
+    subtitle: "Certificates & Ratings: Commercial ASEL, CFI, CFII, MEI",
+    bio: [
+      "Born and raised in the sunshine state of Florida, Rob's heart has always belonged to the open skies. His journey through aviation began in the welcoming skies of Georgia, where he learned to master the art of flight. With every takeoff and landing, his passion for aviation soared to new heights.  Rob's unwavering love for the skies led him down the path of becoming an instructor, a role he embraced wholeheartedly. Sharing his knowledge and expertise with aspiring aviators became his mission, and his dedication to the craft of teaching is a testament to his commitment to aviation.",
+      "Beyond his role in the world of aviation, Rob takes pride in being a loving father and a distinguished Air Force veteran. His experience in the Air Force undoubtedly played a significant role in shaping his aviation journey, instilling in him the values of discipline, dedication, and precision.",
+      "In addition to his instructional role, Rob also serves as a professor at El Paso Community College, further contributing to the education and development of future aviation enthusiasts.  Among the many aircraft that have graced his aviation journey, one holds a special place in his heart - N4106C. This aircraft represents not just a machine but a vessel of dreams, adventure, and countless stories written in the skies.",
+      "Rob's impressive credentials include CFI, CFII, and MEI ratings, showcasing his mastery of multiple facets of flight. As our Assistant Chief Flight Instructor, he continues to inspire and guide aspiring pilots, nurturing their dreams and shaping the future of aviation. Rob is a steadfast member of the team, and his journey continues to inspire those who follow his flight path.",
+    ],
+    image: "/img/our-team/rob-yadouga.webp",
+    alt: "Assistant Chief Flight Instructor Robert Yadouga at Red Arrow Flight Academy",
+    email: "",
+    phone: "(575) 201-6160 ext. 706",
+  },
+  {
+    name: "Gilberto Rodriguez",
+    title: "Assistant Chief Flight Instructor",
+    subtitle: "Certificates & Ratings: Commercial ASEL, AMEL, CFI, CFII",
+    bio: [
+      "Gilbert, a seasoned aviator and retired First Lieutenant from the Mexican Air Force, has dedicated his career to the field of aviation. After an illustrious service in the military, he transitioned to civilian life and embarked on a new chapter in the United States.",
+      "In 2015, Gilbert made a strategic move to El Paso, Texas, where he set his sights on conquering the skies in a different capacity. His journey began initially as a commercial pilot specializing in general aviation and corporate jets. With his vast experience and unwavering commitment to excellence, Gilbert quickly became a respected figure in the aviation community.",
+      "Driven by a desire to share his wealth of knowledge, Gilbert took on the role of a Flight Instructor in 2019. As a Certified Flight Instructor Instrument (CFII), he finds fulfillment in guiding aspiring aviators through the intricate process of obtaining their certificates and realizing their aviation aspirations. His dedication to fostering a new generation of skilled pilots is evident in his patient and meticulous approach to instruction.",
+      "Gilbert's passion for aviation extends beyond the cockpit; it is a commitment to shaping the future of the industry. Through his mentorship and guidance, he continues to play a pivotal role in shaping the next wave of skilled and safety-conscious pilots. In his current role as a CFII, Gilbert embodies the values of discipline, professionalism, and a genuine love for the art of flying.",
+      "With a career spanning both military and civilian sectors, Gilbert's story is one of resilience, adaptability, and an enduring passion for aviation. Whether soaring through the skies or imparting knowledge on the ground, he remains a beacon of inspiration for those who aspire to reach new heights in the world of aviation.",
+    ],
+    image: "/img/our-team/gilberto-rodriguez.webp",
+    alt: "Assistant Chief Flight Instructor Gilbert Rodriguez at Red Arrow Flight Academy",
+    email: "",
+    phone: "(575) 201-6160 ext. 708",
+  },
+  {
+    name: "Shane Lipson",
+    title: "Flight Instructor | Check Instructor",
+    subtitle: "Certificates & Ratings: Commercial ASEL, CFI, CFII",
+    bio: [
+      "Shane Lipson began flying in 2000 while living in New York City.  His first discovery flight, around the Statue of Liberty, had him hooked into aviation and he quickly progressed through training to become a CFII.  Shortly after the World Trade Center attack in 2001, he joined the Civil Air Patrol as a volunteer pilot.  He became a check pilot and then head of Standardization and Evaluation for Texas Wing after moving back to his hometown of El Paso.",
+      "Shane holds an MD Degree from the Paul L Foster School of Medicine and an MSE from the University of Pennsylvania.  He's married with two sons and enjoys teaching others to fly.",
+    ],
+    image: "/img/our-team/placeholder.webp",
+    alt: "CFII Shane Lipson at Red Arrow Flight Academy",
+    email: "",
+    phone: "(575) 201-6160 ext 707",
+  },
+  {
+    name: "Jesus Bustamante",
+    title: "Flight Instructor",
+    subtitle: "Certificates & Ratings: Commercial ASEL, CFI, CFII",
+    bio: [
+      "From the age of 10, Jesus found himself captivated by the world of aviation, a fascination that would shape his destiny. It all began with the awe-inspiring spectacle of an airshow, and from that moment on, the sky became his true calling.",
+      "In 2016, he took his first steps into the world of flight, embarking on a journey that would define his future. His aviation education took flight at Cochise College in Douglas, Arizona, where he dedicated himself to honing his skills and mastering the art of flying. In the year 2020, Jesus's dedication reached new heights as he proudly graduated with a bachelor's degree in professional pilot technology. Armed with knowledge, experience, and a heart full of dreams, he stands on the threshold of an exciting aviation career. His aspirations are clear and resolute - to command cargo planes or join the ranks of the airlines.",
+      "For Jesus, the sky is not the limit; it's the beginning of an adventure that he's destined to explore. What propels Jesus forward is his unwavering passion for aviation, a fire that burns brightly within him. With each flight, each new challenge, he is forging a path toward the boundless skies, where his dreams will take flight.",
+    ],
+    image: "/img/our-team/jesus-bustamante.webp",
+    alt: "CFII Jesus Bustamante at Red Arrow Flight Academy",
+    email: "",
+    phone: "(575) 201-6160 ext. 703",
+  },
+  {
+    name: "Spencer Christian",
+    title: "Flight Instructor",
+    subtitle: "Certificates & Ratings: Commercial ASEL, CFI",
+    bio: [
+      "Since childhood, Spencer's heart has soared with a deep-seated passion for aviation. His journey through the clouds began in 2012 when he first took flight in the Lone Star State of Texas. Little did he know that these initial experiences would chart a remarkable course for his future. Driven by his aviation dreams, Spencer set his sights on the University of North Dakota's prestigious Aerospace program in North Dakota. There, amidst the northern winds, he honed his skills, gained invaluable knowledge, and immersed himself in the world of aviation.",
+      "This pursuit of excellence culminated in his graduation with a Bachelor of Science in Aerospace Sciences, a testament to his commitment to mastering the art of flight. With his wings of knowledge and a heart brimming with enthusiasm, Spencer eagerly embraces the role of a Certified Flight Instructor (CFI). His desire to impart his aviation wisdom to others reflects his deep-rooted passion for flying, and he thrives on the opportunity to inspire the next generation of aviators.",
+      "But Spencer's dreams extend beyond the classroom and training grounds. His ultimate ambition is to take to the skies alongside warbirds, embracing the historical and heroic narratives that surround these remarkable aircraft. As he embarks on this thrilling journey, Spencer carries with him not just a pilot's license but also the indomitable spirit of an aviator fueled by an unwavering love for aviation.",
+    ],
+    image: "/img/our-team/spencer-christian.webp",
+    alt: "CFI Spencer Christian at Red Arrow Flight Academy",
+    email: "",
+    phone: "(575) 201-6160 ext. 704",
+  },
+  {
+    name: "Nasir Ibrahim",
+    title: "Flight Instructor",
+    subtitle: "Certificates & Ratings: Commercial ASEL, CFI",
+    bio: [
+      "Nasir's journey through life has been rooted in the heart of Iowa, where he spent most of his days. However, his aspirations knew no bounds, and he sought to spread his wings far beyond the Hawkeye State.  Opportunity called, and Nasir heeded it by pursuing his flight training in the sunny skies of Florida and the aviation-rich atmosphere of Indiana. These diverse locations became the backdrop for his aviation odyssey, enriching his experience and knowledge of the skies.",
+      "Nasir's initiation into the world of aviation was as a ramp agent for Envoy, where he witnessed the hustle and bustle of aircraft up close. This hands-on exposure only deepened his passion for aviation and set him on a path that he couldn't ignore. Fueled by his unwavering love for the skies, Nasir embraced the role of a flight instructor with enthusiasm. His desire to share his knowledge, experiences, and love for aviation with the next generation of aspiring pilots became his driving force. In the role of an instructor, he found not just a career but a calling.",
+      "Nasir's excitement knows no bounds as he prepares to guide and mentor the future aviators who will follow in his flight path. With his dedication and passion, he is poised to inspire and shape the dreams of those who aspire to soar through the endless blue yonder, just as he did.",
+    ],
+    image: "/img/our-team/nasir-ibrahim.webp",
+    alt: "CFI Nasir Ibrahim at Red Arrow Flight Academy",
+    email: "",
+    phone: "(575) 201-6160 ext. 710",
+  },
+  {
+    name: "Shihran Pathy",
+    title: "Flight Instructor",
+    subtitle: "Certificates & Ratings: Commercial ASEL, AMEL, CFI, CFII",
+    bio: [
+      "Born and raised in Seattle, Washington, Shirahn has expressed his passion for aviation in many different ways since the age of four. Whether it was with the mechanics of a jet engine explained with a balloon, math’s relation to aircraft and flight, or writing essays about aviation disasters on his own time, he always had a story to share about his love of flying.",
+      "A graduate of Aeronautical Science with flight honors from Embry-Riddle Aeronautical University in Prescott, Arizona, Shirahn holds additional ratings in addition to his CFI such as Commercial Seaplane, Multi-Engine, and CFII ratings. Shirahn believes sharing his knowledge in earnest with someone to get better every day is an important value of a human being.",
+      "Outside of aviation, Shirahn is passionate about the world of Electronic Dance Music. He is an accomplished DJ and continues his passion through performing at various live events across Texas and Washington.",
+    ],
+    image: "/img/our-team/shihran-pathy.webp",
+    alt: "CFII Shihran Pathy at Red Arrow Flight Academy",
+    email: "",
+    phone: "(575) 201-6160 ext. 711",
   },
 ];
