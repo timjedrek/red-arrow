@@ -48,4 +48,5 @@ export default {
     },
   },
   plugins: [require("@tailwindcss/typography")],
+  safelist: ["object-left", "object-right", "object-center", "object-cover"],
 };
