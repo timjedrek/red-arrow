@@ -3,16 +3,16 @@ import FooterHome from "../components/FooterHome.astro";
 import EnrollmentForm from "../components/EnrollmentForm.astro";
 import BaseHead from "../components/BaseHead.astro";
 
-const { pageTitle, pageDescription, pageImage, pageKeywords } = Astro.props;
+const { pageImage } = Astro.props;
 ---
 
 <html lang="en" class="scroll-smooth">
   <head>
     <BaseHead
-      title={pageTitle}
-      description={pageDescription}
+      title="Enroll at Red Arrow Flight Academy"
+      description="Register your interest in Red Arrow today. Fill out our enrollment for to let us know you're interested in becoming a pilot. We will get back with you shortly."
       image={pageImage}
-      keywords={pageKeywords}
+      keywords="Enrollment, form, submission, Red Arrow Flight Academy, flight training, pilot training"
     />
   </head>
   <div
