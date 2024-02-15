@@ -1,17 +1,19 @@
 ---
 import DiscoveryFlightCTA from "../../components/DiscoveryFlightCTA.astro";
-
 import ContactUs from "../../components/ContactUs.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import Location from "../../components/Location.astro";
-
 import { fleet } from "../../data/fleet";
 import { simulators } from "../../data/simulators";
 import FleetCard from "../../components/FleetCard.astro";
 import SimulatorCard from "../../components/SimulatorCard.astro";
 ---
 
-<BaseLayout>
+<BaseLayout
+  pageTitle="Our Fleet | Red Arrow Flight Academy"
+  pageDescription="Meet the Red Arrow fleet: the plane names, specs, and price per rental hour. These planes are used both for training and rental. Explore our aircraft today and get to know what you’ll be flying!"
+  pageKeywords="Aircraft, fleet, Red Arrow Flight Academy, rentals, book a flight, Cessna 172, Cessna 182, Piper, Flight training"
+>
   <header
     class="relative h-screen-3/4 bg-our-fleet bg-cover bg-center bg-black flex flex-col items-center justify-center"
   >
