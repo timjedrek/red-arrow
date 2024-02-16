@@ -34,13 +34,13 @@ export default {
         "screen-mobile": "92vh", //depends on menu height
       }),
       keyframes: {
-        wiggle: {
-          "0%, 100%": { transform: "rotate(-3deg)" },
-          "50%": { transform: "rotate(3deg)" },
+        moveReviews: {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-100%)" },
         },
       },
       animation: {
-        wiggle: "wiggle 1s ease-in-out infinite",
+        moveReviews: "moveReviews 5s linear infinite",
       },
       fontFamily: {
         urbanist: ["Urbanist", "sans-serif"],
