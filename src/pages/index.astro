@@ -8,6 +8,7 @@ import MilitaryProgramImage from "../../public/img/military-program.webp";
 import InternationalProgramImage from "../../public/img/international-program.webp";
 import WeAreRedArrowImage from "../../public/img/we-are-red-arrow.webp";
 import Section from "../components/Section.astro";
+import Reviews from "../components/Reviews";
 ---
 
 <HomeLayout
@@ -292,6 +293,8 @@ import Section from "../components/Section.astro";
   </Section>
 
   <GuideDownload />
+
+  <Reviews client:visible />
 
   <!-- Contact Us Form -->
   <ContactUs />
