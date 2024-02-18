@@ -5,6 +5,7 @@ pubDate: "Nov 9, 2020"
 heroImage: "/what-to-do-when-your-throttle-is-stuck-at-full-power.webp"
 author: "Cecilia Otero"
 readingTime: "2 min"
+tags: ["Airplane Tips"]
 ---
 
 Part of being a capable pilot is keeping a level head during emergency situations. We’re talking about the types of situations you don’t experience in class. Learning doesn’t stop at flight school. In fact, your mental arsenal of airplane tips should grow larger and larger for the rest of your life.

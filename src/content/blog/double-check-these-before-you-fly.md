@@ -5,6 +5,7 @@ pubDate: "Nov 26, 2020"
 heroImage: "/double-check-these-before-you-fly.webp"
 author: "Tomas Peralta"
 readingTime: "2 min"
+tags: ["Aviation School", "Student Pilot", "Aviation Careers", "Airplane Tips"]
 ---
 
 In order to have a successful flight you have to be confident that how and what you are flying is safe. It is crucial that you double check these few things before you fly. These few things could make the difference between landing in your desired destination and flying your last flight. Any aviation school or flight lesson instructor will agree that these are crucial.

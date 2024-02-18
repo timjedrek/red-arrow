@@ -5,6 +5,7 @@ pubDate: "Nov 17, 2020"
 heroImage: "/how-to-get-the-most-out-of-your-weather-products.webp"
 author: "Tomas Peralta"
 readingTime: "2 min"
+tags: ["Aviation School", "Flight Lesson"]
 ---
 
 Knowing how to effectively navigate your way through the information from your weather products is a key skill to have in the aviation industry. Easier said than done, right? Approaching weather products can be overwhelming, so here are a few tips to keep in mind.

@@ -5,6 +5,7 @@ pubDate: "Nov 20, 2020"
 heroImage: "/how-flying-build-habits-for-success.webp"
 author: "Tomas Peralta"
 readingTime: "1 min"
+tags: ["Benefits"]
 ---
 
 As it has been emphasized time and time again, the benefits of becoming a pilot are innumerable. Additionally, the habits acquired from flying will also propel you to success. How? Here are some habits that pilots use day to day that will do just that.
