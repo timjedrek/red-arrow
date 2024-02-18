@@ -5,6 +5,7 @@ pubDate: "Dec 22 2020"
 heroImage: "/why-flying-in-the-US-is-first-rate.webp"
 author: "Tomas Peralta"
 readingTime: "2 min"
+tags: []
 ---
 
 The aviation industry is no joke, with international airlines such as Emirates, Turkish Airlines, and China Airlines boasting some great benefits for their teams of pilots. Yet a significant handful of international flight students choose to earn their credentials here in the United States, and some even end up staying to pursue a career in aeronautics. What exactly is it that makes flying in the US so attractive?

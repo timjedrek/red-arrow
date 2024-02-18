@@ -5,6 +5,7 @@ pubDate: "Dec 15 2020"
 heroImage: "/how-to-choose-a-plane-when-buying-one.webp"
 author: "Tomas Peralta"
 readingTime: "2 min"
+tags: ["Airplane Tips"]
 ---
 
 Selecting an airplane is like choosing your home in the sky. Therefore, it is essential that you buy the one that is right for you. It is important to look for the proper functioning of the plane that is suitable for your skills and requirements. Keep the following things in mind when buying a plane.
