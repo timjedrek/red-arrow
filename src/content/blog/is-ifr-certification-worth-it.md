@@ -5,6 +5,7 @@ pubDate: "Dec 14 2020"
 heroImage: "/is-ifr-certification-worth-it.webp"
 author: "Tomas Peralta"
 readingTime: "2 min"
+tags: []
 ---
 
 It’s an age-old question, one contemplated across the aviation industry by students and new pilots alike. “Should I get my IFR certification?" The truth is, nobody can answer that for you except for, well, you.
