@@ -5,6 +5,7 @@ pubDate: "Dec 3, 2020"
 heroImage: "/mistakes-every-student-pilot-makes.webp"
 author: "Tomas Peralta"
 readingTime: "2 min"
+tags: ["Aviation School", "Student Pilot"]
 ---
 
 Student pilots make mistakes, just like anybody else. Nonetheless, it is essential that you learn from them and listen to any tips from the aviation school to help prevent these mistakes. Don't be discouraged. Keep on flying!

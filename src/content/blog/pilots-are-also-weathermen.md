@@ -2,9 +2,10 @@
 title: "Pilots Are Also Weathermen"
 description: "You surely know that weather is a super important aspect of the aviation industry. It affects the way airplanes fly, after all. But do you have any idea just how finely attuned to the weather a pilot has to be? It’s not casual knowledge- pilots need to have a profound understanding of meteorology’s most specific technicalities. In other words, they’re basically weathermen."
 pubDate: "Dec 16 2020"
-heroImage: "/pilost-are-also-weathermen.webp"
+heroImage: "/pilots-are-also-weathermen.webp"
 author: "Tomas Peralta"
 readingTime: "2 min"
+tags: []
 ---
 
 You surely know that weather is a super important aspect of the aviation industry. It affects the way airplanes fly, after all. But do you have any idea just how finely attuned to the weather a pilot has to be? It’s not casual knowledge- pilots need to have a profound understanding of meteorology’s most specific technicalities. In other words, they’re basically weathermen.

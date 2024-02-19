@@ -5,6 +5,7 @@ pubDate: "Nov 25, 2020"
 heroImage: "/how-to-make-the-most-of-your-flight-lessons.webp"
 author: "Paloma Quevedo"
 readingTime: "2 min"
+tags: []
 ---
 
 As a flight student, you know that aviation schools do not come cheap. That's why, when you arrive for each flight lesson, it's important to make sure you are prepared to get the most out of each lesson by maximizing your money and time.
