@@ -1,11 +1,12 @@
 import MobileNavBar from "./MobileNavBar";
 import NavLink from "./NavLink";
 import { flightPrograms, resources, about } from "../consts.ts";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Navbar = ({ pathname }) => {
   const [openMobile, setOpenMobile] = useState(false);
   const [openSubmenu, setOpenSubmenu] = useState("");
+  const [navBar, setNavbar] = useState(false);
 
   const handleHamburgerClick = () => {
     setOpenMobile(() => !openMobile);
@@ -19,12 +20,29 @@ const Navbar = ({ pathname }) => {
     }
   };
 
+  const changeBackground = () => {
+    if (window.scrollY >= 60) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", changeBackground);
+    return () => {
+      window.removeEventListener("scroll", changeBackground);
+    };
+  }, []);
+
   return (
-    <nav className="absolute z-50 w-full">
-      <div className="bg-transparent">
+    <nav className="w-full h-0">
+      <div
+        className={`${navBar || openMobile ? "bg-black" : "bg-transparent"} duration-300`}
+      >
         <div className="mx-auto max-w-7xl px-4">
           <div
-            className="relative flex h-20 lg:h-28 items-center justify-between transition-all"
+            className={`${navBar ? "lg:h-[4.5rem]" : "lg:h-28"} relative flex h-20 items-center justify-between transition-all`}
             id="navbar"
           >
             <div className="flex flex-1 items-center justify-between">
@@ -32,7 +50,7 @@ const Navbar = ({ pathname }) => {
                 <img
                   src="/red-arrow-logo.webp"
                   alt="Red Arrow Logo"
-                  className="h-14 lg:h-20 w-auto transition-all"
+                  className={`${navBar ? "lg:h-14" : "lg:h-20"} h-14 w-auto transition-all`}
                   id="navbar-image"
                 />
               </a>
