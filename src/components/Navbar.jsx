@@ -20,8 +20,8 @@ const Navbar = ({ pathname }) => {
   };
 
   return (
-    <nav className="relative">
-      <div className="bg-black">
+    <nav className="absolute z-50 w-full">
+      <div className="bg-transparent">
         <div className="mx-auto max-w-7xl px-4">
           <div
             className="relative flex h-20 lg:h-28 items-center justify-between transition-all"
