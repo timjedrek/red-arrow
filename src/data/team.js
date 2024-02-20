@@ -16,7 +16,7 @@ export const leadershipTeam = [
   },
   {
     name: "Elsa Peralta",
-    title: "Administrative Manager | Founder",
+    title: "Administrative Manager",
     subtitle: "Certificates & Ratings: Private Pilot Certificate, ASEL",
     bio: [
       "Elsa carries the torch of her family's passion for flying. Drawing from her rich experiences, she has become a driving force behind the success of Red Arrow Flight Academy. Currently, Elsa holds a Private Pilot Certificate (PPC) for Airplane Single-Engine Land (ASEL), and her thirst for knowledge and skill in aviation continues to soar. She's set her sights on obtaining her instrument rating, an ambition that will further enrich her aviation journey.",
