@@ -7,6 +7,8 @@ import react from "@astrojs/react";
 import alpinejs from "@astrojs/alpinejs";
 import partytown from "@astrojs/partytown";
 
+import node from "@astrojs/node";
+
 // https://astro.build/config
 export default defineConfig({
   site: "https://red-arrow-user-auth.web.app/",
@@ -47,4 +49,8 @@ export default defineConfig({
     "/copy-of-financing": "/resources/financing",
     "/copy-of-faa-testing-center": "/resources/faa-exam-center",
   },
+  output: "hybrid",
+  adapter: node({
+    mode: "standalone",
+  }),
 });
