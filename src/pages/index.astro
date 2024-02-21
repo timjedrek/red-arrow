@@ -9,6 +9,7 @@ import InternationalProgramImage from "../../public/img/international-program.we
 import WeAreRedArrowImage from "../../public/img/we-are-red-arrow.webp";
 import Section from "../components/Section.astro";
 import Reviews from "../components/Reviews";
+import Partners from "../components/Partners.astro";
 ---
 
 <HomeLayout
@@ -18,13 +19,13 @@ import Reviews from "../components/Reviews";
 >
   <!-- Header -->
   <header
-    class="relative h-screen-3/4 bg-home bg-cover bg-center bg-black flex flex-col items-center justify-center"
+    class="relative top-0 h-screen-3/4 bg-home bg-cover bg-center bg-black flex flex-col items-center justify-center"
   >
     <!-- bg-overlay to darken -->
     <div class="absolute bg-black/50 w-full h-full z-0"></div>
     <!-- Text -->
     <div
-      class="text-white text-center z-10 flex flex-col items-center gap-4 px-5"
+      class="text-white text-center z-10 flex flex-col items-center gap-4 px-5 h-full justify-center"
     >
       <h1 class="text-5xl font-bold tracking-tight">Become a Pilot</h1>
       <h2 class="text-3xl tracking-wide">
@@ -32,6 +33,7 @@ import Reviews from "../components/Reviews";
       </h2>
       <a href="#contactUs" class="btn-red">Contact Us</a>
     </div>
+    <Partners />
   </header>
 
   <Section reverse={true}>
@@ -39,11 +41,11 @@ import Reviews from "../components/Reviews";
       slot="image"
       src={TrainingProgramImage.src}
       alt="CFI gazes into the rotating propellers of a Cessna 172 at Red Arrow Flight Academy"
-      class="object-cover h-80 lg:h-[600px]"
+      class="object-cover h-80 lg:h-[350px] lg:mt-24"
       loading="lazy"
     />
 
-    <div slot="content" class="max-w-2xl flex flex-col items-center">
+    <div slot="content" class="max-w-2xl flex flex-col items-center mt-24">
       <h2 class="text-3xl font-semibold text-center tracking-tight">
         Our Flight Training
       </h2>
@@ -53,27 +55,12 @@ import Reviews from "../components/Reviews";
       </h3>
       <div class="text-gray-800 tracking-wider">
         <p class="pt-5">
-          Every beginner pilot’s training starts with the Private Pilot program,
-          where we help build a solid foundation of comprehensive knowledge and
-          hands-on experience. From there, you can transition seamlessly into
-          the Instrument Rating program, allowing you to take on more complex
-          weather and flight paths.
-        </p>
-        <p class="pt-5">
-          Our Commercial Pilot program will equip aspiring aviators with the
-          skills needed for a successful career in flight. If you aspire to
-          teach future pilots as well, you have the opportunity to undergo our
-          Certified Flight Instructor (CFI) training to train the next
-          generation of pilots in the greater El Paso area. Gain experience and
-          start your career at Red Arrow Flight Academy.
-        </p>
-        <p class="pt-5">
           At Red Arrow, we have accelerated and flexible training programs to
           accommodate your unique schedule and goals. Each program will be a
           blend of simulator and hands-on training. Immerse yourself in a
           transformative learning experience that prepares you for a future in
-          aviation. Many of our graduates have moved on to the airlines and
-          other exciting career opportunities.
+          aviation from private pilot to CFI. Many of our graduates have moved
+          on to the airlines and other exciting career opportunities.
         </p>
       </div>
       <a href="/flight-programs/training-courses" class="w-fit">
@@ -139,7 +126,7 @@ import Reviews from "../components/Reviews";
     />
     <div slot="content" class="max-w-2xl flex flex-col items-center">
       <h2 class="text-3xl font-semibold text-center tracking-tight">
-        Our Military Programs
+        Military/Rotor Transition Training
       </h2>
       <h3 class="pt-5 text-xl italic text-center">
         As the only Part 141 certified flight school in the region, we
@@ -148,24 +135,23 @@ import Reviews from "../components/Reviews";
       </h3>
       <div class="text-gray-800 tracking-wider">
         <p class="pt-5">
-          At Red Arrow Flight Academy, we have the advantage of being the sole
-          Part 141 flight school around, allowing us to offer unparalleled
-          specialized programs and benefits to our students, especially those
-          that have served in the military. Whether you're transitioning from
-          military service to aviation or seeking additional certifications, our
-          programs are designed to cater to your unique needs.
+          Whether you are a military or a civilian helicopter pilot, you can
+          easily transition into a fixed-wing aircraft with an add-on. We offer
+          add-on training for Private Pilot, Instrument Rating, and Commercial
+          Pilot.
         </p>
-        <p class="pt-5">For our military students:</p>
+        <p class="pt-5">Further military offerings:</p>
         <ul class="pt-5 list-disc pl-10 flex flex-col gap-2">
           <li>
             Military/Rotor Transition Programs: Tailored for individuals adding
-            aviation qualifications to their military experience, these programs
-            facilitate a seamless transition to civilian flight training.
+            fixed wing aviation qualifications to their helicopter military
+            experience, these programs facilitate a seamless transition to
+            civilian flight training.
           </li>
           <li>
-            GI Bill Approved: Red Arrow proudly supports our military students
-            by being GI Bill Approved, offering financial assistance to those
-            eligible for educational benefits.
+            Post 9-11 GI Bill® Accepted: Red Arrow proudly supports our
+            military students by accepting the Post 9-11 GI Bill® and offering
+            financial assistance to those eligible for educational benefits.
           </li>
           <li>
             Financing Options with the COOL Program (Open to Army/Air Force):
@@ -178,7 +164,7 @@ import Reviews from "../components/Reviews";
         <p class="pt-5">Explore the options and learn more below.</p>
       </div>
       <a href="flight-programs/military-rotor-transition" class="w-fit">
-        <div class="btn-red my-10">Visit Our Military Programs</div>
+        <div class="btn-red my-10">Visit Our Military Page</div>
       </a>
     </div>
   </Section>
@@ -238,7 +224,7 @@ import Reviews from "../components/Reviews";
       slot="image"
       src={WeAreRedArrowImage.src}
       alt="The Red Arrow Academy Team at Dona Ana County International Jetport (KDNA)"
-      class="object-cover h-80 lg:h-[650px]"
+      class="object-cover h-80 object-left lg:h-[500px]"
       loading="lazy"
     />
     <div slot="content" class="max-w-2xl flex flex-col items-center">
@@ -254,32 +240,13 @@ import Reviews from "../components/Reviews";
           getting you into the air as fast and safely as possible. As a center
           for aviation training, we take pride in our global partnerships while
           remaining deeply to our locales of El Paso, Santa Teresa, Las Cruces,
-          and surrounding areas.
+          and surrounding areas. We guide our students from zero pilot training
+          to comfortably navigating the skies with our expert team and
+          long-standing history.
         </p>
         <p class="pt-5">
-          Our strategic alliances, including the collaboration with Purdue
-          Global University, bring world-class education to aspiring pilots
-          locally. This global perspective is seamlessly integrated into our
-          international programs, where students from the region join a diverse
-          cohort, fostering a rich learning environment. We even offer M-1 Visas
-          for our international students.
-        </p>
-        <p class="pt-5">
-          For local heroes transitioning from military service, our structured
-          military programs offer a supportive and tailored approach to civilian
-          aviation success. Red Arrow Flight Academy understands the unique
-          skills and experiences military personnel bring to the table. Our
-          programs acknowledge this background, easing the transition and
-          ensuring a comprehensive training experience that aligns with their
-          career aspirations.
-        </p>
-        <p class="pt-5">
-          Guiding our local students through Part 61 programs is our team of
-          highly qualified instructors, including a Designated Pilot Examiner
-          (DPE). This ensures the highest standards in pilot training,
-          proficiency, and successful outcomes.
-        </p>
-        <p class="pt-5">
+          Come get to know us and our unique offerings for international
+          students, Purdue Global University programs, and military students.
           Beyond the cockpit, our dedication to continuous learning is reflected
           in our extracurricular "Learning Lesson" sessions, fostering local
           connections with other flight enthusiasts. Join us to experience the

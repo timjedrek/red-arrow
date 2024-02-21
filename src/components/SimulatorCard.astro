@@ -2,15 +2,9 @@
 import { Icon } from "astro-icon/components";
 
 const { simulator } = Astro.props;
-
-function camelCaseToTitleCase(str) {
-  return str.replace(/([A-Z])/g, " $1").replace(/^./, function (str) {
-    return str.toUpperCase();
-  });
-}
 ---
 
-<h3 class="text-3xl font-medium hidden lg:block text-white mt-10">
+<h3 class="text-3xl font-medium hidden lg:block text-white">
   {simulator.name}
 </h3>
 <div
@@ -19,7 +13,7 @@ function camelCaseToTitleCase(str) {
   <div class="flex flex-col w-full justify-between">
     <div class="h-full flex flex-col justify-between">
       <div
-        class="flex gap-2 bg-gradient-to-r items-center from-gray-200 to-gray-300 text-black justify-between p-2 border-b-4 border-main-red flex-1"
+        class="flex gap-2 bg-gradient-to-r items-center from-gray-700 to-gray-800 text-white justify-between p-2 border-b-4 flex-1"
       >
         <p class="text-sm lg:text-base flex-1">Panels:</p>
         <ul class="flex flex-col flex-[2_2_0%] gap-2">
@@ -33,7 +27,7 @@ function camelCaseToTitleCase(str) {
         </ul>
       </div>
       <div
-        class="flex gap-2 bg-gradient-to-r items-center from-gray-200 to-gray-300 text-black justify-between p-2 border-b-4 border-main-red flex-1"
+        class="flex gap-2 bg-gradient-to-r items-center from-gray-700 to-gray-800 text-white justify-between p-2 border-b-4 flex-1"
       >
         <p class="text-sm lg:text-base flex-1">
           Hours In Simulator Can Be Used As:
@@ -51,7 +45,7 @@ function camelCaseToTitleCase(str) {
     </div>
     <a href="/discovery-flight-form" target="_blank" class="w-full">
       <div
-        class="btn-black text-sm font-medium lg:mt-0 lg:text-lg lg:font-semibold w-full h-full hover:scale-100 rounded-none"
+        class="btn-red text-sm font-medium lg:mt-0 lg:text-lg lg:font-semibold w-full h-full hover:scale-100 rounded-none"
       >
         Book Now
       </div>
@@ -60,7 +54,7 @@ function camelCaseToTitleCase(str) {
   <div>
     <img
       src={simulator.image.src}
-      class="aspect-square object-cover bg-white w-full lg:w-[40rem] border border-black"
+      class="aspect-square object-cover bg-white w-full lg:w-[40rem]"
       alt={simulator.alt}
     />
     <div

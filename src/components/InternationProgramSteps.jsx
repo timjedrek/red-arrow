@@ -60,7 +60,7 @@ const InternationProgramSteps = () => {
             <ol className="list-disc pl-5">
               <li>
                 <a
-                  href="../../public/files/international-students-requirements-m1.pdf"
+                  href="/files/international-students-requirements-m1.pdf"
                   download="international-students-requirements-m1.pdf"
                   className="underline hover:text-blue-500"
                 >
@@ -69,8 +69,8 @@ const InternationProgramSteps = () => {
               </li>
               <li>
                 <a
-                  href="../../public/files/affidavit-of-financial-support-ver1.pdf"
-                  download="international-students-requirements-m1.pdf"
+                  href="/files/affidavit-of-financial-support-ver1.pdf"
+                  download="affidavit-of-financial-support-ver1.pdf"
                   className="underline hover:text-blue-500"
                 >
                   Affidavit of Financial Suport ver1
@@ -78,7 +78,7 @@ const InternationProgramSteps = () => {
               </li>
               <li>
                 <a
-                  href="../../public/files/financial-declaration-ver1.pdf"
+                  href="/files/financial-declaration-ver1.pdf"
                   download="financial-declaration-ver1.pdf"
                   className="underline hover:text-blue-500"
                 >
