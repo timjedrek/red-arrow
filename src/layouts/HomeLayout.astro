@@ -2,6 +2,7 @@
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import FooterHome from "../components/FooterHome.astro";
+import "@fontsource-variable/urbanist";
 
 const { pageTitle, pageDescription, pageImage, pageKeywords } = Astro.props;
 ---
@@ -15,7 +16,7 @@ const { pageTitle, pageDescription, pageImage, pageKeywords } = Astro.props;
       keywords={pageKeywords}
     />
   </head>
-  <body class="relative font-urbanist">
+  <body class="relative font-serif">
     <Header />
     <main>
       <slot />
