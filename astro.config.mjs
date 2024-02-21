@@ -9,7 +9,7 @@ import partytown from "@astrojs/partytown";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://flyredarrow.com",
+  site: "https://red-arrow-user-auth.web.app/",
   integrations: [
     mdx(),
     sitemap(),
