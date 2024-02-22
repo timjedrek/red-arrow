@@ -1,5 +1,0 @@
-User-agent: *
-Disallow: /admin/*
-Allow: /
-
-Sitemap: https://red-arrow-user-auth.web.app/sitemap.xml
