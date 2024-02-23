@@ -18,11 +18,20 @@ if (Astro.cookies.has("session")) {
   <div class="h-96 w-full bg-main-red"></div>
   <h1>Sign in</h1>
   <p>New here? <a href="/register">Create an account</a></p>
-  <form action="/api/auth/signin" method="post">
+  <form
+    action="/api/auth/signin"
+    method="post"
+    class="flex flex-col border border-black p-5 w-1/4"
+  >
     <label for="email" for="email">Email</label>
-    <input type="email" name="email" id="email" />
+    <input class="border border-black" type="email" name="email" id="email" />
     <label for="password">Password</label>
-    <input type="password" name="password" id="password" />
+    <input
+      class="border border-black"
+      type="password"
+      name="password"
+      id="password"
+    />
     <button type="submit">Login</button>
   </form>
 </BaseLayout>
