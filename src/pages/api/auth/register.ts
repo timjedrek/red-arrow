@@ -12,7 +12,9 @@ export const POST: APIRoute = async ({ request, redirect }) => {
   const name = formData.get("name")?.toString();
 
   if (!email || !password || !name) {
-    return new Response("Missing form data", { status: 400 });
+    return new Response(`Missing form data ${email}, ${password}, ${name}`, {
+      status: 400,
+    });
   }
 
   /* Create user */
