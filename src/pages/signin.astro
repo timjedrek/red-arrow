@@ -1,28 +1,24 @@
 ---
-import { app } from "../firebase/server";
-import { getAuth } from "firebase-admin/auth";
+// import { app } from "../firebase/server";
+// import { getAuth } from "firebase-admin/auth";
 import BaseLayout from "../layouts/BaseLayout.astro";
 
-/* Check if the user is authenticated */
-const auth = getAuth(app);
-if (Astro.cookies.has("session")) {
-  const sessionCookie = Astro.cookies.get("session").value;
-  const decodedCookie = await auth.verifySessionCookie(sessionCookie);
-  if (decodedCookie) {
-    return Astro.redirect("/dashboard");
-  }
-}
+// /* Check if the user is authenticated */
+// const auth = getAuth(app);
+// if (Astro.cookies.has("session")) {
+//   const sessionCookie = Astro.cookies.get("session").value;
+//   const decodedCookie = await auth.verifySessionCookie(sessionCookie);
+//   if (decodedCookie) {
+//     return Astro.redirect("/dashboard");
+//   }
+// }
 ---
 
 <BaseLayout title="Sign in">
   <div class="h-96 w-full bg-main-red"></div>
   <h1>Sign in</h1>
   <p>New here? <a href="/register">Create an account</a></p>
-  <form
-    action="/api/auth/signin"
-    method="post"
-    class="flex flex-col border border-black p-5 w-1/4"
-  >
+  <form class="flex flex-col border border-black p-5 w-1/4" id="signin-form">
     <label for="email" for="email">Email</label>
     <input class="border border-black" type="email" name="email" id="email" />
     <label for="password">Password</label>
@@ -35,43 +31,30 @@ if (Astro.cookies.has("session")) {
     <button type="submit">Login</button>
   </form>
 </BaseLayout>
+
 <script>
-  import {
-    getAuth,
-    inMemoryPersistence,
-    signInWithEmailAndPassword,
-  } from "firebase/auth";
+  import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
   import { app } from "../firebase/client";
 
   const auth = getAuth(app);
-  // This will prevent the browser from storing session data
-  auth.setPersistence(inMemoryPersistence);
 
-  const form = document.querySelector("form") as HTMLFormElement;
+  auth.onAuthStateChanged((user) => {
+    if (user) {
+      window.location.href = "/dashboard";
+    }
+  });
+
+  const form = document.getElementById("signin-form") as HTMLFormElement;
   form.addEventListener("submit", async (e) => {
     e.preventDefault();
-    const formData = new FormData(form);
-    const email = formData.get("email")?.toString();
-    const password = formData.get("password")?.toString();
+    const email = form["email"].value;
+    const password = form["password"].value;
 
-    if (!email || !password) {
-      return;
-    }
-    const userCredential = await signInWithEmailAndPassword(
-      auth,
-      email,
-      password,
-    );
-    const idToken = await userCredential.user.getIdToken();
-    const response = await fetch("/api/auth/signin", {
-      method: "GET",
-      headers: {
-        Authorization: `Bearer ${idToken}`,
-      },
-    });
-
-    if (response.redirected) {
-      window.location.assign(response.url);
+    try {
+      await signInWithEmailAndPassword(auth, email, password);
+      window.location.href = "/dashboard";
+    } catch (error) {
+      console.error(error);
     }
   });
 </script>

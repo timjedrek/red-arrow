@@ -7,13 +7,12 @@ import BaseLayout from "../layouts/BaseLayout.astro";
   <h1>Register</h1>
   <p>Already have an account? <a href="/signin">Sign in</a></p>
   <form
-    action="/api/auth/register"
-    method="post"
     class="flex flex-col flex-start w-1/5 border border-black p-5"
+    id="registration-form"
   >
     <label for="name">Name</label>
     <input class="border border-black" type="text" name="name" id="name" />
-    <label for="email" for="email">Email</label>
+    <label for="email">Email</label>
     <input class="border border-black" type="email" name="email" id="email" />
     <label for="password">Password</label>
     <input
@@ -25,3 +24,44 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     <button type="submit">Register</button>
   </form>
 </BaseLayout>
+
+<script>
+  import {
+    getAuth,
+    createUserWithEmailAndPassword,
+    updateProfile,
+  } from "firebase/auth";
+  import { app } from "../firebase/client";
+  const auth = getAuth(app);
+
+  auth.onAuthStateChanged((user) => {
+    if (user) {
+      window.location.href = "/dashboard";
+    }
+  });
+
+  const handleRegistration = async (event) => {
+    event.preventDefault();
+
+    const form = event.target;
+    const formData = new FormData(form);
+    const email = formData.get("email") as string;
+    const password = formData.get("password") as string;
+    const name = formData.get("name");
+
+    try {
+      const userCredential = await createUserWithEmailAndPassword(
+        auth,
+        email,
+        password,
+      );
+      await updateProfile(userCredential.user, { displayName: name as string });
+      window.location.href = "/dashboard";
+    } catch (error) {
+      console.error("Registration failed:", error.message);
+    }
+  };
+
+  const form = document.getElementById("registration-form") as HTMLFormElement;
+  form.addEventListener("submit", handleRegistration);
+</script>
