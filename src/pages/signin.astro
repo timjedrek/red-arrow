@@ -1,39 +1,51 @@
 ---
-// import { app } from "../firebase/server";
-// import { getAuth } from "firebase-admin/auth";
-import BaseLayout from "../layouts/BaseLayout.astro";
-
-// /* Check if the user is authenticated */
-// const auth = getAuth(app);
-// if (Astro.cookies.has("session")) {
-//   const sessionCookie = Astro.cookies.get("session").value;
-//   const decodedCookie = await auth.verifySessionCookie(sessionCookie);
-//   if (decodedCookie) {
-//     return Astro.redirect("/dashboard");
-//   }
-// }
+import StudentLayout from "../layouts/StudentLayout.astro";
 ---
 
-<BaseLayout title="Sign in">
-  <div class="h-96 w-full bg-main-red"></div>
-  <h1>Sign in</h1>
-  <p>New here? <a href="/register">Create an account</a></p>
-  <form class="flex flex-col border border-black p-5 w-1/4" id="signin-form">
-    <label for="email" for="email">Email</label>
-    <input class="border border-black" type="email" name="email" id="email" />
-    <label for="password">Password</label>
-    <input
-      class="border border-black"
-      type="password"
-      name="password"
-      id="password"
-    />
-    <button type="submit">Login</button>
-  </form>
-</BaseLayout>
+<StudentLayout pageTitle="Sign in">
+  <div class="flex flex-col bg-black/50 p-10 rounded-xl gap-5">
+    <h1 class="text-5xl font-semibold uppercase">Sign in</h1>
+
+    <form class="flex flex-col p-5 gap-2" id="signin-form">
+      <label for="email" for="email" class="font-semibold">Email</label>
+      <input
+        class="border border-black p-2 text-black rounded-sm"
+        type="email"
+        name="email"
+        id="email"
+      />
+      <label for="password" class="font-semibold">Password</label>
+      <input
+        class="border border-black p-2 text-black rounded-sm mb-5"
+        type="password"
+        name="password"
+        id="password"
+      />
+      <button type="submit" class="bg-main-red p-3 font-semibold rounded-sm"
+        >Sign in</button
+      >
+      <button
+        id="google"
+        class="bg-[#558aed] p-3 flex gap-3 justify-center items-center rounded-sm"
+      >
+        <img src="/google-icon.webp" alt="google-icon" class="h-5" />
+        <p class="font-semibold">Sign in with Google</p>
+      </button>
+    </form>
+    <p>
+      New here? <a href="/register" class="hover:underline">Create an account</a
+      >
+    </p>
+  </div>
+</StudentLayout>
 
 <script>
-  import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+  import {
+    getAuth,
+    signInWithEmailAndPassword,
+    GoogleAuthProvider,
+    signInWithPopup,
+  } from "firebase/auth";
   import { app } from "../firebase/client";
 
   const auth = getAuth(app);
@@ -55,6 +67,22 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       window.location.href = "/dashboard";
     } catch (error) {
       console.error(error);
+    }
+  });
+
+  const googleSignin = document.querySelector("#google") as HTMLButtonElement;
+  googleSignin.addEventListener("click", async () => {
+    const provider = new GoogleAuthProvider();
+    const userCredential = await signInWithPopup(auth, provider);
+    const idToken = await userCredential.user.getIdToken();
+    const res = await fetch("/api/auth/signin", {
+      headers: {
+        Authorization: `Bearer ${idToken}`,
+      },
+    });
+
+    if (res.redirected) {
+      window.location.assign(res.url);
     }
   });
 </script>
