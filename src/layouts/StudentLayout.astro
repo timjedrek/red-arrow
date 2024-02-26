@@ -1,0 +1,36 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Banner from "../components/Banner.astro";
+import Footer from "../components/Footer.astro";
+import "@fontsource-variable/urbanist";
+import StudentNavbar from "../components/StudentNavbar.jsx";
+
+const { pageTitle, pageDescription, pageImage, pageKeywords } = Astro.props;
+---
+
+<html lang="en" class="scroll-smooth">
+  <head>
+    <BaseHead
+      title={pageTitle}
+      description={pageDescription}
+      image={pageImage}
+      keywords={pageKeywords}
+    />
+  </head>
+  <body class="relative font-serif">
+    <Banner />
+    <StudentNavbar client:load />
+    <main>
+      <div
+        class="relative top-0 h-screen-3/4 bg-home bg-cover bg-center bg-black flex flex-col items-center justify-center"
+      >
+        <div
+          class="text-white text-center z-10 flex flex-col items-center gap-4 px-5 h-full justify-center"
+        >
+          <slot />
+        </div>
+      </div>
+    </main>
+    <Footer />
+  </body>
+</html>

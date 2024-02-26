@@ -1,50 +1,27 @@
 ---
-// import { app } from "../firebase/server";
-// import { getAuth } from "firebase-admin/auth";
-import BaseLayout from "../layouts/BaseLayout.astro";
-
-// const auth = getAuth(app);
-
-/* Check current session */
-// if (!Astro.cookies.has("session")) {
-//   return Astro.redirect("/signin");
-// }
-// const sessionCookie = Astro.cookies.get("session").value;
-// const decodedCookie = await auth.verifySessionCookie(sessionCookie);
-// const user = await auth.getUser(decodedCookie.uid);
-
-// if (!user) {
-//   return Astro.redirect("/signin");
-// }
-
-// import {
-//   getAuth,
-//   inMemoryPersistence,
-//   signInWithEmailAndPassword,
-// } from "firebase/auth";
-// import { app } from "../firebase/client";
-
-// const auth = getAuth(app);
-
-// auth.onAuthStateChanged((user) => {
-//   if (user) {
-//     console.log("User is signed in: ", user);
-//     window.location.href = "/dashboard";
-//   }
-// });
+import StudentLayout from "../layouts/StudentLayout.astro";
 ---
 
-<BaseLayout title="dashboard">
-  <div class="h-96 w-full bg-main-red"></div>
+<StudentLayout pageTitle="Dashboard">
   <div id="content"></div>
   <form action="/api/auth/signout">
     <button id="signout-button" type="submit">Sign out</button>
   </form>
-</BaseLayout>
+
+  <form id="file-upload">
+    <input type="file" name="file" />
+    <input type="text" name="name" placeholder="Name of file" />
+    <button type="submit">Upload</button>
+  </form>
+
+  <div id="all-files"></div>
+</StudentLayout>
 
 <script>
   import { getAuth } from "firebase/auth";
-  import { app } from "../firebase/client";
+  import { app, storageRef } from "../firebase/client";
+  import { uploadBytes, ref, listAll, getDownloadURL } from "firebase/storage";
+
   const auth = getAuth(app);
 
   const setupDashboard = (user) => {
@@ -70,6 +47,33 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     e.preventDefault();
     auth.signOut().then(() => {
       window.location.href = "/signin";
+    });
+  });
+
+  const fileUploadForm = document.getElementById(
+    "file-upload",
+  ) as HTMLFormElement;
+  fileUploadForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const file = fileUploadForm.file.files[0];
+    const name = fileUploadForm.name.value;
+    const fileRef = ref(storageRef, name);
+    uploadBytes(fileRef, file).then((snapshot) => {
+      console.log("Uploaded a blob or file!", snapshot);
+    });
+  });
+
+  const allFiles = document.getElementById("all-files") as HTMLDivElement;
+  listAll(storageRef).then((res) => {
+    res.items.forEach((itemRef) => {
+      getDownloadURL(itemRef).then((url) => {
+        const link = document.createElement("a");
+        link.rel = "noopener";
+        link.target = "_blank";
+        link.href = url;
+        link.textContent = itemRef.name;
+        allFiles.appendChild(link);
+      });
     });
   });
 </script>

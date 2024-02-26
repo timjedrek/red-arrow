@@ -1,9 +1,8 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
+import StudentLayout from "../layouts/StudentLayout.astro";
 ---
 
-<BaseLayout title="Register">
-  <div class="h-96 w-full bg-main-red"></div>
+<StudentLayout pageTitle="Register">
   <h1>Register</h1>
   <p>Already have an account? <a href="/signin">Sign in</a></p>
   <form
@@ -23,7 +22,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     />
     <button type="submit">Register</button>
   </form>
-</BaseLayout>
+</StudentLayout>
 
 <script>
   import {
