@@ -12,7 +12,7 @@ const StudentNavbar = () => {
       <div className="bg-white">
         <div className="mx-auto max-w-7xl px-4">
           <div
-            className="lg:h-[4.5rem] relative flex h-20 items-center justify-between"
+            className="lg:h-28 relative flex h-20 items-center justify-between"
             id="navbar"
           >
             <div className="flex flex-1 items-center justify-between">
@@ -20,7 +20,7 @@ const StudentNavbar = () => {
                 <img
                   src="/red-arrow-logo.webp"
                   alt="Red Arrow Logo"
-                  className="lg:h-14 h-14 w-auto"
+                  className="lg:h-20 h-14 w-auto"
                   id="navbar-image"
                 />
               </a>
