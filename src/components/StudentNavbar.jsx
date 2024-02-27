@@ -8,7 +8,7 @@ const StudentNavbar = () => {
   };
 
   return (
-    <nav className="w-full">
+    <nav className="w-full shadow-md">
       <div className="bg-white">
         <div className="mx-auto max-w-7xl px-4">
           <div
@@ -26,7 +26,7 @@ const StudentNavbar = () => {
               </a>
               <div className="hidden lg:ml-6 lg:block">
                 <div className="flex gap-5 xl:gap-10 items-center">
-                  <a>Documents</a>
+                  {/* Nav Items */}
                 </div>
               </div>
             </div>
@@ -83,9 +83,7 @@ const StudentNavbar = () => {
         className={`${openMobile ? "max-h-[36rem]" : "max-h-0"} overflow-hidden transition-[max-height] duration-300 ease-in-out lg:hidden absolute w-full bg-black -z-10`}
         id="mobile-menu"
       >
-        <div className="px-4 pb-3 pt-2 flex flex-col">
-          <a>documents</a>
-        </div>
+        <div className="px-4 pb-3 pt-2 flex flex-col">{/* Nav Items */}</div>
       </div>
     </nav>
   );
