@@ -14,6 +14,7 @@ import StudentLogin from "../components/StudentLogin.astro";
         type="email"
         name="email"
         id="email"
+        required
       />
       <label for="password" class="font-semibold">Password</label>
       <input
@@ -21,10 +22,12 @@ import StudentLogin from "../components/StudentLogin.astro";
         type="password"
         name="password"
         id="password"
+        required
       />
       <button type="submit" class="bg-main-red p-3 font-semibold rounded-sm"
         >Sign in</button
       >
+      <p class="text-red-600 text-xs max-w-36 mx-auto" id="error-message"></p>
       <button
         id="google"
         class="bg-[#558aed] p-3 flex gap-3 justify-center items-center rounded-sm"
@@ -64,8 +67,17 @@ import StudentLogin from "../components/StudentLogin.astro";
     const password = form["password"].value;
 
     try {
-      await signInWithEmailAndPassword(auth, email, password);
-      window.location.href = "/dashboard";
+      await signInWithEmailAndPassword(auth, email, password)
+        .then(() => {
+          window.location.href = "/dashboard";
+        })
+        .catch((error) => {
+          const errorMessage = error.message;
+          const errorElement = document.getElementById(
+            "error-message",
+          ) as HTMLParagraphElement;
+          errorElement.textContent = errorMessage;
+        });
     } catch (error) {
       console.error(error);
     }
