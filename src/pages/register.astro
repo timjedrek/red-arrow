@@ -1,27 +1,44 @@
 ---
 import StudentLayout from "../layouts/StudentLayout.astro";
+import StudentLogin from "../components/StudentLogin.astro";
 ---
 
 <StudentLayout pageTitle="Register">
-  <h1>Register</h1>
-  <p>Already have an account? <a href="/signin">Sign in</a></p>
-  <form
-    class="flex flex-col flex-start w-1/5 border border-black p-5"
-    id="registration-form"
-  >
-    <label for="name">Name</label>
-    <input class="border border-black" type="text" name="name" id="name" />
-    <label for="email">Email</label>
-    <input class="border border-black" type="email" name="email" id="email" />
-    <label for="password">Password</label>
-    <input
-      class="border border-black"
-      type="password"
-      name="password"
-      id="password"
-    />
-    <button type="submit">Register</button>
-  </form>
+  <StudentLogin>
+    <h1 class="text-5xl font-semibold uppercase">Register</h1>
+
+    <form class="flex flex-col p-5 gap-2" id="registration-form">
+      <label class="font-semibold" for="name">Name</label>
+      <input
+        class="border border-black p-2 text-black rounded-sm"
+        type="text"
+        name="name"
+        id="name"
+      />
+      <label class="font-semibold" for="email">Email</label>
+      <input
+        class="border border-black p-2 text-black rounded-sm"
+        type="email"
+        name="email"
+        id="email"
+      />
+      <label class="font-semibold" for="password">Password</label>
+      <input
+        class="border border-black p-2 text-black rounded-sm"
+        type="password"
+        name="password"
+        id="password"
+      />
+      <button type="submit" class="bg-main-red p-3 font-semibold rounded-sm"
+        >Register</button
+      >
+    </form>
+    <p>
+      Already have an account? <a href="/signin" class="hover:underline"
+        >Sign in</a
+      >
+    </p>
+  </StudentLogin>
 </StudentLayout>
 
 <script>

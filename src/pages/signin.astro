@@ -1,9 +1,10 @@
 ---
 import StudentLayout from "../layouts/StudentLayout.astro";
+import StudentLogin from "../components/StudentLogin.astro";
 ---
 
 <StudentLayout pageTitle="Sign in">
-  <div class="flex flex-col bg-black/50 p-10 rounded-xl gap-5">
+  <StudentLogin>
     <h1 class="text-5xl font-semibold uppercase">Sign in</h1>
 
     <form class="flex flex-col p-5 gap-2" id="signin-form">
@@ -36,7 +37,7 @@ import StudentLayout from "../layouts/StudentLayout.astro";
       New here? <a href="/register" class="hover:underline">Create an account</a
       >
     </p>
-  </div>
+  </StudentLogin>
 </StudentLayout>
 
 <script>
