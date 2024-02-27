@@ -52,13 +52,21 @@ import StudentLogin from "../components/StudentLogin.astro";
     updateProfile,
   } from "firebase/auth";
   import { app } from "../firebase/client";
+  import {
+    getFirestore,
+    collection,
+    getDocs,
+    setDoc,
+    doc,
+  } from "firebase/firestore";
   const auth = getAuth(app);
+  const db = getFirestore(app);
 
-  auth.onAuthStateChanged((user) => {
-    if (user) {
-      window.location.href = "/dashboard";
-    }
-  });
+  // auth.onAuthStateChanged((user) => {
+  //   if (user) {
+  //     window.location.href = "/dashboard";
+  //   }
+  // });
 
   const handleRegistration = async (event) => {
     event.preventDefault();
@@ -72,8 +80,22 @@ import StudentLogin from "../components/StudentLogin.astro";
     try {
       await createUserWithEmailAndPassword(auth, email, password)
         .then(async (userCredential) => {
-          await updateProfile(userCredential.user, { displayName: name });
-          window.location.href = "/dashboard";
+          await updateProfile(userCredential.user, { displayName: name }).then(
+            async () => {
+              await setDoc(doc(db, "users", userCredential.user.uid), {
+                email,
+                name,
+                uid: userCredential.user.uid,
+                student: false,
+              })
+                .then(() => {
+                  window.location.href = "/dashboard";
+                })
+                .catch((error) => {
+                  console.error("Error adding document: ", error);
+                });
+            },
+          );
         })
         .catch((error) => {
           const errorMessage = error.message;

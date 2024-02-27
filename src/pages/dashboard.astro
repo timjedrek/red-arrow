@@ -54,6 +54,31 @@ import StudentLayout from "../layouts/StudentLayout.astro";
       </p>
     </form>
 
+    <form id="student-form" class="flex flex-col p-5 rounded bg-gray-400 w-fit">
+      <div class="flex gap-5">
+        <input
+          type="email"
+          placeholder="User email"
+          name="student-email"
+          required
+          class="p-2"
+        />
+        <button class="bg-black text-white font-semibold p-2"
+          >Make student</button
+        >
+      </div>
+      <p
+        class="text-red-600 text-xs mx-auto font-semibold hidden pt-2"
+        id="student-error-message"
+      >
+      </p>
+      <p
+        class="text-green-800 text-xs mx-auto font-semibold hidde pt-2"
+        id="student-success-message"
+      >
+      </p>
+    </form>
+
     <div
       id="all-files"
       class="bg-gray-800 p-3 text-white rounded-md grid grid-cols-3"
@@ -77,11 +102,23 @@ import StudentLayout from "../layouts/StudentLayout.astro";
     } from "firebase/storage";
     import { getFunctions, httpsCallable } from "firebase/functions";
     const functions = getFunctions(app);
+    import {
+      getFirestore,
+      collection,
+      getDocs,
+      setDoc,
+      getDoc,
+      doc,
+      where,
+      query,
+    } from "firebase/firestore";
+    const db = getFirestore(app);
+    const auth = getAuth(app);
 
-    const successMessage = document.getElementById(
+    const adminSuccessMessage = document.getElementById(
       "admin-success-message",
     ) as HTMLParagraphElement;
-    const errorMessage = document.getElementById(
+    const adminErrorMessage = document.getElementById(
       "admin-error-message",
     ) as HTMLParagraphElement;
 
@@ -92,20 +129,18 @@ import StudentLayout from "../layouts/StudentLayout.astro";
       const addAdminRole = httpsCallable(functions, "addAdminRole");
       addAdminRole({ email: adminEmail }).then((result) => {
         if (result.data.errorInfo) {
-          errorMessage.classList.remove("hidden");
-          errorMessage.textContent = result.data.errorInfo.message;
-          successMessage.textContent = "";
-          successMessage.classList.add("hidden");
+          adminErrorMessage.classList.remove("hidden");
+          adminErrorMessage.textContent = result.data.errorInfo.message;
+          adminSuccessMessage.textContent = "";
+          adminSuccessMessage.classList.add("hidden");
         } else {
-          successMessage.classList.remove("hidden");
-          successMessage.textContent = result.data.message;
-          errorMessage.textContent = "";
-          errorMessage.classList.add("hidden");
+          adminSuccessMessage.classList.remove("hidden");
+          adminSuccessMessage.textContent = result.data.message;
+          adminErrorMessage.textContent = "";
+          adminErrorMessage.classList.add("hidden");
         }
       });
     });
-
-    const auth = getAuth(app);
 
     const fileUploadForm = document.getElementById(
       "file-upload",
@@ -153,6 +188,10 @@ import StudentLayout from "../layouts/StudentLayout.astro";
 
     auth.onAuthStateChanged((user) => {
       if (user) {
+        getDoc(doc(db, "users", user.uid)).then((doc) => {
+          console.log("Student:", doc.data().student);
+        });
+
         user.getIdTokenResult().then((idTokenResult) => {
           if (idTokenResult.claims.admin) {
             fileUploadForm.classList.remove("hidden");
@@ -167,6 +206,40 @@ import StudentLayout from "../layouts/StudentLayout.astro";
       } else {
         window.location.href = "/signin";
       }
+    });
+
+    const studentForm = document.getElementById(
+      "student-form",
+    ) as HTMLFormElement;
+    const studentErrorMessage = document.getElementById(
+      "student-error-message",
+    ) as HTMLParagraphElement;
+    const studentSuccessMessage = document.getElementById(
+      "student-success-message",
+    ) as HTMLParagraphElement;
+
+    studentForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const studentEmail = studentForm["student-email"].value;
+      const student = query(
+        collection(db, "users"),
+        where("email", "==", studentEmail),
+      );
+      getDocs(student).then((querySnapshot) => {
+        querySnapshot.forEach((doc) => {
+          setDoc(doc.ref, { student: true }, { merge: true });
+          studentSuccessMessage.classList.remove("hidden");
+          studentSuccessMessage.textContent = "User is now a student";
+          studentErrorMessage.textContent = "";
+          studentErrorMessage.classList.add("hidden");
+        });
+        if (querySnapshot.empty) {
+          studentErrorMessage.classList.remove("hidden");
+          studentErrorMessage.textContent = "User not found";
+          studentSuccessMessage.textContent = "";
+          studentSuccessMessage.classList.add("hidden");
+        }
+      });
     });
   </script>
 </StudentLayout>
