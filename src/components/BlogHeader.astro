@@ -1,0 +1,10 @@
+---
+import Banner from "./Banner.astro";
+import BlogNavbar from "../components/BlogNavbar.jsx";
+const { pathname } = Astro.url;
+---
+
+<Banner />
+<div class="sticky top-0 z-50">
+  <BlogNavbar pathname={pathname} client:load />
+</div>

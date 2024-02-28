@@ -2,7 +2,7 @@
 import { SITE_TITLE, SITE_DESCRIPTION } from "../../consts";
 import { getCollection } from "astro:content";
 import FormattedDate from "../../components/FormattedDate.astro";
-import BaseLayout from "../../layouts/BaseLayout.astro";
+import BlogLayout from "../../layouts/BlogLayout.astro";
 import { Icon } from "astro-icon/components";
 
 const posts = (await getCollection("blog")).sort(
@@ -10,7 +10,7 @@ const posts = (await getCollection("blog")).sort(
 );
 ---
 
-<BaseLayout>
+<BlogLayout>
   <section class="max-w-7xl mx-auto my-10 p-5">
     <ul class="grid gap-5 grid-cols-1 lg:grid-cols-2">
       {
@@ -55,4 +55,4 @@ const posts = (await getCollection("blog")).sort(
       }
     </ul>
   </section>
-</BaseLayout>
+</BlogLayout>

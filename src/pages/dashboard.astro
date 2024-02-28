@@ -133,7 +133,7 @@ import StudentLayout from "../layouts/StudentLayout.astro";
     const setupResources = (data) => {
       const resource = document.createElement("div");
       resource.className = "flex justify-center items-center";
-      resource.innerHTML = `<a href="${data.url}" target="_blank" rel="noopener" class="bg-main-red text-white font-semibold p-5 rounded-md text-xl w-full text-center">${data.title}</a>`;
+      resource.innerHTML = `<a href="${data.url}" target="_blank" rel="noopener" class="hover:scale-105 duration-200 bg-main-red text-white font-semibold p-5 rounded-md text-xl w-full text-center">${data.title}</a>`;
       resources.appendChild(resource);
     };
 
