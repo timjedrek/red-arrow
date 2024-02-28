@@ -40,7 +40,7 @@ export const flightPrograms = {
       link: "/flight-programs/international-program",
     },
     {
-      name: "Military / Rotor Transition",
+      name: "Military / Rotor Transition Training",
       link: "/flight-programs/military-rotor-transition",
     },
   ],
