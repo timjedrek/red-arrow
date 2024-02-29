@@ -31,7 +31,14 @@ const InternationProgramSteps = () => {
             </li>
             <li className="font-medium">
               Fill out the "Credit Card Authorization" form and email it with
-              your "Pre-Application" form to eperalta@flyredarrow.com.
+              your "Pre-Application" form to{" "}
+              <a
+                href="mailto:info@flyredarrow.com"
+                className="underline hover:text-blue-500"
+              >
+                info@flyredarrow.com
+              </a>
+              .
             </li>
             <ol className="list-disc pl-5">
               <li>
@@ -128,10 +135,10 @@ const InternationProgramSteps = () => {
             <li className="font-medium">
               Email{" "}
               <a
-                href="mailto:eperalta@flyredarrow.com"
+                href="mailto:info@flyredarrow.com"
                 className="underline hover:text-blue-500"
               >
-                eperalta@flyredarrow.com
+                info@flyredarrow.com
               </a>{" "}
               before proceeding.
             </li>

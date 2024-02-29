@@ -37,11 +37,11 @@ export const pplProcess = [
   {
     title: "8. Checkride",
     content:
-      "Undergo a checkride with a Red Arrow instructor. This test assesses your ability to apply theoretical knowledge and execute practical flying skills.",
+      "Undergo a checkride with an FAA Designated Pilot Examiner. This test assesses your ability to apply theoretical knowledge and execute practical flying skills.",
   },
   {
-    title: "9. Private Pilot License (PPL)",
+    title: "9. Private Pilot Certificate (PPL)",
     content:
-      "Upon successful completion of the written exam and checkride, you'll be awarded your Private Pilot License. This certification opens doors to further advancements in your aviation journey.",
+      "Upon successful completion of the written exam and checkride, you'll be awarded your Private Pilot Certificate. This certification opens doors to further advancements in your aviation journey.",
   },
 ];
