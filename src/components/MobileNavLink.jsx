@@ -8,7 +8,7 @@ const MobileNavLink = ({ menuItem, pathname, toggled, onShow }) => {
       <button
         id={menuItem.name}
         onClick={onShow}
-        className={`text-xl w-full flex items-center justify-between text-white py-5 hover:border-b-2 border-main-red whitespace-nowrap ${
+        className={`text-xl w-full flex items-center justify-between text-white py-3 hover:border-b-2 border-main-red whitespace-nowrap ${
           isActive ? "border-b-2" : ""
         }`}
       >

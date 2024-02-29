@@ -6,7 +6,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        "main-red": "#993333",
+        "main-red": "#af3125",
       },
       backgroundImage: {
         home: "url('/img/cessna-outside-hangar-juarez-mx.webp')",

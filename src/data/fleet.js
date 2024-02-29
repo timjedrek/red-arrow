@@ -14,7 +14,7 @@ export const fleet = [
     image: RedBirdImage,
     alt: "Red Bird Cessna 172N at Red Arrow Flight Academy",
     stats: {
-      tallNumber: "N4909G",
+      tailNumber: "N4909G",
       power: "180 HP",
       model: "Cessna 172N",
       maxSpeed: "124 Knots",
@@ -29,7 +29,7 @@ export const fleet = [
     image: SkittlesImage,
     alt: "Skittles Cessna 172M at Red Arrow Flight Academy",
     stats: {
-      tallNumber: "N471PR",
+      tailNumber: "N471PR",
       power: "160 HP",
       model: "172M",
       maxSpeed: "119 Knots",
@@ -44,7 +44,7 @@ export const fleet = [
     image: EchoImage,
     alt: "Echo Cessna 172N at Red Arrow Flight Academy",
     stats: {
-      tallNumber: "N8182E",
+      tailNumber: "N8182E",
       power: "160 HP",
       model: "Cessna 172N",
       maxSpeed: "119 Knots",
@@ -59,7 +59,7 @@ export const fleet = [
     image: A5YXImage,
     alt: "5YX Cessna 172P at Red Arrow Flight Academy",
     stats: {
-      tallNumber: "N5YX",
+      tailNumber: "N5YX",
       power: "160 HP",
       model: "Cessna 172P",
       maxSpeed: "119 Knots",
@@ -74,7 +74,7 @@ export const fleet = [
     image: WoodstockImage,
     alt: "Woodstock Cessna 172K at Red Arrow Flight Academy",
     stats: {
-      tallNumber: "N2OHT",
+      tailNumber: "N2OHT",
       power: "180 HP",
       model: "Cessna 172K",
       maxSpeed: "Knots",
@@ -89,7 +89,7 @@ export const fleet = [
     image: N242TWImage,
     alt: "N242TW Cessna 172S at Red Arrow Flight Academy",
     stats: {
-      tallNumber: "N242TW",
+      tailNumber: "N242TW",
       power: "180 HP",
       model: "Cessna 172S",
       maxSpeed: "Knots",
@@ -104,7 +104,7 @@ export const fleet = [
     image: ChipImage,
     alt: "Chip Piper Archer II (PA-28-181) at Red Arrow Flight Academy",
     stats: {
-      tallNumber: "N2680M",
+      tailNumber: "N2680M",
       power: "180 HP",
       model: "Piper Archer II PA-28-181",
       maxSpeed: "125 Knots",
@@ -119,7 +119,7 @@ export const fleet = [
     image: DaleImage,
     alt: "Dale Piper Archer II (PA-28-181) at Red Arrow Flight Academy",
     stats: {
-      tallNumber: "N7689F",
+      tailNumber: "N7689F",
       power: "180 HP",
       model: "Piper Archer II (PA-28-181)",
       maxSpeed: "125 Knots",
@@ -134,7 +134,7 @@ export const fleet = [
     image: N3180UImage,
     alt: "N3180U Cessna 182F at Red Arrow Flight Academy",
     stats: {
-      tallNumber: "N3180U",
+      tailNumber: "N3180U",
       power: "235 HP",
       model: "Cessna 182F",
       maxSpeed: "167 mph",
