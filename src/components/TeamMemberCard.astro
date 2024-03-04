@@ -10,11 +10,11 @@ const { teamMember } = Astro.props;
   >
     <img
       src={teamMember.image}
-      class="aspect-square object-cover w-full rounded-lg border-4 border-gray-700 bg-white"
+      class="aspect-square object-cover w-full rounded-lg border-2 border-black bg-white"
       alt={teamMember.alt}
     />
     <div
-      class="p-3 rounded-lg text-black bg-transparent border-4 border-gray-700"
+      class="p-3 rounded-lg text-black bg-transparent border-2 border-main-red"
     >
       <h3 class="text-xl font-semibold">{teamMember.name}</h3>
       <p class="italic">{teamMember.title}</p>
