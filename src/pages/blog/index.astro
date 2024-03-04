@@ -2,7 +2,7 @@
 import { SITE_TITLE, SITE_DESCRIPTION } from "../../consts";
 import { getCollection } from "astro:content";
 import FormattedDate from "../../components/FormattedDate.astro";
-import BlogLayout from "../../layouts/BlogLayout.astro";
+import BaseLayout from "../../layouts/BaseLayout.astro";
 import { Icon } from "astro-icon/components";
 
 const posts = (await getCollection("blog")).sort(
@@ -10,7 +10,20 @@ const posts = (await getCollection("blog")).sort(
 );
 ---
 
-<BlogLayout>
+<BaseLayout pageTitle="Blog | Red Arrow Flight Academy">
+  <header
+    class="relative h-screen-3/4 bg-blog bg-cover bg-center bg-black flex flex-col items-center justify-center"
+  >
+    <div class="absolute bg-black/50 w-full h-full z-0"></div>
+    <div
+      class="text-white text-center z-10 flex flex-col items-center gap-8 px-5"
+    >
+      <h1 class="text-5xl font-bold tracking-tighter">The Red Arrow Blog</h1>
+      <h2 class="text-3xl tracking-wide">
+        Pilot Resources and Flight School Updates
+      </h2>
+    </div>
+  </header>
   <section class="max-w-7xl mx-auto my-10 p-5">
     <ul class="grid gap-5 grid-cols-1 lg:grid-cols-2">
       {
@@ -55,4 +68,4 @@ const posts = (await getCollection("blog")).sort(
       }
     </ul>
   </section>
-</BlogLayout>
+</BaseLayout>

@@ -69,6 +69,17 @@ export const leadershipTeam = [
     alt: "Director of Customer Experience Vanessa Martinez at Red Arrow Flight Academy",
     email: "vanessa@flyredarrow.com",
   },
+  {
+    name: "Belka",
+    title: "Chief-Doggo-In-Charge",
+    bio: [
+      "Meet Belka, the dynamic German Shepherd who has earned her wings as the beloved mascot of our flight school. With her keen sense of loyalty and boundless energy, Belka is more than just a furry face around here – she's part of the team!",
+      "Born to patrol the skies (or at least watch over them from the ground), Belka takes her role as Flight School Guardian very seriously. When she's not busy sniffing out treats or playing fetch with aspiring pilots, you can find her stationed at the entrance, greeting students and staff with her trademark wagging tail and infectious enthusiasm. Belka's responsibilities go beyond just being an adorable greeter.",
+      "She also serves as a source of emotional support for students, particularly before nerve-wracking checkrides. With her calming presence and gentle demeanor, Belka has a knack for easing pre-flight jitters and boosting confidence levels.",
+    ],
+    image: "/img/our-team/belka.webp",
+    alt: "Belka at Red Arrow Flight Academy",
+  },
 ];
 
 export const flightTeam = [
@@ -171,19 +182,5 @@ export const flightTeam = [
     alt: "CFII Shihran Pathy at Red Arrow Flight Academy",
     email: "",
     phone: "(575) 201-6160 ext. 711",
-  },
-];
-
-export const specialtyTeam = [
-  {
-    name: "Belka",
-    title: "Chief-Doggo-In-Charge",
-    bio: [
-      "Meet Belka, the dynamic German Shepherd who has earned her wings as the beloved mascot of our flight school. With her keen sense of loyalty and boundless energy, Belka is more than just a furry face around here – she's part of the team!",
-      "Born to patrol the skies (or at least watch over them from the ground), Belka takes her role as Flight School Guardian very seriously. When she's not busy sniffing out treats or playing fetch with aspiring pilots, you can find her stationed at the entrance, greeting students and staff with her trademark wagging tail and infectious enthusiasm. Belka's responsibilities go beyond just being an adorable greeter.",
-      "She also serves as a source of emotional support for students, particularly before nerve-wracking checkrides. With her calming presence and gentle demeanor, Belka has a knack for easing pre-flight jitters and boosting confidence levels.",
-    ],
-    image: "/img/our-team/belka.webp",
-    alt: "Belka at Red Arrow Flight Academy",
   },
 ];
