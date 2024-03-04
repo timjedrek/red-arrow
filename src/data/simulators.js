@@ -1,5 +1,5 @@
-import FMXImage from "../../public/img/our-fleet/FMX-sim.jpg";
-import FTSImage from "../../public/img/our-fleet/FTS-sim.jpg";
+import FMXImage from "../../public/img/our-fleet/FMX-sim.webp";
+import FTSImage from "../../public/img/our-fleet/FTS-sim.webp";
 
 export const simulators = [
   {

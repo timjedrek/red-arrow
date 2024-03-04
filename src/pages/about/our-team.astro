@@ -2,7 +2,7 @@
 import ContactUs from "../../components/ContactUs.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import TeamMemberCard from "../../components/TeamMemberCard.astro";
-import { leadershipTeam, flightTeam } from "../../data/team.js";
+import { leadershipTeam, flightTeam, specialtyTeam } from "../../data/team.js";
 import Location from "../../components/Location.astro";
 import EnrollNowCTA from "../../components/EnrollNowCTA.astro";
 import FlightTeamMember from "../../components/FlightTeamMember.astro";
@@ -18,15 +18,14 @@ import FlightTeamMember from "../../components/FlightTeamMember.astro";
   >
     <div class="absolute bg-black/50 w-full h-full z-0"></div>
     <div
-      class="text-white text-center z-10 flex flex-col items-center gap-4 px-5"
+      class="text-white text-center z-10 flex flex-col items-center gap-8 px-5"
     >
       <h1 class="text-5xl font-bold tracking-tighter">
         The People Behind Red Arrow
       </h1>
       <h2 class="text-3xl tracking-wide">
-        Our elite flight instruction team in Santa Teresa, NM
+        Our elite team at Doña Ana County International Jetport
       </h2>
-      <a href="#contactUs" class="btn-red">Meet Red Arrow</a>
     </div>
   </header>
 
@@ -48,6 +47,12 @@ import FlightTeamMember from "../../components/FlightTeamMember.astro";
     >
       {flightTeam.map((member) => <FlightTeamMember teamMember={member} />)}
     </div>
+
+    <hr class="bg-black w-full h-2 rounded-xl max-w-4xl my-14" />
+    <h2 class="text-4xl font-semibold text-center tracking-tight">
+      Specialty Team
+    </h2>
+    {specialtyTeam.map((member) => <TeamMemberCard teamMember={member} />)}
 
     <a href="/flight-programs/training-courses" class="">
       <div class="btn-red">Get in Touch</div>

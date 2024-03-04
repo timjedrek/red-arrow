@@ -4,7 +4,7 @@ import EchoImage from "../../public/img/our-fleet/echo.webp";
 import A5YXImage from "../../public/img/our-fleet/5yx.webp";
 import WoodstockImage from "../../public/img/our-fleet/woodstock.webp";
 import N242TWImage from "../../public/img/our-fleet/n242tw.webp";
-import ChipImage from "../../public/img/our-fleet/chip.webp";
+import ChipImage from "../../public/img/training-courses/cfi-instrument.webp";
 import DaleImage from "../../public/img/our-fleet/dale.webp";
 import N3180UImage from "../../public/img/our-fleet/n318ou.webp";
 
@@ -37,7 +37,7 @@ export const fleet = [
       equipment: "G5, Garmin 430",
       rentalPrice: "$148 / hour",
     },
-    imageAlignment: "left",
+    imageAlignment: "center",
   },
   {
     name: "Echo",
@@ -97,7 +97,7 @@ export const fleet = [
       equipment: " 2 Garmin G1000, Airconditioning",
       rentalPrice: "$186 / hour",
     },
-    imageAlignment: "left",
+    imageAlignment: "center",
   },
   {
     name: "Chip",
