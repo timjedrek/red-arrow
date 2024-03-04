@@ -107,6 +107,29 @@ const TrainingCourseList = () => {
                   Enroll Today
                 </a>
               </div>
+              <div class="flex flex-col gap-5 m-5 mt-0 rounded-xl border-2 border-main-red shadow-gray-500 text-black bg-gradient-to-bl from-gray-200 to-gray-300 p-5">
+                <h4 class="font-semibold text-xl text-center">
+                  Flight Program Application
+                </h4>
+                <p class="text-center">
+                  If you are interested in enrolling in one of our flight
+                  programs, please download and fill out this application. You
+                  may bring it in to our office or email it to us at{" "}
+                  <a
+                    href="mailto:info@flyredarrow.com"
+                    class="underline hover:text-blue-500"
+                  >
+                    info@flyredarrow.com
+                  </a>
+                </p>
+                <a
+                  href="/files/red-arrow-us-application.pdf"
+                  download="red-arrow-us-application.pdf"
+                  class="btn-red self-center"
+                >
+                  Download
+                </a>
+              </div>
             </motion.div>
             <motion.button
               className="bg-main-red rounded-full p-1 absolute lg:static top-8 right-14"

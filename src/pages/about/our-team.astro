@@ -2,7 +2,7 @@
 import ContactUs from "../../components/ContactUs.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import TeamMemberCard from "../../components/TeamMemberCard.astro";
-import { leadershipTeam, flightTeam, specialtyTeam } from "../../data/team.js";
+import { leadershipTeam, flightTeam } from "../../data/team.js";
 import Location from "../../components/Location.astro";
 import EnrollNowCTA from "../../components/EnrollNowCTA.astro";
 import FlightTeamMember from "../../components/FlightTeamMember.astro";
@@ -47,12 +47,6 @@ import FlightTeamMember from "../../components/FlightTeamMember.astro";
     >
       {flightTeam.map((member) => <FlightTeamMember teamMember={member} />)}
     </div>
-
-    <hr class="bg-black w-full h-2 rounded-xl max-w-4xl my-14" />
-    <h2 class="text-4xl font-semibold text-center tracking-tight">
-      Specialty Team
-    </h2>
-    {specialtyTeam.map((member) => <TeamMemberCard teamMember={member} />)}
 
     <a href="/flight-programs/training-courses" class="">
       <div class="btn-red">Get in Touch</div>
