@@ -117,7 +117,7 @@ const TrainingCourseList = () => {
                   may bring it in to our office or email it to us at{" "}
                   <a
                     href="mailto:info@flyredarrow.com"
-                    class="underline hover:text-blue-500"
+                    class="text-blue-600 hover:underline hover:text-blue-800"
                   >
                     info@flyredarrow.com
                   </a>

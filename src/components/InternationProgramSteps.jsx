@@ -23,18 +23,26 @@ const InternationProgramSteps = () => {
     >
       <SwiperSlide className="p-12">
         <div className="flex flex-col mx-auto max-w-[50rem] gap-5">
-          <h4 className="font-semibold text-xl">Step 1: Pre-Application</h4>
+          <h4 className="font-semibold text-xl">Step 1: Application</h4>
           <ol className="list-decimal flex flex-col gap-2">
             <li className="font-medium">
-              Fill out the "Pre-Application" form to request your I-20. Ensure
-              all information matches your identification exactly.
+              Fill out the{" "}
+              <a
+                href="/files/international-enrollment-packet.pdf"
+                download="international-enrollment-packet.pdf"
+                className="text-blue-600 hover:underline hover:text-blue-800"
+              >
+                Application form
+              </a>{" "}
+              to request your I-20. Ensure all information matches your
+              identification exactly.
             </li>
             <li className="font-medium">
               Fill out the "Credit Card Authorization" form and email it with
-              your "Pre-Application" form to{" "}
+              your Application form to{" "}
               <a
                 href="mailto:info@flyredarrow.com"
-                className="underline hover:text-blue-500"
+                className="text-blue-600 hover:underline hover:text-blue-800"
               >
                 info@flyredarrow.com
               </a>
@@ -69,7 +77,7 @@ const InternationProgramSteps = () => {
                 <a
                   href="/files/international-students-requirements-m1.pdf"
                   download="international-students-requirements-m1.pdf"
-                  className="underline hover:text-blue-500"
+                  className="text-blue-600 hover:underline hover:text-blue-800 font-medium"
                 >
                   International Students Requirements M-1
                 </a>
@@ -78,7 +86,7 @@ const InternationProgramSteps = () => {
                 <a
                   href="/files/affidavit-of-financial-support-ver1.pdf"
                   download="affidavit-of-financial-support-ver1.pdf"
-                  className="underline hover:text-blue-500"
+                  className="text-blue-600 hover:underline hover:text-blue-800 font-medium"
                 >
                   Affidavit of Financial Suport ver1
                 </a>
@@ -87,7 +95,7 @@ const InternationProgramSteps = () => {
                 <a
                   href="/files/financial-declaration-ver1.pdf"
                   download="financial-declaration-ver1.pdf"
-                  className="underline hover:text-blue-500"
+                  className="text-blue-600 hover:underline hover:text-blue-800 font-medium"
                 >
                   Financial Declaration ver1
                 </a>
@@ -111,7 +119,7 @@ const InternationProgramSteps = () => {
                   href="https://www.ice.gov/sevis"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="underline hover:text-blue-500"
+                  className="text-blue-600 hover:underline hover:text-blue-800"
                 >
                   www.ice.gov/sevis
                 </a>{" "}
@@ -136,7 +144,7 @@ const InternationProgramSteps = () => {
               Email{" "}
               <a
                 href="mailto:info@flyredarrow.com"
-                className="underline hover:text-blue-500"
+                className="text-blue-600 hover:underline hover:text-blue-800"
               >
                 info@flyredarrow.com
               </a>{" "}
@@ -148,7 +156,7 @@ const InternationProgramSteps = () => {
                 href="https://www.fts.tsa.dhs.gov/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="underline hover:text-blue-500"
+                className="text-blue-600 hover:underline hover:text-blue-800"
               >
                 FTSP
               </a>{" "}

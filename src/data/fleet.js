@@ -127,7 +127,7 @@ export const fleet = [
       equipment: "Garming 650 GPS",
       rentalPrice: "$161 / hour",
     },
-    imageAlignment: "center",
+    imageAlignment: "right",
   },
   {
     name: "N3180U",
