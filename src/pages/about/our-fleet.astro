@@ -77,6 +77,70 @@ import SimulatorCard from "../../components/SimulatorCard.astro";
     {simulators.map((simulator) => <SimulatorCard simulator={simulator} />)}
   </section>
 
+  <section
+    class="flex flex-col items-center px-10 bg-gradient-to-br from-gray-800 to-black py-10 text-white"
+  >
+    <div class="max-w-2xl">
+      <h2 class="text-3xl font-semibold text-center tracking-tight">
+        Instructor Rates
+      </h2>
+      <div
+        class="mt-5 grid grid-cols-5 max-w-4xl mx-auto border-t border-l border-white text-xs text-center sm:text-sm lg:text-base"
+      >
+        <p
+          class="py-1 text-white flex items-center justify-center border-r border-b border-white font-semibold"
+        >
+          Chief Instructor
+        </p>
+        <p
+          class="py-1 text-white flex items-center justify-center border-r border-b border-white font-semibold"
+        >
+          Assistant Chief Instructor
+        </p>
+        <p
+          class="py-1 text-white flex items-center justify-center border-r border-b border-white font-semibold"
+        >
+          Check Instructor
+        </p>
+        <p
+          class="py-1 text-white flex items-center justify-center border-r border-b border-white font-semibold"
+        >
+          CFII
+        </p>
+        <p
+          class="py-1 text-white flex items-center justify-center border-r border-b border-white font-semibold"
+        >
+          CFI
+        </p>
+        <p
+          class="py-1 flex items-center justify-center border-r border-b border-white"
+        >
+          $85
+        </p>
+        <p
+          class="py-1 flex items-center justify-center border-r border-b border-white"
+        >
+          $78
+        </p>
+        <p
+          class="py-1 flex items-center justify-center border-r border-b border-white"
+        >
+          $72
+        </p>
+        <p
+          class="py-1 flex items-center justify-center border-r border-b border-white"
+        >
+          $68
+        </p>
+        <p
+          class="py-1 flex items-center justify-center border-r border-b border-white"
+        >
+          $63
+        </p>
+      </div>
+    </div>
+  </section>
+
   <Location bgColorRed={true} />
 
   <DiscoveryFlightCTA />

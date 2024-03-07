@@ -4,14 +4,23 @@ const FinancingTabs = () => {
   const [currentTab, setCurrentTab] = useState("Meritize");
 
   const meritize = (
-    <section className="flex flex-col items-center bg-gradient-to-br from-white to-gray-200">
+    <section className="flex flex-col items-center bg-gradient-to-br from-white to-gray-200 overflow-hidden">
       <div className="max-w-7xl px-10 flex flex-col items-center py-10">
-        <h2 className="text-3xl font-semibold text-center tracking-tight">
-          Finance with Meritize
-        </h2>
-        <h3 className="pt-5 text-xl">
-          Don’t let finances limit your pilot aspirations
-        </h3>
+        <div className="flex flex-col-reverse lg:flex-row items-center w-full justify-around py-10 gap-10">
+          <div>
+            <h2 className="text-5xl font-semibold text-center tracking-tight">
+              Finance with Meritize
+            </h2>
+            <h3 className="pt-3 text-2xl text-center">
+              Don’t let finances limit your pilot aspirations
+            </h3>
+          </div>
+          <img
+            src="/meritize-logo.webp"
+            alt="Meritize logo"
+            className="h-24 w-48 md:w-64 object-cover"
+          />
+        </div>
         <div className="tracking-wider">
           <p className="pt-5">
             Red Arrow has teamed up with the Meritize platform* to offer our
@@ -82,7 +91,7 @@ const FinancingTabs = () => {
               href="https://www.meritize.com/students/faq/"
               rel="noopener noreferrer"
               target="_blank"
-              className="hover:text-blue-500"
+              className="hover:text-blue-800 hover:underline text-blue-600"
             >
               https://www.meritize.com/students/faq/
             </a>{" "}
@@ -94,7 +103,7 @@ const FinancingTabs = () => {
               href="https://apply.meritize.com/"
               rel="noopener noreferrer"
               target="_blank"
-              className="hover:text-blue-500"
+              className="hover:text-blue-800 hover:underline text-blue-600"
             >
               https://apply.meritize.com/
             </a>
@@ -110,7 +119,7 @@ const FinancingTabs = () => {
               href="https://www.nmlsconsumeraccess.org/"
               rel="noopener noreferrer"
               target="_blank"
-              className="hover:text-blue-500"
+              className="hover:text-blue-800 hover:underline text-blue-600"
             >
               https://www.nmlsconsumeraccess.org/
             </a>
@@ -122,7 +131,7 @@ const FinancingTabs = () => {
               href="https://www.nmlsconsumeraccess.org/"
               rel="noopener noreferrer"
               target="_blank"
-              className="hover:text-blue-500"
+              className="hover:text-blue-800 hover:underline text-blue-600"
             >
               https://www.nmlsconsumeraccess.org/
             </a>
@@ -200,7 +209,7 @@ const FinancingTabs = () => {
               href="https://www.meritize.com/students/faq/"
               rel="noopener noreferrer"
               target="_blank"
-              className="hover:text-blue-500"
+              className="hover:text-blue-800 hover:underline text-blue-600"
             >
               https://www.meritize.com/students/faq/
             </a>{" "}
@@ -212,7 +221,7 @@ const FinancingTabs = () => {
               href="https://apply.meritize.com/"
               rel="noopener noreferrer"
               target="_blank"
-              className="hover:text-blue-500"
+              className="hover:text-blue-800 hover:underline text-blue-600"
             >
               https://apply.meritize.com/
             </a>
@@ -228,7 +237,7 @@ const FinancingTabs = () => {
               href="https://www.nmlsconsumeraccess.org/"
               rel="noopener noreferrer"
               target="_blank"
-              className="hover:text-blue-500"
+              className="hover:text-blue-800 hover:underline text-blue-600"
             >
               https://www.nmlsconsumeraccess.org/
             </a>
@@ -240,7 +249,7 @@ const FinancingTabs = () => {
               href="https://www.nmlsconsumeraccess.org/"
               rel="noopener noreferrer"
               target="_blank"
-              className="hover:text-blue-500"
+              className="hover:text-blue-800 hover:underline text-blue-600"
             >
               https://www.nmlsconsumeraccess.org/
             </a>
@@ -278,10 +287,21 @@ const FinancingTabs = () => {
     <>
       <section className="flex flex-col items-center bg-gradient-to-br from-white to-gray-200">
         <div className="max-w-7xl px-10 flex flex-col items-center py-10">
-          <h2 className="text-3xl font-semibold text-center tracking-tight">
-            Finance with Stratus Financial
-          </h2>
-          <h3 className="pt-5 text-xl">Leverage financial support here</h3>
+          <div className="flex flex-col-reverse lg:flex-row items-center w-full justify-around py-10 gap-10">
+            <div>
+              <h2 className="text-5xl font-semibold text-center tracking-tight">
+                Finance with Stratus Financial
+              </h2>
+              <h3 className="pt-3 text-2xl text-center">
+                Leverage financial support here
+              </h3>
+            </div>
+            <img
+              src="/stratus-logo-2.webp"
+              alt="Stratus Financial logo"
+              className="h-16 md:h-20"
+            />
+          </div>
           <div className="tracking-wider">
             <p className="pt-5">
               Red Arrow Flight Academy is pleased to partner with Stratus
@@ -289,32 +309,39 @@ const FinancingTabs = () => {
               interested students! Take advantage of Stratus Financial’s unique
               loan structures and get up in the air in no time.
             </p>
-            <p className="pt-5 font-semibold">Student Requirements</p>
-            <ul className="list-disc pl-10">
-              <li>Must be a US Citizen or Permanent Resident*</li>
-              <li>Paystubs for the past two (2) months</li>
-              <li>Bank Statements for the past two (2) months</li>
-              <li>Driver's License</li>
-              <li>
-                Name & contact number of employer (for employee verification)
-              </li>
-              <li>1st or 2nd class Medical Certificate</li>
-              <li>Co-borrower Recommended</li>
-              <li>Pilot Certificate, if applicable</li>
-              <li>Subject to Credit Check and Underwriting</li>
-            </ul>
-            <p className="pt-5 italic">
-              *If non-US citizen, TSA verification is required.
-            </p>
-            <p className="pt-5 font-semibold">Loan Process</p>
-            <ol className="pl-10 list-decimal">
-              <li>Application</li>
-              <li>Processing</li>
-              <li>Underwriting</li>
-              <li>Approval</li>
-              <li>Funding</li>
-              <li>Pilot Training</li>
-            </ol>
+            <div className="flex flex-col md:flex-row w-full gap-5">
+              <div className="flex-1">
+                <p className="pt-5 font-semibold">Student Requirements</p>
+                <ul className="list-disc pl-10">
+                  <li>Must be a US Citizen or Permanent Resident*</li>
+                  <li>Paystubs for the past two (2) months</li>
+                  <li>Bank Statements for the past two (2) months</li>
+                  <li>Driver's License</li>
+                  <li>
+                    Name & contact number of employer (for employee
+                    verification)
+                  </li>
+                  <li>1st or 2nd class Medical Certificate</li>
+                  <li>Co-borrower Recommended</li>
+                  <li>Pilot Certificate, if applicable</li>
+                  <li>Subject to Credit Check and Underwriting</li>
+                </ul>
+                <p className="pt-5 italic">
+                  *If non-US citizen, TSA verification is required.
+                </p>
+              </div>
+              <div className="flex-1">
+                <p className="md:pt-5 font-semibold">Loan Process</p>
+                <ol className="pl-10 list-decimal">
+                  <li>Application</li>
+                  <li>Processing</li>
+                  <li>Underwriting</li>
+                  <li>Approval</li>
+                  <li>Funding</li>
+                  <li>Pilot Training</li>
+                </ol>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -385,7 +412,7 @@ const FinancingTabs = () => {
                 <a
                   href="../../public/files/stratus-financial-brochure.pdf"
                   download="stratus-financial-brochure.pdf"
-                  className="hover:text-blue-500"
+                  className="hover:text-blue-800 hover:underline text-blue-600"
                 >
                   Stratus Finacial Brochure
                 </a>
@@ -394,7 +421,7 @@ const FinancingTabs = () => {
                 <a
                   href="../../public/files/stratus-financial-booklet.pdf"
                   download="stratus-financial-booklet.pdf"
-                  className="hover:text-blue-500"
+                  className="hover:text-blue-800 hover:underline text-blue-600"
                 >
                   Stratus Finacial Booklet
                 </a>
@@ -403,7 +430,7 @@ const FinancingTabs = () => {
                 <a
                   href="../../public/files/stratus-financial-one-page.pdf"
                   download="stratus-financial-one-page.pdf"
-                  className="hover:text-blue-500"
+                  className="hover:text-blue-800 hover:underline text-blue-600"
                 >
                   Stratus Finacial One-Page
                 </a>
@@ -418,12 +445,21 @@ const FinancingTabs = () => {
   const flightTrainingFinance = (
     <section className="flex flex-col items-center bg-gradient-to-br from-white to-gray-200">
       <div className="max-w-7xl px-10 flex flex-col items-center py-10">
-        <h2 className="text-3xl font-semibold text-center tracking-tight">
-          Finance with Flight Training Finance LLC
-        </h2>
-        <h3 className="pt-5 text-xl">
-          Don’t let finances be the limiting facto
-        </h3>
+        <div className="flex flex-col-reverse lg:flex-row items-center w-full justify-around py-10 gap-10">
+          <div>
+            <h2 className="text-5xl font-semibold text-center tracking-tight">
+              Finance with Flight Training Finance LLC
+            </h2>
+            <h3 className="pt-3 text-2xl text-center">
+              Don’t let finances be the limiting factor
+            </h3>
+          </div>
+          <img
+            src="/ftf-logo.webp"
+            alt="Flight Training Finance logo"
+            className="h-12 sm:h-16 md:h-20"
+          />
+        </div>
         <div className="tracking-wider">
           <p className="pt-5">
             Embarking on your journey to becoming a pilot is an exciting
@@ -466,7 +502,7 @@ const FinancingTabs = () => {
               href="https://www.flighttrainingfinancellc.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-blue-500 hover:underline font-semibold"
+              className="hover:text-blue-800 hover:underline text-blue-600 font-semibold"
             >
               here
             </a>{" "}
@@ -491,7 +527,7 @@ const FinancingTabs = () => {
               <a
                 href="../../public/files/ftf-program-guide.pdf"
                 download="ftf-program-guide.pdf"
-                className="hover:text-blue-500"
+                className="hover:text-blue-800 hover:underline text-blue-600"
               >
                 Program Guide
               </a>
@@ -500,7 +536,7 @@ const FinancingTabs = () => {
               <a
                 href="../../public/files/ftf-brochure.pdf"
                 download="ftf-brochure.pdf"
-                className="hover:text-blue-500"
+                className="hover:text-blue-800 hover:underline text-blue-600"
               >
                 FTF Brochure
               </a>

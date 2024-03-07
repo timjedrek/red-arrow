@@ -3,7 +3,7 @@ export const leadershipTeam = [
     name: "Tomas Peralta",
     title: "Chief Flight Instructor | Founder",
     subtitle:
-      "Certificates & Ratings: ATP, FAA Designated Pilot Examiner, Commercial ASEL, AMEL, CFI, CFII",
+      "Certificates & Ratings: FAA Designated Pilot Examiner, ATP, Commercial ASEL, AMEL, CFI, CFII",
     bio: [
       "Tomas Peralta is the Chief Flight Instructor at Red Arrow Flight Academy, bringing with him over 20 years of experience and an extensive knowledge of aviation. Mr. Peralta fostered a love for flying, thanks in part to his family’s involvement in aviation. His dad, mom, and sister all hold private pilot certificates, so he began his training in 2001 while attending college. He went on to earn his Bachelor of Science in Industrial Engineering from ITESM in Monterrey, Mexico, as well as a Master of Science in Industrial Engineering and an MBA from Georgia Institute of Technology.",
       "After returning to the El Paso area, Mr. Peralta became a founding member of Red Arrow Flight Academy. He holds an ATP single-engine land certificate, a commercial multi-engine aircraft certificate, and a Cirrus Vision Jet Type Rating. In addition, he is a CFI and CFII. Mr. Peralta has flown and owned a variety of aircraft for personal, training, and corporate flying purposes. Mr. Peralta’s extensive experience and expertise have earned him roles as both a FAASTeam Representative and an ABQ FSDO Designated Pilot Examiner.",
@@ -61,9 +61,10 @@ export const leadershipTeam = [
     subtitle:
       "Certificates & Ratings: Private Pilot, ASEL & Rotorcraft Helicopter",
     bio: [
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam quasi totam laborum ea iure, odit cum reprehenderit et in doloribus illo molestias sit repudiandae natus possimus eum dolorem eveniet modi?",
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam quasi totam laborum ea iure, odit cum reprehenderit et in doloribus illo molestias sit repudiandae natus possimus eum dolorem eveniet modi?",
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam quasi totam laborum ea iure, odit cum reprehenderit et in doloribus illo molestias sit repudiandae natus possimus eum dolorem eveniet modi?",
+      "Vanessa is a dynamic leader in the nonprofit sector, currently serving as the Executive Director of the War Eagles Air Museum. With a deep-seated commitment to service and a genuine desire to effect positive change, she brings an entrepreneurial spirit to every aspect of her work, driving community engagement and fostering growth.",
+      "Outside of her responsibilities at the aviation museum, Vanessa devotes her spare time to enhancing the customer experience for student pilots at Red Arrow and providing mentorship to aspiring aviators.",
+      "She holds a bachelor of business administration from Baylor University. Vanessa is an active member of several aviation organizations, including Whirly Girls International and The Ninety-Nines. She also serves as the Vice President of the EAA Chapter 1570.",
+      "Beyond her professional endeavors, Vanessa's passion for aviation is evident in her pursuits outside the office. Holding certifications as both a private Fixed Wing Pilot and a Helicopter Pilot, she learned to fly Rotary-Wing in an original Vietnam-era OH-6 Loach (MD-500). Her adventurous spirit and a love for aviation and the great outdoors fuel her dedication to preserving aviation history and inspiring the next generation of enthusiasts.",
     ],
     image: "/img/our-team/placeholder.webp",
     alt: "Director of Customer Experience Vanessa Martinez at Red Arrow Flight Academy",
