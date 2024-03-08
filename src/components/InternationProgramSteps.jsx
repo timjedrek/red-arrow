@@ -38,8 +38,15 @@ const InternationProgramSteps = () => {
               identification exactly.
             </li>
             <li className="font-medium">
-              Fill out the "Credit Card Authorization" form and email it with
-              your Application form to{" "}
+              Fill out the{" "}
+              <a
+                href="/files/credit-card-authorization-form.pdf"
+                download="credit-card-authorization-form.pdf"
+                className="text-blue-600 hover:underline hover:text-blue-800"
+              >
+                Credit Card Authorization form
+              </a>{" "}
+              and email it with your Application form to{" "}
               <a
                 href="mailto:info@flyredarrow.com"
                 className="text-blue-600 hover:underline hover:text-blue-800"
@@ -79,7 +86,7 @@ const InternationProgramSteps = () => {
                   download="international-students-requirements-m1.pdf"
                   className="text-blue-600 hover:underline hover:text-blue-800 font-medium"
                 >
-                  International Students Requirements M-1
+                  International Student Requirements (M-1)
                 </a>
               </li>
               <li>
@@ -88,7 +95,7 @@ const InternationProgramSteps = () => {
                   download="affidavit-of-financial-support-ver1.pdf"
                   className="text-blue-600 hover:underline hover:text-blue-800 font-medium"
                 >
-                  Affidavit of Financial Suport ver1
+                  Affidavit of Financial Support
                 </a>
               </li>
               <li>
@@ -97,7 +104,7 @@ const InternationProgramSteps = () => {
                   download="financial-declaration-ver1.pdf"
                   className="text-blue-600 hover:underline hover:text-blue-800 font-medium"
                 >
-                  Financial Declaration ver1
+                  Financial Declaration
                 </a>
               </li>
             </ol>

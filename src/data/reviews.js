@@ -21,7 +21,7 @@ export const reviews = [
   },
   {
     id: 5,
-    text: "Tomas and her staff are proffesionals and  makes you feel comfortable. The school is clean and has what you need.  ighly recomended for first time flyers or if you're trying to make a career of it.",
+    text: "Tomas and her staff are professionals and makes you feel comfortable. The school is clean and has what you need. Highly recommended for first time flyers or if you're trying to make a career of it.",
     author: "Darisabel Roman",
   },
   {
