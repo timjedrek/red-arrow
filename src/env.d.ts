@@ -9,6 +9,9 @@ interface ImportMetaEnv {
   readonly FB_TOKEN_URI: string;
   readonly FB_AUTH_CERT_URL: string;
   readonly FB_CLIENT_CERT_URL: string;
+  readonly DISCOVERY_FORM_WEBHOOK_URL: string;
+  readonly ENROLLMENT_FORM_WEBHOOK_URL: string;
+  readonly CONTACT_US_FORM_WEBHOOK_URL: string;
 }
 
 interface ImportMeta {
