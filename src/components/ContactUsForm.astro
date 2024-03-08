@@ -1,5 +1,5 @@
 ---
-
+const CONTACT_US_FORM_WEBHOOK_URL = import.meta.env.CONTACT_US_FORM_WEBHOOK_URL;
 ---
 
 <form
@@ -125,13 +125,11 @@
   </div>
 </form>
 
-<script>
+<script define:vars={{ CONTACT_US_FORM_WEBHOOK_URL }}>
   // Wait for the DOM content to be fully loaded
   document.addEventListener("DOMContentLoaded", function () {
     // Get the contact form element
-    const contactForm = document.getElementById(
-      "contact_form",
-    ) as HTMLFormElement;
+    const contactForm = document.getElementById("contact_form");
 
     // Check if the contact form element exists
     if (contactForm !== null) {
@@ -148,14 +146,13 @@
         if (confirmEmailValue === "" || confirmEmailValue === null) {
           // If the honeypot field is empty, it's a human
           // Set the form action to the URL for processing the form and redirecting to thank you
-          contactForm.action =
-            "https://services.leadconnectorhq.com/hooks/6Qxcfy0WWndWLURxYvBB/webhook-trigger/b753d9d9-1a9d-465f-84d0-31b0d9822501";
+          contactForm.action = CONTACT_US_FORM_WEBHOOK_URL;
         }
 
         // Convert FormData to URLSearchParams
         const urlSearchParams = new URLSearchParams();
         for (const pair of formData.entries()) {
-          urlSearchParams.append(pair[0], pair[1] as string);
+          urlSearchParams.append(pair[0], pair[1]);
         }
 
         // Send an AJAX request to submit the form
