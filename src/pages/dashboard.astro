@@ -2,7 +2,7 @@
 import StudentLayout from "../layouts/StudentLayout.astro";
 ---
 
-<StudentLayout pageTitle="Dashboard">
+<StudentLayout pageTitle="Dashboard | Red Arrow Flight Academy">
   <div class="max-w-7xl mx-auto p-5 flex flex-col gap-5">
     <div
       class="flex flex-col lg:flex-row lg:justify-between lg:items-center gap-5"
@@ -30,17 +30,10 @@ import StudentLayout from "../layouts/StudentLayout.astro";
       </form> -->
     </div>
 
-    <h2 class="text-3xl lg:text-5xl font-bold text-main-red text-center pt-10">
-      Red Arrow Resources
-    </h2>
-    <div id="notice" class="text-gray-600 text-xl italic h-40 hidden"></div>
-    <div
-      id="resources"
-      class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 px-5 py-10"
+    <form
+      id="admin-form"
+      class="hidden flex-col p-5 mx-auto rounded bg-gray-400 w-fit"
     >
-    </div>
-
-    <form id="admin-form" class="hidden flex-col p-5 rounded bg-gray-400 w-fit">
       <div class="flex gap-5">
         <input
           type="email"
@@ -64,33 +57,15 @@ import StudentLayout from "../layouts/StudentLayout.astro";
       </p>
     </form>
 
-    <form
-      id="student-form"
-      class="hidden flex-col p-5 rounded bg-gray-400 w-fit"
+    <h2 class="text-3xl lg:text-5xl font-bold text-main-red text-center pt-10">
+      Red Arrow Resources
+    </h2>
+    <div id="notice" class="text-gray-600 text-xl italic h-40 hidden"></div>
+    <div
+      id="resources"
+      class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 px-5 py-10"
     >
-      <div class="flex gap-5">
-        <input
-          type="email"
-          placeholder="User email"
-          name="student-email"
-          required
-          class="p-2"
-        />
-        <button class="bg-black text-white font-semibold p-2"
-          >Make student</button
-        >
-      </div>
-      <p
-        class="text-red-600 text-xs mx-auto font-semibold hidden pt-2"
-        id="student-error-message"
-      >
-      </p>
-      <p
-        class="text-green-800 text-xs mx-auto font-semibold hidde pt-2"
-        id="student-success-message"
-      >
-      </p>
-    </form>
+    </div>
 
     <!-- <div
       id="all-files"
@@ -222,19 +197,35 @@ import StudentLayout from "../layouts/StudentLayout.astro";
       });
     };
 
-    // getDocs(collection(db, "resources")).then((querySnapshot) => {
-    //   querySnapshot.forEach((doc) => {
-    //     setupResources(doc.data());
-    //   });
-    // });
+    const desktopNav = document.getElementById(
+      "desktop-navbar",
+    ) as HTMLDivElement;
+    const mobileNav = document.getElementById(
+      "mobile-navbar",
+    ) as HTMLDivElement;
+
+    const addStudentsTab = () => {
+      const studentsTab = document.createElement("a");
+      studentsTab.textContent = "Students";
+      studentsTab.className = "p-2";
+      studentsTab.href = "/students";
+      desktopNav.appendChild(studentsTab);
+      mobileNav.appendChild(studentsTab.cloneNode(true));
+    };
+
+    const addDashboardTab = () => {
+      const dashboardTab = document.createElement("a");
+      dashboardTab.textContent = "Dashboard";
+      dashboardTab.className = "p-2";
+      dashboardTab.href = "/dashboard";
+      desktopNav.appendChild(dashboardTab);
+      mobileNav.appendChild(dashboardTab.cloneNode(true));
+    };
 
     auth.onAuthStateChanged((user) => {
       if (user) {
         user.getIdTokenResult(true).then((idTokenResult) => {
           if (idTokenResult.claims.admin) {
-            studentForm.classList.remove("hidden");
-            studentForm.classList.add("flex");
-            studentForm.addEventListener("submit", handleStudentForm);
             // fileUploadForm.classList.remove("hidden");
             // fileUploadForm.classList.add("flex");
             adminForm.classList.remove("hidden");
@@ -243,6 +234,8 @@ import StudentLayout from "../layouts/StudentLayout.astro";
             // allFiles.classList.add("grid");
             setupDashboard(user, true);
             getResources();
+            addDashboardTab();
+            addStudentsTab();
           } else {
             getDoc(doc(db, "users", user.uid)).then((doc) => {
               if (doc.data().student) {
@@ -282,40 +275,6 @@ import StudentLayout from "../layouts/StudentLayout.astro";
             student: false,
             uid: user.uid,
           });
-        }
-      });
-    };
-
-    const studentForm = document.getElementById(
-      "student-form",
-    ) as HTMLFormElement;
-    const studentErrorMessage = document.getElementById(
-      "student-error-message",
-    ) as HTMLParagraphElement;
-    const studentSuccessMessage = document.getElementById(
-      "student-success-message",
-    ) as HTMLParagraphElement;
-
-    const handleStudentForm = (e) => {
-      e.preventDefault();
-      const studentEmail = studentForm["student-email"].value;
-      const student = query(
-        collection(db, "users"),
-        where("email", "==", studentEmail),
-      );
-      getDocs(student).then((querySnapshot) => {
-        querySnapshot.forEach((doc) => {
-          setDoc(doc.ref, { student: true }, { merge: true });
-          studentSuccessMessage.classList.remove("hidden");
-          studentSuccessMessage.textContent = "User is now a student";
-          studentErrorMessage.textContent = "";
-          studentErrorMessage.classList.add("hidden");
-        });
-        if (querySnapshot.empty) {
-          studentErrorMessage.classList.remove("hidden");
-          studentErrorMessage.textContent = "User not found";
-          studentSuccessMessage.textContent = "";
-          studentSuccessMessage.classList.add("hidden");
         }
       });
     };

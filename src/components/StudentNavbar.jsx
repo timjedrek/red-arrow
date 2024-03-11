@@ -25,7 +25,10 @@ const StudentNavbar = () => {
                 />
               </a>
               <div className="hidden lg:ml-6 lg:block">
-                <div className="flex gap-5 xl:gap-10 items-center">
+                <div
+                  id="desktop-navbar"
+                  className="flex gap-5 xl:gap-10 items-center"
+                >
                   {/* Nav Items */}
                 </div>
               </div>
@@ -80,10 +83,12 @@ const StudentNavbar = () => {
       </div>
 
       <div
-        className={`${openMobile ? "max-h-[36rem]" : "max-h-0"} overflow-hidden transition-[max-height] duration-300 ease-in-out lg:hidden absolute w-full bg-black -z-10`}
+        className={`${openMobile ? "max-h-[36rem]" : "max-h-0"} overflow-hidden transition-[max-height] duration-300 ease-in-out lg:hidden absolute w-full bg-white z-10`}
         id="mobile-menu"
       >
-        <div className="px-4 pb-3 pt-2 flex flex-col">{/* Nav Items */}</div>
+        <div id="mobile-navbar" className="px-4 pb-3 pt-2 flex flex-col">
+          {/* Nav Items */}
+        </div>
       </div>
     </nav>
   );
