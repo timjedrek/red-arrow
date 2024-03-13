@@ -4,7 +4,7 @@ import EchoImage from "../../public/img/our-fleet/echo.webp";
 import A5YXImage from "../../public/img/our-fleet/5yx.webp";
 import WoodstockImage from "../../public/img/our-fleet/woodstock.webp";
 import N242TWImage from "../../public/img/our-fleet/n242tw.webp";
-import ChipImage from "../../public/img/training-courses/cfi-instrument.webp";
+import ChipImage from "../../public/img/our-fleet/chip.webp";
 import DaleImage from "../../public/img/our-fleet/dale.webp";
 import N3180UImage from "../../public/img/our-fleet/n318ou.webp";
 
@@ -22,7 +22,7 @@ export const fleet = [
       equipment: "Garmin 430, Aspen Avionics PFD",
       rentalPrice: "$157 / hour wet",
     },
-    imageAlignment: "left",
+    imageAlignment: "right",
   },
   {
     name: "Skittles",
@@ -82,7 +82,7 @@ export const fleet = [
       equipment: "2 Garmin G5, Garming 650 GPS",
       rentalPrice: "$165 / hour wet",
     },
-    imageAlignment: "center",
+    imageAlignment: "right",
   },
   {
     name: "N242TW",
