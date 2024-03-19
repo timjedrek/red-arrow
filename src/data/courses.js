@@ -76,6 +76,6 @@ export const courses = [
     id: "5",
     imagePath: "/img/training-courses/military.webp",
     alt: "Many of our students come from Ft. Bliss and complete their pilot training at Red Arrow Flight Academy",
-    title: "Military Rotor/Transition",
+    title: "Military Rotor/Transition Training",
   },
 ];

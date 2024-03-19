@@ -1,0 +1,133 @@
+---
+import StudentLayout from "../layouts/StudentLayout.astro";
+import StudentLogin from "../components/StudentLogin.astro";
+const REGISTRATION_FORM_WEBHOOOK_URL = import.meta.env
+  .REGISTRATION_FORM_WEBHOOOK_URL;
+---
+
+<StudentLayout pageTitle="Register">
+  <StudentLogin>
+    <h1 class="text-5xl font-semibold uppercase">Register</h1>
+
+    <form
+      class="flex flex-col p-5 gap-2"
+      id="registration-form"
+      action={REGISTRATION_FORM_WEBHOOOK_URL}
+    >
+      <label class="font-semibold" for="name">Name</label>
+      <input
+        class="border border-black p-2 text-black rounded-sm"
+        type="text"
+        name="name"
+        id="name"
+        required
+      />
+      <label class="font-semibold" for="email">Email</label>
+      <input
+        class="border border-black p-2 text-black rounded-sm"
+        type="email"
+        name="email"
+        id="email"
+        required
+      />
+      <label class="font-semibold" for="password">Password</label>
+      <input
+        class="border border-black p-2 text-black rounded-sm"
+        type="password"
+        name="password"
+        id="password"
+        required
+      />
+      <button type="submit" class="bg-main-red p-3 font-semibold rounded-sm"
+        >Register</button
+      >
+      <p class="text-red-600 text-xs max-w-36 mx-auto" id="error-message"></p>
+    </form>
+    <p>
+      Already have an account? <a href="/signin" class="hover:underline"
+        >Sign in</a
+      >
+    </p>
+  </StudentLogin>
+</StudentLayout>
+
+<script>
+  import {
+    getAuth,
+    createUserWithEmailAndPassword,
+    updateProfile,
+  } from "firebase/auth";
+  import { app } from "../firebase/client";
+  import {
+    getFirestore,
+    collection,
+    getDocs,
+    setDoc,
+    doc,
+  } from "firebase/firestore";
+  const auth = getAuth(app);
+  const db = getFirestore(app);
+
+  // auth.onAuthStateChanged((user) => {
+  //   if (user) {
+  //     window.location.href = "/dashboard";
+  //   }
+  // });
+
+  const handleRegistration = async (event) => {
+    event.preventDefault();
+
+    const form = event.target;
+    const formData = new FormData(form);
+    const email = formData.get("email") as string;
+    const password = formData.get("password") as string;
+    const name = formData.get("name") as string;
+
+    try {
+      await createUserWithEmailAndPassword(auth, email, password)
+        .then(async (userCredential) => {
+          await updateProfile(userCredential.user, { displayName: name }).then(
+            async () => {
+              await setDoc(doc(db, "users", userCredential.user.uid), {
+                email,
+                name,
+                uid: userCredential.user.uid,
+                student: false,
+              })
+                .then(() => {
+                  const urlSearchParams = new URLSearchParams();
+                  for (const pair of formData.entries()) {
+                    if (pair[0] !== "password") {
+                      urlSearchParams.append(pair[0], pair[1]);
+                    }
+                  }
+                  const xhr = new XMLHttpRequest();
+                  xhr.open("POST", form.action);
+                  xhr.setRequestHeader(
+                    "Content-Type",
+                    "application/x-www-form-urlencoded",
+                  );
+                  xhr.send(urlSearchParams);
+                  window.location.href = "/dashboard";
+                })
+                .catch((error) => {
+                  console.error("Error adding document: ", error);
+                });
+            },
+          );
+        })
+        .catch((error) => {
+          const errorMessage = error.message;
+          const errorElement = document.getElementById(
+            "error-message",
+          ) as HTMLParagraphElement;
+          errorElement.textContent = errorMessage;
+        });
+    } catch (error) {
+      console.error("Registration failed:", error.message);
+    }
+  };
+
+  const form = document.getElementById("registration-form") as HTMLFormElement;
+  form.addEventListener("submit", handleRegistration);
+</script>

@@ -3,7 +3,7 @@ export const leadershipTeam = [
     name: "Tomas Peralta",
     title: "Chief Flight Instructor | Founder",
     subtitle:
-      "Certificates & Ratings: ATP, FAA Designated Pilot Examiner, Commercial ASEL, AMEL, CFI, CFII",
+      "Certificates & Ratings: FAA Designated Pilot Examiner, ATP, Commercial ASEL, AMEL, CFI, CFII",
     bio: [
       "Tomas Peralta is the Chief Flight Instructor at Red Arrow Flight Academy, bringing with him over 20 years of experience and an extensive knowledge of aviation. Mr. Peralta fostered a love for flying, thanks in part to his family’s involvement in aviation. His dad, mom, and sister all hold private pilot certificates, so he began his training in 2001 while attending college. He went on to earn his Bachelor of Science in Industrial Engineering from ITESM in Monterrey, Mexico, as well as a Master of Science in Industrial Engineering and an MBA from Georgia Institute of Technology.",
       "After returning to the El Paso area, Mr. Peralta became a founding member of Red Arrow Flight Academy. He holds an ATP single-engine land certificate, a commercial multi-engine aircraft certificate, and a Cirrus Vision Jet Type Rating. In addition, he is a CFI and CFII. Mr. Peralta has flown and owned a variety of aircraft for personal, training, and corporate flying purposes. Mr. Peralta’s extensive experience and expertise have earned him roles as both a FAASTeam Representative and an ABQ FSDO Designated Pilot Examiner.",
@@ -31,6 +31,7 @@ export const leadershipTeam = [
   {
     name: "Jazmine Anaya",
     title: "Dispatch Manager",
+    subtitle: "Certificates & Ratings: Student Pilot",
     bio: [
       "El Paso native Jazmine Anaya is a born adventurer with an insatiable passion for exploration. Born and raised in El Paso, Texas, Jazmine's heart has always been captivated by the allure of distant horizons and new frontiers.  In her pursuit of wanderlust, Jazmine has taken a remarkable leap into the world of aviation by becoming an integral part of the Red Arrow team as a dispatcher. Here, her dedication and enthusiasm for the skies have found a perfect platform to flourish.",
       "Jazmine's journey in aviation is marked by her tenacity and ambition. She is a proud recipient of the EAA Chapter 1570 flight training scholarship, a recognition of her unwavering commitment to taking flight. As a student pilot, she is in the process of transforming her dreams of flight into a soaring reality.  Her introduction to the world of aviation represents a pivotal moment in her life, one that promises to open up a world of opportunities and adventures. Jazmine's journey is a testament to the power of following one's passion, even when the path may seem distant and uncertain.",
@@ -43,15 +44,42 @@ export const leadershipTeam = [
   },
   {
     name: "Danielle Nelson",
-    title: "Dispatch",
+    title: "Dispatch Manager",
+    subtitle: "Certificates & Ratings: Private Pilot, ASEL",
     bio: [
       "Danielle's journey into the world of aviation is a testament to the power of dreams and determination. Graduating high school just this year, she wasted no time in taking the plunge into the aviation industry, making a resounding impact at Red Arrow.  Her journey towards the skies began when she met a U.S. Army helicopter pilot during her junior year. This fateful encounter ignited a spark within her, redirecting her life's course. Initially, Danielle had aspirations to pursue a career in the medical field, but the allure of aviation proved irresistible.",
       "As a student pilot at Red Arrow, Danielle is taking her first steps toward realizing her dream of becoming a pilot. Her determination to learn and excel in the world of aviation is nothing short of inspiring. She is driven by a deep-seated passion for flight, and there's no looking back on the path she's chosen. Danielle has set her sights on an ambitious goal - to become an instructor right here at Red Arrow once she completes her flight training. Her commitment to passing on her knowledge and love for aviation to future pilots is a testament to her dedication.",
       "While the exact direction her aviation journey will take her after instruction remains undecided, one thing is certain: Danielle wants to continue flying. Her desire and motivation to achieve her goals shine brightly, and Red Arrow is proud to have her as an integral part of the team. Danielle represents the embodiment of dreams taking flight, and her journey is a source of inspiration for all who share her passion for aviation.",
     ],
-    image: "/img/our-team/placeholder.webp",
+    image: "/img/our-team/danielle-nelson.webp",
     alt: "Dispatch Manager Danielle Nelson at Red Arrow Flight Academy",
     email: "dnelson@flyredarrow.com",
+  },
+  {
+    name: "Vanessa Martinez",
+    title: "Director of Customer Experience",
+    subtitle:
+      "Certificates & Ratings: Private Pilot, ASEL & Rotorcraft Helicopter",
+    bio: [
+      "Vanessa is a dynamic leader in the nonprofit sector, currently serving as the Executive Director of the War Eagles Air Museum. With a deep-seated commitment to service and a genuine desire to effect positive change, she brings an entrepreneurial spirit to every aspect of her work, driving community engagement and fostering growth.",
+      "Outside of her responsibilities at the aviation museum, Vanessa devotes her spare time to enhancing the customer experience for student pilots at Red Arrow and providing mentorship to aspiring aviators.",
+      "She holds a bachelor of business administration from Baylor University. Vanessa is an active member of several aviation organizations, including Whirly Girls International and The Ninety-Nines. She also serves as the Vice President of the EAA Chapter 1570.",
+      "Beyond her professional endeavors, Vanessa's passion for aviation is evident in her pursuits outside the office. Holding certifications as both a private Fixed Wing Pilot and a Helicopter Pilot, she learned to fly Rotary-Wing in an original Vietnam-era OH-6 Loach (MD-500). Her adventurous spirit and a love for aviation and the great outdoors fuel her dedication to preserving aviation history and inspiring the next generation of enthusiasts.",
+    ],
+    image: "/img/our-team/placeholder.webp",
+    alt: "Director of Customer Experience Vanessa Martinez at Red Arrow Flight Academy",
+    email: "vanessa@flyredarrow.com",
+  },
+  {
+    name: "Belka",
+    title: "Chief-Doggo-In-Charge",
+    bio: [
+      "Meet Belka, the dynamic German Shepherd who has earned her wings as the beloved mascot of our flight school. With her keen sense of loyalty and boundless energy, Belka is more than just a furry face around here – she's part of the team!",
+      "Born to patrol the skies (or at least watch over them from the ground), Belka takes her role as Flight School Guardian very seriously. When she's not busy sniffing out treats or playing fetch with aspiring pilots, you can find her stationed at the entrance, greeting students and staff with her trademark wagging tail and infectious enthusiasm. Belka's responsibilities go beyond just being an adorable greeter.",
+      "She also serves as a source of emotional support for students, particularly before nerve-wracking checkrides. With her calming presence and gentle demeanor, Belka has a knack for easing pre-flight jitters and boosting confidence levels.",
+    ],
+    image: "/img/our-team/belka.webp",
+    alt: "Belka at Red Arrow Flight Academy",
   },
 ];
 
@@ -95,14 +123,14 @@ export const flightTeam = [
       "Shane Lipson began flying in 2000 while living in New York City.  His first discovery flight, around the Statue of Liberty, had him hooked into aviation and he quickly progressed through training to become a CFII.  Shortly after the World Trade Center attack in 2001, he joined the Civil Air Patrol as a volunteer pilot.  He became a check pilot and then head of Standardization and Evaluation for Texas Wing after moving back to his hometown of El Paso.",
       "Shane holds an MD Degree from the Paul L Foster School of Medicine and an MSE from the University of Pennsylvania.  He's married with two sons and enjoys teaching others to fly.",
     ],
-    image: "/img/our-team/placeholder.webp",
+    image: "/img/our-team/shane-lipson.webp",
     alt: "CFII Shane Lipson at Red Arrow Flight Academy",
     email: "",
     phone: "(575) 201-6160 ext 707",
   },
   {
     name: "Jesus Bustamante",
-    title: "Flight Instructor",
+    title: "Flight Instructor | Check Instructor",
     subtitle: "Certificates & Ratings: Commercial ASEL, CFI, CFII",
     bio: [
       "From the age of 10, Jesus found himself captivated by the world of aviation, a fascination that would shape his destiny. It all began with the awe-inspiring spectacle of an airshow, and from that moment on, the sky became his true calling.",

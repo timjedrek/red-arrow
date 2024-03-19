@@ -77,7 +77,7 @@ const Navbar = ({ pathname }) => {
                   <div>
                     <a
                       href="/discovery-flight"
-                      className={`cursor-pointer text-xl text-white py-5 hover:border-b-2 border-main-red whitespace-nowrap ${
+                      className={`cursor-pointer text-xl text-white py-3 hover:border-b-2 border-main-red whitespace-nowrap ${
                         pathname === "/discovery-flight" ? "border-b-2" : ""
                       }`}
                     >
@@ -151,7 +151,7 @@ const Navbar = ({ pathname }) => {
           <MobileNavBar pathname={pathname} />
           <a
             href="/discovery-flight"
-            className={`cursor-pointer text-xl text-white py-5 hover:border-b-2 border-main-red whitespace-nowrap ${
+            className={`cursor-pointer text-xl text-white py-3 hover:border-b-2 border-main-red whitespace-nowrap ${
               pathname === "/discovery-flight" ? "border-b-2" : ""
             }`}
           >

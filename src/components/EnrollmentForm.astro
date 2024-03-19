@@ -1,5 +1,5 @@
 ---
-
+const ENROLLMENT_FORM_WEBHOOK_URL = import.meta.env.ENROLLMENT_FORM_WEBHOOK_URL;
 ---
 
 <form id="enrollment_form" method="POST" action="" data-astro-reload>
@@ -66,13 +66,11 @@
   </div>
 </form>
 
-<script>
+<script define:vars={{ ENROLLMENT_FORM_WEBHOOK_URL }}>
   // Wait for the DOM content to be fully loaded
   document.addEventListener("DOMContentLoaded", function () {
     // Get the enrollment form element
-    const enrollmentForm = document.getElementById(
-      "enrollment_form",
-    ) as HTMLFormElement;
+    const enrollmentForm = document.getElementById("enrollment_form");
 
     // Check if the enrollment form element exists
     if (enrollmentForm !== null) {
@@ -89,14 +87,13 @@
         if (confirmEmailValue === "" || confirmEmailValue === null) {
           // If the honeypot field is empty, it's a human
           // Set the form action to the URL for processing the form and redirecting to thank you
-          enrollmentForm.action =
-            "https://services.leadconnectorhq.com/hooks/6Qxcfy0WWndWLURxYvBB/webhook-trigger/ed06f489-4a7d-41ac-947f-eddac0287574";
+          enrollmentForm.action = ENROLLMENT_FORM_WEBHOOK_URL;
         }
 
         // Convert FormData to URLSearchParams
         const urlSearchParams = new URLSearchParams();
         for (const pair of formData.entries()) {
-          urlSearchParams.append(pair[0], pair[1] as string);
+          urlSearchParams.append(pair[0], pair[1]);
         }
 
         // Send an AJAX request to submit the form

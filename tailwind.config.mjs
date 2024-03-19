@@ -6,7 +6,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        "main-red": "#993333",
+        "main-red": "#af3125",
       },
       backgroundImage: {
         home: "url('/img/cessna-outside-hangar-juarez-mx.webp')",
@@ -23,6 +23,7 @@ export default {
         "faa-exam-center": "url('/img/faa-exam-center/banner.webp')",
         financing: "url('/img/financing/banner.webp')",
         "training-courses": "url('/img/training-courses/banner.webp')",
+        blog: "url('/img/blog/banner.webp')",
         "discovery-flight":
           "url('/img/discovery-flight/discovery-flight-banner.webp')",
         "cfi-and-student": "url('/img/discovery-flight/cfi-and-student.webp')",
@@ -49,6 +50,6 @@ export default {
       },
     },
   },
-  plugins: [require("@tailwindcss/typography")],
+  plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms")],
   safelist: ["object-left", "object-right", "object-center", "object-cover"],
 };
