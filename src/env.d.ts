@@ -12,6 +12,7 @@ interface ImportMetaEnv {
   readonly DISCOVERY_FORM_WEBHOOK_URL: string;
   readonly ENROLLMENT_FORM_WEBHOOK_URL: string;
   readonly CONTACT_US_FORM_WEBHOOK_URL: string;
+  readonly REGISTRATION_FORM_WEBHOOOK_URL: string;
 }
 
 interface ImportMeta {
