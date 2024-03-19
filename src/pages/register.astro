@@ -1,13 +1,19 @@
 ---
 import StudentLayout from "../layouts/StudentLayout.astro";
 import StudentLogin from "../components/StudentLogin.astro";
+const REGISTRATION_FORM_WEBHOOOK_URL = import.meta.env
+  .REGISTRATION_FORM_WEBHOOOK_URL;
 ---
 
 <StudentLayout pageTitle="Register">
   <StudentLogin>
     <h1 class="text-5xl font-semibold uppercase">Register</h1>
 
-    <form class="flex flex-col p-5 gap-2" id="registration-form">
+    <form
+      class="flex flex-col p-5 gap-2"
+      id="registration-form"
+      action={REGISTRATION_FORM_WEBHOOOK_URL}
+    >
       <label class="font-semibold" for="name">Name</label>
       <input
         class="border border-black p-2 text-black rounded-sm"
@@ -89,6 +95,19 @@ import StudentLogin from "../components/StudentLogin.astro";
                 student: false,
               })
                 .then(() => {
+                  const urlSearchParams = new URLSearchParams();
+                  for (const pair of formData.entries()) {
+                    if (pair[0] !== "password") {
+                      urlSearchParams.append(pair[0], pair[1]);
+                    }
+                  }
+                  const xhr = new XMLHttpRequest();
+                  xhr.open("POST", form.action);
+                  xhr.setRequestHeader(
+                    "Content-Type",
+                    "application/x-www-form-urlencoded",
+                  );
+                  xhr.send(urlSearchParams);
                   window.location.href = "/dashboard";
                 })
                 .catch((error) => {
