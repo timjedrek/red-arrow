@@ -302,13 +302,21 @@ const FinancingTabs = () => {
               className="h-16 md:h-20"
             />
           </div>
-          <div className="tracking-wider">
+          <div className="tracking-wider flex flex-col items-center">
             <p className="pt-5">
               Red Arrow Flight Academy is pleased to partner with Stratus
               Financial to make pilot training more affordable for our
               interested students! Take advantage of Stratus Financial’s unique
               loan structures and get up in the air in no time.
             </p>
+            <a
+              href="https://stratus.finance/apply/redarrow1175019/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-[#0bc1e1] cursor-pointer my-5 w-fit font-bold uppercase py-3 px-5 rounded-xl hover:scale-105 duration-200"
+            >
+              Apply Now
+            </a>
             <div className="flex flex-col md:flex-row w-full gap-5">
               <div className="flex-1">
                 <p className="pt-5 font-semibold">Student Requirements</p>
@@ -437,6 +445,14 @@ const FinancingTabs = () => {
               </li>
             </ul>
           </div>
+          <a
+            href="https://stratus.finance/apply/redarrow1175019/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-[#0bc1e1] cursor-pointer my-5 w-fit font-bold uppercase py-3 px-5 rounded-xl hover:scale-105 duration-200"
+          >
+            Apply Now
+          </a>
         </div>
       </section>
     </>
