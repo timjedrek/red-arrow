@@ -1,0 +1,282 @@
+---
+import StudentLayout from "../layouts/StudentLayout.astro";
+---
+
+<StudentLayout pageTitle="Dashboard | Red Arrow Flight Academy">
+  <div class="max-w-7xl mx-auto p-5 flex flex-col gap-5">
+    <div
+      class="flex flex-col lg:flex-row lg:justify-between lg:items-center gap-5"
+    >
+      <div id="content"></div>
+
+      <!-- <form
+        id="file-upload"
+        class="bg-main-red p-5 lg:w-1/2 rounded-md flex-col hidden"
+      >
+        <h2 class="text-white font-semibold text-2xl p-2">Upload a file</h2>
+        <div class="flex flex-col md:flex-row gap-2">
+          <input type="file" name="file" class="p-2 text-white" />
+
+          <input
+            type="text"
+            name="name"
+            placeholder="Name of file"
+            class="p-2"
+          />
+          <button type="submit" class="bg-black p-2 text-white font-semibold"
+            >Upload</button
+          >
+        </div>
+      </form> -->
+    </div>
+
+    <form
+      id="admin-form"
+      class="hidden flex-col p-5 mx-auto rounded bg-gray-400 w-fit"
+    >
+      <div class="flex gap-5">
+        <input
+          type="email"
+          placeholder="User email"
+          name="admin-email"
+          required
+          class="p-2"
+        />
+        <button class="bg-black text-white font-semibold p-2">Make admin</button
+        >
+      </div>
+      <p
+        class="text-red-600 text-xs mx-auto font-semibold hidden pt-2"
+        id="admin-error-message"
+      >
+      </p>
+      <p
+        class="text-green-800 text-xs mx-auto font-semibold hidde pt-2"
+        id="admin-success-message"
+      >
+      </p>
+    </form>
+
+    <h2 class="text-3xl lg:text-5xl font-bold text-main-red text-center pt-10">
+      Red Arrow Resources
+    </h2>
+    <div id="notice" class="text-gray-600 text-xl italic h-40 hidden"></div>
+    <div
+      id="resources"
+      class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 px-5 py-10"
+    >
+    </div>
+
+    <!-- <div
+      id="all-files"
+      class="bg-gray-800 p-3 text-white rounded-md grid-cols-3 hidden"
+    >
+      <h2 class="text-white font-semibold text-2xl p-2 col-span-3 bg-gray-700">
+        Resources
+      </h2>
+      <h3 class="font-bold p-2 col-span-2 border-b border-white">Name</h3>
+      <h3 class="font-bold p-2 text-center border-b border-white">Download</h3>
+    </div> -->
+  </div>
+
+  <script>
+    import { getAuth } from "firebase/auth";
+    import { app, storageRef } from "../firebase/client";
+    import {
+      uploadBytes,
+      ref,
+      listAll,
+      getDownloadURL,
+    } from "firebase/storage";
+    import { getFunctions, httpsCallable } from "firebase/functions";
+    const functions = getFunctions(app);
+    import {
+      getFirestore,
+      collection,
+      getDocs,
+      setDoc,
+      getDoc,
+      doc,
+      where,
+      query,
+    } from "firebase/firestore";
+    const db = getFirestore(app);
+    const auth = getAuth(app);
+
+    const resources = document.getElementById("resources") as HTMLDivElement;
+
+    const setupResources = (data) => {
+      const resource = document.createElement("div");
+      resource.className = "flex justify-center items-center";
+      resource.innerHTML = `<a href="${data.url}" target="_blank" rel="noopener" class="hover:scale-105 duration-200 bg-main-red text-white font-semibold p-5 rounded-md text-xl w-full text-center">${data.title}</a>`;
+      resources.appendChild(resource);
+    };
+
+    const adminSuccessMessage = document.getElementById(
+      "admin-success-message",
+    ) as HTMLParagraphElement;
+    const adminErrorMessage = document.getElementById(
+      "admin-error-message",
+    ) as HTMLParagraphElement;
+
+    const adminForm = document.getElementById("admin-form") as HTMLFormElement;
+    adminForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const adminEmail = adminForm["admin-email"].value;
+      const addAdminRole = httpsCallable(functions, "addAdminRole");
+      addAdminRole({ email: adminEmail }).then((result) => {
+        console.log(result);
+        if (result.data.errorInfo) {
+          adminErrorMessage.classList.remove("hidden");
+          adminErrorMessage.textContent = result.data.errorInfo.message;
+          adminSuccessMessage.textContent = "";
+          adminSuccessMessage.classList.add("hidden");
+        } else {
+          adminSuccessMessage.classList.remove("hidden");
+          adminSuccessMessage.textContent = result.data.message;
+          adminErrorMessage.textContent = "";
+          adminErrorMessage.classList.add("hidden");
+        }
+      });
+    });
+
+    // const fileUploadForm = document.getElementById(
+    //   "file-upload",
+    // ) as HTMLFormElement;
+
+    // const allFiles = document.getElementById("all-files") as HTMLDivElement;
+    const content = document.getElementById("content") as HTMLDivElement;
+    const setupDashboard = (user, admin = false) => {
+      content.innerHTML = `
+      <h1 class="text-4xl font-semibold">Welcome ${user.displayName} ${admin ? "(Admin)" : ""}</h1>
+      <p>We are happy to see you here.</p>
+    `;
+
+      // fileUploadForm.addEventListener("submit", (e) => {
+      //   e.preventDefault();
+      //   const file = fileUploadForm.file.files[0];
+      //   const name = fileUploadForm.name.value;
+      //   const fileRef = ref(storageRef, name);
+      //   uploadBytes(fileRef, file).then((snapshot) => {
+      //     window.location.href = "/dashboard";
+      //   });
+      // });
+
+      //       listAll(storageRef).then((res) => {
+      //         res.items.forEach((itemRef) => {
+      //           getDownloadURL(itemRef).then((url) => {
+      //             const linkDescription = document.createElement("p");
+      //             linkDescription.textContent = itemRef.name;
+      //             linkDescription.className =
+      //               "p-2 col-span-2 border-b border-gray-500";
+      //             allFiles.appendChild(linkDescription);
+      //             const container = document.createElement("div");
+      //             container.className =
+      //               "flex justify-center border-b border-gray-500";
+      //             const link = document.createElement("a");
+      //             link.rel = "noopener";
+      //             link.target = "_blank";
+      //             link.href = url;
+      //             link.className = "p-2 w-fit";
+      //             link.innerHTML = `<svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      // <path d="M12.5535 16.5061C12.4114 16.6615 12.2106 16.75 12 16.75C11.7894 16.75 11.5886 16.6615 11.4465 16.5061L7.44648 12.1311C7.16698 11.8254 7.18822 11.351 7.49392 11.0715C7.79963 10.792 8.27402 10.8132 8.55352 11.1189L11.25 14.0682V3C11.25 2.58579 11.5858 2.25 12 2.25C12.4142 2.25 12.75 2.58579 12.75 3V14.0682L15.4465 11.1189C15.726 10.8132 16.2004 10.792 16.5061 11.0715C16.8118 11.351 16.833 11.8254 16.5535 12.1311L12.5535 16.5061Z" fill="#FFFFFF"/>
+      // <path d="M3.75 15C3.75 14.5858 3.41422 14.25 3 14.25C2.58579 14.25 2.25 14.5858 2.25 15V15.0549C2.24998 16.4225 2.24996 17.5248 2.36652 18.3918C2.48754 19.2919 2.74643 20.0497 3.34835 20.6516C3.95027 21.2536 4.70814 21.5125 5.60825 21.6335C6.47522 21.75 7.57754 21.75 8.94513 21.75H15.0549C16.4225 21.75 17.5248 21.75 18.3918 21.6335C19.2919 21.5125 20.0497 21.2536 20.6517 20.6516C21.2536 20.0497 21.5125 19.2919 21.6335 18.3918C21.75 17.5248 21.75 16.4225 21.75 15.0549V15C21.75 14.5858 21.4142 14.25 21 14.25C20.5858 14.25 20.25 14.5858 20.25 15C20.25 16.4354 20.2484 17.4365 20.1469 18.1919C20.0482 18.9257 19.8678 19.3142 19.591 19.591C19.3142 19.8678 18.9257 20.0482 18.1919 20.1469C17.4365 20.2484 16.4354 20.25 15 20.25H9C7.56459 20.25 6.56347 20.2484 5.80812 20.1469C5.07435 20.0482 4.68577 19.8678 4.40901 19.591C4.13225 19.3142 3.9518 18.9257 3.85315 18.1919C3.75159 17.4365 3.75 16.4354 3.75 15Z" fill="#FFFFFF"/>
+      // </svg>`;
+      //             container.appendChild(link);
+      //             allFiles.appendChild(container);
+      //           });
+      //         });
+      //       });
+    };
+
+    const getResources = async () => {
+      const resources = collection(db, "resources");
+      const querySnapshot = await getDocs(resources);
+      querySnapshot.forEach((doc) => {
+        setupResources(doc.data());
+      });
+    };
+
+    const desktopNav = document.getElementById(
+      "desktop-navbar",
+    ) as HTMLDivElement;
+    const mobileNav = document.getElementById(
+      "mobile-navbar",
+    ) as HTMLDivElement;
+
+    const addStudentsTab = () => {
+      const studentsTab = document.createElement("a");
+      studentsTab.textContent = "Students";
+      studentsTab.className = "p-2";
+      studentsTab.href = "/students";
+      desktopNav.appendChild(studentsTab);
+      mobileNav.appendChild(studentsTab.cloneNode(true));
+    };
+
+    const addDashboardTab = () => {
+      const dashboardTab = document.createElement("a");
+      dashboardTab.textContent = "Dashboard";
+      dashboardTab.className = "p-2";
+      dashboardTab.href = "/dashboard";
+      desktopNav.appendChild(dashboardTab);
+      mobileNav.appendChild(dashboardTab.cloneNode(true));
+    };
+
+    auth.onAuthStateChanged((user) => {
+      if (user) {
+        user.getIdTokenResult(true).then((idTokenResult) => {
+          if (idTokenResult.claims.admin) {
+            // fileUploadForm.classList.remove("hidden");
+            // fileUploadForm.classList.add("flex");
+            adminForm.classList.remove("hidden");
+            adminForm.classList.add("flex");
+            // allFiles.classList.remove("hidden");
+            // allFiles.classList.add("grid");
+            setupDashboard(user, true);
+            getResources();
+            addDashboardTab();
+            addStudentsTab();
+          } else {
+            getDoc(doc(db, "users", user.uid)).then((doc) => {
+              if (doc.data().student) {
+                // allFiles.classList.remove("hidden");
+                // allFiles.classList.add("grid");
+                setupDashboard(user);
+                getResources();
+              } else {
+                const notice = document.getElementById(
+                  "notice",
+                ) as HTMLDivElement;
+                notice.classList.remove("hidden");
+                notice.textContent =
+                  "Please contact an admin to be added as a student for access to resources.";
+                content.innerHTML = `
+      <h1 class="text-4xl font-semibold">Welcome ${user.displayName}</h1>
+      <p>We are happy to see you here.</p>
+    `;
+              }
+            });
+          }
+        });
+
+        createFirebaseUser(user);
+      } else {
+        window.location.href = "/signin";
+      }
+    });
+
+    const createFirebaseUser = (user) => {
+      const userRef = doc(db, "users", user.uid);
+      getDoc(userRef).then((doc) => {
+        if (!doc.exists()) {
+          setDoc(userRef, {
+            email: user.email,
+            name: user.displayName,
+            student: false,
+            uid: user.uid,
+          });
+        }
+      });
+    };
+  </script>
+</StudentLayout>

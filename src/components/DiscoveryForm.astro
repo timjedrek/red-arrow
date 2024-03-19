@@ -8,6 +8,8 @@ for (let i = 0; i < 15; i++) {
   currentDate.setDate(currentDate.getDate() + i);
   datesArray.push(currentDate);
 }
+
+const DISCOVERY_FORM_WEBHOOK_URL = import.meta.env.DISCOVERY_FORM_WEBHOOK_URL;
 ---
 
 <form id="discovery_form" method="POST" action="" data-astro-reload>
@@ -211,132 +213,129 @@ for (let i = 0; i < 15; i++) {
   <div class="btn-red mt-5 ml-auto">
     <button type="submit">Submit</button>
   </div>
-
-  <script>
-    // Wait for the DOM content to be fully loaded
-    document.addEventListener("DOMContentLoaded", function () {
-      // Get the discovery form element
-      const discoveryForm = document.getElementById(
-        "discovery_form",
-      ) as HTMLFormElement;
-
-      // Check if the discovery form element exists
-      if (discoveryForm !== null) {
-        // Add submit event listener to the discovery form
-        discoveryForm.addEventListener("submit", function (event) {
-          // Prevent the default form submission
-          event.preventDefault();
-
-          // Serialize the form data
-          const formData = new FormData(discoveryForm);
-
-          // Check the value of the honeypot field
-          const confirmEmailValue = formData.get("confirm-email");
-          if (confirmEmailValue === "" || confirmEmailValue === null) {
-            // If the honeypot field is empty, it's a human
-            // Set the form action to the URL for processing the form and redirecting to thank you
-            discoveryForm.action =
-              "https://services.leadconnectorhq.com/hooks/6Qxcfy0WWndWLURxYvBB/webhook-trigger/82224472-6bdb-4a5b-8bce-ac984d058d62";
-          }
-
-          // Convert FormData to URLSearchParams
-          const urlSearchParams = new URLSearchParams();
-          for (const pair of formData.entries()) {
-            urlSearchParams.append(pair[0], pair[1] as string);
-          }
-
-          // Send an AJAX request to submit the form
-          const xhr = new XMLHttpRequest();
-          xhr.open("POST", discoveryForm.action);
-          xhr.setRequestHeader(
-            "Content-Type",
-            "application/x-www-form-urlencoded",
-          );
-          xhr.onload = function () {
-            // Check if the request was successful (status 200)
-            if (xhr.status === 200) {
-              // Redirect the user after a successful form submission
-              window.location.href = "/discovery-confirmation";
-            } else {
-              // Handle errors if any
-              console.error("Form submission failed:", xhr.statusText);
-            }
-          };
-          xhr.onerror = function () {
-            // Handle network errors
-            console.error("Network error occurred while submitting the form.");
-          };
-          xhr.send(urlSearchParams);
-        });
-      } else {
-        console.error("Discovery form element not found.");
-      }
-    });
-
-    const dayRadioButtons = document.querySelectorAll(
-      'input[type="radio"][name="day-option"]',
-    );
-
-    dayRadioButtons.forEach((radioButton) => {
-      radioButton.addEventListener("change", function () {
-        const labels = document.querySelectorAll(".daylabels");
-        labels.forEach((label) => {
-          label.classList.remove("bg-red-200", "hover:bg-main-red");
-        });
-
-        const selectedLabel = this.parentNode;
-        selectedLabel.classList.add("bg-red-200", "hover:bg-main-red");
-      });
-    });
-
-    const timeRadioButtons = document.querySelectorAll(
-      'input[type="radio"][name="time-option"]',
-    );
-    timeRadioButtons.forEach((radioButton) => {
-      radioButton.addEventListener("change", function () {
-        const labels = document.querySelectorAll(".timelabels");
-        labels.forEach((label) => {
-          label.classList.remove("bg-red-200", "hover:bg-main-red");
-        });
-
-        const selectedLabel = this.parentNode;
-        selectedLabel.classList.add("bg-red-200", "hover:bg-main-red");
-      });
-    });
-
-    const goalRadioButtons = document.querySelectorAll(
-      'input[type="radio"][name="goal-option"]',
-    );
-    goalRadioButtons.forEach((radioButton) => {
-      radioButton.addEventListener("change", function () {
-        const labels = document.querySelectorAll(".goallabels");
-        labels.forEach((label) => {
-          label.classList.remove("bg-red-200", "hover:bg-main-red");
-        });
-
-        const selectedLabel = this.parentNode;
-        selectedLabel.classList.add("bg-red-200", "hover:bg-main-red");
-      });
-    });
-  </script>
-
-  <style>
-    .ohno {
-      @apply hidden;
-    }
-
-    input,
-    textarea {
-      @apply my-3 border py-2 pl-3 rounded-md w-full ring-0 outline-none focus:border-main-red;
-    }
-
-    #discoveryForm {
-      @apply m-0;
-    }
-
-    /* @layer components in the global css file not loading this class.. :/ */
-    .btn-red {
-      @apply w-min whitespace-nowrap text-center text-lg bg-main-red text-white px-5 py-3 rounded-md uppercase font-semibold hover:scale-105 hover:shadow-xl duration-200 hover:bg-red-800;
-    }
-  </style>
 </form>
+
+<style>
+  .ohno {
+    @apply hidden;
+  }
+
+  input,
+  textarea {
+    @apply my-3 border py-2 pl-3 rounded-md w-full ring-0 outline-none focus:border-main-red;
+  }
+
+  #discoveryForm {
+    @apply m-0;
+  }
+
+  /* @layer components in the global css file not loading this class.. :/ */
+  .btn-red {
+    @apply w-min whitespace-nowrap text-center text-lg bg-main-red text-white px-5 py-3 rounded-md uppercase font-semibold hover:scale-105 hover:shadow-xl duration-200 hover:bg-red-800;
+  }
+</style>
+
+<script define:vars={{ DISCOVERY_FORM_WEBHOOK_URL }}>
+  // Wait for the DOM content to be fully loaded
+  document.addEventListener("DOMContentLoaded", function () {
+    // Get the discovery form element
+    const discoveryForm = document.getElementById("discovery_form");
+
+    // Check if the discovery form element exists
+    if (discoveryForm !== null) {
+      // Add submit event listener to the discovery form
+      discoveryForm.addEventListener("submit", function (event) {
+        // Prevent the default form submission
+        event.preventDefault();
+
+        // Serialize the form data
+        const formData = new FormData(discoveryForm);
+
+        // Check the value of the honeypot field
+        const confirmEmailValue = formData.get("confirm-email");
+        if (confirmEmailValue === "" || confirmEmailValue === null) {
+          // If the honeypot field is empty, it's a human
+          // Set the form action to the URL for processing the form and redirecting to thank you
+          discoveryForm.action = DISCOVERY_FORM_WEBHOOK_URL;
+        }
+
+        // Convert FormData to URLSearchParams
+        const urlSearchParams = new URLSearchParams();
+        for (const pair of formData.entries()) {
+          urlSearchParams.append(pair[0], pair[1]);
+        }
+
+        // Send an AJAX request to submit the form
+        const xhr = new XMLHttpRequest();
+        xhr.open("POST", discoveryForm.action);
+        xhr.setRequestHeader(
+          "Content-Type",
+          "application/x-www-form-urlencoded",
+        );
+        xhr.onload = function () {
+          // Check if the request was successful (status 200)
+          if (xhr.status === 200) {
+            // Redirect the user after a successful form submission
+            window.location.href = "/discovery-confirmation";
+          } else {
+            // Handle errors if any
+            console.error("Form submission failed:", xhr.statusText);
+          }
+        };
+        xhr.onerror = function () {
+          // Handle network errors
+          console.error("Network error occurred while submitting the form.");
+        };
+        xhr.send(urlSearchParams);
+      });
+    } else {
+      console.error("Discovery form element not found.");
+    }
+  });
+
+  const dayRadioButtons = document.querySelectorAll(
+    'input[type="radio"][name="day-option"]',
+  );
+
+  dayRadioButtons.forEach((radioButton) => {
+    radioButton.addEventListener("change", function () {
+      const labels = document.querySelectorAll(".daylabels");
+      labels.forEach((label) => {
+        label.classList.remove("bg-red-200", "hover:bg-main-red");
+      });
+
+      const selectedLabel = this.parentNode;
+      selectedLabel.classList.add("bg-red-200", "hover:bg-main-red");
+    });
+  });
+
+  const timeRadioButtons = document.querySelectorAll(
+    'input[type="radio"][name="time-option"]',
+  );
+  timeRadioButtons.forEach((radioButton) => {
+    radioButton.addEventListener("change", function () {
+      const labels = document.querySelectorAll(".timelabels");
+      labels.forEach((label) => {
+        label.classList.remove("bg-red-200", "hover:bg-main-red");
+      });
+
+      const selectedLabel = this.parentNode;
+      selectedLabel.classList.add("bg-red-200", "hover:bg-main-red");
+    });
+  });
+
+  const goalRadioButtons = document.querySelectorAll(
+    'input[type="radio"][name="goal-option"]',
+  );
+  goalRadioButtons.forEach((radioButton) => {
+    radioButton.addEventListener("change", function () {
+      const labels = document.querySelectorAll(".goallabels");
+      labels.forEach((label) => {
+        label.classList.remove("bg-red-200", "hover:bg-main-red");
+      });
+
+      const selectedLabel = this.parentNode;
+      selectedLabel.classList.add("bg-red-200", "hover:bg-main-red");
+    });
+  });
+</script>

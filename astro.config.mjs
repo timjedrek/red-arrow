@@ -6,10 +6,11 @@ import icon from "astro-icon";
 import react from "@astrojs/react";
 import alpinejs from "@astrojs/alpinejs";
 import partytown from "@astrojs/partytown";
+import node from "@astrojs/node";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://flyredarrow.com",
+  site: "https://red-arrow-user-auth.web.app/",
   integrations: [
     mdx(),
     sitemap(),
@@ -47,4 +48,8 @@ export default defineConfig({
     "/copy-of-financing": "/resources/financing",
     "/copy-of-faa-testing-center": "/resources/faa-exam-center",
   },
+  output: "server",
+  adapter: node({
+    mode: "standalone",
+  }),
 });

@@ -1,0 +1,106 @@
+---
+import StudentLayout from "../layouts/StudentLayout.astro";
+import StudentLogin from "../components/StudentLogin.astro";
+---
+
+<StudentLayout pageTitle="Sign in">
+  <StudentLogin>
+    <h1 class="text-5xl font-semibold uppercase">Sign in</h1>
+
+    <form class="flex flex-col p-5 gap-2" id="signin-form">
+      <label for="email" for="email" class="font-semibold">Email</label>
+      <input
+        class="border border-black p-2 text-black rounded-sm"
+        type="email"
+        name="email"
+        id="email"
+        required
+      />
+      <label for="password" class="font-semibold">Password</label>
+      <input
+        class="border border-black p-2 text-black rounded-sm mb-5"
+        type="password"
+        name="password"
+        id="password"
+        required
+      />
+      <button type="submit" class="bg-main-red p-3 font-semibold rounded-sm"
+        >Sign in</button
+      >
+      <p class="text-red-600 text-xs max-w-36 mx-auto" id="error-message"></p>
+      <button
+        id="google"
+        class="bg-[#558aed] p-3 flex gap-3 justify-center items-center rounded-sm"
+      >
+        <img src="/google-icon.webp" alt="google-icon" class="h-5" />
+        <p class="font-semibold">Sign in with Google</p>
+      </button>
+    </form>
+    <p>
+      New here? <a href="/register" class="hover:underline">Create an account</a
+      >
+    </p>
+    <p>
+      <a href="/forgot-your-password" class="hover:underline"
+        >Forgot your password?</a
+      >
+    </p>
+  </StudentLogin>
+</StudentLayout>
+
+<script>
+  import {
+    getAuth,
+    signInWithEmailAndPassword,
+    GoogleAuthProvider,
+    signInWithPopup,
+  } from "firebase/auth";
+  import { app } from "../firebase/client";
+
+  const auth = getAuth(app);
+
+  auth.onAuthStateChanged((user) => {
+    if (user) {
+      window.location.href = "/dashboard";
+    }
+  });
+
+  const form = document.getElementById("signin-form") as HTMLFormElement;
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const email = form["email"].value;
+    const password = form["password"].value;
+
+    try {
+      await signInWithEmailAndPassword(auth, email, password)
+        .then(() => {
+          window.location.href = "/dashboard";
+        })
+        .catch((error) => {
+          const errorMessage = error.message;
+          const errorElement = document.getElementById(
+            "error-message",
+          ) as HTMLParagraphElement;
+          errorElement.textContent = errorMessage;
+        });
+    } catch (error) {
+      console.error(error);
+    }
+  });
+
+  const googleSignin = document.querySelector("#google") as HTMLButtonElement;
+  googleSignin.addEventListener("click", async () => {
+    const provider = new GoogleAuthProvider();
+    const userCredential = await signInWithPopup(auth, provider);
+    const idToken = await userCredential.user.getIdToken();
+    const res = await fetch("/api/auth/signin", {
+      headers: {
+        Authorization: `Bearer ${idToken}`,
+      },
+    });
+
+    if (res.redirected) {
+      window.location.assign(res.url);
+    }
+  });
+</script>

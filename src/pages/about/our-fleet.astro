@@ -17,17 +17,14 @@ import SimulatorCard from "../../components/SimulatorCard.astro";
   <header
     class="relative h-screen-3/4 bg-our-fleet bg-cover bg-center bg-black flex flex-col items-center justify-center"
   >
-    <div class="absolute bg-black/20 w-full h-full z-0"></div>
+    <div class="absolute bg-black/40 w-full h-full z-0"></div>
     <div
-      class="text-white text-center z-10 flex flex-col items-center gap-4 px-5"
+      class="text-white text-center z-10 flex flex-col items-center gap-8 px-5"
     >
       <h1 class="text-5xl font-bold tracking-tighter">The Red Arrow Fleet</h1>
       <h2 class="text-3xl tracking-wide">
         Our extensive fleet available for flight training and rentals
       </h2>
-      <a href="/discovery-flight-form" target="_blank" class="btn-red"
-        >Fly High</a
-      >
     </div>
   </header>
 
@@ -38,7 +35,7 @@ import SimulatorCard from "../../components/SimulatorCard.astro";
       <h2 class="text-3xl font-semibold text-center tracking-tight">
         Our Fleet
       </h2>
-      <h3 class="pt-10 text-xl italic text-center">
+      <h3 class="pt-10 text-xl text-center">
         All airplanes are subject to fuel surcharge. Prices may change, contact
         us for current prices. Prices do not include tax.
       </h3>
@@ -72,12 +69,76 @@ import SimulatorCard from "../../components/SimulatorCard.astro";
     <h2 class="text-3xl font-semibold text-center tracking-tight">
       Our Simulators
     </h2>
-    <h3 class="pt-10 text-xl italic">
+    <h3 class="pt-5 text-xl">
       Prices may change, contact us for current prices. Prices do not include
       tax.
     </h3>
 
     {simulators.map((simulator) => <SimulatorCard simulator={simulator} />)}
+  </section>
+
+  <section
+    class="flex flex-col items-center px-10 bg-gradient-to-br from-gray-800 to-black py-10 text-white"
+  >
+    <div class="max-w-2xl">
+      <h2 class="text-3xl font-semibold text-center tracking-tight">
+        Instructor Rates
+      </h2>
+      <div
+        class="mt-5 grid grid-cols-5 max-w-4xl mx-auto border-t border-l border-white text-xs text-center sm:text-sm lg:text-base"
+      >
+        <p
+          class="py-1 text-white flex items-center justify-center border-r border-b border-white font-semibold"
+        >
+          Chief Instructor
+        </p>
+        <p
+          class="py-1 text-white flex items-center justify-center border-r border-b border-white font-semibold"
+        >
+          Assistant Chief Instructor
+        </p>
+        <p
+          class="py-1 text-white flex items-center justify-center border-r border-b border-white font-semibold"
+        >
+          Check Instructor
+        </p>
+        <p
+          class="py-1 text-white flex items-center justify-center border-r border-b border-white font-semibold"
+        >
+          CFII
+        </p>
+        <p
+          class="py-1 text-white flex items-center justify-center border-r border-b border-white font-semibold"
+        >
+          CFI
+        </p>
+        <p
+          class="py-1 flex items-center justify-center border-r border-b border-white"
+        >
+          $85
+        </p>
+        <p
+          class="py-1 flex items-center justify-center border-r border-b border-white"
+        >
+          $78
+        </p>
+        <p
+          class="py-1 flex items-center justify-center border-r border-b border-white"
+        >
+          $72
+        </p>
+        <p
+          class="py-1 flex items-center justify-center border-r border-b border-white"
+        >
+          $68
+        </p>
+        <p
+          class="py-1 flex items-center justify-center border-r border-b border-white"
+        >
+          $63
+        </p>
+      </div>
+    </div>
   </section>
 
   <Location bgColorRed={true} />

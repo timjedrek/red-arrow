@@ -1,7 +1,7 @@
 ---
 import type { CollectionEntry } from "astro:content";
 import FormattedDate from "../components/FormattedDate.astro";
-import BaseLayout from "./BaseLayout.astro";
+import BlogLayout from "./BlogLayout.astro";
 import { Icon } from "astro-icon/components";
 type Props = CollectionEntry<"blog">["data"];
 
@@ -16,7 +16,7 @@ const {
 } = Astro.props;
 ---
 
-<BaseLayout>
+<BlogLayout>
   <article class="flex flex-col my-16 max-w-2xl mx-auto p-5 gap-5">
     <h1 class="text-4xl lg:text-5xl font-semibold">{title}</h1>
     <div class="flex items-center gap-3">
@@ -33,4 +33,4 @@ const {
       <slot />
     </div>
   </article>
-</BaseLayout>
+</BlogLayout>

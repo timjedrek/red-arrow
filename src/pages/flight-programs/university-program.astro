@@ -31,12 +31,12 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
       <h2 class="text-3xl font-semibold text-center tracking-tight">
         Purdue Global + Red Arrow
       </h2>
-      <h3 class="pt-10 text-xl italic">
+      <h3 class="pt-10 text-xl text-center">
         For the benefit of those who wish to turn aviation into their career via
         university-level instruction.
       </h3>
       <div class="tracking-wider">
-        <p class="pt-10">
+        <p class="pt-10 text-center">
           Discover an aviation career through our University Program in
           collaboration with Purdue University Global. This partnership brings
           together the flexibility and affordability of Purdue Global with the
@@ -72,9 +72,9 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
           </p>
         </div>
         <img
-          src="/img/university-program/benefits.webp"
+          src="/img/university-program/student-gyroscope.webp"
           alt=""
-          class="w-fit h-80"
+          class="w-96 h-96 object-cover"
         />
       </div>
 
@@ -82,9 +82,9 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
         class="flex flex-col-reverse items-center lg:flex-row gap-6 w-full justify-around"
       >
         <img
-          src="/img/university-program/why-purdue.webp"
+          src="/img/university-program/student-reading.webp"
           alt=""
-          class="w-fit h-80"
+          class="w-96 h-96 object-cover"
         />
         <div class="max-w-xl p-10">
           <h2 class="text-3xl font-semibold text-center tracking-tight">
@@ -109,11 +109,11 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
         </div>
       </div>
 
-      <h3 class="p-10 text-xl italic text-center max-w-3xl self-center">
+      <h3 class="p-10 text-xl text text-center max-w-3xl self-center">
         Seize the opportunity to shape your aviation future by enrolling now or
         visiting <a
           href="https://RedArrow.PurdueGlobal.edu"
-          class="underline hover:text-blue-500"
+          class="text-blue-600 hover:underline hover:text-blue-800"
           target="_blank"
           rel="noopener"
         >
@@ -121,6 +121,32 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
         </a>. Launch your career with the combined excellence of Red Arrow
         Flight Academy and Purdue University Global.
       </h3>
+
+      <div
+        class="flex flex-col lg:max-w-2xl mx-auto gap-5 m-5 mt-0 rounded-xl border-2 border-main-red shadow-gray-500 text-black bg-gradient-to-bl from-gray-200 to-gray-300 p-5"
+      >
+        <h4 class="font-semibold text-xl text-center">
+          Flight Program Application
+        </h4>
+        <p class="text-center">
+          If you are interested in enrolling in one of our flight programs,
+          please download and fill out this application. You may bring it in to
+          our office or email it to us at{" "}
+          <a
+            href="mailto:info@flyredarrow.com"
+            class="text-blue-600 hover:underline hover:text-blue-800"
+          >
+            info@flyredarrow.com
+          </a>
+        </p>
+        <a
+          href="/files/red-arrow-us-application.pdf"
+          download="red-arrow-us-application.pdf"
+          class="btn-red self-center"
+        >
+          Download
+        </a>
+      </div>
     </div>
   </section>
 

@@ -40,7 +40,7 @@ export const flightPrograms = {
       link: "/flight-programs/international-program",
     },
     {
-      name: "Military / Rotor Transition",
+      name: "Military/Rotor Transition Training",
       link: "/flight-programs/military-rotor-transition",
     },
   ],
@@ -52,7 +52,7 @@ export const resources = {
   mobileClassName: "resources-mobile",
   submenu: [
     {
-      name: "FAA Exam Center",
+      name: "FAA Testing Center",
       link: "/resources/faa-exam-center",
     },
     {
