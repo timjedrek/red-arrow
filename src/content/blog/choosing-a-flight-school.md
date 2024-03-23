@@ -20,13 +20,13 @@ Red Arrow Flight Academy holds accreditation from the FAA as a Part 141 flight s
 
 The caliber of flight instructors profoundly influences the learning experience and your proficiency as a pilot. Seek out flight schools with experienced, certified instructors who possess a track record of effectively teaching students and preparing them for certification exams. Experienced instructors bring a wealth of knowledge, expertise, and real-world flying experience to the classroom, fostering a supportive learning environment and helping you develop the skills necessary for safe and confident flying.
 
-At Red Arrow Flight Academy, [our team of instructors](https://red-arrow-user-auth.web.app/about/our-team) comprises seasoned aviation professionals with extensive experience in both flight instruction and commercial aviation. Our instructors are dedicated to guiding students through every stage of their training journey, imparting invaluable insights and techniques to help them excel as pilots.
+At Red Arrow Flight Academy, [our team of instructors](https://www.flyredarrow.com/about/our-team) comprises seasoned aviation professionals with extensive experience in both flight instruction and commercial aviation. Our instructors are dedicated to guiding students through every stage of their training journey, imparting invaluable insights and techniques to help them excel as pilots.
 
 ## Fleet and Maintenance
 
 The condition and variety of aircraft in a flight school's fleet play a crucial role in enhancing your training experience and providing exposure to different aircraft types. Look for schools with a well-maintained fleet equipped with modern avionics, ensuring safety, reliability, and optimal learning opportunities. Additionally, inquire about the school's maintenance practices to ensure that aircraft undergo regular inspections and upkeep to uphold the highest safety standards.
 
-Red Arrow Flight Academy boasts a fleet of meticulously maintained aircraft. Each aircraft undergoes routine inspections and servicing to ensure peak performance and reliability at our [Red Arrow Maintenance Shop](https://red-arrow-user-auth.web.app/resources/maintenance). Students can train with confidence knowing they're flying in well-equipped and well-maintained aircraft.
+Red Arrow Flight Academy boasts a fleet of meticulously maintained aircraft. Each aircraft undergoes routine inspections and servicing to ensure peak performance and reliability at our [Red Arrow Maintenance Shop](https://www.flyredarrow.com/resources/maintenance). Students can train with confidence knowing they're flying in well-equipped and well-maintained aircraft.
 
 ![Red Arrow staff carefully checks each aircraft for proper maintenance upkeep](/red-arrow-staff.webp)
 
@@ -52,4 +52,4 @@ Red Arrow Flight Academy takes pride in its impeccable safety record and stellar
 
 Choosing the right flight school is the crucial first step in becoming a proficient and confident pilot. By carefully evaluating factors such as accreditation, experienced instructors, fleet and maintenance standards, curriculum and training programs, and safety record and reputation, you can make an informed decision and select a flight school that aligns with your goals and aspirations.
 
-At Red Arrow Flight Academy, we're committed to providing this unparalleled training and support. [Contact us](https://red-arrow-user-auth.web.app/enrollment) to take one more step closer to becoming a pilot with confidence and excellence today.
+At Red Arrow Flight Academy, we're committed to providing this unparalleled training and support. [Contact us](https://www.flyredarrow.com/enrollment) to take one more step closer to becoming a pilot with confidence and excellence today.

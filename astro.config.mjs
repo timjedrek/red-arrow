@@ -10,7 +10,7 @@ import node from "@astrojs/node";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://red-arrow-user-auth.web.app/",
+  site: "https://www.flyredarrow.com/",
   integrations: [
     mdx(),
     sitemap(),
