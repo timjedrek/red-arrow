@@ -81,15 +81,11 @@ const Navbar = ({ pathname }) => {
                         pathname === "/discovery-flight" ? "border-b-2" : ""
                       }`}
                     >
-                      Discovery Flight
+                      Fly with Us
                     </a>
                   </div>
-                  <a
-                    href="/discovery-flight-form"
-                    target="_blank"
-                    className="btn-red"
-                  >
-                    BOOK NOW
+                  <a href="/enrollment" target="_blank" className="btn-red">
+                    Enroll Now
                   </a>
                 </div>
               </div>
@@ -155,14 +151,14 @@ const Navbar = ({ pathname }) => {
               pathname === "/discovery-flight" ? "border-b-2" : ""
             }`}
           >
-            Discovery Flight
+            Fly with Us
           </a>
           <a
-            href="/discovery-flight-form"
+            href="/enrollment"
             target="_blank"
             className="btn-red place-self-center mt-5"
           >
-            BOOK NOW
+            Enroll Now
           </a>
         </div>
       </div>
