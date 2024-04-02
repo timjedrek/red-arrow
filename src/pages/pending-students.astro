@@ -64,7 +64,7 @@ import StudentLayout from "../layouts/StudentLayout.astro";
       <h2
         class="text-3xl lg:text-5xl font-bold text-main-red text-center pt-10"
       >
-        Current Students
+        Pending Students
       </h2>
       <div
         id="students"
@@ -107,7 +107,7 @@ import StudentLayout from "../layouts/StudentLayout.astro";
     const students = document.getElementById("students") as HTMLDivElement;
     getDocs(collection(db, "users")).then((querySnapshot) => {
       querySnapshot.forEach((doc) => {
-        if (doc.data().student) {
+        if (doc.data().student === false) {
           const name = document.createElement("p");
           name.className = "p-2 border-b border-r border-black";
           name.textContent = doc.data().name;
