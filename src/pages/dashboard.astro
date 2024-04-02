@@ -125,7 +125,7 @@ import StudentLayout from "../layouts/StudentLayout.astro";
       const adminEmail = adminForm["admin-email"].value;
       const addAdminRole = httpsCallable(functions, "addAdminRole");
       addAdminRole({ email: adminEmail }).then((result) => {
-        console.log(result);
+        // console.log(result);
         if (result.data.errorInfo) {
           adminErrorMessage.classList.remove("hidden");
           adminErrorMessage.textContent = result.data.errorInfo.message;
@@ -211,6 +211,12 @@ import StudentLayout from "../layouts/StudentLayout.astro";
       studentsTab.href = "/students";
       desktopNav.appendChild(studentsTab);
       mobileNav.appendChild(studentsTab.cloneNode(true));
+      const pendingStudentsTab = document.createElement("a");
+      pendingStudentsTab.textContent = "Pending Students";
+      pendingStudentsTab.className = "p-2";
+      pendingStudentsTab.href = "/pending-students";
+      desktopNav.appendChild(pendingStudentsTab);
+      mobileNav.appendChild(pendingStudentsTab.cloneNode(true));
     };
 
     const addDashboardTab = () => {
