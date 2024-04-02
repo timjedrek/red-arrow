@@ -104,7 +104,12 @@ import StudentLayout from "../layouts/StudentLayout.astro";
     );
 
     const unsubscribe = onSnapshot(allStudents, (querySnapshot) => {
-      students.innerHTML = "";
+      students.innerHTML = `<p class="p-2 border-b border-r border-black font-bold uppercase">
+          Full Name
+        </p>
+        <p class="p-2 border-b border-r border-black font-bold uppercase">
+          Email
+        </p>`;
       querySnapshot.forEach((doc) => {
         const name = document.createElement("p");
         name.className = "p-2 border-b border-r border-black";
