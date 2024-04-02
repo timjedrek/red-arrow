@@ -82,12 +82,6 @@ import StudentLayout from "../layouts/StudentLayout.astro";
   <script>
     import { getAuth } from "firebase/auth";
     import { app, storageRef } from "../firebase/client";
-    import {
-      uploadBytes,
-      ref,
-      listAll,
-      getDownloadURL,
-    } from "firebase/storage";
     import { getFunctions, httpsCallable } from "firebase/functions";
     const functions = getFunctions(app);
     import {

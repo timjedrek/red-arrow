@@ -82,15 +82,7 @@ import StudentLayout from "../layouts/StudentLayout.astro";
 
   <script>
     import { getAuth } from "firebase/auth";
-    import { app, storageRef } from "../firebase/client";
-    import {
-      uploadBytes,
-      ref,
-      listAll,
-      getDownloadURL,
-    } from "firebase/storage";
-    import { getFunctions, httpsCallable } from "firebase/functions";
-    const functions = getFunctions(app);
+    import { app } from "../firebase/client";
     import {
       getFirestore,
       collection,
@@ -100,23 +92,28 @@ import StudentLayout from "../layouts/StudentLayout.astro";
       doc,
       where,
       query,
+      onSnapshot,
     } from "firebase/firestore";
     const db = getFirestore(app);
     const auth = getAuth(app);
 
     const students = document.getElementById("students") as HTMLDivElement;
-    getDocs(collection(db, "users")).then((querySnapshot) => {
+    const allNonStudents = query(
+      collection(db, "users"),
+      where("student", "==", false),
+    );
+
+    const unsubscribe = onSnapshot(allNonStudents, (querySnapshot) => {
+      students.innerHTML = "";
       querySnapshot.forEach((doc) => {
-        if (doc.data().student === false) {
-          const name = document.createElement("p");
-          name.className = "p-2 border-b border-r border-black";
-          name.textContent = doc.data().name;
-          const email = document.createElement("p");
-          email.className = "p-2 border-b border-r border-black";
-          email.textContent = doc.data().email;
-          students.appendChild(name);
-          students.appendChild(email);
-        }
+        const name = document.createElement("p");
+        name.className = "p-2 border-b border-r border-black";
+        name.textContent = doc.data().name;
+        const email = document.createElement("p");
+        email.className = "p-2 border-b border-r border-black";
+        email.textContent = doc.data().email;
+        students.appendChild(name);
+        students.appendChild(email);
       });
     });
 
