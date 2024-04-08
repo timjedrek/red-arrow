@@ -95,7 +95,7 @@ export const fleet = [
       maxSpeed: "Knots",
       year: "2005",
       equipment: " 2 Garmin G1000, Airconditioning",
-      rentalPrice: "$186 / hour wet",
+      rentalPrice: "$179 / hour wet",
     },
     imageAlignment: "center",
   },
