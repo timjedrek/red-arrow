@@ -5,6 +5,7 @@ import RedArrowFleetImage from "../../../public/img/new-to-flying/red-arrow-flee
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import Section from "../../components/Section.astro";
 import PplProcess from "../../components/PplProcess.jsx";
+import Timeline from "../../components/Timeline.astro";
 ---
 
 <BaseLayout
@@ -229,7 +230,7 @@ import PplProcess from "../../components/PplProcess.jsx";
     </div>
     <div
       slot="application-form"
-      class="flex flex-col lg:max-w-2xl mx-auto gap-5 m-5 mt-0 rounded-xl border-2 border-main-red shadow-gray-500 text-black bg-gradient-to-bl from-gray-200 to-gray-300 p-5"
+      class="flex mt-10 flex-col lg:max-w-2xl mx-auto gap-5 m-5 lg:mt-0 rounded-xl border-2 border-main-red shadow-gray-500 text-black bg-gradient-to-bl from-gray-200 to-gray-300 p-5"
     >
       <h4 class="font-semibold text-xl text-center">
         Flight Program Application
@@ -253,6 +254,7 @@ import PplProcess from "../../components/PplProcess.jsx";
         Download
       </a>
     </div>
+    <Timeline slot="application-form" />
   </Section>
 
   <!-- Call to Action Banner -->
