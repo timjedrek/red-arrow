@@ -1,121 +1,201 @@
 ---
-
+import { Icon } from "astro-icon/components";
 ---
 
-<section class="py-10">
-  <h1 class="text-center text-3xl font-semibold tracking-tight pb-5">
-    Aviation Certification Timeline
-  </h1>
-  <ul id="timeline-ul">
-    <li style="--accent-color:#af3125">
-      <div class="date">Private Pilot Certificate</div>
-      <div
-        class="shadow-md shadow-gray-400 bg-gradient-to-bl from-gray-200 to-gray-300"
-      >
-        <div class="title text-xl">2-3 Months</div>
-        <div class="descr">
-          This foundational course covers the basics of flying, navigation, and
-          communication, equipping students with the skills needed for solo
-          flights and preparing them for advanced certifications.
+<section class="py-10 bg-gradient-to-br from-white to-gray-200">
+  <div>
+    <h2 class="text-center text-3xl font-semibold tracking-tight">
+      Certification and Beyond
+    </h2>
+    <h3 class="py-5 text-xl text-center max-w-2xl mx-auto px-5">
+      At Red Arrow, we're committed to guiding you toward a fulfilling career in
+      aviation. Beyond earning your Private Pilot License, our training programs
+      open doors to diverse and exciting career opportunities.
+    </h3>
+    <a href="/about/our-story" class="w-fit block mx-auto mb-10">
+      <div class="btn-red w-fit">Why Red Arrow?</div>
+    </a>
+    <ul id="timeline-ul">
+      <li style="--accent-color:#af3125">
+        <div class="date">Private Pilot Certificate</div>
+        <div
+          class="shadow-md shadow-gray-400 bg-gradient-to-bl from-gray-200 to-gray-300"
+        >
+          <div class="title text-xl">Approx. 2-3 Months</div>
+          <div class="descr">
+            This foundational course covers the basics of flying, navigation,
+            and communication, equipping students with the skills needed for
+            solo flights and preparing them for advanced certifications.
+          </div>
+          <div class="p-6 pt-0 flex justify-end">
+            <a
+              href="/flight-programs/training-courses#training-courses"
+              class="text-main-red font-semibold hover:underline flex items-center gap-1"
+              ><p>View training</p>
+              <Icon name="fluent:arrow-right-12-regular" /></a
+            >
+          </div>
         </div>
-      </div>
-    </li>
-    <li style="--accent-color:#af3125">
-      <div class="date">Commercial Certificate</div>
-      <div
-        class="shadow-md shadow-gray-400 bg-gradient-to-bl from-gray-200 to-gray-300"
-      >
-        <div class="title text-xl">2-3 Months</div>
-        <div class="descr">
-          Building on the private pilot's license, this certification allows
-          pilots to operate aircraft commercially, enhancing skills in complex
-          flight operations and expanding employment opportunities in aviation.
+      </li>
+      <li style="--accent-color:#af3125">
+        <div class="date">Instrument Rating</div>
+        <div
+          class="shadow-md shadow-gray-400 bg-gradient-to-bl from-gray-200 to-gray-300"
+        >
+          <div class="title text-xl">Approx. 2-3 Months</div>
+          <div class="descr">
+            Pilots learn to fly in various weather conditions using only
+            instruments, a critical skill for enhancing safety and efficiency in
+            flights, especially in adverse weather and low visibility.
+          </div>
+          <div class="p-6 pt-0 flex justify-end">
+            <a
+              href="/flight-programs/training-courses#training-courses"
+              class="text-main-red font-semibold hover:underline flex items-center gap-1"
+              ><p>View training</p>
+              <Icon name="fluent:arrow-right-12-regular" /></a
+            >
+          </div>
         </div>
-      </div>
-    </li>
-    <li style="--accent-color:#af3125">
-      <div class="date after:border-2 after:text-main-red">
-        Certified Flight Instructor (CFI)
-      </div>
-      <div
-        class="shadow-md shadow-gray-400 bg-gradient-to-bl from-gray-200 to-gray-300"
-      >
-        <div class="title text-xl">2-3 Months</div>
-        <div class="descr">
-          This certification trains pilots to become educators, focusing on
-          teaching methodologies, student assessment, and flight training
-          techniques, enabling them to instruct aspiring pilots effectively.
+      </li>
+      <li style="--accent-color:#af3125">
+        <div class="date">Commercial Certificate</div>
+        <div
+          class="shadow-md shadow-gray-400 bg-gradient-to-bl from-gray-200 to-gray-300"
+        >
+          <div class="title text-xl">Approx. 2-3 Months</div>
+          <div class="descr">
+            Building on the private pilot's license, this certification allows
+            pilots to operate aircraft commercially, enhancing skills in complex
+            flight operations and expanding employment opportunities in
+            aviation.
+          </div>
+          <div class="p-6 pt-0 flex justify-end">
+            <a
+              href="/flight-programs/training-courses#training-courses"
+              class="text-main-red font-semibold hover:underline flex items-center gap-1"
+              ><p>View training</p>
+              <Icon name="fluent:arrow-right-12-regular" /></a
+            >
+          </div>
         </div>
-      </div>
-    </li>
-    <li style="--accent-color:#af3125">
-      <div class="date">Certified Flight Instructor Instrument (CFII)</div>
-      <div
-        class="shadow-md shadow-gray-400 bg-gradient-to-bl from-gray-200 to-gray-300"
-      >
-        <div class="title text-xl">2-3 Months</div>
-        <div class="descr">
-          Specializing in instrument flying, this certification allows
-          instructors to teach navigation using instruments, essential for
-          flying in poor weather conditions and advancing flight safety.
+      </li>
+      <li style="--accent-color:#af3125">
+        <div class="date after:border-2 after:text-main-red">
+          Certified Flight Instructor (CFI)
         </div>
-      </div>
-    </li>
-    <li style="--accent-color:#af3125">
-      <div class="date">Instrument Rating</div>
-      <div
-        class="shadow-md shadow-gray-400 bg-gradient-to-bl from-gray-200 to-gray-300"
-      >
-        <div class="title text-xl">2-3 Months</div>
-        <div class="descr">
-          Pilots learn to fly in various weather conditions using only
-          instruments, a critical skill for enhancing safety and efficiency in
-          flights, especially in adverse weather and low visibility.
+        <div
+          class="shadow-md shadow-gray-400 bg-gradient-to-bl from-gray-200 to-gray-300"
+        >
+          <div class="title text-xl">Approx. 2-3 Months</div>
+          <div class="descr">
+            This certification trains pilots to become educators, focusing on
+            teaching methodologies, student assessment, and flight training
+            techniques, enabling them to instruct aspiring pilots effectively.
+          </div>
+          <div class="p-6 pt-0 flex justify-end">
+            <a
+              href="/flight-programs/training-courses#training-courses"
+              class="text-main-red font-semibold hover:underline flex items-center gap-1"
+              ><p>View training</p>
+              <Icon name="fluent:arrow-right-12-regular" /></a
+            >
+          </div>
         </div>
-      </div>
-    </li>
-    <li style="--accent-color:#af3125">
-      <div class="date">Aviation Specialization</div>
-      <div
-        class="shadow-md shadow-gray-400 bg-gradient-to-bl from-gray-200 to-gray-300"
-      >
-        <div class="title text-xl">Varies</div>
-        <div class="descr">
-          Pilots can pursue specialized training in areas like aerobatics,
-          agricultural aviation, or airline transport, tailored to their career
-          goals and interests, further refining their expertise.
+      </li>
+      <li style="--accent-color:#af3125">
+        <div class="date">Certified Flight Instructor Instrument (CFII)</div>
+        <div
+          class="shadow-md shadow-gray-400 bg-gradient-to-bl from-gray-200 to-gray-300"
+        >
+          <div class="title text-xl">Approx. 2-3 Months</div>
+          <div class="descr">
+            Specializing in instrument flying, this certification allows
+            instructors to teach navigation using instruments, essential for
+            flying in poor weather conditions and advancing flight safety.
+          </div>
+          <div class="p-6 pt-0 flex justify-end">
+            <a
+              href="/flight-programs/training-courses#training-courses"
+              class="text-main-red font-semibold hover:underline flex items-center gap-1"
+              ><p>View training</p>
+              <Icon name="fluent:arrow-right-12-regular" /></a
+            >
+          </div>
         </div>
-      </div>
-    </li>
-    <li style="--accent-color:#af3125">
-      <div class="date">Charter Pilot</div>
-      <div
-        class="shadow-md shadow-gray-400 bg-gradient-to-bl from-gray-200 to-gray-300"
-      >
-        <div class="title text-xl">Varies</div>
-        <div class="descr">
-          Training focuses on operating non-scheduled flights, offering
-          flexibility and requiring strong decision-making skills to manage
-          varied flight operations, from short local trips to international
-          charters.
+      </li>
+
+      <li style="--accent-color:#af3125">
+        <div class="date">Aviation Specialization</div>
+        <div
+          class="shadow-md shadow-gray-400 bg-gradient-to-bl from-gray-200 to-gray-300"
+        >
+          <div class="title text-xl">Time to Completion Varies</div>
+          <div class="descr">
+            Pilots can pursue specialized training in areas like aerobatics,
+            agricultural aviation, or airline transport, tailored to their
+            career goals and interests, further refining their expertise.
+          </div>
         </div>
-      </div>
-    </li>
-    <li style="--accent-color:#af3125">
-      <div class="date">Airline Pilot</div>
-      <div
-        class="shadow-md shadow-gray-400 bg-gradient-to-bl from-gray-200 to-gray-300"
-      >
-        <div class="title text-xl">Varies</div>
-        <div class="descr">
-          This ultimate certification level involves rigorous training for
-          flying large commercial aircraft, emphasizing advanced navigation,
-          safety procedures, and crew management, leading to a career in major
-          airlines.
+      </li>
+      <li style="--accent-color:#af3125">
+        <div class="date">Charter Pilot</div>
+        <div
+          class="shadow-md shadow-gray-400 bg-gradient-to-bl from-gray-200 to-gray-300"
+        >
+          <div class="title text-xl">Time to Completion Varies</div>
+          <div class="descr">
+            Training focuses on operating non-scheduled flights, offering
+            flexibility and requiring strong decision-making skills to manage
+            varied flight operations, from short local trips to international
+            charters.
+          </div>
         </div>
-      </div>
-    </li>
-  </ul>
+      </li>
+      <li style="--accent-color:#af3125">
+        <div class="date">Airline Pilot</div>
+        <div
+          class="shadow-md shadow-gray-400 bg-gradient-to-bl from-gray-200 to-gray-300"
+        >
+          <div class="title text-xl">Time to Completion Varies</div>
+          <div class="descr">
+            This ultimate certification level involves rigorous training for
+            flying large commercial aircraft, emphasizing advanced navigation,
+            safety procedures, and crew management, leading to a career in major
+            airlines.
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="px-5">
+    <div
+      class="flex mt-20 flex-col lg:max-w-2xl mx-auto gap-5 m-5 rounded-xl border-2 border-main-red shadow-gray-500 text-black bg-gradient-to-bl from-gray-200 to-gray-300 p-5"
+    >
+      <h4 class="font-semibold text-xl text-center">
+        Flight Program Application
+      </h4>
+      <p class="text-center">
+        If you are interested in enrolling in one of our flight programs, please
+        download and fill out this application. You may bring it in to our
+        office or email it to us at{" "}
+        <a
+          href="mailto:info@flyredarrow.com"
+          class="text-blue-600 hover:underline hover:text-blue-800"
+        >
+          info@flyredarrow.com
+        </a>
+      </p>
+      <a
+        href="/files/red-arrow-us-application.pdf"
+        download="red-arrow-us-application.pdf"
+        class="btn-red self-center"
+      >
+        Download
+      </a>
+    </div>
+  </div>
 </section>
 
 <style>
