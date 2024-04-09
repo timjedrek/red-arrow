@@ -1,5 +1,7 @@
 ---
 import { Icon } from "astro-icon/components";
+import RedArrowCircle from "../../public/img/red-arrow-circle.png";
+import { Image } from "astro:assets";
 ---
 
 <section class="py-10 bg-gradient-to-br from-white to-gray-200">
@@ -16,11 +18,16 @@ import { Icon } from "astro-icon/components";
       <div class="btn-red w-fit">Why Red Arrow?</div>
     </a>
     <ul id="timeline-ul">
-      <li style="--accent-color:#af3125">
+      <li style="--accent-color:#af3125" class="relative">
         <div class="date leading-none">Private Pilot Certificate</div>
         <div
           class="shadow-md shadow-gray-400 bg-gradient-to-bl from-gray-200 to-gray-300"
         >
+          <Image
+            src={RedArrowCircle}
+            alt="Red Arrow Circle"
+            class="size-14 absolute top-0 -left-[87px] sm:left-auto sm:-right-[87px]"
+          />
           <div class="title text-xl">Approx. 2-3 Months</div>
           <div class="descr">
             This foundational course covers the basics of flying, navigation,
@@ -37,11 +44,16 @@ import { Icon } from "astro-icon/components";
           </div>
         </div>
       </li>
-      <li style="--accent-color:#af3125">
+      <li style="--accent-color:#af3125" class="relative">
         <div class="date leading-none">Instrument Rating</div>
         <div
           class="shadow-md shadow-gray-400 bg-gradient-to-bl from-gray-200 to-gray-300"
         >
+          <Image
+            src={RedArrowCircle}
+            alt="Red Arrow Circle"
+            class="size-14 absolute top-0 -left-[87px] sm:-left-[85px]"
+          />
           <div class="title text-xl">Approx. 2-3 Months</div>
           <div class="descr">
             Pilots learn to fly in various weather conditions using only
@@ -58,11 +70,16 @@ import { Icon } from "astro-icon/components";
           </div>
         </div>
       </li>
-      <li style="--accent-color:#af3125">
+      <li style="--accent-color:#af3125" class="relative">
         <div class="date leading-none">Commercial Certificate</div>
         <div
           class="shadow-md shadow-gray-400 bg-gradient-to-bl from-gray-200 to-gray-300"
         >
+          <Image
+            src={RedArrowCircle}
+            alt="Red Arrow Circle"
+            class="size-14 absolute top-0 -left-[87px] sm:left-auto sm:-right-[87px]"
+          />
           <div class="title text-xl">Approx. 2-3 Months</div>
           <div class="descr">
             Building on the private pilot's license, this certification allows
@@ -80,13 +97,18 @@ import { Icon } from "astro-icon/components";
           </div>
         </div>
       </li>
-      <li style="--accent-color:#af3125">
+      <li style="--accent-color:#af3125" class="relative">
         <div class="date after:border-2 after:text-main-red">
           Certified Flight Instructor (CFI)
         </div>
         <div
           class="shadow-md shadow-gray-400 bg-gradient-to-bl from-gray-200 to-gray-300"
         >
+          <Image
+            src={RedArrowCircle}
+            alt="Red Arrow Circle"
+            class="size-14 absolute top-0 -left-[87px] sm:-left-[85px]"
+          />
           <div class="title text-xl">Approx. 2-3 Months</div>
           <div class="descr">
             This certification trains pilots to become educators, focusing on
@@ -103,13 +125,18 @@ import { Icon } from "astro-icon/components";
           </div>
         </div>
       </li>
-      <li style="--accent-color:#af3125">
+      <li style="--accent-color:#af3125" class="relative">
         <div class="date leading-none">
           Certified Flight Instructor Instrument (CFII)
         </div>
         <div
           class="shadow-md shadow-gray-400 bg-gradient-to-bl from-gray-200 to-gray-300"
         >
+          <Image
+            src={RedArrowCircle}
+            alt="Red Arrow Circle"
+            class="size-14 absolute top-0 -left-[87px] sm:left-auto sm:-right-[87px]"
+          />
           <div class="title text-xl">Approx. 2-3 Months</div>
           <div class="descr">
             Specializing in instrument flying, this certification allows
@@ -127,11 +154,16 @@ import { Icon } from "astro-icon/components";
         </div>
       </li>
 
-      <li style="--accent-color:#af3125">
+      <li style="--accent-color:#af3125" class="relative">
         <div class="date leading-none">Aviation Specialization</div>
         <div
           class="shadow-md shadow-gray-400 bg-gradient-to-bl from-gray-200 to-gray-300"
         >
+          <Image
+            src={RedArrowCircle}
+            alt="Red Arrow Circle"
+            class="size-14 absolute top-0 -left-[87px] sm:-left-[85px]"
+          />
           <div class="title text-xl">Time to Completion Varies</div>
           <div class="descr">
             Pilots can pursue specialized training in areas like aerobatics,
@@ -140,11 +172,16 @@ import { Icon } from "astro-icon/components";
           </div>
         </div>
       </li>
-      <li style="--accent-color:#af3125">
+      <li style="--accent-color:#af3125" class="relative">
         <div class="date">Charter Pilot</div>
         <div
           class="shadow-md shadow-gray-400 bg-gradient-to-bl from-gray-200 to-gray-300"
         >
+          <Image
+            src={RedArrowCircle}
+            alt="Red Arrow Circle"
+            class="size-14 absolute top-0 -left-[87px] sm:left-auto sm:-right-[87px]"
+          />
           <div class="title text-xl">Time to Completion Varies</div>
           <div class="descr">
             Training focuses on operating non-scheduled flights, offering
@@ -154,11 +191,16 @@ import { Icon } from "astro-icon/components";
           </div>
         </div>
       </li>
-      <li style="--accent-color:#af3125">
+      <li style="--accent-color:#af3125" class="relative">
         <div class="date leading-none">Airline Pilot</div>
         <div
           class="shadow-md shadow-gray-400 bg-gradient-to-bl from-gray-200 to-gray-300"
         >
+          <Image
+            src={RedArrowCircle}
+            alt="Red Arrow Circle"
+            class="size-14 absolute top-0 -left-[87px] sm:-left-[85px]"
+          />
           <div class="title text-xl">Time to Completion Varies</div>
           <div class="descr">
             This ultimate certification level involves rigorous training for
