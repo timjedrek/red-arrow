@@ -99,6 +99,13 @@ const TrainingCourseList = () => {
                   <h6 className="font-semibold">Get started today</h6>
                   <p className="text-sm">{courses[selectedId].content[3]}</p>
                 </div>
+                {courses[selectedId].note && (
+                  <div className="flex flex-col gap-1 mt-3">
+                    <p className="text-sm font-semibold">
+                      *{courses[selectedId].note}
+                    </p>
+                  </div>
+                )}
                 <a
                   href="/enrollment"
                   target="_blank"
