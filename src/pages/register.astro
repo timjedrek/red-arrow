@@ -94,6 +94,7 @@ const REGISTRATION_FORM_WEBHOOOK_URL = import.meta.env
                 name,
                 uid: userCredential.user.uid,
                 student: false,
+                pending: true,
               })
                 .then(() => {
                   const urlSearchParams = new URLSearchParams();
