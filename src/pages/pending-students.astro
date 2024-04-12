@@ -93,6 +93,7 @@ import StudentLayout from "../layouts/StudentLayout.astro";
       where,
       query,
       onSnapshot,
+      orderBy,
     } from "firebase/firestore";
     const db = getFirestore(app);
     const auth = getAuth(app);
@@ -100,7 +101,8 @@ import StudentLayout from "../layouts/StudentLayout.astro";
     const students = document.getElementById("students") as HTMLDivElement;
     const allNonStudents = query(
       collection(db, "users"),
-      where("student", "==", false),
+      where("pending", "==", true),
+      orderBy("name"),
     );
 
     const unsubscribe = onSnapshot(allNonStudents, (querySnapshot) => {
@@ -142,6 +144,12 @@ import StudentLayout from "../layouts/StudentLayout.astro";
       pendingStudentsTab.href = "/pending-students";
       desktopNav.appendChild(pendingStudentsTab);
       mobileNav.appendChild(pendingStudentsTab.cloneNode(true));
+      const rejectedStudentsTab = document.createElement("a");
+      rejectedStudentsTab.textContent = "Rejected Students";
+      rejectedStudentsTab.className = "p-2";
+      rejectedStudentsTab.href = "/rejected-students";
+      desktopNav.appendChild(rejectedStudentsTab);
+      mobileNav.appendChild(rejectedStudentsTab.cloneNode(true));
     };
 
     const addDashboardTab = () => {
@@ -199,6 +207,7 @@ import StudentLayout from "../layouts/StudentLayout.astro";
             name: user.displayName,
             student: false,
             uid: user.uid,
+            pending: true,
           });
         }
       });
@@ -223,7 +232,7 @@ import StudentLayout from "../layouts/StudentLayout.astro";
       );
       getDocs(student).then((querySnapshot) => {
         querySnapshot.forEach((doc) => {
-          setDoc(doc.ref, { student: true }, { merge: true });
+          setDoc(doc.ref, { student: true, pending: false }, { merge: true });
           studentSuccessMessage.classList.remove("hidden");
           studentSuccessMessage.textContent = "User is now a student";
           studentErrorMessage.textContent = "";
@@ -257,7 +266,7 @@ import StudentLayout from "../layouts/StudentLayout.astro";
       );
       getDocs(student).then((querySnapshot) => {
         querySnapshot.forEach((doc) => {
-          setDoc(doc.ref, { student: false }, { merge: true });
+          setDoc(doc.ref, { student: false, pending: false }, { merge: true });
           removeStudentSuccessMessage.classList.remove("hidden");
           removeStudentSuccessMessage.textContent =
             "User has been removed as a student";

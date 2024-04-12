@@ -64,7 +64,7 @@ import StudentLayout from "../layouts/StudentLayout.astro";
       <h2
         class="text-3xl lg:text-5xl font-bold text-main-red text-center pt-10"
       >
-        Current Students
+        Rejected Students
       </h2>
       <div
         id="students"
@@ -99,13 +99,14 @@ import StudentLayout from "../layouts/StudentLayout.astro";
     const auth = getAuth(app);
 
     const students = document.getElementById("students") as HTMLDivElement;
-    const allStudents = query(
+    const allNonStudents = query(
       collection(db, "users"),
-      where("student", "==", true),
       orderBy("name"),
+      where("student", "==", false),
+      where("pending", "==", false),
     );
 
-    const unsubscribe = onSnapshot(allStudents, (querySnapshot) => {
+    const unsubscribe = onSnapshot(allNonStudents, (querySnapshot) => {
       students.innerHTML = `<p class="p-2 border-b border-r border-black font-bold uppercase">
           Full Name
         </p>
@@ -266,7 +267,7 @@ import StudentLayout from "../layouts/StudentLayout.astro";
       );
       getDocs(student).then((querySnapshot) => {
         querySnapshot.forEach((doc) => {
-          setDoc(doc.ref, { student: false, pending: false }, { merge: true });
+          setDoc(doc.ref, { student: false, pending: true }, { merge: true });
           removeStudentSuccessMessage.classList.remove("hidden");
           removeStudentSuccessMessage.textContent =
             "User has been removed as a student";
