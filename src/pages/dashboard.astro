@@ -211,6 +211,12 @@ import StudentLayout from "../layouts/StudentLayout.astro";
       pendingStudentsTab.href = "/pending-students";
       desktopNav.appendChild(pendingStudentsTab);
       mobileNav.appendChild(pendingStudentsTab.cloneNode(true));
+      const rejectedStudentsTab = document.createElement("a");
+      rejectedStudentsTab.textContent = "Rejected Students";
+      rejectedStudentsTab.className = "p-2";
+      rejectedStudentsTab.href = "/rejected-students";
+      desktopNav.appendChild(rejectedStudentsTab);
+      mobileNav.appendChild(rejectedStudentsTab.cloneNode(true));
     };
 
     const addDashboardTab = () => {
@@ -274,6 +280,7 @@ import StudentLayout from "../layouts/StudentLayout.astro";
             name: user.displayName,
             student: false,
             uid: user.uid,
+            pending: true,
           });
         }
       });
