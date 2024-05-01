@@ -2,7 +2,7 @@
 title: "Mastering the FAA Private Pilot Written Exam"
 description: "Explore the crucial steps and preparation strategies for passing the FAA Private Pilot Written Exam. Learn how Red Arrow Flight Academy in Santa Teresa, NM, supports students from the classroom to the cockpit."
 pubDate: "2024-04-18"
-heroImage: "/public/img/blog/student-studying-for-exam.jpg"
+heroImage: "/img/blog/student-studying-for-exam.jpg"
 author: "Elsa Peralta"
 readingTime: "7 min"
 tags:

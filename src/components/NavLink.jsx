@@ -3,7 +3,6 @@ const NavLink = ({ menuItem, pathname, toggled, onShow }) => {
   return (
     <div className="relative">
       <a
-        id={menuItem.name}
         onClick={onShow}
         className={`cursor-pointer text-xl text-white py-3 hover:border-b-2 border-main-red whitespace-nowrap ${
           isActive ? "border-b-2" : ""
