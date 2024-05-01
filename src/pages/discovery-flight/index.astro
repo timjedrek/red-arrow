@@ -67,6 +67,7 @@ import EnrollNowCTA from "../../components/EnrollNowCTA.astro";
 
   <section
     class="relative bg-cfi-and-student bg-top bg-cover bg-fixed bg-main-red text-white flex flex-col items-center"
+    id="pricing"
   >
     <div class="absolute bg-main-red/60 w-full h-full z-10"></div>
     <div
@@ -119,3 +120,13 @@ import EnrollNowCTA from "../../components/EnrollNowCTA.astro";
 
   <ContactUs />
 </BaseLayout>
+
+<script>
+  const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+
+  const pricing = document.getElementById("pricing");
+
+  if (isSafari && pricing) {
+    pricing.classList.remove("bg-fixed");
+  }
+</script>
