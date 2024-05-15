@@ -42,7 +42,7 @@ Our instructors are dedicated to guiding you through the study materials and cla
 
 The ultimate aim of the FAA written exam is to confirm that you possess a well-rounded understanding of all aspects of flying safely as a private pilot. This knowledge is crucial not just for passing the test but for your entire flying career, laying a solid groundwork before hands-on flight training begins.
 
-## Ensuring Checkride Success
+### Ensuring Checkride Success
 
 Passing the written exam is more than a mere formality; it's a testament to your mastery of critical aviation knowledge. This mastery builds confidence and competence, crucial as you advance to the checkride—the final practical exam conducted by an FAA examiner.
 
