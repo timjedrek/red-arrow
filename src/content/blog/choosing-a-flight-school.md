@@ -2,7 +2,7 @@
 title: "Choosing a Flight School"
 description: "The thought of starting flight training can be daunting from the first step. When embarking on the path to becoming a pilot, selecting the right flight school is paramount to your success."
 pubDate: "Mar 20, 2024"
-heroImage: "/red-arrow-founder.webp"
+heroImage: "/src/assets/red-arrow-founder.webp"
 author: "Tomas Peralta"
 readingTime: "2 min"
 tags: ["Aviation School", "Student Pilot"]
