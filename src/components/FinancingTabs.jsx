@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const FinancingTabs = () => {
-  const [currentTab, setCurrentTab] = useState("Meritize");
+  const [currentTab, setCurrentTab] = useState("Quick Comparison");
 
   const meritize = (
     <section className="flex flex-col items-center bg-gradient-to-br from-white to-gray-200 overflow-hidden">
@@ -696,10 +696,10 @@ const FinancingTabs = () => {
           defaultValue={currentTab}
           onChange={(e) => setCurrentTab(e.target.value)}
         >
+          <option>Quick Comparison</option>
           <option>Meritize</option>
           <option>Stratus Financial</option>
           <option>Flight Training Finance</option>
-          <option>Quick Comparison</option>
         </select>
       </div>
 
@@ -708,6 +708,16 @@ const FinancingTabs = () => {
           className="isolate flex divide-x divide-gray-200 rounded-lg shadow"
           aria-label="Tabs"
         >
+          <div
+            className={`${currentTab === "Quick Comparison" ? "text-gray-900" : "text-gray-500 hover:text-gray-700"} cursor-pointer rounded-l-lg group relative min-w-0 flex-1 overflow-hidden bg-white py-4 px-4 text-center font-medium hover:bg-gray-50 focus:z-10`}
+            onClick={() => setCurrentTab("Quick Comparison")}
+          >
+            <span>Quick Comparison</span>
+            <span
+              aria-hidden="true"
+              className={`${currentTab === "Quick Comparison" ? "bg-main-red" : "bg-transparent"} absolute inset-x-0 bottom-0 h-0.5`}
+            ></span>
+          </div>
           <div
             className={`${currentTab === "Meritize" ? "text-gray-900" : "text-gray-500 hover:text-gray-700"} cursor-pointer rounded-l-lg group relative min-w-0 flex-1 overflow-hidden bg-white py-4 px-4 text-center font-medium hover:bg-gray-50 focus:z-10`}
             aria-current="page"
@@ -737,16 +747,6 @@ const FinancingTabs = () => {
             <span
               aria-hidden="true"
               className={`${currentTab === "Flight Training Finance" ? "bg-main-red" : "bg-transparent"} absolute inset-x-0 bottom-0 h-0.5`}
-            ></span>
-          </div>
-          <div
-            className={`${currentTab === "Quick Comparison" ? "text-gray-900" : "text-gray-500 hover:text-gray-700"} cursor-pointer rounded-l-lg group relative min-w-0 flex-1 overflow-hidden bg-white py-4 px-4 text-center font-medium hover:bg-gray-50 focus:z-10`}
-            onClick={() => setCurrentTab("Quick Comparison")}
-          >
-            <span>Quick Comparison</span>
-            <span
-              aria-hidden="true"
-              className={`${currentTab === "Quick Comparison" ? "bg-main-red" : "bg-transparent"} absolute inset-x-0 bottom-0 h-0.5`}
             ></span>
           </div>
         </div>
