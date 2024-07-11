@@ -3,6 +3,7 @@ import ContactUs from "../../components/ContactUs.astro";
 import HomeLayout from "../../layouts/HomeLayout.astro";
 import ScheduleCallCTA from "../../components/ScheduleCallCTA.astro";
 import FinancingTabs from "../../components/FinancingTabs";
+import QuizCTA from "../../components/QuizCTA.astro";
 ---
 
 <HomeLayout
@@ -47,6 +48,8 @@ import FinancingTabs from "../../components/FinancingTabs";
   </header>
 
   <FinancingTabs client:load />
+
+  <QuizCTA red={true} />
 
   <!-- Call to Action Banner -->
   <ScheduleCallCTA />
