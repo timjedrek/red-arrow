@@ -5,6 +5,7 @@ import HomeLayout from "../layouts/HomeLayout.astro";
 import Section from "../components/Section.astro";
 import Reviews from "../components/Reviews";
 import Partners from "../components/Partners.astro";
+import QuizCTA from "../components/QuizCTA.astro";
 ---
 
 <HomeLayout
@@ -167,8 +168,10 @@ import Partners from "../components/Partners.astro";
     </div>
   </Section>
 
+  <QuizCTA />
+
   <section
-    class="bg-gradient-to-br py-10 px-5 from-main-red to-red-900 text-white"
+    class="bg-gradient-to-br py-10 px-5 from-main-red to-red-900 text-white z-10 relative"
   >
     <div class="flex flex-col items-center max-w-5xl px-5 mx-auto">
       <h2 class="text-3xl font-semibold text-center tracking-tight">
