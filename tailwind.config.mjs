@@ -14,7 +14,7 @@ export default {
         "our-story": "url('/img/our-story/banner.webp')",
         "our-team": "url('/img/our-team/banner.webp')",
         "our-fleet": "url('/img/our-fleet/banner.webp')",
-        pilot: "url('/img/pilot-with-cessna.webp')",
+        pilot: "url('/dispatch-manager-taking-the-red-arrow-pilot-quiz.jpg')",
         maintenance: "url('/img/maintenance/banner.webp')",
         military: "url('/img/military/banner.webp')",
         "new-to-flying": "url('/img/new-to-flying/banner.webp')",
