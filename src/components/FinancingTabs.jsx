@@ -422,7 +422,7 @@ const FinancingTabs = () => {
                   download="stratus-financial-brochure.pdf"
                   className="hover:text-blue-800 hover:underline text-blue-600"
                 >
-                  Stratus Finacial Brochure
+                  Stratus Financial Brochure
                 </a>
               </li>
               <li>
@@ -431,7 +431,7 @@ const FinancingTabs = () => {
                   download="stratus-financial-booklet.pdf"
                   className="hover:text-blue-800 hover:underline text-blue-600"
                 >
-                  Stratus Finacial Booklet
+                  Stratus Financial Booklet
                 </a>
               </li>
               <li>
@@ -440,7 +440,7 @@ const FinancingTabs = () => {
                   download="stratus-financial-one-page.pdf"
                   className="hover:text-blue-800 hover:underline text-blue-600"
                 >
-                  Stratus Finacial One-Page
+                  Stratus Financial One-Page
                 </a>
               </li>
             </ul>
