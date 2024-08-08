@@ -1,26 +1,29 @@
 ---
-publishDate: 2024-08-07
-author: Tomas Peralta
-title: Reading an Instrument Panel
-excerpt: Understanding the instrument panel is essential for every pilot. Understand how to read key flight instruments and learn their functions to ensure safe and efficient flight training while at Red Arrow Flight Academy.
-image: ![Working on an instrument panel at Red Arrow Maintenance](/public/red-arrow-maintenance-personel-fixing-instrument-panel.webp)
-category: Pilot Training
+pubDate: "2024-08-07"
+author: "Tomas Peralta"
+title: "Reading an Instrument Panel"
+description: "Understanding the instrument panel is essential for every pilot. Understand how to read key flight instruments and learn their functions to ensure safe and efficient flight training while at Red Arrow Flight Academy."
+heroImage: "/red-arrow-maintenance-personel-fixing-instrument-panel.webp"
+category: "Pilot Training"
+readingTime: "3 min"
 tags:
-  - instrument panel
-  - flight instruments
-  - pilot training
-  - Red Arrow Flight Academy
-  - aviation education
-  - CFI training
-  - instrument rating
-  - flight lessons
-  - GI Bill
-  - Fort Bliss
-  - El Paso
-  - Santa Teresa
-  - Dona Ana County
-  ---
-  
+  [
+    "instrument panel",
+    "flight instruments",
+    "pilot training",
+    "Red Arrow Flight Academy",
+    "aviation education",
+    "CFI training",
+    "instrument rating",
+    "flight lessons",
+    "GI Bill",
+    "Fort Bliss",
+    "El Paso",
+    "Santa Teresa",
+    "Dona Ana County",
+  ]
+---
+
 Flying demands a thorough understanding of your aircraft's instrument panel. These instruments are pivotal in providing real-time data on the plane's performance and position. At Red Arrow Flight Academy, we emphasize the importance of mastering these tools to ensure our students can navigate safely and efficiently.
 
 ## Core Flight Instruments
@@ -28,7 +31,6 @@ Flying demands a thorough understanding of your aircraft's instrument panel. The
 In every cockpit, the "six-pack" instruments are fundamental. These include the Airspeed Indicator, Attitude Indicator, Altimeter, Vertical Speed Indicator, Heading Indicator, and Turn Coordinator. Each instrument serves a unique purpose:
 
 - **Airspeed Indicator (ASI)**: This measures how fast the aircraft is moving through the air. Understanding speed ranges such as Vne (Never Exceed Speed) and Va (Maneuvering Speed) is crucial for safe operations.
-  
 - **Attitude Indicator (AI)**: This shows the aircraft’s orientation relative to the horizon, which is vital for maintaining proper flight posture, especially in poor visibility.
 
 - **Altimeter**: By measuring altitude above mean sea level, the altimeter helps pilots maintain safe flight levels and clearances.
