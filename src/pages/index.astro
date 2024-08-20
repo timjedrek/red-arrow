@@ -3,7 +3,6 @@ import GuideDownload from "../components/GuideDownload.astro";
 import ContactUs from "../components/ContactUs.astro";
 import HomeLayout from "../layouts/HomeLayout.astro";
 import Section from "../components/Section.astro";
-import Reviews from "../components/Reviews";
 import Partners from "../components/Partners.astro";
 import QuizCTA from "../components/QuizCTA.astro";
 ---
@@ -266,8 +265,22 @@ import QuizCTA from "../components/QuizCTA.astro";
 
   <GuideDownload />
 
-  <Reviews client:visible />
+  <section class="py-12 px-5">
+    <h2 class="text-3xl lg:text-4xl font-bold text-center py-5 px-5">
+      What Our Students Say
+    </h2>
+    <div
+      class="elfsight-app-da16efd4-792e-4831-86a2-1cc641d51de5"
+      data-elfsight-app-lazy
+    >
+    </div>
+  </section>
 
   <!-- Contact Us Form -->
   <ContactUs />
 </HomeLayout>
+
+<script
+  src="https://static.elfsight.com/platform/platform.js"
+  data-use-service-core
+  defer></script>
