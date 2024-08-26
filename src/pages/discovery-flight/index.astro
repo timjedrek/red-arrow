@@ -6,6 +6,7 @@ import FlightOption from "../../components/FlightOption.astro";
 import SimulatorTestImage from "../../../public/img/discovery-flight/captain.webp";
 import RecreationalFlight from "../../../public/img/discovery-flight/recreational-flight.webp";
 import EnrollNowCTA from "../../components/EnrollNowCTA.astro";
+import AerialPhotography from "../../../public/aerial-photography-shot-of-el-paso-tx-from-red-arrow-flight-academy.jpeg";
 ---
 
 <BaseLayout
@@ -111,8 +112,14 @@ import EnrollNowCTA from "../../components/EnrollNowCTA.astro";
       description="Enjoy the view around El Paso to celebrate a special occasion for two people. If it’s a birthday, a romantic date, or just for the fun of it, book a 1-hour flight and experience flying and the city like never before."
       reverse={true}
     />
+    <FlightOption
+      image={AerialPhotography}
+      alt="El Paso couple completes a proposal post-discovery flight at KDNA"
+      title="Aerial Photography / Photo Flights"
+      description="Need photography of El Paso or Santa Teresa from above? Do you want to photograph real estate or record some footage for a film? Come fly with us at Red Arrow on a photo flight and take advantage of the view from the seat of a Cessna. For more details on our Aerial Photography offering, please call us!"
+    />
     <a href="/discovery-flight-form" target="_blank">
-      <div class="btn-red">Book a Flight</div>
+      <div class="btn-red mt-5">Book a Flight</div>
     </a>
   </section>
 
