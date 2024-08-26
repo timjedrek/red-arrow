@@ -602,7 +602,7 @@ const FinancingTabs = () => {
                 </tr>
               </thead>
               <tbody>
-                <tr>
+                {/* <tr>
                   <td className="border border-gray-500 p-3">Meritize</td>
                   <td className="border border-gray-500 p-3">
                     Individual application based on FICO score and other merits
@@ -624,9 +624,11 @@ const FinancingTabs = () => {
                   <td className="border border-gray-500 p-3">
                     Begins immediately
                   </td>
-                </tr>
+                </tr> */}
                 <tr>
-                  <td className="border border-gray-500 p-3">Stratus</td>
+                  <td className="border border-gray-500 p-3 font-semibold">
+                    Stratus Financial
+                  </td>
                   <td className="border border-gray-500 p-3">
                     Can apply with a co-borrower from the start; caters to
                     various stages of flight training
@@ -653,7 +655,9 @@ const FinancingTabs = () => {
                   </td>
                 </tr>
                 <tr>
-                  <td className="border border-gray-500 p-3">Pilot Finance</td>
+                  <td className="border border-gray-500 p-3 font-semibold">
+                    Flight Training Finance
+                  </td>
                   <td className="border border-gray-500 p-3">
                     Focus on FICO score for financing; best suited for hobbyists
                   </td>
@@ -697,7 +701,7 @@ const FinancingTabs = () => {
           onChange={(e) => setCurrentTab(e.target.value)}
         >
           <option>Quick Comparison</option>
-          <option>Meritize</option>
+          {/* <option>Meritize</option> */}
           <option>Stratus Financial</option>
           <option>Flight Training Finance</option>
         </select>
@@ -718,7 +722,7 @@ const FinancingTabs = () => {
               className={`${currentTab === "Quick Comparison" ? "bg-main-red" : "bg-transparent"} absolute inset-x-0 bottom-0 h-0.5`}
             ></span>
           </div>
-          <div
+          {/* <div
             className={`${currentTab === "Meritize" ? "text-gray-900" : "text-gray-500 hover:text-gray-700"} cursor-pointer rounded-l-lg group relative min-w-0 flex-1 overflow-hidden bg-white py-4 px-4 text-center font-medium hover:bg-gray-50 focus:z-10`}
             aria-current="page"
             onClick={() => setCurrentTab("Meritize")}
@@ -728,7 +732,7 @@ const FinancingTabs = () => {
               aria-hidden="true"
               className={`${currentTab === "Meritize" ? "bg-main-red" : "bg-transparent"} absolute inset-x-0 bottom-0 h-0.5`}
             ></span>
-          </div>
+          </div> */}
           <div
             className={`${currentTab === "Stratus Financial" ? "text-gray-900" : "text-gray-500 hover:text-gray-700"} cursor-pointer rounded-l-lg group relative min-w-0 flex-1 overflow-hidden bg-white py-4 px-4 text-center font-medium hover:bg-gray-50 focus:z-10`}
             onClick={() => setCurrentTab("Stratus Financial")}
