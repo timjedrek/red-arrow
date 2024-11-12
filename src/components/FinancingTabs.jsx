@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const FinancingTabs = () => {
-  const [currentTab, setCurrentTab] = useState("Meritize");
+  const [currentTab, setCurrentTab] = useState("Quick Comparison");
 
   const meritize = (
     <section className="flex flex-col items-center bg-gradient-to-br from-white to-gray-200 overflow-hidden">
@@ -302,13 +302,21 @@ const FinancingTabs = () => {
               className="h-16 md:h-20"
             />
           </div>
-          <div className="tracking-wider">
+          <div className="tracking-wider flex flex-col items-center">
             <p className="pt-5">
               Red Arrow Flight Academy is pleased to partner with Stratus
               Financial to make pilot training more affordable for our
               interested students! Take advantage of Stratus Financial’s unique
               loan structures and get up in the air in no time.
             </p>
+            <a
+              href="https://stratus.finance/apply/redarrow1175019/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-[#0bc1e1] cursor-pointer my-5 w-fit font-bold uppercase py-3 px-5 rounded-xl hover:scale-105 duration-200"
+            >
+              Apply Now
+            </a>
             <div className="flex flex-col md:flex-row w-full gap-5">
               <div className="flex-1">
                 <p className="pt-5 font-semibold">Student Requirements</p>
@@ -414,7 +422,7 @@ const FinancingTabs = () => {
                   download="stratus-financial-brochure.pdf"
                   className="hover:text-blue-800 hover:underline text-blue-600"
                 >
-                  Stratus Finacial Brochure
+                  Stratus Financial Brochure
                 </a>
               </li>
               <li>
@@ -423,7 +431,7 @@ const FinancingTabs = () => {
                   download="stratus-financial-booklet.pdf"
                   className="hover:text-blue-800 hover:underline text-blue-600"
                 >
-                  Stratus Finacial Booklet
+                  Stratus Financial Booklet
                 </a>
               </li>
               <li>
@@ -432,11 +440,19 @@ const FinancingTabs = () => {
                   download="stratus-financial-one-page.pdf"
                   className="hover:text-blue-800 hover:underline text-blue-600"
                 >
-                  Stratus Finacial One-Page
+                  Stratus Financial One-Page
                 </a>
               </li>
             </ul>
           </div>
+          <a
+            href="https://stratus.finance/apply/redarrow1175019/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-[#0bc1e1] cursor-pointer my-5 w-fit font-bold uppercase py-3 px-5 rounded-xl hover:scale-105 duration-200"
+          >
+            Apply Now
+          </a>
         </div>
       </section>
     </>
@@ -546,6 +562,130 @@ const FinancingTabs = () => {
       </div>
     </section>
   );
+  const quickComparison = (
+    <section className="flex flex-col items-center bg-gradient-to-br from-white to-gray-200 overflow-hidden w-full">
+      <div className="max-w-7xl px-10 py-10 w-full">
+        <div className="w-full">
+          <h2 className="text-5xl font-semibold text-center tracking-tight">
+            Financing Options Comparison
+          </h2>
+          <p className="pt-3 text-2xl text-center">
+            Compare the different financing options available to you for flight
+            training. Each option has unique features to suit various needs and
+            circumstances.
+          </p>
+
+          <div className="mt-10 overflow-auto w-full">
+            <table className="border-collapse min-w-[75rem]">
+              <thead>
+                <tr>
+                  <th className="border border-gray-500 p-3">
+                    Financing Option
+                  </th>
+                  <th className="border border-gray-500 p-3">
+                    Eligibility Criteria
+                  </th>
+                  <th className="border border-gray-500 p-3">
+                    Program Coverage
+                  </th>
+                  <th className="border border-gray-500 p-3">
+                    Time to Complete
+                  </th>
+                  <th className="border border-gray-500 p-3">Co-borrower</th>
+                  <th className="border border-gray-500 p-3">
+                    Repayment Start
+                  </th>
+                  <th className="border border-gray-500 p-3">
+                    Funding Disbursement
+                  </th>
+                  <th className="border border-gray-500 p-3">Interest</th>
+                </tr>
+              </thead>
+              <tbody>
+                {/* <tr>
+                  <td className="border border-gray-500 p-3">Meritize</td>
+                  <td className="border border-gray-500 p-3">
+                    Individual application based on FICO score and other merits
+                  </td>
+                  <td className="border border-gray-500 p-3">From 0 to CFI</td>
+                  <td className="border border-gray-500 p-3">
+                    18 months for 0 to CFI; 1 year if starting post-PPL
+                  </td>
+                  <td className="border border-gray-500 p-3">
+                    Post-acceptance; affects rate only
+                  </td>
+                  <td className="border border-gray-500 p-3">
+                    After finishing commercial or CFI
+                  </td>
+                  <td className="border border-gray-500 p-3">
+                    One-third or half of the total loan, based on financing
+                    amount
+                  </td>
+                  <td className="border border-gray-500 p-3">
+                    Begins immediately
+                  </td>
+                </tr> */}
+                <tr>
+                  <td className="border border-gray-500 p-3 font-semibold">
+                    Stratus Financial
+                  </td>
+                  <td className="border border-gray-500 p-3">
+                    Can apply with a co-borrower from the start; caters to
+                    various stages of flight training
+                  </td>
+                  <td className="border border-gray-500 p-3">
+                    Various stages from private pilot to CFI; tailored to
+                    individual training needs
+                  </td>
+                  <td className="border border-gray-500 p-3">
+                    Flexible, adapts to individual training pace
+                  </td>
+                  <td className="border border-gray-500 p-3">
+                    From the beginning; enhances loan options
+                  </td>
+                  <td className="border border-gray-500 p-3">
+                    Flexible, based on individual agreement
+                  </td>
+                  <td className="border border-gray-500 p-3">
+                    Flexible, based on student needs and school involvement
+                  </td>
+                  <td className="border border-gray-500 p-3">
+                    Varies, competitive options tailored to the borrower's
+                    circumstances
+                  </td>
+                </tr>
+                <tr>
+                  <td className="border border-gray-500 p-3 font-semibold">
+                    Flight Training Finance
+                  </td>
+                  <td className="border border-gray-500 p-3">
+                    Focus on FICO score for financing; best suited for hobbyists
+                  </td>
+                  <td className="border border-gray-500 p-3">
+                    Only PPL or IFR
+                  </td>
+                  <td className="border border-gray-500 p-3">Not specified</td>
+                  <td className="border border-gray-500 p-3">Not applicable</td>
+                  <td className="border border-gray-500 p-3">
+                    Immediately; does not defer during training; terms range
+                    from 18 to 72 months
+                  </td>
+                  <td className="border border-gray-500 p-3">
+                    Paid directly to school after each lesson; loan grows with
+                    each lesson
+                  </td>
+                  <td className="border border-gray-500 p-3">
+                    Rates vary between 12% to 18%; repayment does not defer
+                    during training
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 
   return (
     <div>
@@ -560,7 +700,8 @@ const FinancingTabs = () => {
           defaultValue={currentTab}
           onChange={(e) => setCurrentTab(e.target.value)}
         >
-          <option>Meritize</option>
+          <option>Quick Comparison</option>
+          {/* <option>Meritize</option> */}
           <option>Stratus Financial</option>
           <option>Flight Training Finance</option>
         </select>
@@ -572,6 +713,16 @@ const FinancingTabs = () => {
           aria-label="Tabs"
         >
           <div
+            className={`${currentTab === "Quick Comparison" ? "text-gray-900" : "text-gray-500 hover:text-gray-700"} cursor-pointer rounded-l-lg group relative min-w-0 flex-1 overflow-hidden bg-white py-4 px-4 text-center font-medium hover:bg-gray-50 focus:z-10`}
+            onClick={() => setCurrentTab("Quick Comparison")}
+          >
+            <span>Quick Comparison</span>
+            <span
+              aria-hidden="true"
+              className={`${currentTab === "Quick Comparison" ? "bg-main-red" : "bg-transparent"} absolute inset-x-0 bottom-0 h-0.5`}
+            ></span>
+          </div>
+          {/* <div
             className={`${currentTab === "Meritize" ? "text-gray-900" : "text-gray-500 hover:text-gray-700"} cursor-pointer rounded-l-lg group relative min-w-0 flex-1 overflow-hidden bg-white py-4 px-4 text-center font-medium hover:bg-gray-50 focus:z-10`}
             aria-current="page"
             onClick={() => setCurrentTab("Meritize")}
@@ -581,7 +732,7 @@ const FinancingTabs = () => {
               aria-hidden="true"
               className={`${currentTab === "Meritize" ? "bg-main-red" : "bg-transparent"} absolute inset-x-0 bottom-0 h-0.5`}
             ></span>
-          </div>
+          </div> */}
           <div
             className={`${currentTab === "Stratus Financial" ? "text-gray-900" : "text-gray-500 hover:text-gray-700"} cursor-pointer rounded-l-lg group relative min-w-0 flex-1 overflow-hidden bg-white py-4 px-4 text-center font-medium hover:bg-gray-50 focus:z-10`}
             onClick={() => setCurrentTab("Stratus Financial")}
@@ -608,6 +759,7 @@ const FinancingTabs = () => {
       {currentTab === "Meritize" && meritize}
       {currentTab === "Stratus Financial" && stratusFinancial}
       {currentTab === "Flight Training Finance" && flightTrainingFinance}
+      {currentTab === "Quick Comparison" && quickComparison}
     </div>
   );
 };

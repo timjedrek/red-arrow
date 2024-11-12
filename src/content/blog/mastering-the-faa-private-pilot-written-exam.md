@@ -2,13 +2,21 @@
 title: "Mastering the FAA Private Pilot Written Exam"
 description: "Explore the crucial steps and preparation strategies for passing the FAA Private Pilot Written Exam. Learn how Red Arrow Flight Academy in Santa Teresa, NM, supports students from the classroom to the cockpit."
 pubDate: "2024-04-18"
-heroImage: "/public/img/blog/student-studying-for-exam.jpg"
+heroImage: "/img/blog/student-studying-for-exam.jpg"
 author: "Elsa Peralta"
 readingTime: "7 min"
-tags: ["Private Pilot", "FAA Written Exam", "Flight Training", "Aviation Education", "Red Arrow Flight Academy"]
+tags:
+  [
+    "Private Pilot",
+    "FAA Written Exam",
+    "Flight Training",
+    "Aviation Education",
+    "Red Arrow Flight Academy",
+  ]
 ---
 
 ## Understanding the FAA Private Pilot Written Exam
+
 Earning a private pilot license is an exhilarating step towards unparalleled freedom in the skies. However, a critical initial step exists: passing the FAA Private Pilot Aeronautical Knowledge Test, often referred to as the "written" exam. At Red Arrow Flight Academy in Santa Teresa, NM, we understand the nerves that come with examinations and are here to demystify the process for you.
 
 ### What Does the Written Exam Cover?
@@ -42,7 +50,7 @@ Our instructors are dedicated to guiding you through the study materials and cla
 
 The ultimate aim of the FAA written exam is to confirm that you possess a well-rounded understanding of all aspects of flying safely as a private pilot. This knowledge is crucial not just for passing the test but for your entire flying career, laying a solid groundwork before hands-on flight training begins.
 
-## Ensuring Checkride Success
+### Ensuring Checkride Success
 
 Passing the written exam is more than a mere formality; it's a testament to your mastery of critical aviation knowledge. This mastery builds confidence and competence, crucial as you advance to the checkride—the final practical exam conducted by an FAA examiner.
 
@@ -52,9 +60,9 @@ The journey to becoming a private pilot, though challenging, is incredibly rewar
 
 ### Take the Written Exam at Our FAA Testing Center
 
-Students at Red Arrow have the unique advantage of taking the FAA written exam right here at our own [FAA Testing Center](https://www.flyredarrow.com/flight-programs/faa-testing-center). This convenient access helps streamline the process, making your journey to becoming a pilot as smooth as possible.
+Students at Red Arrow have the unique advantage of taking the FAA written exam right here at our own [FAA Testing Center](https://www.flyredarrow.com/resources/faa-exam-center). This convenient access helps streamline the process, making your journey to becoming a pilot as smooth as possible.
 
-### Explore Our [Flight Training Programs](https://www.flyredarrow.com/flight-programs)
+### Explore Our [Flight Training Programs](https://www.flyredarrow.com/flight-programs/training-courses)
 
 Learn more about our comprehensive private pilot training programs, including our [military rotor transition programs](https://www.flyredarrow.com/flight-programs/military-rotor-transition), tailored for veterans and active duty military personnel looking to transition into civilian aviation.
 

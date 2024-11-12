@@ -5,6 +5,8 @@ import RedArrowFleetImage from "../../../public/img/new-to-flying/red-arrow-flee
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import Section from "../../components/Section.astro";
 import PplProcess from "../../components/PplProcess.jsx";
+import Timeline from "../../components/Timeline.astro";
+import QuizCTA from "../../components/QuizCTA.astro";
 ---
 
 <BaseLayout
@@ -165,9 +167,13 @@ import PplProcess from "../../components/PplProcess.jsx";
           and Stratus Financial to provide financial loan assistance. For students
           looking to pursue flight as a career while earning a university degree,
           we have a partnership with Purdue Global University offering great discounts,
-          as flight training counts for university credits. Military students can
-          also leverage their Post-9/11 GI Bills and Credentialing Assistance - these
-          benefits are not mutually exclusive and can both be used together.
+          as flight training counts for university credits.
+        </p>
+        <p class="pt-5 font-semibold">
+          *Military students can also leverage their Post 9-11 GI Bill® for
+          flight training. However, a private pilot certificate is NOT covered
+          by the Post 9-11 GI Bill®. You must hold a private certificate to
+          access these benefits.
         </p>
       </div>
       <a href="/resources/financing" class="">
@@ -176,84 +182,9 @@ import PplProcess from "../../components/PplProcess.jsx";
     </div>
   </Section>
 
-  <Section reverse={true}>
-    <img
-      slot="image"
-      src="/img/new-to-flying/student-instructor.webp"
-      alt="Red Arrow fleet on the tarmac outside the school’s hangar"
-      class="h-80 lg:h-[700px] object-cover"
-      loading="lazy"
-    />
-    <div slot="content" class="max-w-2xl flex flex-col items-center">
-      <h2 class="text-3xl font-semibold text-center tracking-tight">
-        Pilot Career Paths
-      </h2>
-      <h3 class="pt-5 text-xl text-center">
-        At Red Arrow, we're committed to guiding you toward a fulfilling career
-        in aviation. Beyond earning your Private Pilot License, our training
-        programs open doors to diverse and exciting career opportunities.
-      </h3>
-      <div class="text-gray-800 tracking-wider">
-        <p class="pt-5">
-          <span class="font-semibold">Commercial Pilot:</span> Propel your aviation
-          career forward with a Commercial Pilot Certificate. This certification
-          equips you with the skills to fly for compensation or hire.
-        </p>
-        <p class="pt-5">
-          <span class="font-semibold">Certified Flight Instructor (CFI):</span> Inspire
-          future aviators as a CFI, guiding them through their journey. Upon earning
-          your Private Pilot Certificate, Instrument Rating, Commercial Certificate,
-          and CFI Certificate, you'll accumulate approximately 250-300 total flight
-          hours. Corporate charter or airline positions typically require 750-1500
-          flight hours to get hired, making instructing an excellent and cost-efficient
-          pathway to accumulate flight time.
-        </p>
-        <p class="pt-5">
-          <span class="font-semibold">Aviation Specializations:</span> Our training
-          programs offer a strong groundwork for flying in diverse sectors of aviation.
-          Whether you are interested in aerial surveying, aerial photography, regional
-          or legacy airline piloting, air freight/cargo shipping, corporate charter
-          flying, agricultural piloting, or unique roles like flying for state agencies
-          or police departments, Red Arrow provides the necessary skills and certifications
-          to succeed in these specialized career paths.
-        </p>
-        <p class="pt-5">
-          As you progress through our training programs, we are dedicated to
-          providing you with the knowledge, hands-on experience, and
-          certifications essential for pursuing your dream career.
-        </p>
-      </div>
-      <a href="/about/our-story" class="max-w-min">
-        <div class="btn-red my-10">Why Red Arrow?</div>
-      </a>
-    </div>
-    <div
-      slot="application-form"
-      class="flex flex-col lg:max-w-2xl mx-auto gap-5 m-5 mt-0 rounded-xl border-2 border-main-red shadow-gray-500 text-black bg-gradient-to-bl from-gray-200 to-gray-300 p-5"
-    >
-      <h4 class="font-semibold text-xl text-center">
-        Flight Program Application
-      </h4>
-      <p class="text-center">
-        If you are interested in enrolling in one of our flight programs, please
-        download and fill out this application. You may bring it in to our
-        office or email it to us at{" "}
-        <a
-          href="mailto:info@flyredarrow.com"
-          class="text-blue-600 hover:underline hover:text-blue-800"
-        >
-          info@flyredarrow.com
-        </a>
-      </p>
-      <a
-        href="/files/red-arrow-us-application.pdf"
-        download="red-arrow-us-application.pdf"
-        class="btn-red self-center"
-      >
-        Download
-      </a>
-    </div>
-  </Section>
+  <Timeline />
+
+  <QuizCTA />
 
   <!-- Call to Action Banner -->
   <DiscoveryFlightCTA />

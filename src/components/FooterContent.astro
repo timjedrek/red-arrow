@@ -182,19 +182,19 @@ const today = new Date();
                   href="/discovery-flight-form"
                   target="_blank"
                   class="text-sm leading-6 text-gray-300 hover:text-red-500 duration-300"
-                  >Discovery Flight</a
+                  >Fly with Us</a
                 >
               </li>
               <li>
                 <a
-                  href="#contactUs"
+                  href="/#contactUs"
                   class="text-sm leading-6 text-gray-300 hover:text-red-500 duration-300"
                   >Visit School</a
                 >
               </li>
               <li>
                 <a
-                  href="#contactUs"
+                  href="/#contactUs"
                   class="text-sm leading-6 text-gray-300 hover:text-red-500 duration-300"
                   >Contact Form</a
                 >
@@ -241,14 +241,28 @@ const today = new Date();
         </div>
       </div>
     </div>
-    <div class="mt-16 border-t border-white/10 pt-8 sm:mt-20 lg:mt-24">
+    <div
+      class="mt-16 border-t border-white/10 pt-8 sm:mt-20 lg:mt-24 flex-col md:flex-row flex justify-between"
+    >
+      <div class="flex flex-col">
+        <p class="text-xs leading-5 text-gray-400">
+          &copy; {today.getFullYear()}
+          <a href="/">Red Arrow Flight Academy</a>. All rights reserved.
+        </p>
+        <a
+          href="/privacy-policy"
+          class="text-xs leading-5 text-gray-400 hover:underline duration-300"
+          >Privacy Policy and Terms of Service</a
+        >
+      </div>
       <p class="text-xs leading-5 text-gray-400">
-        &copy; {today.getFullYear()}
-        <a href="/">Red Arrow Flight Academy</a>. All rights reserved.
+        Powered by <a
+          href="https://rightruddermarketing.com/"
+          target="_blank"
+          class="text-white font-medium hover:underline duration-300"
+          >More Right Rudder</a
+        >
       </p>
-      <a href="/privacy-policy" class="text-xs leading-5 text-gray-400"
-        >Privacy Policy and Terms of Service</a
-      >
     </div>
   </div>
 </footer>

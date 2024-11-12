@@ -1,0 +1,285 @@
+---
+import StudentLayout from "../layouts/StudentLayout.astro";
+---
+
+<StudentLayout pageTitle="Dashboard | Red Arrow Flight Academy">
+  <div class="max-w-7xl mx-auto p-5 flex flex-col gap-5">
+    <div class="flex flex-col lg:flex-row gap-5 justify-center items-center">
+      <form id="student-form" class="hidden flex-col p-5 rounded bg-gray-400">
+        <div class="flex gap-5">
+          <input
+            type="email"
+            placeholder="User email"
+            name="student-email"
+            required
+            class="p-2"
+          />
+          <button class="bg-black text-white font-semibold p-2"
+            >Add student</button
+          >
+        </div>
+        <p
+          class="text-red-600 text-xs mx-auto font-semibold hidden pt-2"
+          id="student-error-message"
+        >
+        </p>
+        <p
+          class="text-green-800 text-xs mx-auto font-semibold hidden pt-2"
+          id="student-success-message"
+        >
+        </p>
+      </form>
+
+      <form
+        id="remove-student-form"
+        class="hidden flex-col p-5 rounded bg-gray-400"
+      >
+        <div class="flex gap-5">
+          <input
+            type="email"
+            placeholder="User email"
+            name="student-email"
+            required
+            class="p-2"
+          />
+          <button class="bg-black text-white font-semibold p-2"
+            >Remove student</button
+          >
+        </div>
+        <p
+          class="text-red-600 text-xs mx-auto font-semibold hidden pt-2"
+          id="remove-student-error-message"
+        >
+        </p>
+        <p
+          class="text-green-800 text-xs mx-auto font-semibold hidde pt-2"
+          id="remove-student-success-message"
+        >
+        </p>
+      </form>
+    </div>
+
+    <!-- List of all students -->
+    <div>
+      <h2
+        class="text-3xl lg:text-5xl font-bold text-main-red text-center pt-10"
+      >
+        Pending Students
+      </h2>
+      <div
+        id="students"
+        class="grid grid-cols-2 border-t border-l border-black my-10 text-xs md:text-base max-w-5xl mx-auto break-all"
+      >
+        <p class="p-2 border-b border-r border-black font-bold uppercase">
+          Full Name
+        </p>
+        <p class="p-2 border-b border-r border-black font-bold uppercase">
+          Email
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    import { getAuth } from "firebase/auth";
+    import { app } from "../firebase/client";
+    import {
+      getFirestore,
+      collection,
+      getDocs,
+      setDoc,
+      getDoc,
+      doc,
+      where,
+      query,
+      onSnapshot,
+      orderBy,
+    } from "firebase/firestore";
+    const db = getFirestore(app);
+    const auth = getAuth(app);
+
+    const students = document.getElementById("students") as HTMLDivElement;
+    const allNonStudents = query(
+      collection(db, "users"),
+      where("pending", "==", true),
+      orderBy("name"),
+    );
+
+    const unsubscribe = onSnapshot(allNonStudents, (querySnapshot) => {
+      students.innerHTML = `<p class="p-2 border-b border-r border-black font-bold uppercase">
+          Full Name
+        </p>
+        <p class="p-2 border-b border-r border-black font-bold uppercase">
+          Email
+        </p>`;
+      querySnapshot.forEach((doc) => {
+        const name = document.createElement("p");
+        name.className = "p-2 border-b border-r border-black";
+        name.textContent = doc.data().name;
+        const email = document.createElement("p");
+        email.className = "p-2 border-b border-r border-black";
+        email.textContent = doc.data().email;
+        students.appendChild(name);
+        students.appendChild(email);
+      });
+    });
+
+    const desktopNav = document.getElementById(
+      "desktop-navbar",
+    ) as HTMLDivElement;
+    const mobileNav = document.getElementById(
+      "mobile-navbar",
+    ) as HTMLDivElement;
+
+    const addStudentsTab = () => {
+      const studentsTab = document.createElement("a");
+      studentsTab.textContent = "Students";
+      studentsTab.className = "p-2";
+      studentsTab.href = "/students";
+      desktopNav.appendChild(studentsTab);
+      mobileNav.appendChild(studentsTab.cloneNode(true));
+      const pendingStudentsTab = document.createElement("a");
+      pendingStudentsTab.textContent = "Pending Students";
+      pendingStudentsTab.className = "p-2";
+      pendingStudentsTab.href = "/pending-students";
+      desktopNav.appendChild(pendingStudentsTab);
+      mobileNav.appendChild(pendingStudentsTab.cloneNode(true));
+      // const rejectedStudentsTab = document.createElement("a");
+      // rejectedStudentsTab.textContent = "Rejected Students";
+      // rejectedStudentsTab.className = "p-2";
+      // rejectedStudentsTab.href = "/rejected-students";
+      // desktopNav.appendChild(rejectedStudentsTab);
+      // mobileNav.appendChild(rejectedStudentsTab.cloneNode(true));
+    };
+
+    const addDashboardTab = () => {
+      const dashboardTab = document.createElement("a");
+      dashboardTab.textContent = "Dashboard";
+      dashboardTab.className = "p-2";
+      dashboardTab.href = "/dashboard";
+      desktopNav.appendChild(dashboardTab);
+      mobileNav.appendChild(dashboardTab.cloneNode(true));
+    };
+
+    auth.onAuthStateChanged((user) => {
+      if (user) {
+        user.getIdTokenResult(true).then((idTokenResult) => {
+          if (idTokenResult.claims.admin) {
+            studentForm.classList.remove("hidden");
+            studentForm.classList.add("flex");
+            studentForm.addEventListener("submit", handleStudentForm);
+            removeStudentForm.classList.remove("hidden");
+            removeStudentForm.classList.add("flex");
+            removeStudentForm.addEventListener(
+              "submit",
+              handleRemoveStudentForm,
+            );
+            addDashboardTab();
+            addStudentsTab();
+          } else {
+            getDoc(doc(db, "users", user.uid)).then((doc) => {
+              if (doc.data().student) {
+                // allFiles.classList.remove("hidden");
+                // allFiles.classList.add("grid");
+              } else {
+                const notice = document.getElementById(
+                  "notice",
+                ) as HTMLDivElement;
+                notice.classList.remove("hidden");
+                notice.textContent =
+                  "Please contact an admin to be added as a student for access to resources.";
+              }
+            });
+          }
+        });
+        createFirebaseUser(user);
+      } else {
+        window.location.href = "/signin";
+      }
+    });
+
+    const createFirebaseUser = (user) => {
+      const userRef = doc(db, "users", user.uid);
+      getDoc(userRef).then((doc) => {
+        if (!doc.exists()) {
+          setDoc(userRef, {
+            email: user.email,
+            name: user.displayName,
+            student: false,
+            uid: user.uid,
+            pending: true,
+          });
+        }
+      });
+    };
+
+    const studentForm = document.getElementById(
+      "student-form",
+    ) as HTMLFormElement;
+    const studentErrorMessage = document.getElementById(
+      "student-error-message",
+    ) as HTMLParagraphElement;
+    const studentSuccessMessage = document.getElementById(
+      "student-success-message",
+    ) as HTMLParagraphElement;
+
+    const handleStudentForm = (e) => {
+      e.preventDefault();
+      const studentEmail = studentForm["student-email"].value;
+      const student = query(
+        collection(db, "users"),
+        where("email", "==", studentEmail),
+      );
+      getDocs(student).then((querySnapshot) => {
+        querySnapshot.forEach((doc) => {
+          setDoc(doc.ref, { student: true, pending: false }, { merge: true });
+          studentSuccessMessage.classList.remove("hidden");
+          studentSuccessMessage.textContent = "User is now a student";
+          studentErrorMessage.textContent = "";
+          studentErrorMessage.classList.add("hidden");
+        });
+        if (querySnapshot.empty) {
+          studentErrorMessage.classList.remove("hidden");
+          studentErrorMessage.textContent = "User not found";
+          studentSuccessMessage.textContent = "";
+          studentSuccessMessage.classList.add("hidden");
+        }
+      });
+    };
+
+    const removeStudentForm = document.getElementById(
+      "remove-student-form",
+    ) as HTMLFormElement;
+    const removeStudentErrorMessage = document.getElementById(
+      "remove-student-error-message",
+    ) as HTMLParagraphElement;
+    const removeStudentSuccessMessage = document.getElementById(
+      "remove-student-success-message",
+    ) as HTMLParagraphElement;
+
+    const handleRemoveStudentForm = (e) => {
+      e.preventDefault();
+      const studentEmail = removeStudentForm["student-email"].value;
+      const student = query(
+        collection(db, "users"),
+        where("email", "==", studentEmail),
+      );
+      getDocs(student).then((querySnapshot) => {
+        querySnapshot.forEach((doc) => {
+          setDoc(doc.ref, { student: false, pending: false }, { merge: true });
+          removeStudentSuccessMessage.classList.remove("hidden");
+          removeStudentSuccessMessage.textContent =
+            "User has been removed as a student";
+          removeStudentErrorMessage.textContent = "";
+          removeStudentErrorMessage.classList.add("hidden");
+        });
+        if (querySnapshot.empty) {
+          removeStudentErrorMessage.classList.remove("hidden");
+          removeStudentErrorMessage.textContent = "User not found";
+          removeStudentSuccessMessage.textContent = "";
+          removeStudentSuccessMessage.classList.add("hidden");
+        }
+      });
+    };
+  </script>
+</StudentLayout>

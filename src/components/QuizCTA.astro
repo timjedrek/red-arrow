@@ -1,0 +1,35 @@
+---
+import { MdOutlineQuiz } from "react-icons/md";
+const { red = false } = Astro.props;
+---
+
+<section
+  class=`bg-gradient-to-br ${red ? "from-main-red to-red-900" : "from-gray-800 to-black"} text-white flex justify-center relative`
+>
+  <div class="flex flex-col items-center lg:flex-row max-w-7xl py-20">
+    <div class="flex flex-col flex-1 items-center p-5 gap-5 text-center">
+      <p class="text-lg">Can You Become a Pilot?</p>
+      <h2 class="text-3xl font-bold text-center tracking-tight">
+        Take our quiz and learn what it takes
+      </h2>
+      <p class="text-lg">
+        Becoming a pilot can seem like a daunting task, but it doesn’t have to
+        be. Take our quick quiz to find out what kind of instruction you prefer,
+        how you might approach flight training, and see if flight lessons with
+        Red Arrow are for you.
+      </p>
+      <div class="flex gap-5">
+        <a href="/quiz" class=`${red ? "btn-black" : "btn-red"}`
+          >Take the Quiz</a
+        >
+        <a href="#contactUs" class=`${red ? "btn-black" : "btn-red"}`
+          >Visit Us</a
+        >
+      </div>
+    </div>
+    <div class="flex-1"></div>
+    <MdOutlineQuiz
+      className="size-[40rem] right-20 -top-8 text-white/10 absolute"
+    />
+  </div>
+</section>

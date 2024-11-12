@@ -82,12 +82,6 @@ import StudentLayout from "../layouts/StudentLayout.astro";
   <script>
     import { getAuth } from "firebase/auth";
     import { app, storageRef } from "../firebase/client";
-    import {
-      uploadBytes,
-      ref,
-      listAll,
-      getDownloadURL,
-    } from "firebase/storage";
     import { getFunctions, httpsCallable } from "firebase/functions";
     const functions = getFunctions(app);
     import {
@@ -125,7 +119,7 @@ import StudentLayout from "../layouts/StudentLayout.astro";
       const adminEmail = adminForm["admin-email"].value;
       const addAdminRole = httpsCallable(functions, "addAdminRole");
       addAdminRole({ email: adminEmail }).then((result) => {
-        console.log(result);
+        // console.log(result);
         if (result.data.errorInfo) {
           adminErrorMessage.classList.remove("hidden");
           adminErrorMessage.textContent = result.data.errorInfo.message;
@@ -211,6 +205,18 @@ import StudentLayout from "../layouts/StudentLayout.astro";
       studentsTab.href = "/students";
       desktopNav.appendChild(studentsTab);
       mobileNav.appendChild(studentsTab.cloneNode(true));
+      const pendingStudentsTab = document.createElement("a");
+      pendingStudentsTab.textContent = "Pending Students";
+      pendingStudentsTab.className = "p-2";
+      pendingStudentsTab.href = "/pending-students";
+      desktopNav.appendChild(pendingStudentsTab);
+      mobileNav.appendChild(pendingStudentsTab.cloneNode(true));
+      // const rejectedStudentsTab = document.createElement("a");
+      // rejectedStudentsTab.textContent = "Rejected Students";
+      // rejectedStudentsTab.className = "p-2";
+      // rejectedStudentsTab.href = "/rejected-students";
+      // desktopNav.appendChild(rejectedStudentsTab);
+      // mobileNav.appendChild(rejectedStudentsTab.cloneNode(true));
     };
 
     const addDashboardTab = () => {
@@ -274,6 +280,7 @@ import StudentLayout from "../layouts/StudentLayout.astro";
             name: user.displayName,
             student: false,
             uid: user.uid,
+            pending: true,
           });
         }
       });

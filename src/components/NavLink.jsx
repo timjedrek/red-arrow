@@ -2,15 +2,16 @@ const NavLink = ({ menuItem, pathname, toggled, onShow }) => {
   const isActive = menuItem.submenu.some((item) => item.link === pathname);
   return (
     <div className="relative">
-      <a
+      <div
+        name={menuItem.name}
         id={menuItem.name}
         onClick={onShow}
-        className={`cursor-pointer text-xl text-white py-3 hover:border-b-2 border-main-red whitespace-nowrap ${
+        className={`cursor-pointer text-xl text-white py-3 hover:border-b-2 border-main-red whitespace-nowrap inline ${
           isActive ? "border-b-2" : ""
         }`}
       >
         {menuItem.name}
-      </a>
+      </div>
       <div
         className={`overflow-hidden text-white ${
           toggled ? "max-h-96" : "max-h-0"
