@@ -144,3 +144,13 @@ import ContactUsForm from "../components/ContactUsForm.astro";
     </div>
   </div>
 </section>
+
+<script>
+  const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+
+  const contactUs = document.getElementById("contactUs");
+
+  if (isSafari && contactUs) {
+    contactUs.classList.remove("bg-fixed");
+  }
+</script>

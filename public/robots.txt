@@ -1,5 +1,8 @@
 User-agent: *
-Disallow: /admin/*
+Disallow: /dashboard/
+Disallow: /rejected-students/
+Disallow: /pending-students/
+Disallow: /students/
 Allow: /
 
-Sitemap: https://red-arrow-user-auth.web.app/sitemap.xml
+Sitemap: https://www.flyredarrow.com/sitemap-index.xml

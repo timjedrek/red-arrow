@@ -3,8 +3,8 @@ import GuideDownload from "../components/GuideDownload.astro";
 import ContactUs from "../components/ContactUs.astro";
 import HomeLayout from "../layouts/HomeLayout.astro";
 import Section from "../components/Section.astro";
-import Reviews from "../components/Reviews";
 import Partners from "../components/Partners.astro";
+import QuizCTA from "../components/QuizCTA.astro";
 ---
 
 <HomeLayout
@@ -26,8 +26,11 @@ import Partners from "../components/Partners.astro";
         Become a Pilot with Red Arrow
       </h1>
       <h2 class="text-3xl tracking-wide">
-        Your Cessna Pilot Center Flight School in Santa Teresa, NM
+        Your Cessna Pilot Training Center in Santa Teresa, NM
       </h2>
+      <a href="/discovery-flight-form" target="_blank">
+        <button class="btn-red">Book an Intro Flight</button>
+      </a>
     </div>
     <Partners />
   </header>
@@ -127,12 +130,11 @@ import Partners from "../components/Partners.astro";
       </h2>
       <h3 class="pt-5 text-xl text-center">
         As the sole Part 141 certified flight school in the region, we
-        specialize in providing comprehensive fixed-wing pilot training programs
-        tailored for military students.
+        specialize in training programs tailored for military students.
       </h3>
       <div class="text-gray-800 tracking-wider">
         <p class="pt-5">Our military-focused offerings include:</p>
-        <ul class="pt-5 list-disc pl-10 flex flex-col gap-2">
+        <ul class="flex flex-col mt-2 gap-2">
           <li>
             <span class="font-semibold">Fixed-Wing Add-On Programs:</span> Designed
             specifically for individuals with helicopter military experience seeking
@@ -141,11 +143,22 @@ import Partners from "../components/Partners.astro";
             Private Pilot, Instrument Rating, and Commercial Pilot Certificate.
           </li>
           <li>
-            <span class="font-semibold">Post 9-11 GI Bill® Accepted:</span> Red
-            Arrow is proud to be selected by the VA to participate in the GI Bill®
-            program, offering financial assistance for eligible military students.
-            This includes coverage for Instrument, Commercial, and CFI ratings. The
-            GI Bill® does not cover the Private Pilot Certificate.
+            <p>
+              <span class="font-semibold">GI Bill®:</span> The following programs
+              are approved by the New Mexico Department of Veterans’ Services, State
+              Approving Agency for VA education benefits under the GI Bill: Instrument,
+              Commercial, and CFI ratings.
+            </p>
+            <p class="italic mt-2 text-sm">
+              GI Bill® is a Registered Trademark of the U.S. Department of
+              Veteran Affairs (VA). More information about education benefits
+              offered by VA is available at the U.S. government website: <a
+                class="hover:underline text-blue-600"
+                target="_blank"
+                href="https://benefits.va.gov/gibill/"
+                >https://benefits.va.gov/gibill/</a
+              >
+            </p>
           </li>
           <li>
             <span class="font-semibold">Army Credentialing Assistance:</span> Through
@@ -154,7 +167,9 @@ import Partners from "../components/Partners.astro";
             ranging from $1,000 to $4,000 annually.
           </li>
         </ul>
-        <p class="pt-5">Explore the options and learn more below.</p>
+        <p class="pt-5 font-bold">
+          Coming from Fort Bliss? Check out our military transition page below!
+        </p>
       </div>
       <a href="flight-programs/military-rotor-transition" class="w-fit">
         <div class="btn-red my-10">Visit Our Military Page</div>
@@ -162,8 +177,10 @@ import Partners from "../components/Partners.astro";
     </div>
   </Section>
 
+  <QuizCTA />
+
   <section
-    class="bg-gradient-to-br py-10 px-5 from-main-red to-red-900 text-white"
+    class="bg-gradient-to-br py-10 px-5 from-main-red to-red-900 text-white z-10 relative"
   >
     <div class="flex flex-col items-center max-w-5xl px-5 mx-auto">
       <h2 class="text-3xl font-semibold text-center tracking-tight">
@@ -248,8 +265,22 @@ import Partners from "../components/Partners.astro";
 
   <GuideDownload />
 
-  <Reviews client:visible />
+  <section class="py-12 px-5">
+    <h2 class="text-3xl lg:text-4xl font-bold text-center py-5 px-5">
+      What Our Students Say
+    </h2>
+    <div
+      class="elfsight-app-da16efd4-792e-4831-86a2-1cc641d51de5"
+      data-elfsight-app-lazy
+    >
+    </div>
+  </section>
 
   <!-- Contact Us Form -->
   <ContactUs />
 </HomeLayout>
+
+<script
+  src="https://static.elfsight.com/platform/platform.js"
+  data-use-service-core
+  defer></script>

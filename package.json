@@ -16,7 +16,7 @@
     "@astrojs/partytown": "^2.0.4",
     "@astrojs/react": "^3.0.9",
     "@astrojs/rss": "^4.0.2",
-    "@astrojs/sitemap": "^3.0.4",
+    "@astrojs/sitemap": "^3.1.4",
     "@astrojs/tailwind": "^5.1.0",
     "@fontsource-variable/urbanist": "^5.0.19",
     "@types/alpinejs": "^3.13.6",
@@ -37,6 +37,7 @@
   },
   "devDependencies": {
     "@iconify-json/entypo-social": "^1.1.8",
+    "@iconify-json/fluent": "^1.1.52",
     "@iconify-json/healthicons": "^1.1.17",
     "@iconify-json/ic": "^1.1.17",
     "@iconify-json/tabler": "^1.1.104",

@@ -10,10 +10,16 @@ import node from "@astrojs/node";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://red-arrow-user-auth.web.app/",
+  site: "https://www.flyredarrow.com/",
   integrations: [
     mdx(),
-    sitemap(),
+    sitemap({
+      filter: (page) =>
+        page !== "https://www.flyredarrow.com/dashboard/" &&
+        page !== "https://www.flyredarrow.com/students/" &&
+        page !== "https://www.flyredarrow.com/rejected-students/" &&
+        page !== "https://www.flyredarrow.com/pending-students/",
+    }),
     tailwind(),
     icon(),
     react(),

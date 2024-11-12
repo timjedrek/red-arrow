@@ -3,6 +3,7 @@ import ContactUs from "../../components/ContactUs.astro";
 import HomeLayout from "../../layouts/HomeLayout.astro";
 import ScheduleCallCTA from "../../components/ScheduleCallCTA.astro";
 import FinancingTabs from "../../components/FinancingTabs";
+import QuizCTA from "../../components/QuizCTA.astro";
 ---
 
 <HomeLayout
@@ -26,12 +27,14 @@ import FinancingTabs from "../../components/FinancingTabs";
       <h2 class="text-xl md:text-3xl tracking-wide">
         Helping our students fund their pilot training
       </h2>
-      <div class="flex items-center gap-1 md:gap-5 bg-white/70 px-5 rounded-lg">
-        <img
+      <div
+        class="flex items-center gap-1 md:gap-5 bg-white/70 px-5 py-10 rounded-lg"
+      >
+        <!-- <img
           src="/meritize-logo.webp"
           alt="Meritize logo"
           class="h-16 sm:h-28 lg:h-40"
-        />
+        /> -->
         <img
           src="/stratus-logo-2.webp"
           alt="Stratus Financial logo"
@@ -47,6 +50,8 @@ import FinancingTabs from "../../components/FinancingTabs";
   </header>
 
   <FinancingTabs client:load />
+
+  <QuizCTA red={true} />
 
   <!-- Call to Action Banner -->
   <ScheduleCallCTA />

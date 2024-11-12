@@ -12,6 +12,7 @@ export const courses = [
       "Earning a Private Pilot License is a strategic move that comes with multiple advantages. While it doesn't permit commercial activities, the PPL enhances safety by instilling the necessary skills to operate aircraft with confidence. It opens the door to personal and leisure flights, allowing you to explore the joy of flying at your convenience. Additionally, a PPL sets the foundation for future aviation endeavors and is a significant milestone in your journey toward advanced pilot certifications.",
       "Ready to embark on the exciting journey of becoming a certified pilot? The Private Pilot License program at Red Arrow Flight Academy offers expert instruction and a structured learning environment. Contact us today to enroll and take the first step toward realizing your dream of flying aircraft with skill and confidence.",
     ],
+    note: "Military students can also leverage their Post 9-11 GI Bill® for flight training. However, a private pilot certificate is NOT covered by the Post 9-11 GI Bill®. You must hold a private certificate to access these benefits.",
   },
   {
     id: "1",

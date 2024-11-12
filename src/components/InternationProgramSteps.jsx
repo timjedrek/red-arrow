@@ -78,7 +78,16 @@ const InternationProgramSteps = () => {
               <li>Cancellation 19-10 days in advance: $200 refund.</li>
               <li>Cancellation 9-0 days in advance: $0 refund.</li>
             </ol>
-            <li className="font-medium">Download all files below:</li>
+            <li className="font-medium">
+              Download and complete all files below and send to{" "}
+              <a
+                href="mailto:info@flyredarrow.com"
+                className="text-blue-600 hover:underline hover:text-blue-800"
+              >
+                info@flyredarrow.com
+              </a>
+              :
+            </li>
             <ol className="list-disc pl-5">
               <li>
                 <a

@@ -1,0 +1,264 @@
+---
+import DiscoveryFlightCTA from "../../components/DiscoveryFlightCTA.astro";
+import ContactUs from "../../components/ContactUs.astro";
+import RedArrowFleetImage from "../../../public/img/new-to-flying/red-arrow-fleet.webp";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Section from "../../components/Section.astro";
+import PplProcess from "../../components/PplProcess.jsx";
+import Timeline from "../../components/Timeline.astro";
+---
+
+<BaseLayout
+  pageTitle="New to Flying | Red Arrow Flight Academy"
+  pageDescription="Elevate your aviation aspirations with Red Arrow Flight Academy's comprehensive pilot training programs. From PPL to advanced certifications, our expert CFIs guide you through every step. Discover career paths, budget considerations, and more. Start your journey today!"
+  pageKeywords="aviation training, pilot certification, flight school programs, pilot career paths, flight training costs, commercial pilot license, certified flight instructor, aviation education, pilot training academy"
+>
+  <!-- Header -->
+  <header
+    class="relative h-screen-3/4 bg-new-to-flying bg-cover bg-center bg-black flex flex-col items-center justify-center"
+  >
+    <!-- bg-overlay to darken -->
+    <div class="absolute bg-black/50 w-full h-full z-0"></div>
+    <!-- Text -->
+    <div
+      class="text-white text-center z-10 flex flex-col items-center gap-4 px-5"
+    >
+      <h1 class="text-5xl font-bold tracking-tight">New to Flying?</h1>
+      <h2 class="text-3xl tracking-wide">
+        Get to know what pilot training is all about
+      </h2>
+      <a href="#contactUs" class="btn-red">Visit the Academy</a>
+    </div>
+  </header>
+
+  <Section reverse={true}>
+    <img
+      slot="image"
+      src="/img/new-to-flying/cessna-pilot-center-sign.webp"
+      alt="Jet flying through clouds"
+      class="h-80 lg:h-[450px] object-cover"
+      loading="lazy"
+    />
+    <div slot="content" class="max-w-2xl flex flex-col items-center">
+      <h2 class="text-3xl font-semibold text-center tracking-tight">
+        Flight Training Overview
+      </h2>
+      <div class="text-gray-800 tracking-wider">
+        <p class="pt-5">
+          Allow Red Arrow Flight Academy to guide you to becoming a pilot with
+          our renowned flight training. Our program is meticulously designed to
+          take aspiring pilots from the fundamentals to the heights of flight
+          capability. Guided by our expert CFIs, you'll experience a blend of
+          comprehensive ground school education and hands-on flying, ensuring a
+          well-rounded understanding of the art and science of aviation.
+        </p>
+        <p class="pt-5">
+          From the thrill of your first solo flight to mastering advanced
+          maneuvers, our step-by-step program instills confidence, knowledge,
+          and the skills necessary to fly safely and competently. We would love
+          to be the ones to make your flight dream a reality. Email us or stop
+          by if you’re interested.
+        </p>
+      </div>
+      <a href="/enrollment" target="_blank" class="">
+        <div class="btn-red my-10">Enroll Today</div>
+      </a>
+    </div>
+  </Section>
+
+  <section
+    class="bg-gradient-to-br py-10 px-5 from-main-red to-red-900 text-white"
+  >
+    <div
+      class="max-w-5xl px-10 lg:w-1/2 flex flex-col items-center py-10 mx-auto"
+    >
+      <h2 class="text-3xl font-semibold text-center tracking-tight">
+        It All Starts with Your PPL
+      </h2>
+
+      <h3 class="pt-10 text-xl text-center">
+        Becoming a certified pilot with Red Arrow Flight Academy, like many
+        other achievements, has a process. Here's a breakdown of the key stages
+        in your path to obtaining a Private Pilot Certificate (PPL):
+      </h3>
+    </div>
+    <div
+      class="flex flex-col-reverse lg:flex-row-reverse max-w-7xl px-5 mx-auto gap-10"
+    >
+      <img
+        src="/img/new-to-flying/student-bagpack.webp"
+        alt="Student passes checkride at Red Arrow Flight Academy"
+        class="h-80 lg:h-[600px] object-cover lg:flex-1 max-w-2xl mx-auto"
+      />
+
+      <div class="max-w-2xl flex flex-col items-center lg:flex-1 mx-auto">
+        <PplProcess client:visible />
+        <a href="/discovery-flight-form" target="_blank" class="">
+          <div class="btn-black mt-10">Book a Discovery Flight</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <Section reverse={true}>
+    <img
+      slot="image"
+      src="/img/new-to-flying/student-with-instrument-panel.webp"
+      alt="Instrument panel of a Cessna aircraft over El Paso, TX"
+      class="h-80 lg:h-[500px] object-cover"
+      loading="lazy"
+    />
+    <div slot="content" class="max-w-2xl flex flex-col items-center">
+      <h2 class="text-3xl font-semibold text-center tracking-tight">
+        After Your PPL
+      </h2>
+      <div class="text-gray-800 tracking-wider">
+        <p class="pt-5">
+          Our training course offering extends well beyond the PPL. No matter
+          where you're starting from, our courses cater to every aspiring
+          aviator's needs. We offer a range of ratings, including Private Pilot,
+          Instrument Rating, Commercial Pilot, Certified Flight Instructor
+          (CFI), and Certified Flight Instructor Instrument (CFII). We also
+          offer High-Performance Endorsement Training.
+        </p>
+        <p class="pt-5">
+          At Red Arrow, we prioritize hiring our own, so once you become a CFI,
+          you have the opportunity for a full-time job as an instructor on our
+          team to build up your flight hours. From there, you have numerous
+          career options, such as flying for a regional or legacy airline, air
+          freight/cargo shipping, corporate charter flying, or agricultural
+          piloting. Let us guide you to success in the next phase of your pilot
+          career.
+        </p>
+      </div>
+      <a href="/flight-programs/training-courses" class="">
+        <div class="btn-red my-10">Our Training Programs</div>
+      </a>
+    </div>
+  </Section>
+
+  <Section red={true}>
+    <img
+      slot="image"
+      src="/img/new-to-flying/aircraft-propeller.webp"
+      alt="Propeller of an aircraft in black and white"
+      class="h-80 lg:h-[550px] object-cover"
+      loading="lazy"
+    />
+    <div slot="content" class="max-w-2xl flex flex-col items-center">
+      <h2 class="text-3xl font-semibold text-center tracking-tight">
+        Budget Considerations
+      </h2>
+      <div class="text-gray-100 tracking-wider">
+        <p class="pt-5">
+          As you embark on your aviation journey, understanding budget
+          considerations is crucial. At Red Arrow Flight Academy, we operate on
+          a pay-as-you-go basis, eliminating the need for down payments or
+          long-term contracts. Whether you're pursuing a Private Pilot License
+          or advancing to a Commercial Pilot License, we aim to provide clarity
+          on the costs associated with flight training. Please note that prices
+          may vary, as the duration of training can differ for each student.
+        </p>
+        <p class="pt-5">
+          <span class="font-semibold">Financial Support:</span> We recommend exploring
+          scholarship opportunities through organizations such as AOPA, EAA, and
+          other aviation affinity groups. Additionally, we are partnered with Mertize
+          and Stratus Financial to provide financial loan assistance. For students
+          looking to pursue flight as a career while earning a university degree,
+          we have a partnership with Purdue Global University offering great discounts,
+          as flight training counts for university credits. Military students can
+          also leverage their Post-9/11 GI Bills and Credentialing Assistance - these
+          benefits are not mutually exclusive and can both be used together.
+        </p>
+      </div>
+      <a href="/resources/financing" class="">
+        <div class="btn-black my-10">Financing Options</div>
+      </a>
+    </div>
+  </Section>
+
+  <Section reverse={true}>
+    <img
+      slot="image"
+      src="/img/new-to-flying/student-instructor.webp"
+      alt="Red Arrow fleet on the tarmac outside the school’s hangar"
+      class="h-80 lg:h-[700px] object-cover"
+      loading="lazy"
+    />
+    <div slot="content" class="max-w-2xl flex flex-col items-center">
+      <h2 class="text-3xl font-semibold text-center tracking-tight">
+        Pilot Career Paths
+      </h2>
+      <h3 class="pt-5 text-xl text-center">
+        At Red Arrow, we're committed to guiding you toward a fulfilling career
+        in aviation. Beyond earning your Private Pilot License, our training
+        programs open doors to diverse and exciting career opportunities.
+      </h3>
+      <div class="text-gray-800 tracking-wider">
+        <p class="pt-5">
+          <span class="font-semibold">Commercial Pilot:</span> Propel your aviation
+          career forward with a Commercial Pilot Certificate. This certification
+          equips you with the skills to fly for compensation or hire.
+        </p>
+        <p class="pt-5">
+          <span class="font-semibold">Certified Flight Instructor (CFI):</span> Inspire
+          future aviators as a CFI, guiding them through their journey. Upon earning
+          your Private Pilot Certificate, Instrument Rating, Commercial Certificate,
+          and CFI Certificate, you'll accumulate approximately 250-300 total flight
+          hours. Corporate charter or airline positions typically require 750-1500
+          flight hours to get hired, making instructing an excellent and cost-efficient
+          pathway to accumulate flight time.
+        </p>
+        <p class="pt-5">
+          <span class="font-semibold">Aviation Specializations:</span> Our training
+          programs offer a strong groundwork for flying in diverse sectors of aviation.
+          Whether you are interested in aerial surveying, aerial photography, regional
+          or legacy airline piloting, air freight/cargo shipping, corporate charter
+          flying, agricultural piloting, or unique roles like flying for state agencies
+          or police departments, Red Arrow provides the necessary skills and certifications
+          to succeed in these specialized career paths.
+        </p>
+        <p class="pt-5">
+          As you progress through our training programs, we are dedicated to
+          providing you with the knowledge, hands-on experience, and
+          certifications essential for pursuing your dream career.
+        </p>
+      </div>
+      <a href="/about/our-story" class="max-w-min">
+        <div class="btn-red my-10">Why Red Arrow?</div>
+      </a>
+    </div>
+    <div
+      slot="application-form"
+      class="flex mt-10 flex-col lg:max-w-2xl mx-auto gap-5 m-5 lg:mt-0 rounded-xl border-2 border-main-red shadow-gray-500 text-black bg-gradient-to-bl from-gray-200 to-gray-300 p-5"
+    >
+      <h4 class="font-semibold text-xl text-center">
+        Flight Program Application
+      </h4>
+      <p class="text-center">
+        If you are interested in enrolling in one of our flight programs, please
+        download and fill out this application. You may bring it in to our
+        office or email it to us at{" "}
+        <a
+          href="mailto:info@flyredarrow.com"
+          class="text-blue-600 hover:underline hover:text-blue-800"
+        >
+          info@flyredarrow.com
+        </a>
+      </p>
+      <a
+        href="/files/red-arrow-us-application.pdf"
+        download="red-arrow-us-application.pdf"
+        class="btn-red self-center"
+      >
+        Download
+      </a>
+    </div>
+  </Section>
+
+  <!-- Call to Action Banner -->
+  <DiscoveryFlightCTA />
+
+  <!-- Contact Us Form -->
+  <ContactUs />
+</BaseLayout>

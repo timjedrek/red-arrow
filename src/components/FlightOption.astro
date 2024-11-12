@@ -1,5 +1,5 @@
 ---
-const { image, alt, title, description, reverse = false } = Astro.props;
+const { image, alt, title, description, reverse = false, note } = Astro.props;
 ---
 
 <div
@@ -19,6 +19,7 @@ const { image, alt, title, description, reverse = false } = Astro.props;
       <p class="pt-5">
         {description}
       </p>
+      <p class="font-semibold mt-3">{note}</p>
     </div>
   </div>
 </div>

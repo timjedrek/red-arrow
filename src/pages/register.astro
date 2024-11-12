@@ -44,8 +44,9 @@ const REGISTRATION_FORM_WEBHOOOK_URL = import.meta.env
       <p class="text-red-600 text-xs max-w-36 mx-auto" id="error-message"></p>
     </form>
     <p>
-      Already have an account? <a href="/signin" class="hover:underline"
-        >Sign in</a
+      Already have an account? <a
+        href="/signin"
+        class="underline hover:text-blue-600">Sign in</a
       >
     </p>
   </StudentLogin>
@@ -93,6 +94,7 @@ const REGISTRATION_FORM_WEBHOOOK_URL = import.meta.env
                 name,
                 uid: userCredential.user.uid,
                 student: false,
+                pending: true,
               })
                 .then(() => {
                   const urlSearchParams = new URLSearchParams();
