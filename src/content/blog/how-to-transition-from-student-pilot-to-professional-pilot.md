@@ -2,7 +2,7 @@
 title: "How to Transition from Student Pilot to Professional Pilot"
 description: "Learn how to navigate the journey from student pilot to professional pilot with this practical guide from Red Arrow Flight Academy. Based in Santa Teresa, NM, Red Arrow offers personalized training to help you achieve your aviation career goals. Start your transition today!"
 pubDate: "Dec 13, 2024"
-heroImage: "/red-arrow-student-to-professional-pilot.jpg"
+heroImage: "/student-to-pro-pilot.avif"
 author: "Elsa Peralta"
 readingTime: "3 min"
 tags: ["Student Pilot Guide", "Red Arrow Flight Academy", "Santa Teresa Flight School", "Professional Pilot Training", "El Paso Aviation Careers", "Flight School Tips", "Aviation Career Path", "Santa Teresa Pilot Programs"]
