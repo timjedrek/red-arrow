@@ -113,26 +113,26 @@ import StudentLayout from "../layouts/StudentLayout.astro";
       "admin-error-message",
     ) as HTMLParagraphElement;
 
-    const adminForm = document.getElementById("admin-form") as HTMLFormElement;
-    adminForm.addEventListener("submit", (e) => {
-      e.preventDefault();
-      const adminEmail = adminForm["admin-email"].value;
-      const addAdminRole = httpsCallable(functions, "addAdminRole");
-      addAdminRole({ email: adminEmail }).then((result) => {
-        // console.log(result);
-        if (result.data.errorInfo) {
-          adminErrorMessage.classList.remove("hidden");
-          adminErrorMessage.textContent = result.data.errorInfo.message;
-          adminSuccessMessage.textContent = "";
-          adminSuccessMessage.classList.add("hidden");
-        } else {
-          adminSuccessMessage.classList.remove("hidden");
-          adminSuccessMessage.textContent = result.data.message;
-          adminErrorMessage.textContent = "";
-          adminErrorMessage.classList.add("hidden");
-        }
-      });
-    });
+    // const adminForm = document.getElementById("admin-form") as HTMLFormElement;
+    // adminForm.addEventListener("submit", (e) => {
+    //   e.preventDefault();
+    //   const adminEmail = adminForm["admin-email"].value;
+    //   const addAdminRole = httpsCallable(functions, "addAdminRole");
+    //   addAdminRole({ email: adminEmail }).then((result) => {
+    //     // console.log(result);
+    //     if (result.data.errorInfo) {
+    //       adminErrorMessage.classList.remove("hidden");
+    //       adminErrorMessage.textContent = result.data.errorInfo.message;
+    //       adminSuccessMessage.textContent = "";
+    //       adminSuccessMessage.classList.add("hidden");
+    //     } else {
+    //       adminSuccessMessage.classList.remove("hidden");
+    //       adminSuccessMessage.textContent = result.data.message;
+    //       adminErrorMessage.textContent = "";
+    //       adminErrorMessage.classList.add("hidden");
+    //     }
+    //   });
+    // });
 
     // const fileUploadForm = document.getElementById(
     //   "file-upload",
