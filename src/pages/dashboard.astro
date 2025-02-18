@@ -117,9 +117,12 @@ import StudentLayout from "../layouts/StudentLayout.astro";
     adminForm.addEventListener("submit", (e) => {
       e.preventDefault();
       const adminEmail = adminForm["admin-email"].value;
-      const addAdminRole = httpsCallable(functions, "addAdminRole");
-      addAdminRole({ email: adminEmail }).then((result) => {
-        // console.log(result);
+      const addAdminRoleSecondGen = httpsCallable(
+        functions,
+        "addAdminRoleSecondGen",
+      );
+
+      addAdminRoleSecondGen({ email: adminEmail }).then((result) => {
         if (result.data.errorInfo) {
           adminErrorMessage.classList.remove("hidden");
           adminErrorMessage.textContent = result.data.errorInfo.message;
