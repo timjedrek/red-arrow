@@ -29,20 +29,6 @@ export const leadershipTeam = [
     phone: "(575) 201-6160 ext. 705",
   },
   {
-    name: "Jazmine Anaya",
-    title: "Dispatch Manager",
-    subtitle: "Certificates & Ratings: Student Pilot",
-    bio: [
-      "El Paso native Jazmine Anaya is a born adventurer with an insatiable passion for exploration. Born and raised in El Paso, Texas, Jazmine's heart has always been captivated by the allure of distant horizons and new frontiers.  In her pursuit of wanderlust, Jazmine has taken a remarkable leap into the world of aviation by becoming an integral part of the Red Arrow team as a dispatcher. Here, her dedication and enthusiasm for the skies have found a perfect platform to flourish.",
-      "Jazmine's journey in aviation is marked by her tenacity and ambition. She is a proud recipient of the EAA Chapter 1570 flight training scholarship, a recognition of her unwavering commitment to taking flight. As a student pilot, she is in the process of transforming her dreams of flight into a soaring reality.  Her introduction to the world of aviation represents a pivotal moment in her life, one that promises to open up a world of opportunities and adventures. Jazmine's journey is a testament to the power of following one's passion, even when the path may seem distant and uncertain.",
-      "As she continues to explore the boundless skies, Jazmine Anaya serves as an inspiring example of someone who dares to chase their dreams and embrace the thrilling unknown of aviation. Her story is one of determination, ambition, and the endless possibilities that the world of flight has to offer.",
-    ],
-    image: "/img/our-team/jazmine-anaya.webp",
-    alt: "Dispatch Manager Jazmine Anaya at Red Arrow Flight Academy",
-    email: "janaya@flyredarrow.com",
-    phone: "(575) 201-6160 ext. 701",
-  },
-  {
     name: "Danielle Nelson",
     title: "Business Operations Director",
     subtitle: "Certificates & Ratings: Private Pilot, ASEL, Instrument Rating",
@@ -98,8 +84,11 @@ export const dispatchTeam = [
     name: "McKayla Anderson",
     title: "Dispatch",
     subtitle: "",
-    bio: [],
-    image: "/img/our-team/placeholder.webp",
+    bio: [
+      "McKayla, a native of Utah now residing in El Paso, Texas, is a dedicated and ambitious individual who values hard work and continuous learning. Although she has yet to fly in an airplane, McKayla has developed a strong passion for aviation and actively seeks opportunities to expand her knowledge in the field. Her fascination with aviation is driven by a deep curiosity about the industry, and she is always exploring ways to better understand its complexities and innovations.",
+      "Outside of her professional pursuits, McKayla enjoys spending quality time with her partner and their dog. She is passionate about a variety of hobbies, including training her dog, amateur gardening, playing the saxophone, and weightlifting. McKayla takes pride in maintaining an active lifestyle and strives to balance personal growth with her professional development, always eager to discover new interests and challenges along the way.",
+    ],
+    image: "/mckayla-anderson.webp",
     alt: "Dispatch McKayla Anderson at Red Arrow Flight Academy",
     email: "",
     phone: "",
@@ -218,7 +207,7 @@ export const flightTeam = [
     phone: "",
   },
   {
-    name: "Jacob Canda",
+    name: "Jacob Canada",
     title: "Flight Instructor",
     subtitle: "Certificates & Ratings: Commercial ASEL, CFI, AMEL",
     bio: [
@@ -226,7 +215,7 @@ export const flightTeam = [
       "Thanks to the Presidential Scholarship, Jacob went on to earn a Bachelor’s degree in Aeronautics and a Minor in Applied Meteorology from Embry-Riddle Aeronautical University in 2022. Now a Certified Flight Instructor (CFI), Jacob shares his passion for the clear skies of El Paso, helping aspiring pilots achieve their dreams.",
       "Outside of flying, Jacob is captivated by military vehicles and volunteers at the War Eagles Air Museum, where he’s always eager to share his knowledge about the museum’s collection. Currently, Jacob is pursuing his Certified Flight Instructor Instrument (CFII) rating and has his sights set on obtaining a Master's in Meteorology to further combine his love for aviation and weather.",
     ],
-    image: "/cfi-jacob-canda.webp",
+    image: "/cfi-jacob-canada.webp",
     alt: "CFI Jacob Canada at Red Arrow Flight Academy",
     email: "",
     phone: "",
