@@ -2,7 +2,7 @@
 import ContactUs from "../../components/ContactUs.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import TeamMemberCard from "../../components/TeamMemberCard.astro";
-import { leadershipTeam, flightTeam } from "../../data/team.js";
+import { leadershipTeam, flightTeam, dispatchTeam } from "../../data/team.js";
 import Location from "../../components/Location.astro";
 import EnrollNowCTA from "../../components/EnrollNowCTA.astro";
 import FlightTeamMember from "../../components/FlightTeamMember.astro";
@@ -37,6 +37,18 @@ import FlightTeamMember from "../../components/FlightTeamMember.astro";
     </h2>
 
     {leadershipTeam.map((member) => <TeamMemberCard teamMember={member} />)}
+
+    <hr class="bg-black w-full h-2 rounded-xl max-w-4xl my-14" />
+    <h2 class="text-4xl font-semibold text-center tracking-tight">
+      Dispatch Team
+    </h2>
+
+    <div
+      class="grid grid-cols-1 lg:grid-cols-2 gap-5 py-10 justify-items-center"
+    >
+      {dispatchTeam.map((member) => <FlightTeamMember teamMember={member} />)}
+    </div>
+
     <hr class="bg-black w-full h-2 rounded-xl max-w-4xl my-14" />
     <h2 class="text-4xl font-semibold text-center tracking-tight">
       Flight Team

@@ -83,6 +83,29 @@ export const leadershipTeam = [
   },
 ];
 
+export const dispatchTeam = [
+  {
+    name: "Charlie Feuille",
+    title: "Dispatch",
+    subtitle: "",
+    bio: [],
+    image: "/img/our-team/placeholder.webp",
+    alt: "Dispatch Charlie Feuille at Red Arrow Flight Academy",
+    email: "",
+    phone: "",
+  },
+  {
+    name: "McKayla Anderson",
+    title: "Dispatch",
+    subtitle: "",
+    bio: [],
+    image: "/img/our-team/placeholder.webp",
+    alt: "Dispatch McKayla Anderson at Red Arrow Flight Academy",
+    email: "",
+    phone: "",
+  },
+];
+
 export const flightTeam = [
   {
     name: "Rob Yadouga",
