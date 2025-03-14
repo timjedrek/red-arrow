@@ -195,8 +195,7 @@ export const flightTeam = [
   {
     name: "Kamilee Charland",
     title: "Flight Instructor",
-    subtitle:
-      "Certificates & Ratings: Commercial ASEL, CFI, CFII ASMEL and MEI",
+    subtitle: "Certificates & Ratings: Commercial ASEL, CFI, CFII, AMEL, MEI",
     bio: [
       "Born and raised just south of Houston, Texas, Kamilee’s love for aviation began at an early age. One of her fondest childhood memories is attending the Wings Over Houston airshow every year with her family, sparking her lifelong passion for flight. At just thirteen years old, Kamilee took her first flight after receiving a discovery flight as a birthday gift, setting the stage for her journey in aviation. She completed her Private Pilot training while still in high school and, eager to gain experience, quickly moved on to earn her ratings—achieving Commercial ASEL and AMEL, CFI, CFII, and MEI.",
       "For Kamilee, there isn’t a fixed end goal in her aviation career—the opportunities are vast, and she’s excited to explore them all. However, she believes the most important aspect of her journey is enjoying each step along the way, knowing there’s always something new to learn and experience.",
