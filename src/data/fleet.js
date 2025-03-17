@@ -7,6 +7,7 @@ import N242TWImage from "../../public/img/our-fleet/n242tw.webp";
 import ChipImage from "../../public/img/our-fleet/chip.webp";
 import DaleImage from "../../public/img/our-fleet/dale.webp";
 import N318OUImage from "../../public/img/our-fleet/n318ou.webp";
+import placeholder from "../../public/img/our-team/placeholder.webp";
 
 export const fleet = [
   {
@@ -143,5 +144,20 @@ export const fleet = [
       rentalPrice: "$193 /hour wet",
     },
     imageAlignment: "left",
+  },
+  {
+    name: "N200WS",
+    image: placeholder,
+    alt: "Piper Seneca N200WS at Red Arrow Flight Academy",
+    stats: {
+      tailNumber: "N200WS",
+      power: "",
+      model: "Piper Seneca",
+      maxSpeed: "",
+      year: "",
+      equipment: "",
+      rentalPrice: "TBA",
+    },
+    imageAlignment: "center",
   },
 ];
