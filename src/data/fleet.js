@@ -146,7 +146,7 @@ export const fleet = [
     imageAlignment: "left",
   },
   {
-    name: "N200WS",
+    name: "**New** Multi-Engine Piper Seneca (Coming Soon)",
     image: placeholder,
     alt: "Piper Seneca N200WS at Red Arrow Flight Academy",
     stats: {
