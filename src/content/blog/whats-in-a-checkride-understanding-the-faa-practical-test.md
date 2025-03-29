@@ -18,7 +18,7 @@ At Red Arrow, we make sure our students understand the structure of the checkrid
 
 ## Two Parts: Oral and Flight Test
 
-The checkride has two main components: an oral exam and a flight test. It usually begins on the ground, with the DPE conducting a detailed discussion of your flight planning and decision-making. This portion can take between 1.5 to 3 hours depending on the examiner and your preparedness.
+The checkride has two main components: an oral exam and a flight test. It usually begins on the ground, with the DPE conducting a detailed discussion of your flight planning and decision making. This portion can take between 1.5 to 3 hours depending on the examiner and your preparedness.
 
 During the oral portion, you might be asked to:
 
@@ -39,13 +39,13 @@ After successfully completing the oral exam, the flight portion follows. You wil
 - Emergency procedures and system failures
 - Use of cockpit checklists and situational awareness
 
-The DPE is evaluating your decision-making, ability to maintain control of the aircraft, and whether you can perform safely within the required standards.
+The DPE is evaluating your decision making, ability to maintain control of the aircraft, and whether you can perform safely within the required standards.
 
 ## How Red Arrow Prepares You
 
-At Red Arrow Flight Academy, we take great pride in preparing our students to succeed not just on the checkride, but as confident, responsible pilots. Our FAA-approved curriculum and experienced instructors will guide you through each phase of training with checkride success in mind.
+At Red Arrow Flight Academy, we take great pride in preparing our students to succeed not just on the checkride, but as confident, responsible pilots. Our FAA approved curriculum and experienced instructors will guide you through each phase of training with checkride success in mind.
 
-Located at Dona Ana County International Jetport in Santa Teresa, our school offers wide open airspace and low traffic, making it an ideal training environment for mastering skills without the distractions of a congested airport. Plus, our proximity to El Paso gives you a taste of controlled airspace operations as well.
+Located at Dona Ana County International Jetport in Santa Teresa, our school offers wide open airspace and low traffic, making it an ideal training environment for mastering skills without the distractions of a congested airport. Plus, our proximity to El Paso, Texas gives you a taste of controlled airspace operations as well.
 
 Before recommending a student for the checkride, our instructors conduct a thorough stage check and mock oral exams to ensure readiness. We will only endorse you when we are confident that you will not just pass, but truly understand what you are doing.
 
