@@ -141,20 +141,6 @@ export const flightTeam = [
     phone: "(575) 201-6160 ext 707",
   },
   {
-    name: "Jesus Bustamante",
-    title: "Flight Instructor | Check Instructor",
-    subtitle: "Certificates & Ratings: Commercial ASEL, CFI, CFII",
-    bio: [
-      "From the age of 10, Jesus found himself captivated by the world of aviation, a fascination that would shape his destiny. It all began with the awe-inspiring spectacle of an airshow, and from that moment on, the sky became his true calling.",
-      "In 2016, he took his first steps into the world of flight, embarking on a journey that would define his future. His aviation education took flight at Cochise College in Douglas, Arizona, where he dedicated himself to honing his skills and mastering the art of flying. In the year 2020, Jesus's dedication reached new heights as he proudly graduated with a bachelor's degree in professional pilot technology. Armed with knowledge, experience, and a heart full of dreams, he stands on the threshold of an exciting aviation career. His aspirations are clear and resolute - to command cargo planes or join the ranks of the airlines.",
-      "For Jesus, the sky is not the limit; it's the beginning of an adventure that he's destined to explore. What propels Jesus forward is his unwavering passion for aviation, a fire that burns brightly within him. With each flight, each new challenge, he is forging a path toward the boundless skies, where his dreams will take flight.",
-    ],
-    image: "/img/our-team/jesus-bustamante.webp",
-    alt: "CFII Jesus Bustamante at Red Arrow Flight Academy",
-    email: "",
-    phone: "(575) 201-6160 ext. 703",
-  },
-  {
     name: "Shihran Pathy",
     title: "Flight Instructor",
     subtitle: "Certificates & Ratings: Commercial ASEL, AMEL, CFI, CFII",
