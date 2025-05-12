@@ -7,7 +7,7 @@ import N242TWImage from "../../public/img/our-fleet/n242tw.webp";
 import ChipImage from "../../public/img/our-fleet/chip.webp";
 import DaleImage from "../../public/img/our-fleet/dale.webp";
 import N318OUImage from "../../public/img/our-fleet/n318ou.webp";
-import placeholder from "../../public/img/our-team/placeholder.webp";
+import placeholder from "../../public/image.png";
 
 export const fleet = [
   {
