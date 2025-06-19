@@ -1,7 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { MdOutlineQuiz } from "react-icons/md";
-const QUIZ_FORM_WEBHOOK_URL = import.meta.env.QUIZ_FORM_WEBHOOK_URL;
 ---
 
 <BaseLayout
@@ -561,7 +560,7 @@ const QUIZ_FORM_WEBHOOK_URL = import.meta.env.QUIZ_FORM_WEBHOOK_URL;
   </section>
 </BaseLayout>
 
-<script define:vars={{ QUIZ_FORM_WEBHOOK_URL }}>
+<script>
   // Wait for the DOM content to be fully loaded
   document.addEventListener("DOMContentLoaded", function () {
     // Get the quiz form element
@@ -582,7 +581,7 @@ const QUIZ_FORM_WEBHOOK_URL = import.meta.env.QUIZ_FORM_WEBHOOK_URL;
         if (confirmEmailValue === "" || confirmEmailValue === null) {
           // If the honeypot field is empty, it's a human
           // Set the form action to the URL for processing the form and redirecting to thank you
-          quizForm.action = QUIZ_FORM_WEBHOOK_URL;
+          quizForm.action = "";
         }
 
         const inspirations = [];

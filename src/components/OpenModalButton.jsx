@@ -22,8 +22,7 @@ const OpenModalButton = () => {
     const name = formData.get("name");
     setUserName(name);
 
-    const url =
-      "https://services.leadconnectorhq.com/hooks/6Qxcfy0WWndWLURxYvBB/webhook-trigger/8626098f-6d59-46ce-909e-36863924966d";
+    const url = "";
     fetch(url, {
       method: "POST",
       body: new URLSearchParams(formData),
