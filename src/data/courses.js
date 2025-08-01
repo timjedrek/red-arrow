@@ -75,6 +75,20 @@ export const courses = [
   },
   {
     id: "5",
+    imagePath: "/img/training-courses/commercial-multi-engine-add-on.webp",
+    alt: "Commercial Multi-Engine Add-On",
+    title: "Commercial Multi-Engine Add-On",
+    banner_title: "What is a Commercial Multi-Engine Add-On?",
+    banner_subtitle: "Upgrade for certified commercial pilots",
+    content: [
+      "The Commercial Multi-Engine Add-On is an essential upgrade for certified commercial pilots seeking to expand their capabilities and career opportunities. This rating allows you to operate aircraft with more than one engine under commercial privileges, opening doors to charter flying, airline paths, and high-performance operations. It’s the next step for pilots ready to elevate their skills—and their careers.",
+      "Multi-engine training focuses on mastering advanced aerodynamics, engine-out procedures, and complex systems management. You’ll develop critical decision-making skills and the ability to handle asymmetrical thrust, engine failures, and higher performance demands. At Red Arrow, our training emphasizes precision and confidence in high-workload environments—ensuring you’re fully prepared for real-world operations.",
+      "Adding a multi-engine rating sets you apart in the aviation industry. It’s not just about flying bigger aircraft—it’s about being more marketable, more capable, and more versatile. Whether your goal is to fly corporate jets, cargo, commuter routes, or eventually join an airline, this rating is a required and respected credential. It’s your key to new opportunities and advanced flying experiences.",
+      "Take the next step in your aviation journey with Red Arrow. Our experienced instructors, advanced curriculum, and tailored approach will guide you through your multi-engine training with clarity and confidence. Contact us to schedule a tour, review the syllabus, and enroll in the Commercial Multi-Engine Add-On program. Your future in multi-engine commercial aviation starts here.",
+    ],
+  },
+  {
+    id: "6",
     imagePath: "/img/training-courses/military.webp",
     alt: "Many of our students come from Ft. Bliss and complete their pilot training at Red Arrow Flight Academy",
     title: "Military Rotor/Transition Training",
