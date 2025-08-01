@@ -11,7 +11,7 @@ const TrainingCourseList = () => {
       className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 py-10 relative"
       id="courseList"
     >
-      {courses.slice(0, 5).map((course) => (
+      {courses.slice(0, 6).map((course) => (
         <motion.div
           className="flex bg-gradient-to-br from-white to-gray-200 text-black flex-col rounded-xl cursor-pointer shadow-lg"
           layoutId={course.id}
@@ -36,17 +36,17 @@ const TrainingCourseList = () => {
 
       <motion.a
         href="/flight-programs/military-rotor-transition"
-        className="flex bg-gradient-to-br from-white to-gray-200 text-black flex-col rounded-xl cursor-pointer shadow-lg"
+        className="flex lg:col-end-[-2] bg-gradient-to-br from-white to-gray-200 text-black flex-col rounded-xl cursor-pointer shadow-lg"
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
       >
         <img
-          src={courses[5].imagePath}
-          alt={courses[5].alt}
+          src={courses[6].imagePath}
+          alt={courses[6].alt}
           className="h-64 w-full object-cover rounded-t-xl"
         />
         <p className="text-xl font-medium text-center p-3 tracking-wider">
-          {courses[5].title}
+          {courses[6].title}
         </p>
       </motion.a>
 
