@@ -26,6 +26,6 @@ export const simulators = [
       "10 hours for Instrument",
       "Instrument currency",
     ],
-    rentalPrice: "$45 /hour",
+    rentalPrice: "$39 /hour",
   },
 ];
