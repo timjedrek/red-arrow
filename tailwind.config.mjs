@@ -42,9 +42,20 @@ export default {
           "0%": { transform: "translateX(0)" },
           "100%": { transform: "translateX(-100%)" },
         },
+        growThrice: {
+          "0%": { transform: "scale(1)", opacity: "1" },
+          "10%": { transform: "scale(1.08)" },
+          "20%": { transform: "scale(1)" },
+          "30%": { transform: "scale(1.05)" },
+          "40%": { transform: "scale(1)" },
+          "50%": { transform: "scale(1.03)" },
+          "60%": { transform: "scale(1)" },
+          "100%": { transform: "scale(1)", opacity: "1" },
+        },
       },
       animation: {
         moveReviews: "moveReviews 5s linear infinite",
+        "grow-thrice": "growThrice 1.8s ease-in-out 1", // runs once over 1.8s
       },
       fontFamily: {
         serif: ["Urbanist Variable", ...defaultTheme.fontFamily.serif],
