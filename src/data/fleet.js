@@ -156,7 +156,7 @@ export const fleet = [
       maxSpeed: "",
       year: "1979",
       equipment: "G 430",
-      rentalPrice: "$398 /hour wet",
+      rentalPrice: "$349 /hour wet",
     },
     imageAlignment: "center",
   },

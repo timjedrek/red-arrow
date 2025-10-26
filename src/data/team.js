@@ -71,20 +71,6 @@ export const leadershipTeam = [
 
 export const dispatchTeam = [
   {
-    name: "Charlie Feuille",
-    title: "Dispatch",
-    subtitle: "",
-    bio: [
-      "Charlie Feuille was born and raised in the vibrant city of El Paso, Texas. From an early age, he was drawn to the freedom and excitement of flight—whether it was watching planes take off or imagining what it would be like to soar through the clouds, aviation quickly became his lifelong passion.",
-      "After beginning his aviation journey at Embry-Riddle Aeronautical University, Charlie decided to bring his training closer to home and finish his commercial license with Red Arrow Flight Academy. This move has brought him one step closer to his goal of becoming a flight instructor. He's eager to share his love for flying with the next generation of pilots and help others reach their own goals in aviation.",
-      "Charlie is committed to creating a supportive, hands-on learning environment where students feel encouraged and confident. His goal is simple: to inspire others to take to the skies and chase their dreams.",
-    ],
-    image: "/charlie-feuille.webp",
-    alt: "Dispatch Charlie Feuille at Red Arrow Flight Academy",
-    email: "",
-    phone: "",
-  },
-  {
     name: "McKayla Anderson",
     title: "Dispatch",
     subtitle: "",
