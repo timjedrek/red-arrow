@@ -48,6 +48,14 @@ import { PHONE_NUMBER } from "../consts";
         </a>
       </div>
     </div>
+    <a
+      href="/enrollment"
+      class="text-white text-center text-sm hover:underline block duration-200 underline-offset-2"
+    >
+      Now Enrolling <span class="hidden sm:inline">
+        – Accelerated Multi-Engine Rating Program</span
+      >
+    </a>
     <div id="log-in-out"></div>
   </div>
 </div>
@@ -55,27 +63,32 @@ import { PHONE_NUMBER } from "../consts";
 <script>
   import { getAuth } from "firebase/auth";
   import { app } from "../firebase/client";
+  document.addEventListener("DOMContentLoaded", () => {
+    const auth = getAuth(app);
 
-  const auth = getAuth(app);
-
-  const logInOrOut = document.getElementById("log-in-out") as HTMLDivElement;
-  auth.onAuthStateChanged((user) => {
-    if (user) {
-      logInOrOut.innerHTML = `
-        <a href="/dashboard" class="text-white text-md lg:text-lg cursor-pointer border-r border-white px-2">Dashboard</a>
-        <button id="signout-banner-button" class="text-white text-md lg:text-lg cursor-pointer px-2">Log Out</button>
-      `;
-      const signoutButton = document.getElementById(
-        "signout-banner-button",
-      ) as HTMLButtonElement;
-      signoutButton.addEventListener("click", (e) => {
-        e.preventDefault();
-        auth.signOut().then(() => {
-          window.location.href = "/signin";
-        });
+    const logInOrOut = document.getElementById("log-in-out") as HTMLDivElement;
+    if (logInOrOut) {
+      auth.onAuthStateChanged((user) => {
+        if (user) {
+          logInOrOut.innerHTML = `
+                    <a href="/dashboard" class="text-white text-md lg:text-lg cursor-pointer border-r border-white px-2">Dashboard</a>
+                    <button id="signout-banner-button" class="text-white text-md lg:text-lg cursor-pointer px-2">Log Out</button>
+                `;
+          const signoutButton = document.getElementById(
+            "signout-banner-button",
+          ) as HTMLButtonElement;
+          if (signoutButton) {
+            signoutButton.addEventListener("click", (e) => {
+              e.preventDefault();
+              auth.signOut().then(() => {
+                window.location.href = "/signin";
+              });
+            });
+          }
+        } else {
+          logInOrOut.innerHTML = `<a href="/signin" class="text-white text-md lg:text-lg cursor-pointer">Student Log In</a>`;
+        }
       });
-    } else {
-      logInOrOut.innerHTML = `<a href="/signin" class="text-white text-md lg:text-lg cursor-pointer">Student Log In</a>`;
     }
   });
 </script>
