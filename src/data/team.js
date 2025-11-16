@@ -83,6 +83,21 @@ export const dispatchTeam = [
     email: "",
     phone: "",
   },
+  {
+    name: "Andrew Ramirez",
+    title: "Dispatch",
+    subtitle: "",
+    bio: [
+      "Andrew Ramirez was born and raised in El Paso, Texas, a city known for its vibrant culture, strong community spirit, and wide-open skies—something that would later inspire his passion for aviation. Growing up, Andrew developed a deep appreciation for both his hometown’s unique blend of traditions and the sprawling freedom of the desert.",
+      "Before setting his sights on the skies, Andrew spent several years in Chicago as a high school English teacher. In the classroom, he discovered a love for mentorship, helping students find their voices and confidence through language and storytelling. His time as an educator taught him patience, communication, and leadership—skills that he now brings with him as he transitions toward a new chapter in the skies.",
+      "Outside of work, Andrew has always felt most at peace outdoors. Whether it’s hiking through the Franklin Mountains, working on hands-on projects in the backyard, or simply enjoying the quiet of a West Texas sunset, he finds energy and clarity in nature.",
+      "Now, as he pursues a career in aviation, Andrew is driven by the same curiosity and dedication that defined his teaching years. His goal is to combine his love for learning, his steady focus, and his lifelong fascination with flight to build a future that quite literally takes him to new heights."
+    ],
+    image: "/img/our-team/andrew-ramirez.webp",
+    alt: "Dispatch Andrew Ramirez at Red Arrow Flight Academy",
+    email: "",
+    phone: "",
+  },
 ];
 
 export const flightTeam = [
@@ -198,6 +213,21 @@ export const flightTeam = [
       "Outside of aviation, David enjoys playing the piano, hitting the gym, and unwinding with movies alongside his girlfriend.",
     ],
     image: "/cfi-david-ramirez.webp",
+    alt: "CFI Reilly Randag at Red Arrow Flight Academy",
+    email: "",
+    phone: "",
+  },
+  {
+    name: "Malachi Lyday",
+    title: "Flight Instructor",
+    subtitle: "",
+    bio: [
+      "Malachi was born in Denver, Colorado, but it was in Phoenix where his passion for aviation truly took root. At just five years old—playing with model airplanes and tracing their paths across the sky—he felt a spark that never faded. As a first-generation pilot, every step of his journey has been built from determination, self-belief, and a genuine love for flying.",
+      "He completed his first solo flight at the Delta Solo Flight Academy in Olive Branch, Mississippi—a moment that transformed a childhood dream into reality. From there, he earned his Private Pilot Certificate at ATP in Mesa, Arizona, and went on to complete the rest of his ratings at AeroGuard Flight Training Center in Phoenix, shaping himself into the pilot he once imagined becoming.",
+      "Now, as a Certified Flight Instructor at Red Arrow, Malachi’s mission goes deeper than teaching maneuvers or preparing students for checkrides. He aims to give every student the confidence to excel on their very first attempt, and the professionalism, discipline, and safety mindset that will carry them through any aviation career they choose. His goal is not only to train pilots—but to inspire them, the same way aviation inspired him.",
+      "Outside the cockpit, Malachi is a loyal Denver Broncos and Denver Nuggets fan, a devoted music lover, and someone who finds clarity and balance in the gym.",
+    ],
+    image: "/img/our-team/malachi-lyday.webp",
     alt: "CFI Reilly Randag at Red Arrow Flight Academy",
     email: "",
     phone: "",
