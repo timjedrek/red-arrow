@@ -162,7 +162,7 @@ export const flightTeam = [
   {
     name: "David Harris",
     title: "Flight Instructor",
-    subtitle: "Certificates & Ratings: Commercial ASEL, CFI, AMEL",
+    subtitle: "Certificates & Ratings: Commercial ASEL, CFI, AMEL, CFII",
     bio: [
       "David's journey began in the alfalfa fields of Logan, Utah, where he was born and raised. Driven by a passion for medicine, he initially pursued a career in healthcare, working in urgent care. However, like many aviators, aviation soon captured his heart. With a shift in career aspirations, David moved to St. Petersburg, Florida, to earn his Private through Commercial Multi-Engine ratings. He then returned home to complete his Certified Flight Instructor (CFI) certification, soaring over the same fields that shaped his roots.",
       "As an instructor, David’s goal is to share the thrill and joy of aviation while being a steadfast support for his students, especially during the tough moments. He believes that, as aviators, learning never stops—whether you’re a student or a CFI, we’re all continually growing in our craft.",
@@ -206,28 +206,13 @@ export const flightTeam = [
   {
     name: "David Ramirez",
     title: "Flight Instructor",
-    subtitle: "Certificates & Ratings: Commercial ASEL, CFI and CFII",
+    subtitle: "Certificates & Ratings: Commercial ASEL, CFI, CFII and AMEL",
     bio: [
       "David, born and raised in El Paso, discovered his passion for aviation at a young age while watching his father fly military cargo planes. Although he was initially uncertain about following in his father's footsteps, his sister’s pursuit of a career in aviation reignited his interest and ultimately inspired him to begin his own journey. David now hopes to one day fly alongside both his father and sister in the airlines.",
       "He received his aviation education from Texas State Technical College in Waco, where he earned an associate's degree in Aircraft Pilot Training Technology. He continued his training at American Flyers, obtaining both his Certified Flight Instructor (CFI) and Instrument Instructor (CFII) certificates. As an instructor, David is committed to fostering a safe and supportive learning environment while sharing the joy and excitement that flying brings.",
       "Outside of aviation, David enjoys playing the piano, hitting the gym, and unwinding with movies alongside his girlfriend.",
     ],
     image: "/cfi-david-ramirez.webp",
-    alt: "CFI Reilly Randag at Red Arrow Flight Academy",
-    email: "",
-    phone: "",
-  },
-  {
-    name: "Malachi Lyday",
-    title: "Flight Instructor",
-    subtitle: "",
-    bio: [
-      "Malachi was born in Denver, Colorado, but it was in Phoenix where his passion for aviation truly took root. At just five years old—playing with model airplanes and tracing their paths across the sky—he felt a spark that never faded. As a first-generation pilot, every step of his journey has been built from determination, self-belief, and a genuine love for flying.",
-      "He completed his first solo flight at the Delta Solo Flight Academy in Olive Branch, Mississippi—a moment that transformed a childhood dream into reality. From there, he earned his Private Pilot Certificate at ATP in Mesa, Arizona, and went on to complete the rest of his ratings at AeroGuard Flight Training Center in Phoenix, shaping himself into the pilot he once imagined becoming.",
-      "Now, as a Certified Flight Instructor at Red Arrow, Malachi’s mission goes deeper than teaching maneuvers or preparing students for checkrides. He aims to give every student the confidence to excel on their very first attempt, and the professionalism, discipline, and safety mindset that will carry them through any aviation career they choose. His goal is not only to train pilots—but to inspire them, the same way aviation inspired him.",
-      "Outside the cockpit, Malachi is a loyal Denver Broncos and Denver Nuggets fan, a devoted music lover, and someone who finds clarity and balance in the gym.",
-    ],
-    image: "/img/our-team/malachi-lyday.webp",
     alt: "CFI Reilly Randag at Red Arrow Flight Academy",
     email: "",
     phone: "",
