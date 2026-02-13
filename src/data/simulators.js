@@ -12,20 +12,20 @@ export const simulators = [
       "Instrument currency",
       "50 hours Commercial",
     ],
-    rentalPrice: "$64 /hour",
+    rentalPrice: "$78 /hour",
   },
-  {
-    name: "FTS Simulator",
-    image: FTSImage,
-    panels: [
-      "Cessna 172 & 182 (20 different panel configurations)",
-      "Columbia 350 (Avydine, G1000) Cirrus SR 20 & SR 22 (19 different panel configurations)",
-    ],
-    hoursInSimulatorCanBeUsedAs: [
-      "2.5 hours for Private Pilot",
-      "10 hours for Instrument",
-      "Instrument currency",
-    ],
-    rentalPrice: "$39 /hour",
-  },
+  // {
+  //   name: "FTS Simulator",
+  //   image: FTSImage,
+  //   panels: [
+  //     "Cessna 172 & 182 (20 different panel configurations)",
+  //     "Columbia 350 (Avydine, G1000) Cirrus SR 20 & SR 22 (19 different panel configurations)",
+  //   ],
+  //   hoursInSimulatorCanBeUsedAs: [
+  //     "2.5 hours for Private Pilot",
+  //     "10 hours for Instrument",
+  //     "Instrument currency",
+  //   ],
+  //   rentalPrice: "$39 /hour",
+  // },
 ];
