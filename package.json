@@ -10,7 +10,7 @@
     "astro": "astro",
     "deploy:hosting": "firebase deploy --only hosting",
     "deploy:functions": "firebase deploy --only functions",
-    "deploy": "npm run deploy:hosting && npm run deploy:functions"
+    "deploy": "pnpm run deploy:hosting && pnpm run deploy:functions"
   },
   "dependencies": {
     "@astrojs/alpinejs": "^0.4.0",
