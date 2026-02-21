@@ -31,7 +31,7 @@ export const leadershipTeam = [
   {
     name: "Danielle Nelson",
     title: "Business Operations Director",
-    subtitle: "Certificates & Ratings: Private Pilot, ASEL, Instrument Rating",
+    subtitle: "Certificates & Ratings: Commercial ASEL, Instrument Rating",
     bio: [
       "Danielle’s journey into aviation began shortly after graduating high school in 2023, when she quickly made her mark at Red Arrow. Her passion for flight was sparked during her junior year, after meeting a U.S. Army helicopter pilot, which shifted her focus from a potential medical career to aviation.",
       "Now a rated pilot with both Private and Instrument ratings, Danielle is on track to earn her Commercial and CFI ratings. Her determination to succeed in aviation is evident in her commitment to continuous learning and growth. Danielle’s goal is to become an instructor at Red Arrow once she completes her training, driven by her desire to share her knowledge and passion for aviation with others.",
@@ -103,7 +103,7 @@ export const dispatchTeam = [
 export const flightTeam = [
   {
     name: "Rob Yadouga",
-    title: "Assistant Chief Flight Instructor",
+    title: "Check Instructor",
     subtitle: "Certificates & Ratings: Commercial ASEL, CFI, CFII, MEI",
     bio: [
       "Born and raised in the sunshine state of Florida, Rob's heart has always belonged to the open skies. His journey through aviation began in the welcoming skies of Georgia, where he learned to master the art of flight. With every takeoff and landing, his passion for aviation soared to new heights.  Rob's unwavering love for the skies led him down the path of becoming an instructor, a role he embraced wholeheartedly. Sharing his knowledge and expertise with aspiring aviators became his mission, and his dedication to the craft of teaching is a testament to his commitment to aviation.",
@@ -134,7 +134,7 @@ export const flightTeam = [
   },
   {
     name: "Shane Lipson",
-    title: "Flight Instructor | Check Instructor",
+    title: "Check Instructor",
     subtitle: "Certificates & Ratings: Commercial ASEL, CFI, CFII",
     bio: [
       "Shane Lipson began flying in 2000 while living in New York City.  His first discovery flight, around the Statue of Liberty, had him hooked into aviation and he quickly progressed through training to become a CFII.  Shortly after the World Trade Center attack in 2001, he joined the Civil Air Patrol as a volunteer pilot.  He became a check pilot and then head of Standardization and Evaluation for Texas Wing after moving back to his hometown of El Paso.",
