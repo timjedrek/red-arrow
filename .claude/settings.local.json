@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__web-search-prime__web_search_prime",
+      "Bash(Get-Content *)",
+      "Bash(npm audit *)",
+      "Bash(Select-String \"vulnerability|critical|high|moderate|low\")",
+      "Bash(Select-Object -First 20)",
+      "Bash(npm install *)",
+      "Bash(echo \"Exit code: $?\")",
+      "Bash(npm -v)",
+      "Bash(npm config *)"
+    ]
+  }
+}

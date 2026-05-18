@@ -12,7 +12,7 @@ export const simulators = [
       "Instrument currency",
       "50 hours Commercial",
     ],
-    rentalPrice: "$78 /hour",
+    rentalPrice: "$79 /hour",
   },
   // {
   //   name: "FTS Simulator",
