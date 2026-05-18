@@ -26,7 +26,7 @@ At Red Arrow Flight Academy, our fleet of aircraft is carefully selected to prov
 
 The **Cessna 172** series is the cornerstone of our training fleet, with multiple models including the 172N, 172M, 172P, and 172S. These aircraft are the most widely used trainers in the world, known for their stability, ease of control, and reliability.
 
-- **Red Bird (Cessna 172N)**: With a 180 HP engine, Garmin 430, and Aspen Avionics PFD, Red Bird is suitable for all levels of training, from Private Pilot License (PPL) to more advanced maneuvers required for Commercial Pilot License (CPL).
+- **Red Bird (Cessna 172N)**: With a 180 HP engine, Garmin 650, and Aspen Avionics PFD, Red Bird is suitable for all levels of training, from Private Pilot License (PPL) to more advanced maneuvers required for Commercial Pilot License (CPL).
 - **Skittles (Cessna 172M)**: Powered by a 160 HP engine and equipped with G5 and Garmin 430, Skittles is ideal for students mastering consistency and control during Instrument Rating (IR) training and cross-country flights.
 - **Echo (Cessna 172N)**: Echo’s 160 HP engine and advanced Garmin 430Was and Dual G5 avionics make it perfect for advanced training, particularly for students working towards their IR and CPL.
 - **5YX (Cessna 172P)**: With Aspen and Garmin 650 avionics and an S-Tec Autopilot, 5YX is a modern trainer that helps students transition smoothly from basic training to complex flight operations.

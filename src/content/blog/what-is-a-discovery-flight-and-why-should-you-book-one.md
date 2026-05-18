@@ -46,6 +46,6 @@ Discovery flights are affordable. Prices vary depending on flight time and aircr
 
 If you live near **Santa Teresa**, **El Paso**, or **Las Cruces** and want to learn about flying, book a discovery flight at Red Arrow Flight Academy. You will get real flight time, meet our instructors, and see if becoming a pilot is right for you.
 
-**[Schedule your discovery flight today!](/discovery-flight-form)**
+**[Schedule your discovery flight today!](https://app.flightschedulepro.com/DiscoveryFlights/95906da7-add1-4c84-abfc-44228c99c3bc)**
 
 ---
