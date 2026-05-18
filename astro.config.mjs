@@ -47,7 +47,8 @@ export default defineConfig({
     "/military-rotor-transition-training":
       "/flight-programs/military-rotor-transition",
     "/copy-of-international-student": "/flight-programs/international-program",
-    "/book-online": "/discovery-flight-form",
+    "/book-online":
+      "https://app.flightschedulepro.com/DiscoveryFlights/95906da7-add1-4c84-abfc-44228c99c3bc",
     "/plans-pricing": "/",
     "/post/[...slug]": "/blog/[...slug]",
     "/flight-experience": "/",

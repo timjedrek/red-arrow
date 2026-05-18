@@ -83,7 +83,7 @@ const BlogNavbar = ({ pathname }) => {
                     </a>
                   </div>
                   <a
-                    href="/discovery-flight-form"
+                    href="https://app.flightschedulepro.com/DiscoveryFlights/95906da7-add1-4c84-abfc-44228c99c3bc"
                     target="_blank"
                     className="btn-red"
                   >
@@ -156,7 +156,7 @@ const BlogNavbar = ({ pathname }) => {
             Discovery Flight
           </a>
           <a
-            href="/discovery-flight-form"
+            href="https://app.flightschedulepro.com/DiscoveryFlights/95906da7-add1-4c84-abfc-44228c99c3bc"
             target="_blank"
             className="btn-red place-self-center mt-5"
           >
