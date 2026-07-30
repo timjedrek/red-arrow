@@ -1,16 +1,59 @@
-[debug] [2026-05-18T15:10:44.769Z] ----------------------------------------------------------------------
-[debug] [2026-05-18T15:10:44.773Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\asus\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
-[debug] [2026-05-18T15:10:44.773Z] CLI Version:   15.18.0
-[debug] [2026-05-18T15:10:44.774Z] Platform:      win32
-[debug] [2026-05-18T15:10:44.774Z] Node Version:  v22.14.0
-[debug] [2026-05-18T15:10:44.774Z] Time:          Mon May 18 2026 22:10:44 GMT+0700 (Indochina Time)
-[debug] [2026-05-18T15:10:44.775Z] ----------------------------------------------------------------------
+[debug] [2026-07-30T01:32:53.332Z] ----------------------------------------------------------------------
+[debug] [2026-07-30T01:32:53.339Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\asus\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2026-07-30T01:32:53.341Z] CLI Version:   15.18.0
+[debug] [2026-07-30T01:32:53.341Z] Platform:      win32
+[debug] [2026-07-30T01:32:53.341Z] Node Version:  v22.23.1
+[debug] [2026-07-30T01:32:53.342Z] Time:          Thu Jul 30 2026 08:32:53 GMT+0700 (Indochina Time)
+[debug] [2026-07-30T01:32:53.342Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2026-05-18T15:10:50.031Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2026-05-18T15:10:50.035Z] > authorizing via signed-in user (joeyk2k@gmail.com)
-[debug] [2026-05-18T15:10:50.036Z] [iam] checking project red-arrow-user-auth for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]
-[debug] [2026-05-18T15:10:50.040Z] Checked if tokens are valid: true, expires at: 1779120213832
-[debug] [2026-05-18T15:10:50.041Z] Checked if tokens are valid: true, expires at: 1779120213832
-[debug] [2026-05-18T15:10:50.045Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/red-arrow-user-auth:testIamPermissions [none]
-[debug] [2026-05-18T15:10:50.045Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/red-arrow-user-auth:testIamPermissions  x-goog-user-project=red-arrow-user-auth
-[debug] [2026-05-18T15:10:50.047Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/red-arrow-user-auth:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-07-30T01:32:53.349Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2026-07-30T01:32:58.720Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-07-30T01:32:58.721Z] > authorizing via signed-in user (joeyk2k@gmail.com)
+[debug] [2026-07-30T01:32:58.721Z] [iam] checking project red-arrow-user-auth for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2026-07-30T01:32:58.723Z] Checked if tokens are valid: false, expires at: 1784447030850
+[debug] [2026-07-30T01:32:58.723Z] Checked if tokens are valid: false, expires at: 1784447030850
+[debug] [2026-07-30T01:32:58.723Z] > refreshing access token with scopes: []
+[debug] [2026-07-30T01:32:58.726Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2026-07-30T01:32:58.726Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-07-30T01:32:58.903Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2026-07-30T01:32:58.904Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-07-30T01:32:58.919Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/red-arrow-user-auth:testIamPermissions [none]
+[debug] [2026-07-30T01:32:58.920Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/red-arrow-user-auth:testIamPermissions  x-goog-user-project=red-arrow-user-auth
+[debug] [2026-07-30T01:32:58.920Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/red-arrow-user-auth:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-07-30T01:32:59.316Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2026-07-30T01:32:59.316Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2026-07-30T01:33:00.249Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/red-arrow-user-auth:testIamPermissions 200
+[debug] [2026-07-30T01:33:00.250Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/red-arrow-user-auth:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-07-30T01:33:00.250Z] Checked if tokens are valid: true, expires at: 1785378777904
+[debug] [2026-07-30T01:33:00.250Z] Checked if tokens are valid: true, expires at: 1785378777904
+[debug] [2026-07-30T01:33:00.251Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/red-arrow-user-auth/serviceAccounts/red-arrow-user-auth@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2026-07-30T01:33:00.251Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/red-arrow-user-auth/serviceAccounts/red-arrow-user-auth@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2026-07-30T01:33:01.783Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/red-arrow-user-auth/serviceAccounts/red-arrow-user-auth@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2026-07-30T01:33:01.784Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/red-arrow-user-auth/serviceAccounts/red-arrow-user-auth@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2026-07-30T01:33:01.784Z] Checked if tokens are valid: true, expires at: 1785378777904
+[debug] [2026-07-30T01:33:01.784Z] Checked if tokens are valid: true, expires at: 1785378777904
+[debug] [2026-07-30T01:33:01.785Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/red-arrow-user-auth [none]
+[debug] [2026-07-30T01:33:02.314Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/red-arrow-user-auth 200
+[debug] [2026-07-30T01:33:02.314Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/red-arrow-user-auth {"projectId":"red-arrow-user-auth","projectNumber":"13882138942","displayName":"Red Arrow User Auth","name":"projects/red-arrow-user-auth","resources":{"hostingSite":"red-arrow-user-auth","locationId":"us-central"},"state":"ACTIVE","labels":{"firebase":"enabled"},"etag":"1_9ffac0e2-6a0b-4ee4-9ccb-5898ba6a031c"}
+[debug] [2026-07-30T01:33:09.466Z] defaultcredentials: writing to file C:\Users\asus\AppData\Roaming\firebase\joeyk2k_gmail_com_application_default_credentials.json
+[debug] [2026-07-30T01:33:09.500Z] Checked if tokens are valid: true, expires at: 1785378777904
+[debug] [2026-07-30T01:33:09.500Z] Checked if tokens are valid: true, expires at: 1785378777904
+[debug] [2026-07-30T01:33:09.501Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/red-arrow-user-auth/sites pageToken=&pageSize=10
+[debug] [2026-07-30T01:33:10.661Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/red-arrow-user-auth/sites 200
+[debug] [2026-07-30T01:33:10.662Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/red-arrow-user-auth/sites {"sites":[{"name":"projects/red-arrow-user-auth/sites/red-arrow-user-auth","defaultUrl":"https://red-arrow-user-auth.web.app","appId":"1:13882138942:web:0394e76ba44b7cdcfbcc6f","type":"DEFAULT_SITE"}]}
+[debug] [2026-07-30T01:33:10.663Z] Checked if tokens are valid: true, expires at: 1785378777904
+[debug] [2026-07-30T01:33:10.663Z] Checked if tokens are valid: true, expires at: 1785378777904
+[debug] [2026-07-30T01:33:10.664Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:13882138942:web:0394e76ba44b7cdcfbcc6f/config [none]
+[debug] [2026-07-30T01:33:12.582Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:13882138942:web:0394e76ba44b7cdcfbcc6f/config 200
+[debug] [2026-07-30T01:33:12.582Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:13882138942:web:0394e76ba44b7cdcfbcc6f/config {"projectId":"red-arrow-user-auth","appId":"1:13882138942:web:0394e76ba44b7cdcfbcc6f","storageBucket":"red-arrow-user-auth.appspot.com","locationId":"us-central","apiKey":"AIzaSyA4ujTO88RYMptWP9il91w-5pQJi1_2IYY","authDomain":"red-arrow-user-auth.firebaseapp.com","messagingSenderId":"13882138942","projectNumber":"13882138942","version":"2"}
+[info] 
+   Thank you for trying our experimental support for Astro on Firebase Hosting.
+   While this integration is maintained by Googlers it is not a supported Firebase product.
+   Issues filed on GitHub will be addressed on a best-effort basis by maintainers and other community members.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/frameworks-overview
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+

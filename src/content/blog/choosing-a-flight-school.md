@@ -38,7 +38,7 @@ Red Arrow Flight Academy's curriculum is designed to provide students with round
 
 Additionally, you can meet with us once a week for our "Learning Lessons". These are after-hours calls with the Red Arrow team to gain an extra edge in your aviation cirriculum.
 
-![Dispatch Manager Jazmine Anaya and CFII Shihran Pathy reviewing their material](/dispatch-manager-jazmine.webp)
+![Dispatch Manager Jazmine Anaya reviewing her material](/dispatch-manager-jazmine.webp)
 
 ## Safety Record and Reputation
 
