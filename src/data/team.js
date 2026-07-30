@@ -8,7 +8,6 @@ import andrewRamirezImg from "../assets/team/andrew-ramirez.webp";
 import robYadougaImg from "../assets/team/rob-yadouga.webp";
 import gilbertoRodriguezImg from "../assets/team/gilberto-rodriguez.webp";
 import shaneLipsonImg from "../assets/team/shane-lipson.webp";
-import shihranPathyImg from "../assets/team/shihran-pathy.webp";
 import davidHarrisImg from "../assets/team/david-harris.webp";
 import jacobCanadaImg from "../assets/team/jacob-canada.webp";
 import eduardoLujanImg from "../assets/team/eduardo-lujan.webp";
@@ -48,7 +47,8 @@ export const leadershipTeam = [
   {
     name: "Danielle Nelson",
     title: "Business Operations Director",
-    subtitle: "Certificates & Ratings: Commercial ASEL, Instrument Rating",
+    subtitle:
+      "Certificates & Ratings: Commercial ASEL, Instrument Rating, Flight Instructor",
     bio: [
       "Danielle’s journey into aviation began shortly after graduating high school in 2023, when she quickly made her mark at Red Arrow. Her passion for flight was sparked during her junior year, after meeting a U.S. Army helicopter pilot, which shifted her focus from a potential medical career to aviation.",
       "Now a rated pilot with both Private and Instrument ratings, Danielle is on track to earn her Commercial and CFI ratings. Her determination to succeed in aviation is evident in her commitment to continuous learning and growth. Danielle’s goal is to become an instructor at Red Arrow once she completes her training, driven by her desire to share her knowledge and passion for aviation with others.",
@@ -161,20 +161,6 @@ export const flightTeam = [
     alt: "CFII Shane Lipson at Red Arrow Flight Academy",
     email: "",
     phone: "(575) 201-6160 ext 707",
-  },
-  {
-    name: "Shirahn Pathy",
-    title: "Flight Instructor",
-    subtitle: "Certificates & Ratings: Commercial ASEL, AMEL, CFI, CFII",
-    bio: [
-      "Born and raised in Seattle, Washington, Shirahn has expressed his passion for aviation in many different ways since the age of four. Whether it was with the mechanics of a jet engine explained with a balloon, math’s relation to aircraft and flight, or writing essays about aviation disasters on his own time, he always had a story to share about his love of flying.",
-      "A graduate of Aeronautical Science with flight honors from Embry-Riddle Aeronautical University in Prescott, Arizona, Shirahn holds additional ratings in addition to his CFI such as Commercial Seaplane, Multi-Engine, and CFII ratings. Shirahn believes sharing his knowledge in earnest with someone to get better every day is an important value of a human being.",
-      "Outside of aviation, Shirahn is passionate about the world of Electronic Dance Music. He is an accomplished DJ and continues his passion through performing at various live events across Texas and Washington.",
-    ],
-    image: shihranPathyImg,
-    alt: "CFII Shirahn Pathy at Red Arrow Flight Academy",
-    email: "",
-    phone: "(575) 201-6160 ext. 711",
   },
   {
     name: "David Harris",
