@@ -12,7 +12,6 @@ import davidHarrisImg from "../assets/team/david-harris.webp";
 import jacobCanadaImg from "../assets/team/jacob-canada.webp";
 import eduardoLujanImg from "../assets/team/eduardo-lujan.webp";
 import dianaMartinezHernandezImg from "../assets/team/diana-martinez-hernandez.webp";
-import davidRamirezImg from "../assets/team/david-ramirez.webp";
 
 export const leadershipTeam = [
   {
@@ -218,20 +217,6 @@ export const flightTeam = [
     ],
     image: dianaMartinezHernandezImg,
     alt: "CFII Diana Martinez Hernandez at Red Arrow Flight Academy",
-    email: "",
-    phone: "",
-  },
-  {
-    name: "David Ramirez",
-    title: "Flight Instructor",
-    subtitle: "Certificates & Ratings: Commercial ASEL, CFI, CFII and AMEL",
-    bio: [
-      "David, born and raised in El Paso, discovered his passion for aviation at a young age while watching his father fly military cargo planes. Although he was initially uncertain about following in his father's footsteps, his sister’s pursuit of a career in aviation reignited his interest and ultimately inspired him to begin his own journey. David now hopes to one day fly alongside both his father and sister in the airlines.",
-      "He received his aviation education from Texas State Technical College in Waco, where he earned an associate's degree in Aircraft Pilot Training Technology. He continued his training at American Flyers, obtaining both his Certified Flight Instructor (CFI) and Instrument Instructor (CFII) certificates. As an instructor, David is committed to fostering a safe and supportive learning environment while sharing the joy and excitement that flying brings.",
-      "Outside of aviation, David enjoys playing the piano, hitting the gym, and unwinding with movies alongside his girlfriend.",
-    ],
-    image: davidRamirezImg,
-    alt: "CFI David Ramirez at Red Arrow Flight Academy",
     email: "",
     phone: "",
   },

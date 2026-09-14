@@ -3,7 +3,6 @@ import SkittlesImage from "../../public/img/our-fleet/skittles.webp";
 import EchoImage from "../../public/img/our-fleet/echo.webp";
 import A5YXImage from "../../public/img/our-fleet/5yx.webp";
 import WoodstockImage from "../../public/img/our-fleet/woodstock.webp";
-import N242TWImage from "../../public/img/our-fleet/n242tw.webp";
 import ChipImage from "../../public/img/our-fleet/chip.webp";
 import DaleImage from "../../public/img/our-fleet/dale.webp";
 import N318OUImage from "../../public/img/our-fleet/n318ou.webp";
@@ -84,21 +83,6 @@ export const fleet = [
       rentalPrice: "$171 /hour wet",
     },
     imageAlignment: "right",
-  },
-  {
-    name: "N242TW",
-    image: N242TWImage,
-    alt: "N242TW Cessna 172S at Red Arrow Flight Academy",
-    stats: {
-      tailNumber: "N242TW",
-      power: "180 HP",
-      model: "Cessna 172S",
-      maxSpeed: "Knots",
-      year: "2005",
-      equipment: " 2 Garmin G1000, Airconditioning",
-      rentalPrice: "$179 /hour wet",
-    },
-    imageAlignment: "center",
   },
   {
     name: "Chip",
