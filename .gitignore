@@ -21,4 +21,3 @@ pnpm-debug.log*
 
 .firebase/
 pnpm-lock.yaml
-config.bat

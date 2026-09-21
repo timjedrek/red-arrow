@@ -10,6 +10,7 @@
     "astro": "astro",
     "deploy:hosting": "firebase deploy --only hosting",
     "deploy:functions": "firebase deploy --only functions",
+    "deploy:dev": "firebase hosting:channel:deploy dev",
     "deploy": "pnpm run deploy:hosting && pnpm run deploy:functions"
   },
   "dependencies": {
@@ -19,7 +20,7 @@
     "@astrojs/partytown": "^2.0.4",
     "@astrojs/react": "^3.0.9",
     "@astrojs/rss": "^4.0.2",
-    "@astrojs/sitemap": "^3.1.4",
+    "@astrojs/sitemap": "3.2.1",
     "@astrojs/tailwind": "^5.1.0",
     "@fontsource-variable/urbanist": "^5.0.19",
     "@types/alpinejs": "^3.13.6",
@@ -35,6 +36,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^5.0.1",
+    "sharp": "^0.33.5",
     "swiper": "^11.0.5",
     "tailwindcss": "^3.4.1"
   },
@@ -48,5 +50,11 @@
     "@tailwindcss/typography": "^0.5.10",
     "prettier": "^3.2.4",
     "prettier-plugin-astro": "^0.13.0"
+  },
+  "allowScripts": {
+    "sharp@0.33.5": true,
+    "sharp@0.32.6": true,
+    "esbuild@0.19.11": true,
+    "protobufjs@7.5.3": true
   }
 }
