@@ -2,7 +2,7 @@
 title: "Popular Recreational Areas in El Paso, TX"
 description: "Culturally rich and historically significant, El Paso, Texas, boasts 297 sunny days in the year and offers vast and vivid desert landscapes as far as the eye can see."
 pubDate: "Aug 31, 2020"
-heroImage: "/popular-recreational-areas-in-el-paso-tx.webp"
+heroImage: "../../assets/blog/popular-recreational-areas-in-el-paso-tx.webp"
 author: "Tomas Peralta"
 readingTime: "4 min"
 tags: []

@@ -2,7 +2,7 @@
 title: "Understanding Flight School Terminology: A Beginner’s Guide"
 description: "Learn the basics of flight school terminology with this beginner-friendly guide from Red Arrow Flight Academy in Santa Teresa, NM. Discover key aviation terms like Part 141 vs. Part 61, private pilot license, flight simulators, and more. Start your journey into aviation today!"
 pubDate: "Nov 20, 2024"
-heroImage: "/red-arrow-beginners-guide-flight-school-terminology.jpg"
+heroImage: "../../assets/blog/red-arrow-beginners-guide-flight-school-terminology.jpg"
 author: "Elsa Peralta"
 readingTime: "2 min"
 tags: ["Flight Training Basics", "Red Arrow Flight Academy", "Santa Teresa Flight School", "Part 141 vs Part 61", "Aviation Terminology", "Pilot Training Guide", "Beginner Pilot Tips", "El Paso Flight Training", "Discovery Flights Santa Teresa", "Learn to Fly"]

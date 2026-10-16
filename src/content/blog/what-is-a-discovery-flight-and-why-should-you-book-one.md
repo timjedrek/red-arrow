@@ -2,7 +2,7 @@
 title: "What is a Discovery Flight and Why Should You Book One?"
 description: "If you are thinking about becoming a pilot, a discovery flight is the best place to start. It is a short, hands-on flight lesson that shows you what it feels like to fly a real airplane. You do not need any experience, and you do not need to commit to flight school yet. A discovery flight helps you decide if flying is right for you."
 pubDate: "Apr 17, 2025"
-heroImage: "/instrument-rating-training-for-red-arrow-flight-academy.webp"
+heroImage: "../../assets/blog/instrument-rating-training-for-red-arrow-flight-academy.webp"
 author: "Tomas Peralta"
 readingTime: "2 min"
 tags: ["Discovery Flight"]

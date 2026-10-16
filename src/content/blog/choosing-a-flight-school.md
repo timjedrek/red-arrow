@@ -2,7 +2,7 @@
 title: "Choosing a Flight School"
 description: "The thought of starting flight training can be daunting from the first step. When embarking on the path to becoming a pilot, selecting the right flight school is paramount to your success."
 pubDate: "Mar 20, 2024"
-heroImage: "/red-arrow-founder.webp"
+heroImage: "../../assets/blog/red-arrow-founder.webp"
 author: "Tomas Peralta"
 readingTime: "2 min"
 tags: ["Aviation School", "Student Pilot"]
@@ -28,7 +28,7 @@ The condition and variety of aircraft in a flight school's fleet play a crucial 
 
 Red Arrow Flight Academy boasts a fleet of meticulously maintained aircraft. Each aircraft undergoes routine inspections and servicing to ensure peak performance and reliability at our [Red Arrow Maintenance Shop](https://www.flyredarrow.com/resources/maintenance). Students can train with confidence knowing they're flying in well-equipped and well-maintained aircraft.
 
-![Red Arrow staff carefully checks each aircraft for proper maintenance upkeep](/red-arrow-staff.webp)
+![Red Arrow staff carefully checks each aircraft for proper maintenance upkeep](../../assets/blog/red-arrow-staff.webp)
 
 ## Curriculum and Training Programs
 
@@ -38,7 +38,7 @@ Red Arrow Flight Academy's curriculum is designed to provide students with round
 
 Additionally, you can meet with us once a week for our "Learning Lessons". These are after-hours calls with the Red Arrow team to gain an extra edge in your aviation cirriculum.
 
-![Dispatch Manager Jazmine Anaya reviewing her material](/dispatch-manager-jazmine.webp)
+![Dispatch Manager Jazmine Anaya reviewing her material](../../assets/blog/dispatch-manager-jazmine.webp)
 
 ## Safety Record and Reputation
 
@@ -46,7 +46,7 @@ A flight school's safety record and reputation are indicative of its commitment 
 
 Red Arrow Flight Academy takes pride in its impeccable safety record and stellar reputation within the aviation industry. Our unwavering commitment to safety is evident in every aspect of our operations, from our highly-vetted training standards to our rigorous aircraft maintenance practices. With a track record of producing highly skilled and safety-conscious pilots, Red Arrow has earned the trust and respect of students, instructors, and industry professionals alike, making us the preferred choice for aspiring aviators seeking quality training and guidance.
 
-![Checking the fleet!](/checking-the-fleet.webp)
+![Checking the fleet!](../../assets/blog/checking-the-fleet.webp)
 
 ## Choosing Wisely
 

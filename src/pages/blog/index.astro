@@ -1,6 +1,7 @@
 ---
 import { SITE_TITLE, SITE_DESCRIPTION } from "../../consts";
 import { getCollection } from "astro:content";
+import { Picture } from "astro:assets";
 import FormattedDate from "../../components/FormattedDate.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 
@@ -35,7 +36,7 @@ const posts = (await getCollection("blog")).sort(
               <div class="flex-[1.7_1.7_0] h-full flex flex-col justify-between">
                 <div class={`flex flex-col`}>
                   <h4
-                    class={`font-semibold leading-5 ${index === 0 ? "text-xl lg:text-3xl" : "text-xl"}`}
+                    class={`font-semibold ${index === 0 ? "text-xl lg:text-3xl" : "text-xl"}`}
                   >
                     {post.data.title}
                   </h4>
@@ -56,8 +57,17 @@ const posts = (await getCollection("blog")).sort(
                 </p>
               </div>
               <div class="flex-1 h-full">
-                <img
+                <Picture
                   src={post.data.heroImage}
+                  formats={["avif", "webp"]}
+                  widths={index === 0 ? [480, 900] : [240, 420]}
+                  sizes={
+                    index === 0
+                      ? "(max-width: 1023px) 120px, 450px"
+                      : "(max-width: 1023px) 120px, 210px"
+                  }
+                  loading="lazy"
+                  decoding="async"
                   alt=""
                   class="h-full object-cover w-full rounded-xl"
                 />

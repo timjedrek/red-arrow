@@ -2,7 +2,7 @@
 title: "What to Focus on Before your Private Pilot Checkride"
 description: "Aviation school students know better than anyone how important their private pilot checkride is. This exam could be one of the last things standing between you and your pilot certificate, so listen up! Here’s a short list of subjects to focus on while you study."
 pubDate: "Nov 7, 2020"
-heroImage: "/what-to-focus-on-before-your-private-pilot-checkride.webp"
+heroImage: "../../assets/blog/what-to-focus-on-before-your-private-pilot-checkride.webp"
 author: "Cecilia Otero"
 readingTime: "2 min"
 tags: ["Aviation School"]

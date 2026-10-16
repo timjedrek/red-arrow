@@ -2,7 +2,7 @@
 title: "Top 3 Things About Your Private Pilot License"
 description: "All pilots can agree that the best thing about becoming a pilot is the flying itself. After learning how to fly a plane and receiving a private pilot license, a pilot is granted the freedom to fly on their own agenda. Although the private pilot license doesn’t allow you to fly for compensation, it remains the second most coveted pilot certificate in the United States (after the student pilot certificate). The private pilot license holds this status mainly because of all the exciting things a pilot can do with it."
 pubDate: "Sep 12, 2020"
-heroImage: "/top-3-things-about-your-private-pilot-license.webp"
+heroImage: "../../assets/blog/top-3-things-about-your-private-pilot-license.webp"
 author: "Tomas Peralta"
 readingTime: "3 min"
 tags: []

@@ -2,7 +2,7 @@
 title: "Three Airplanes Every Pilot Should Fly"
 description: "So, you’re done with aviation school, you’ve moved on from being a student pilot to actually holding your pilot license in your hands—the next thing on your list should be to have fun with that license!"
 pubDate: "Oct 26, 2020"
-heroImage: "/three-airplanes-every-pilot-should-fly.webp"
+heroImage: "../../assets/blog/three-airplanes-every-pilot-should-fly.webp"
 author: "Tomas Peralta"
 readingTime: "3 min"
 tags: ["Student Pilot", "Airplane", "Aviation School"]

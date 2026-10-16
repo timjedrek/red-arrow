@@ -2,7 +2,7 @@
 title: "Benefits of Airline Pilots"
 description: "The Great Barrier Reef in Australia, the Pyramids of Giza in Egypt,  the Victoria Falls in  Zambia, or Venice, Italy might be on your bucket list as some places you wish to visit. The world is composed of so many astonishing places that a lifetime wouldn’t last to visit them all. Or would it? Well, becoming a pilot might not allow you to see every beautiful corner of the world, but it will certainly get you closer to that goal. Nonetheless, if you think the only perk of becoming a pilot is traveling the world, you are very mistaken."
 pubDate: "Aug 26, 2020"
-heroImage: "/benefits-of-airline-pilots.webp"
+heroImage: "../../assets/blog/benefits-of-airline-pilots.webp"
 author: "Tomas Peralta"
 readingTime: "2 min"
 tags: []

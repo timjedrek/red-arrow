@@ -2,7 +2,7 @@
 title: "Welcome to Flight Training"
 description: "Welcome to the Red Arrow Flight Academy. We are delighted that you have taken an interest in the flight training programs that Red Arrow has to offer."
 pubDate: "Aug 19, 2020"
-heroImage: "/welcome-to-flight-training.webp"
+heroImage: "../../assets/blog/welcome-to-flight-training.webp"
 author: "Tomas Peralta"
 readingTime: "2 min"
 tags: []

@@ -2,7 +2,7 @@
 title: "The Best Fly-In Restaurants in the Southwest"
 description: "Airport food gets a bad rep. Nobody’s fond of the soggy sandwiches and overpriced bottled water that come to mind at the mention of an airport meal, but what choice does one have? When you’re rushing across a hectic airport between short layovers, that sandwich is the best you can do."
 pubDate: "Sep 14, 2020"
-heroImage: "/the-best-fly-in-restaurants-in-the-southwest.webp"
+heroImage: "../../assets/blog/the-best-fly-in-restaurants-in-the-southwest.webp"
 author: "Tomas Peralta"
 readingTime: "3 min"
 tags: []

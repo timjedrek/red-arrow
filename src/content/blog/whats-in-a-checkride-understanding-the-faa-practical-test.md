@@ -2,7 +2,7 @@
 title: "What’s in a Checkride? Understanding the FAA Practical Test"
 description: "For every aspiring pilot training at Red Arrow Flight Academy in Santa Teresa, NM, the FAA checkride is the final step between student pilot and certified aviator. It is the moment where all your training, study, and flight hours come together in a single day to prove you are ready to fly on your own. Whether you are pursuing your Private Pilot Certificate or planning to go further into a professional flying career, understanding what the checkride involves can help you feel more confident and prepared."
 pubDate: "Mar 21, 2025"
-heroImage: "/cfis-at-red-arrow-prepping-for-takeoff.jpg"
+heroImage: "../../assets/blog/cfis-at-red-arrow-prepping-for-takeoff.jpg"
 author: "Tomas Peralta"
 readingTime: "2 min"
 tags: ["Checkride"]

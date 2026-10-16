@@ -1,5 +1,6 @@
 ---
 import type { CollectionEntry } from "astro:content";
+import { Picture } from "astro:assets";
 import FormattedDate from "../components/FormattedDate.astro";
 import BlogLayout from "./BlogLayout.astro";
 type Props = CollectionEntry<"blog">["data"];
@@ -17,7 +18,7 @@ const {
 
 <BlogLayout>
   <article class="flex flex-col my-16 max-w-2xl mx-auto p-5 gap-5">
-    <h1 class="text-4xl lg:text-5xl font-semibold">{title}</h1>
+    <h1 class="text-4xl lg:text-5xl font-semibold leading-tight">{title}</h1>
     <div class="flex items-center gap-3">
       <div>
         <p>by {author}</p>
@@ -25,7 +26,17 @@ const {
       </div>
     </div>
     <div class="">
-      {heroImage && <img width={820} height={500} src={heroImage} alt="" />}
+      {heroImage && (
+        <Picture
+          src={heroImage}
+          formats={["avif", "webp"]}
+          widths={[350, 632, 1264]}
+          sizes="(max-width: 767px) calc(100vw - 40px), 632px"
+          fetchpriority="high"
+          decoding="async"
+          alt=""
+        />
+      )}
     </div>
     <div class="w-full">
       <slot />

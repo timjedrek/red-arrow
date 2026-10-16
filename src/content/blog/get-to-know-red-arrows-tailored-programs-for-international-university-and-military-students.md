@@ -2,7 +2,7 @@
 title: "Get to Know Red Arrow's Tailored Programs for International, University, and Military Students"
 description: "Discover Red Arrow Flight Academy's specialized programs designed for international students, university students, and military personnel."
 pubDate: "2024-07-09"
-heroImage: "/discussing-financing-at-red-arrow-flight-academy.jpg"
+heroImage: "../../assets/blog/discussing-financing-at-red-arrow-flight-academy.jpg"
 author: "Elsa Peralta"
 readingTime: "2 min"
 tags:
@@ -22,7 +22,7 @@ tags:
 
 At Red Arrow Flight Academy, our mission is to provide top-tier aviation training to a diverse array of students, including university students, international candidates, and military personnel. Our specialized programs are designed to meet the distinct needs of each group, and our commitment to supporting the military community is unwavering. Let's take a look at each program and how we can best support the El Paso civilian and military aviation communities.
 
-![CFIs at Red Arrow Prepping for Takeoff](/cfis-at-red-arrow-prepping-for-takeoff.jpg)
+![CFIs at Red Arrow Prepping for Takeoff](../../assets/blog/cfis-at-red-arrow-prepping-for-takeoff.jpg)
 
 ## University Program
 
@@ -30,7 +30,7 @@ Red Arrow Flight Academy partners with accredited universities to offer a Univer
 
 Our training fleet includes advanced aircraft and state-of-the-art simulators, ensuring students gain experience with the latest aviation technology. The program includes comprehensive ground school training, covering subjects such as aerodynamics, meteorology, and navigation. Our graduates are equipped with the skills and knowledge needed to excel in the aviation industry, whether they pursue careers with major airlines, corporate aviation, or other sectors.
 
-![Discussing Financing at Red Arrow Flight Academy](/discussing-financing-at-red-arrow-flight-academy.jpg)
+![Discussing Financing at Red Arrow Flight Academy](../../assets/blog/discussing-financing-at-red-arrow-flight-academy.jpg)
 
 ## International Program
 
@@ -38,7 +38,7 @@ The International Program at Red Arrow Flight Academy is designed to meet the ne
 
 Our instructors are experienced in working with international students, providing an inclusive and supportive learning environment. The program includes language support for non-native English speakers, ensuring they can fully participate in training. Students also receive guidance on cultural integration, helping them adjust to life in the United States. This program aims to provide international students with a seamless transition and high-quality flight training that meets global standards.
 
-![Red Arrow Aircraft and American Flag](/red-arrow-aircrarft-and-american-flag.JPG)
+![Red Arrow Aircraft and American Flag](../../assets/blog/red-arrow-aircrarft-and-american-flag.JPG)
 
 ## Military Rotor Transition Program
 
@@ -48,7 +48,7 @@ Our instructors, many of whom have military backgrounds, understand the unique n
 
 In addition to flight training, we offer career counseling and job placement services to help military pilots transition to civilian aviation careers. This support includes assistance with the certification process and networking opportunities with potential employers.
 
-![Red Arrow Military Rotor Transition Program for Fort Bliss, TX](/red-arrow-military-rotor-transition-program-for-fort-bliss-tx.JPG)
+![Red Arrow Military Rotor Transition Program for Fort Bliss, TX](../../assets/blog/red-arrow-military-rotor-transition-program-for-fort-bliss-tx.JPG)
 
 ## Financing Options
 
@@ -56,7 +56,7 @@ Red Arrow Flight Academy offers a variety of financing options to make flight tr
 
 We also offer personalized financial counseling to help students explore their options and choose the best financing solution for their needs. This service ensures that financial constraints do not prevent aspiring pilots from achieving their dreams.
 
-![Red Arrow Signage at Dona Ana County](/red-arrow-signage-dona-ana-county.JPG)
+![Red Arrow Signage at Dona Ana County](../../assets/blog/red-arrow-signage-dona-ana-county.JPG)
 
 ## Community and Military Support
 

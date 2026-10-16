@@ -2,7 +2,7 @@
 title: "3 Tips for Your Pilot Certificate"
 description: "With everything going on in the world right now (Coronavirus, I’m looking at you), getting a pilot certificate is likely the last thing on your mind. It makes sense- An unexpected deadly pandemic does tend to be overwhelming."
 pubDate: "Aug 21, 2020"
-heroImage: "/three-tips-for-your-pilot-certificate.webp"
+heroImage: "../../assets/blog/three-tips-for-your-pilot-certificate.webp"
 author: "Tomas Peralta"
 readingTime: "2 min"
 tags: []

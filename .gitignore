@@ -21,3 +21,7 @@ pnpm-debug.log*
 
 .firebase/
 pnpm-lock.yaml
+
+# Firebase CLI debug output
+firebase-debug.log
+firebase-debug.*.log

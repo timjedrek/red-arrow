@@ -2,7 +2,7 @@
 title: "5 Reasons Pilots Have the World's Best Job"
 description: "In times that have kept us so distanced for so long, it might be the perfect moment to get your wings. Becoming a pilot will allow you to widen your horizons and explore the world while also getting so many more benefits. It is without a doubt the world’s best job."
 pubDate: "Aug 23, 2020"
-heroImage: "/five-reasons-pilots-have-the-world-s-best-job.webp"
+heroImage: "../../assets/blog/five-reasons-pilots-have-the-world-s-best-job.webp"
 author: "Tomas Peralta"
 readingTime: "2 min"
 tags: []
