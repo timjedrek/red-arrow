@@ -117,20 +117,20 @@ import StudentLayout from "../layouts/StudentLayout.astro";
     adminForm.addEventListener("submit", (e) => {
       e.preventDefault();
       const adminEmail = adminForm["admin-email"].value;
-      const addAdminRoleSecondGen = httpsCallable(
-        functions,
-        "addAdminRoleSecondGen",
-      );
+      const addAdminRoleSecondGen = httpsCallable<
+        { email: string },
+        { message?: string; error?: string }
+      >(functions, "addAdminRoleSecondGen");
 
       addAdminRoleSecondGen({ email: adminEmail }).then((result) => {
-        if (result.data.errorInfo) {
+        if (result.data.error) {
           adminErrorMessage.classList.remove("hidden");
-          adminErrorMessage.textContent = result.data.errorInfo.message;
+          adminErrorMessage.textContent = result.data.error;
           adminSuccessMessage.textContent = "";
           adminSuccessMessage.classList.add("hidden");
         } else {
           adminSuccessMessage.classList.remove("hidden");
-          adminSuccessMessage.textContent = result.data.message;
+          adminSuccessMessage.textContent = result.data.message ?? "";
           adminErrorMessage.textContent = "";
           adminErrorMessage.classList.add("hidden");
         }
@@ -247,7 +247,7 @@ import StudentLayout from "../layouts/StudentLayout.astro";
             addStudentsTab();
           } else {
             getDoc(doc(db, "users", user.uid)).then((doc) => {
-              if (doc.data().student) {
+              if (doc.data()?.student) {
                 // allFiles.classList.remove("hidden");
                 // allFiles.classList.add("grid");
                 setupDashboard(user);

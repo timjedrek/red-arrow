@@ -19,3 +19,12 @@ interface ImportMetaEnv {
 interface ImportMeta {
   readonly env: ImportMetaEnv;
 }
+
+interface Window {
+  /** Injected by https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js */
+  jotformEmbedHandler: (
+    iframeSelector: string,
+    baseUrl?: string,
+    callback?: () => void,
+  ) => void;
+}

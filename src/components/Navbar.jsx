@@ -42,11 +42,11 @@ const Navbar = ({ pathname }) => {
       >
         <div className="mx-auto max-w-7xl px-4">
           <div
-            className={`${navBar ? "lg:h-[4.5rem]" : "lg:h-28"} relative flex h-20 items-center justify-between transition-all`}
+            className={`${navBar ? "lg:h-18" : "lg:h-28"} relative flex h-20 items-center justify-between transition-all`}
             id="navbar"
           >
             <div className="flex flex-1 items-center justify-between">
-              <a href="/" className="flex flex-shrink-0 items-center">
+              <a href="/" className="flex shrink-0 items-center">
                 <img
                   src="/red-arrow-logo.webp"
                   alt="Red Arrow Logo"
@@ -140,7 +140,7 @@ const Navbar = ({ pathname }) => {
       </div>
 
       <div
-        className={`${openMobile ? "max-h-[36rem]" : "max-h-0"} overflow-hidden transition-[max-height] duration-300 ease-in-out lg:hidden absolute w-full bg-black -z-10`}
+        className={`${openMobile ? "max-h-144" : "max-h-0"} overflow-hidden transition-[max-height] duration-300 ease-in-out lg:hidden absolute w-full bg-black -z-10`}
         id="mobile-menu"
       >
         <div className="px-4 pb-3 pt-2 flex flex-col">

@@ -13,7 +13,7 @@ const TrainingCourseList = () => {
     >
       {courses.slice(0, 6).map((course) => (
         <motion.div
-          className="flex bg-gradient-to-br from-white to-gray-200 text-black flex-col rounded-xl cursor-pointer shadow-lg"
+          className="flex bg-linear-to-br from-white to-gray-200 text-black flex-col rounded-xl cursor-pointer shadow-lg"
           layoutId={course.id}
           onClick={() => {
             setSelectedId(course.id);
@@ -36,7 +36,7 @@ const TrainingCourseList = () => {
 
       <motion.a
         href="/flight-programs/military-rotor-transition"
-        className="flex lg:col-end-[-2] bg-gradient-to-br from-white to-gray-200 text-black flex-col rounded-xl cursor-pointer shadow-lg"
+        className="flex lg:-col-end-2 bg-linear-to-br from-white to-gray-200 text-black flex-col rounded-xl cursor-pointer shadow-lg"
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
       >
@@ -66,9 +66,9 @@ const TrainingCourseList = () => {
               <img
                 src={courses[selectedId].imagePath}
                 alt={courses[selectedId].alt}
-                className="h-[28rem] w-full object-cover"
+                className="h-112 w-full object-cover"
               />
-              <div className="bg-black/50 absolute p-5 top-0 w-full h-[28rem] text-white flex flex-col justify-center items-center">
+              <div className="bg-black/50 absolute p-5 top-0 w-full h-112 text-white flex flex-col justify-center items-center">
                 <h4 className="text-5xl font-bold tracking-tighter text-center">
                   {courses[selectedId].banner_title}
                 </h4>
@@ -114,7 +114,7 @@ const TrainingCourseList = () => {
                   Enroll Today
                 </a>
               </div>
-              <div class="flex flex-col gap-5 m-5 mt-0 rounded-xl border-2 border-main-red shadow-gray-500 text-black bg-gradient-to-bl from-gray-200 to-gray-300 p-5">
+              <div class="flex flex-col gap-5 m-5 mt-0 rounded-xl border-2 border-main-red shadow-gray-500 text-black bg-linear-to-bl from-gray-200 to-gray-300 p-5">
                 <h4 class="font-semibold text-xl text-center">
                   Flight Program Application
                 </h4>

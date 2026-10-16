@@ -1,4 +1,3 @@
-import defaultTheme from "tailwindcss/defaultTheme";
 import { createRequire } from 'module';
 
 const require = createRequire(import.meta.url);
@@ -61,10 +60,18 @@ export default {
         "grow-thrice": "growThrice 1.8s ease-in-out 1", // runs once over 1.8s
       },
       fontFamily: {
-        serif: ["Urbanist Variable", ...defaultTheme.fontFamily.serif],
+        serif: [
+          "Urbanist Variable",
+          "ui-serif",
+          "Georgia",
+          "Cambria",
+          '"Times New Roman"',
+          "Times",
+          "serif",
+        ],
       },
     },
   },
   plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms")],
-  safelist: ["object-left", "object-right", "object-center", "object-cover"],
+  // safelist moved to CSS: see @source inline(...) in src/styles/global.css
 };

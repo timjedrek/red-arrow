@@ -4,7 +4,7 @@ const { red = false } = Astro.props;
 ---
 
 <section
-  class=`bg-gradient-to-br ${red ? "from-main-red to-red-900" : "from-gray-800 to-black"} text-white flex justify-center relative`
+  class=`bg-linear-to-br ${red ? "from-main-red to-red-900" : "from-gray-800 to-black"} text-white flex justify-center relative`
 >
   <div class="flex flex-col items-center lg:flex-row max-w-7xl py-20">
     <div class="flex flex-col flex-1 items-center p-5 gap-5 text-center z-50">
@@ -29,7 +29,7 @@ const { red = false } = Astro.props;
     </div>
     <div class="flex-1"></div>
     <MdOutlineQuiz
-      className="size-[40rem] right-20 -top-8 text-white/10 absolute"
+      className="size-160 right-20 -top-8 text-white/10 absolute"
     />
   </div>
 </section>

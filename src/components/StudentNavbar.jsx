@@ -16,7 +16,7 @@ const StudentNavbar = () => {
             id="navbar"
           >
             <div className="flex flex-1 items-center justify-between">
-              <a href="/" className="flex flex-shrink-0 items-center">
+              <a href="/" className="flex shrink-0 items-center">
                 <img
                   src="/red-arrow-logo.webp"
                   alt="Red Arrow Logo"
@@ -83,7 +83,7 @@ const StudentNavbar = () => {
       </div>
 
       <div
-        className={`${openMobile ? "max-h-[36rem]" : "max-h-0"} overflow-hidden transition-[max-height] duration-300 ease-in-out lg:hidden absolute w-full bg-white z-10`}
+        className={`${openMobile ? "max-h-144" : "max-h-0"} overflow-hidden transition-[max-height] duration-300 ease-in-out lg:hidden absolute w-full bg-white z-10`}
         id="mobile-menu"
       >
         <div id="mobile-navbar" className="px-4 pb-3 pt-2 flex flex-col">

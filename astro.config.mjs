@@ -1,8 +1,7 @@
-import { defineConfig } from "astro/config";
+import { defineConfig, svgoOptimizer } from "astro/config";
 import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
-import tailwind from "@astrojs/tailwind";
-import icon from "astro-icon";
+import tailwindcss from "@tailwindcss/vite";
 import react from "@astrojs/react";
 import alpinejs from "@astrojs/alpinejs";
 import partytown from "@astrojs/partytown";
@@ -20,8 +19,6 @@ export default defineConfig({
         page !== "https://www.flyredarrow.com/rejected-students/" &&
         page !== "https://www.flyredarrow.com/pending-students/",
     }),
-    tailwind(),
-    icon(),
     react(),
     alpinejs(),
     partytown({
@@ -54,6 +51,12 @@ export default defineConfig({
     "/flight-experience": "/",
     "/copy-of-financing": "/resources/financing",
     "/copy-of-faa-testing-center": "/resources/faa-exam-center",
+  },
+  vite: {
+    plugins: [tailwindcss()],
+  },
+  experimental: {
+    svgOptimizer: svgoOptimizer(),
   },
   output: "server",
   adapter: node({

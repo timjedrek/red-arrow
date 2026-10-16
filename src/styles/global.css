@@ -1,39 +1,58 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
 
-@layer components {
-  .btn-red {
-    @apply w-min whitespace-nowrap text-center text-lg bg-main-red text-white px-5 py-3 rounded-md uppercase font-semibold hover:scale-105 hover:shadow-xl duration-200 hover:bg-red-800;
+@config '../../tailwind.config.mjs';
+
+@source inline("object-left object-right object-center object-cover");
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
   }
-  .btn-black {
-    @apply w-min whitespace-nowrap text-center text-lg bg-black text-white px-5 py-3 rounded-md uppercase font-semibold hover:scale-105 hover:shadow-xl duration-200 hover:bg-gray-950 cursor-pointer;
-  }
+}
+
+@utility btn-red {
+  @apply w-min whitespace-nowrap text-center text-lg bg-main-red text-white px-5 py-3 rounded-md uppercase font-semibold hover:scale-105 hover:shadow-xl duration-200 hover:bg-red-800;
+}
+
+@utility btn-black {
+  @apply w-min whitespace-nowrap text-center text-lg bg-black text-white px-5 py-3 rounded-md uppercase font-semibold hover:scale-105 hover:shadow-xl duration-200 hover:bg-gray-950 cursor-pointer;
 }
 
 .swiper-button-next,
 .swiper-button-prev {
-  @apply text-main-red !important;
+  @apply text-main-red!;
 }
 
 .swiper-pagination-bullet-active {
-  @apply bg-main-red !important;
+  @apply bg-main-red!;
 }
 
 .swiper-button-next {
-  @apply lg:right-24 xl:right-44 2xl:right-72 !important;
+  @apply lg:right-24! xl:right-44! 2xl:right-72!;
 }
 
 .swiper-button-prev {
-  @apply lg:left-24 xl:left-44 2xl:left-72 !important;
+  @apply lg:left-24! xl:left-44! 2xl:left-72!;
 }
 
 .swiper-pagination-bullet {
-  @apply w-5 h-5 text-white text-sm font-semibold text-center !important;
+  @apply w-5! h-5! text-white! text-sm! font-semibold! text-center!;
 }
 
 .swiper-slide {
-  @apply h-auto !important;
+  @apply h-auto!;
 }
 
 /* width */
