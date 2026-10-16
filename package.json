@@ -12,9 +12,9 @@
     "check": "astro check",
     "preview": "astro preview",
     "astro": "astro",
-    "deploy:hosting": "mise exec node@22 -- firebase deploy --only hosting",
-    "deploy:functions": "mise exec node@22 -- firebase deploy --only functions",
-    "deploy:dev": "mise exec node@22 -- firebase hosting:channel:deploy dev",
+    "deploy:hosting": "npm_config_legacy_peer_deps=true mise exec node@22 -- firebase deploy --only hosting",
+    "deploy:functions": "npm_config_legacy_peer_deps=true mise exec node@22 -- firebase deploy --only functions",
+    "deploy:dev": "npm_config_legacy_peer_deps=true mise exec node@22 -- firebase hosting:channel:deploy dev",
     "deploy": "npm run deploy:hosting && npm run deploy:functions"
   },
   "dependencies": {
