@@ -2,7 +2,7 @@
 title: "The Best Career Option of the Decade: Pilot"
 description: "You may be aware of the plethora of advantages to having a pilot’s certificate. Without the stress and hassle of commercial air travel, a whole world of freedom and flexibility presents itself to you. What’s even more enticing about learning to fly a plane is that it unlocks the opportunity for a career in aviation."
 pubDate: "Sep 23, 2020"
-heroImage: "/the-best-career-option-of-the-decade-pilot.webp"
+heroImage: "../../assets/blog/the-best-career-option-of-the-decade-pilot.webp"
 author: "Tomas Peralta"
 readingTime: "2 min"
 tags: ["Aviation Careers", "Pilot Life"]

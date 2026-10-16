@@ -2,7 +2,7 @@
 title: "Why Flying Yourself is Worth The Investment"
 description: "Travel is amazing. There’s nothing as enchanting as arriving at a brand-new destination, ready to explore unfamiliar landscapes and cultures. The commute there, however, doesn’t tend to be so great. Dealing with flight itineraries, layovers, check-ins, and TSA lines adds unnecessary stress to what should be a relaxing vacation or productive business trip."
 pubDate: "Sep 10, 2020"
-heroImage: "/why-flying-yourself-is-worth-the-investment.webp"
+heroImage: "../../assets/blog/why-flying-yourself-is-worth-the-investment.webp"
 author: "Tomas Peralta"
 readingTime: "3 min"
 tags: []

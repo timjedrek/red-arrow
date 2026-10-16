@@ -3,7 +3,7 @@ title: "A Guide to Safety Standards in Flight Schools"
 fileTitle: "a-guide-to-safety-standards-in-flight-schools"
 description: "Learn about essential safety standards in flight schools and how Red Arrow Flight Academy in Santa Teresa, NM, prioritizes student safety. Discover the key factors that make a flight school safe and how you can start your aviation journey with confidence."
 pubDate: "Feb 11, 2025"
-heroImage: "/img/blog/pilot-making-sure-everything-is-in-order-with-his-plane.webp"
+heroImage: "../../assets/blog/pilot-making-sure-everything-is-in-order-with-his-plane.webp"
 author: "Elsa Peralta"
 readingTime: "4 min"
 tags:

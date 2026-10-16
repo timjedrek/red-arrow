@@ -2,7 +2,7 @@
 title: "Top Pilot Rules"
 description: "No matter what level in aviation school you are currently enrolled in, you should live your life according to these top pilot tips. As a student pilot, guiding every flight with these laws will allow you to experience a more successful flight."
 pubDate: "Oct 26, 2020"
-heroImage: "/top-pilot-rules.webp"
+heroImage: "../../assets/blog/top-pilot-rules.webp"
 author: "Cecilia Otero"
 readingTime: "2 min"
 tags: []

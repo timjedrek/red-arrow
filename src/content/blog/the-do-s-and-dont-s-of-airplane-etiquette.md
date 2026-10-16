@@ -2,7 +2,7 @@
 title: "The Do’s and Dont’s of Airplane Etiquette"
 description: "So, you finally kickstarted your dreams and signed up for aviation school. You’ve never been more excited. Once you have that pilot’s license, it’s all smooth sailing…Or flying, we should say. You’ll finally wave goodbye to all of the annoying nuances that come with commercial airline travel! No check-ins, no TSA, no last-minute schedule changes… Sounds like heaven. Unfortunately for student pilots, that life is still a few months away. Keep these do’s and don’ts of airplane etiquette in mind until you finally get that pilot’s license."
 pubDate: "Oct 20, 2020"
-heroImage: "/the-do-s-and-dont-s-of-airplane-etiquette.webp"
+heroImage: "../../assets/blog/the-do-s-and-dont-s-of-airplane-etiquette.webp"
 author: "Cecilia Otero"
 readingTime: "3 min"
 tags: ["Travel Tips"]

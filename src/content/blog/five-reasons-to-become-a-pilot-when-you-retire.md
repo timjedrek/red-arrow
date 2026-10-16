@@ -2,7 +2,7 @@
 title: "5 Reasons to Become a Pilot When You Retire"
 description: "More and more retirees are choosing to fly through their retirement—literally. Without the burdens of raising a family and earning an income, retirees have the time and independence to learn how to fly and become pilots as a retirement hobby."
 pubDate: "Sep 25, 2020"
-heroImage: "/five-reasons-to-become-a-pilot-when-you-retire.webp"
+heroImage: "../../assets/blog/five-reasons-to-become-a-pilot-when-you-retire.webp"
 author: "Tomas Peralta"
 readingTime: "2 min"
 tags: ["Aviation Careers", "Benefits", "Pilot Life", "Retirement"]

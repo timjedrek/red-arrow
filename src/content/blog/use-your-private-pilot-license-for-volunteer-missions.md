@@ -2,7 +2,7 @@
 title: "Use Your Private Pilot License for Volunteer Missions"
 description: "A pilot can use their private pilot license for what they are most passionate about, whether it be professional, recreational, or charitable. Becoming a volunteer pilot to give back to your community at the local, national, and even global level offers pilots a chance to change the world—one flight at a time."
 pubDate: "Sep 8, 2020"
-heroImage: "/use-your-private-pilot-license-for-volunteer-missions.webp"
+heroImage: "../../assets/blog/use-your-private-pilot-license-for-volunteer-missions.webp"
 author: "Tomas Peralta"
 readingTime: "3 min"
 tags: []

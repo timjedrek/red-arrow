@@ -2,7 +2,7 @@
 title: "Terms About Wings That Every Pilot Should Know"
 description: "Becoming a pilot is more than just having the passion to fly. When you become a pilot, you will need to know many terms about the airplane and all its parts. These pilot terms about the wings are crucial for you to recognize."
 pubDate: "Nov 3, 2020"
-heroImage: "/terms-about-wings-that-every-pilot-should-know.webp"
+heroImage: "../../assets/blog/terms-about-wings-that-every-pilot-should-know.webp"
 author: "Tomas Peralta"
 readingTime: "1 min"
 tags: ["Student Pilot", "Airplane"]

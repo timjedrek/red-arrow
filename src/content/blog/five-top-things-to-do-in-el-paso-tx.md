@@ -2,7 +2,7 @@
 title: "5 Top Things to do in El Paso, TX"
 description: "Situated at the very tip of West Texas, El Paso is a hidden gem of excitement and spirit, brimming with opportunities for entertainment, cultural fulfillment, and a plain old good time. Life in El Paso is alluring to all kinds of people, from foodies to history buffs to outdoorsy artists. Here’s a list of the top 5 things to do in El Paso."
 pubDate: "Sep 1, 2020"
-heroImage: "/five-top-things-to-do-in-el-paso-tx.webp"
+heroImage: "../../assets/blog/five-top-things-to-do-in-el-paso-tx.webp"
 author: "Tomas Peralta"
 readingTime: "2 min"
 tags: []

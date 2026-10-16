@@ -3,7 +3,7 @@ pubDate: "2024-08-07"
 author: "Tomas Peralta"
 title: "Reading an Instrument Panel"
 description: "Understanding the instrument panel is essential for every pilot. Understand how to read key flight instruments and learn their functions to ensure safe and efficient flight training while at Red Arrow Flight Academy."
-heroImage: "/red-arrow-maintenance-personel-fixing-instrument-panel.webp"
+heroImage: "../../assets/blog/red-arrow-maintenance-personel-fixing-instrument-panel.webp"
 category: "Pilot Training"
 readingTime: "3 min"
 tags:
@@ -41,7 +41,7 @@ In every cockpit, the "six-pack" instruments are fundamental. These include the 
 
 - **Turn Coordinator**: This helps pilots execute coordinated turns, displaying the rate and quality of the turn.
 
-![Typical insturment panel of a Cessna](/red-arrow-aircraft-instrument-panel.webp)
+![Typical insturment panel of a Cessna](../../assets/blog/red-arrow-aircraft-instrument-panel.webp)
 _The instrument panel of one of our aircraft at KDNA_
 
 ### Additional Instruments
@@ -62,7 +62,7 @@ Regularly scanning all instruments helps build a comprehensive picture of the ai
 
 Red Arrow Flight Academy offers extensive resources to help students master these instruments. Our ground school classes and experienced instructors provide detailed instruction and practical insights, ensuring students gain confidence in using the instrument panel.
 
-![Red Arrow's Hangar at Dona Ana Jetport (KDNA)](/instrument-rating-training-for-red-arrow-flight-academy.webp)
+![Red Arrow's Hangar at Dona Ana Jetport (KDNA)](../../assets/blog/instrument-rating-training-for-red-arrow-flight-academy.webp)
 _Visit Red Arrow for an orientation on instrument rating training_
 
 ## Pursuing Instrument Flight Training
@@ -71,7 +71,7 @@ Consider advancing your training with an instrument rating (IFR). This not only 
 
 Mastering the instrument panel is a critical step in becoming a proficient pilot. At Red Arrow Flight Academy, we are dedicated to providing the knowledge and tools necessary for our students to succeed. Embrace the challenge, invest in your training, and soar to new heights with confidence.
 
-![Red Arrow airplane ready for pilot training near Fort Bliss, TX](/aircraft-for-instrument-rating-at-red-arrow.webp)
+![Red Arrow airplane ready for pilot training near Fort Bliss, TX](../../assets/blog/aircraft-for-instrument-rating-at-red-arrow.webp)
 _Start training with an instrument panel today_
 
 For more details, [visit our website](https://www.flyredarrow.com/) or [contact us directly](https://www.flyredarrow.com/enrollment). Join us at Red Arrow Flight Academy and take the first step towards mastering your flight instruments and achieving your pilot goals.

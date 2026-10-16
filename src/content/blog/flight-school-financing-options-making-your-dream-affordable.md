@@ -3,7 +3,7 @@ title: "Flight School Financing Options: Making Your Dream Affordable"
 fileTitle: "flight-school-financing-options-making-your-dream-affordable"
 description: "Explore flexible flight school financing options available through Stratus Financial and Flight Training Finance, partnered with Red Arrow Flight Academy in Santa Teresa, NM. Learn how to make pilot training affordable and start your aviation journey today!"
 pubDate: "Jan 6, 2025"
-heroImage: "/discussing-financing-at-red-arrow-flight-academy.jpg"
+heroImage: "../../assets/blog/discussing-financing-at-red-arrow-flight-academy.jpg"
 author: "Elsa Peralta"
 readingTime: "3 min"
 tags: ["Flight School Financing", "Red Arrow Flight Academy", "Santa Teresa Pilot Training", "Affordable Aviation Training", "Stratus Financial", "Flight Training Finance", "El Paso Aviation Careers", "Flight School Costs", "Santa Teresa NM Flight Academy"]

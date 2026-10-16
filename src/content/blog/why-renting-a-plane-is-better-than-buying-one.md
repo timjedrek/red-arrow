@@ -2,7 +2,7 @@
 title: "Why Renting a Plane is Better Than Buying One"
 description: "If you are planning on getting your pilot license soon, you are probably facing the vital decision of buying a plane or renting one? Well there are many reasons as to why renting a plane is a much wiser decision. Here are just a few."
 pubDate: "Sep 27, 2020"
-heroImage: "/why-renting-a-plane-is-better-than-buying-one.webp"
+heroImage: "../../assets/blog/why-renting-a-plane-is-better-than-buying-one.webp"
 author: "Tomas Peralta"
 readingTime: "2 min"
 tags: ["Renting a Plane", "Pilot Training"]
