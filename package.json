@@ -12,9 +12,9 @@
     "check": "astro check",
     "preview": "astro preview",
     "astro": "astro",
-    "deploy:hosting": "mise exec node@22 -- firebase deploy --only hosting",
-    "deploy:functions": "mise exec node@22 -- firebase deploy --only functions",
-    "deploy:dev": "mise exec node@22 -- firebase hosting:channel:deploy dev",
+    "deploy:hosting": "npm_config_legacy_peer_deps=true mise exec node@22 -- firebase deploy --only hosting",
+    "deploy:functions": "npm_config_legacy_peer_deps=true mise exec node@22 -- firebase deploy --only functions",
+    "deploy:dev": "npm_config_legacy_peer_deps=true mise exec node@22 -- firebase hosting:channel:deploy dev",
     "deploy": "npm run deploy:hosting && npm run deploy:functions"
   },
   "dependencies": {
@@ -27,14 +27,10 @@
     "@astrojs/sitemap": "^3.7.4",
     "@fontsource-variable/urbanist": "^5.0.19",
     "@tailwindcss/vite": "^4.3.3",
-    "@types/alpinejs": "^3.13.6",
-    "@types/react": "^18.2.48",
-    "@types/react-dom": "^18.2.18",
     "alpinejs": "^3.13.5",
     "astro": "^7.4.0",
     "firebase": "^12.19.0",
-    "firebase-admin": "^13.10.0",
-    "firebase-tools": "^15.34.0",
+    "firebase-admin": "^14.5.0",
     "framer-motion": "^11.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -47,9 +43,17 @@
     "@astrojs/check": "^0.9.10",
     "@tailwindcss/forms": "^0.5.7",
     "@tailwindcss/typography": "^0.5.10",
+    "@types/alpinejs": "^3.13.6",
+    "@types/react": "^18.2.48",
+    "@types/react-dom": "^18.2.18",
+    "firebase-tools": "^15.34.0",
     "prettier": "^3.2.4",
     "prettier-plugin-astro": "^0.13.0",
     "typescript": "^5.9.3"
+  },
+  "overrides": {
+    "@grpc/grpc-js": "^1.14.6",
+    "postcss-selector-parser": "^7.1.6"
   },
   "allowScripts": {
     "sharp@0.33.5": true,
