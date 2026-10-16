@@ -1,0 +1,16 @@
+---
+/**
+ * Drop-in replacement for `astro-icon`'s `<Icon name="collection:icon" />`.
+ * Icons live in `src/icons/<collection>/<icon>.svg` and are rendered as
+ * native Astro SVG components (optimized at build time via experimental.svgo).
+ */
+const { name, class: className, size, ...rest } = Astro.props;
+
+const icons = import.meta.glob<{ default: any }>("/src/icons/**/*.svg", {
+  eager: true,
+});
+
+const Svg = icons[`/src/icons/${String(name).replace(":", "/")}.svg`]?.default;
+---
+
+{Svg ? <Svg width={size ?? "1em"} height={size ?? "1em"} class={className} {...rest} /> : null}

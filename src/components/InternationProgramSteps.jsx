@@ -22,7 +22,7 @@ const InternationProgramSteps = () => {
       className="w-full px-10"
     >
       <SwiperSlide className="p-12">
-        <div className="flex flex-col mx-auto max-w-[50rem] gap-5">
+        <div className="flex flex-col mx-auto max-w-200 gap-5">
           <h4 className="font-semibold text-xl">Step 1: Application</h4>
           <ol className="list-decimal flex flex-col gap-2">
             <li className="font-medium">
@@ -121,7 +121,7 @@ const InternationProgramSteps = () => {
         </div>
       </SwiperSlide>
       <SwiperSlide className="p-12">
-        <div className="flex flex-col mx-auto max-w-[50rem] gap-5">
+        <div className="flex flex-col mx-auto max-w-200 gap-5">
           <h4 className="font-semibold text-xl">Step 2: Obtain Visa</h4>
           <ol className="list-decimal flex flex-col gap-2">
             <li className="font-medium">
@@ -153,7 +153,7 @@ const InternationProgramSteps = () => {
         </div>
       </SwiperSlide>
       <SwiperSlide className="p-12">
-        <div className="flex flex-col mx-auto max-w-[50rem] gap-5">
+        <div className="flex flex-col mx-auto max-w-200 gap-5">
           <h4 className="font-semibold text-xl">Step 3: TSA Requirements</h4>
           <ol className="list-decimal flex flex-col gap-2">
             <li className="font-medium">
@@ -218,7 +218,7 @@ const InternationProgramSteps = () => {
         </div>
       </SwiperSlide>
       <SwiperSlide className="p-12">
-        <div className="flex flex-col mx-auto max-w-[50rem] gap-5">
+        <div className="flex flex-col mx-auto max-w-200 gap-5">
           <h4 className="font-semibold text-xl">Step 4: Travel Arrangements</h4>
           <ol className="list-decimal flex flex-col gap-2">
             <li className="font-medium">

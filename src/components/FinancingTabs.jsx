@@ -4,7 +4,7 @@ const FinancingTabs = () => {
   const [currentTab, setCurrentTab] = useState("Quick Comparison");
 
   const meritize = (
-    <section className="flex flex-col items-center bg-gradient-to-br from-white to-gray-200 overflow-hidden">
+    <section className="flex flex-col items-center bg-linear-to-br from-white to-gray-200 overflow-hidden">
       <div className="max-w-7xl px-10 flex flex-col items-center py-10">
         <div className="flex flex-col-reverse lg:flex-row items-center w-full justify-around py-10 gap-10">
           <div>
@@ -285,7 +285,7 @@ const FinancingTabs = () => {
 
   const stratusFinancial = (
     <>
-      <section className="flex flex-col items-center bg-gradient-to-br from-white to-gray-200">
+      <section className="flex flex-col items-center bg-linear-to-br from-white to-gray-200">
         <div className="max-w-7xl px-10 flex flex-col items-center py-10">
           <div className="flex flex-col-reverse lg:flex-row items-center w-full justify-around py-10 gap-10">
             <div>
@@ -357,11 +357,11 @@ const FinancingTabs = () => {
         <img
           src="/img/financing/stratus-financial-banner.webp"
           alt="Stratus Financial Banner"
-          className="min-w-[80rem]"
+          className="min-w-7xl"
         />
       </div>
 
-      <section className="flex flex-col items-center bg-gradient-to-br from-white to-gray-200">
+      <section className="flex flex-col items-center bg-linear-to-br from-white to-gray-200">
         <div className="max-w-7xl px-10 flex flex-col items-center py-10">
           <h2 className="text-3xl font-semibold text-center tracking-tight pb-10">
             FAQs
@@ -459,7 +459,7 @@ const FinancingTabs = () => {
   );
 
   const flightTrainingFinance = (
-    <section className="flex flex-col items-center bg-gradient-to-br from-white to-gray-200">
+    <section className="flex flex-col items-center bg-linear-to-br from-white to-gray-200">
       <div className="max-w-7xl px-10 flex flex-col items-center py-10">
         <div className="flex flex-col-reverse lg:flex-row items-center w-full justify-around py-10 gap-10">
           <div>
@@ -563,7 +563,7 @@ const FinancingTabs = () => {
     </section>
   );
   const quickComparison = (
-    <section className="flex flex-col items-center bg-gradient-to-br from-white to-gray-200 overflow-hidden w-full">
+    <section className="flex flex-col items-center bg-linear-to-br from-white to-gray-200 overflow-hidden w-full">
       <div className="max-w-7xl px-10 py-10 w-full">
         <div className="w-full">
           <h2 className="text-5xl font-semibold text-center tracking-tight">
@@ -576,7 +576,7 @@ const FinancingTabs = () => {
           </p>
 
           <div className="mt-10 overflow-auto w-full">
-            <table className="border-collapse min-w-[75rem]">
+            <table className="border-collapse min-w-300">
               <thead>
                 <tr>
                   <th className="border border-gray-500 p-3">

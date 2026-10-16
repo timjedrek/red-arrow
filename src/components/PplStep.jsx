@@ -2,7 +2,7 @@ import { FaPlus, FaMinus } from "react-icons/fa6";
 
 const PplStep = ({ step, toggled, onShow }) => {
   return (
-    <div className="flex flex-col items-start pl-3 bg-gradient-to-br from-gray-200 to-gray-300">
+    <div className="flex flex-col items-start pl-3 bg-linear-to-br from-gray-200 to-gray-300">
       <button
         id={step.title}
         onClick={onShow}

@@ -178,7 +178,7 @@ import StudentLayout from "../layouts/StudentLayout.astro";
             addStudentsTab();
           } else {
             getDoc(doc(db, "users", user.uid)).then((doc) => {
-              if (doc.data().student) {
+              if (doc.data()?.student) {
                 // allFiles.classList.remove("hidden");
                 // allFiles.classList.add("grid");
               } else {

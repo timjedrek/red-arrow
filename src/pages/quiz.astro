@@ -564,7 +564,9 @@ import { MdOutlineQuiz } from "react-icons/md";
   // Wait for the DOM content to be fully loaded
   document.addEventListener("DOMContentLoaded", function () {
     // Get the quiz form element
-    const quizForm = document.getElementById("quiz-form");
+    const quizForm = document.getElementById("quiz-form") as
+      | HTMLFormElement
+      | null;
 
     // Check if the quiz form element exists
     if (quizForm !== null) {
@@ -584,18 +586,18 @@ import { MdOutlineQuiz } from "react-icons/md";
           quizForm.action = "";
         }
 
-        const inspirations = [];
+        const inspirations: string[] = [];
         formData.getAll("inspirations").forEach((inspiration) => {
-          inspirations.push(inspiration);
+          inspirations.push(String(inspiration));
         });
 
         formData.delete("inspirations");
 
         formData.append("what-inspires-you", inspirations.join(","));
 
-        const kindOfGuidance = [];
+        const kindOfGuidance: string[] = [];
         formData.getAll("kind-of-guidance").forEach((guidance) => {
-          kindOfGuidance.push(guidance);
+          kindOfGuidance.push(String(guidance));
         });
 
         formData.delete("kind-of-guidance");
@@ -608,7 +610,7 @@ import { MdOutlineQuiz } from "react-icons/md";
         // Convert FormData to URLSearchParams
         const urlSearchParams = new URLSearchParams();
         for (const pair of formData.entries()) {
-          urlSearchParams.append(pair[0], pair[1]);
+          urlSearchParams.append(pair[0], String(pair[1]));
         }
 
         // Send an AJAX request to submit the form
@@ -639,8 +641,12 @@ import { MdOutlineQuiz } from "react-icons/md";
     }
   });
 
-  const checkbox = document.getElementById("agree-data-collection");
-  const submitButton = document.getElementById("submit-button");
+  const checkbox = document.getElementById(
+    "agree-data-collection",
+  ) as HTMLInputElement;
+  const submitButton = document.getElementById(
+    "submit-button",
+  ) as HTMLButtonElement;
 
   checkbox.addEventListener("change", function () {
     if (checkbox.checked) {
