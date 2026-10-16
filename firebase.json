@@ -1,19 +1,25 @@
 {
   "hosting": {
     "source": ".",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ],
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "frameworksBackend": {
       "region": "us-central1"
-    }
+    },
+    "headers": [
+      {
+        "source": "/epoa{,/**}",
+        "headers": [
+          { "key": "Cache-Control", "value": "no-cache" },
+          { "key": "Permissions-Policy", "value": "microphone=(self)" }
+        ]
+      }
+    ]
   },
   "functions": [
     {
       "source": "functions",
       "codebase": "default",
+      "runtime": "nodejs22",
       "ignore": [
         "node_modules",
         ".git",

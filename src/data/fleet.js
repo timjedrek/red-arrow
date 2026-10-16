@@ -3,10 +3,10 @@ import SkittlesImage from "../../public/img/our-fleet/skittles.webp";
 import EchoImage from "../../public/img/our-fleet/echo.webp";
 import A5YXImage from "../../public/img/our-fleet/5yx.webp";
 import WoodstockImage from "../../public/img/our-fleet/woodstock.webp";
-import N242TWImage from "../../public/img/our-fleet/n242tw.webp";
 import ChipImage from "../../public/img/our-fleet/chip.webp";
 import DaleImage from "../../public/img/our-fleet/dale.webp";
 import N318OUImage from "../../public/img/our-fleet/n318ou.webp";
+import placeholder from "../../public/image.png";
 
 export const fleet = [
   {
@@ -19,8 +19,8 @@ export const fleet = [
       model: "Cessna 172N",
       maxSpeed: "124 Knots",
       year: "1979",
-      equipment: "Garmin 430, Aspen Avionics PFD",
-      rentalPrice: "$162 /hour wet",
+      equipment: "Garmin 650, Aspen Avionics PFD",
+      rentalPrice: "$171 /hour wet",
     },
     imageAlignment: "right",
   },
@@ -35,7 +35,7 @@ export const fleet = [
       maxSpeed: "119 Knots",
       year: "1973",
       equipment: "G5, Garmin 430",
-      rentalPrice: "$152 /hour wet",
+      rentalPrice: "$171 /hour wet",
     },
     imageAlignment: "center",
   },
@@ -50,7 +50,7 @@ export const fleet = [
       maxSpeed: "119 Knots",
       year: "1978",
       equipment: "Garmin 430Was, Dual G5",
-      rentalPrice: "$165 /hour wet",
+      rentalPrice: "$171 /hour wet",
     },
     imageAlignment: "right",
   },
@@ -65,7 +65,7 @@ export const fleet = [
       maxSpeed: "119 Knots",
       year: "1981",
       equipment: "Aspen, Garmin 650,Avionics, S-Tec Autopilot",
-      rentalPrice: "$167 /hour wet",
+      rentalPrice: "$171 /hour wet",
     },
     imageAlignment: "left",
   },
@@ -80,24 +80,9 @@ export const fleet = [
       maxSpeed: "Knots",
       year: "1969",
       equipment: "2 Garmin G5, Garming 650 GPS",
-      rentalPrice: "$165 /hour wet",
+      rentalPrice: "$171 /hour wet",
     },
     imageAlignment: "right",
-  },
-  {
-    name: "N242TW",
-    image: N242TWImage,
-    alt: "N242TW Cessna 172S at Red Arrow Flight Academy",
-    stats: {
-      tailNumber: "N242TW",
-      power: "180 HP",
-      model: "Cessna 172S",
-      maxSpeed: "Knots",
-      year: "2005",
-      equipment: " 2 Garmin G1000, Airconditioning",
-      rentalPrice: "$179 /hour wet",
-    },
-    imageAlignment: "center",
   },
   {
     name: "Chip",
@@ -110,7 +95,7 @@ export const fleet = [
       maxSpeed: "125 Knots",
       year: "1978",
       equipment: "2 Garmin G5, Garming 650 GPS, S-Tec Autopilot",
-      rentalPrice: "$171 /hour wet",
+      rentalPrice: "$175 /hour wet",
     },
     imageAlignment: "right",
   },
@@ -125,7 +110,7 @@ export const fleet = [
       maxSpeed: "125 Knots",
       year: "1976",
       equipment: "Garming 650 GPS",
-      rentalPrice: "$166 /hour wet",
+      rentalPrice: "$175 /hour wet",
     },
     imageAlignment: "right",
   },
@@ -143,5 +128,20 @@ export const fleet = [
       rentalPrice: "$193 /hour wet",
     },
     imageAlignment: "left",
+  },
+  {
+    name: "Multi-Engine Piper Seneca",
+    image: placeholder,
+    alt: "Piper Seneca N200WS at Red Arrow Flight Academy",
+    stats: {
+      tailNumber: "N200WS",
+      power: "200 HP",
+      model: "Piper Seneca",
+      maxSpeed: "",
+      year: "1979",
+      equipment: "G 430",
+      rentalPrice: "$399 /hour wet",
+    },
+    imageAlignment: "center",
   },
 ];

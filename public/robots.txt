@@ -3,6 +3,7 @@ Disallow: /dashboard/
 Disallow: /rejected-students/
 Disallow: /pending-students/
 Disallow: /students/
+Disallow: /epoa/
 Allow: /
 
 Sitemap: https://www.flyredarrow.com/sitemap-index.xml

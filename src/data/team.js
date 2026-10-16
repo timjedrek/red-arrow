@@ -1,58 +1,60 @@
+import tomasPeraltaImg from "../assets/team/tomas-peralta.webp";
+import elsaPeraltaImg from "../assets/team/elsa-peralta.webp";
+import danielleNelsonImg from "../assets/team/danielle-nelson.webp";
+import vanessaMartinezImg from "../assets/team/vanessa-martinez.webp";
+import belkaImg from "../assets/team/belka.webp";
+import mckaylaAndersonImg from "../assets/team/mckayla-anderson.webp";
+import andrewRamirezImg from "../assets/team/andrew-ramirez.webp";
+import robYadougaImg from "../assets/team/rob-yadouga.webp";
+import gilbertoRodriguezImg from "../assets/team/gilberto-rodriguez.webp";
+import shaneLipsonImg from "../assets/team/shane-lipson.webp";
+import davidHarrisImg from "../assets/team/david-harris.webp";
+import jacobCanadaImg from "../assets/team/jacob-canada.webp";
+import eduardoLujanImg from "../assets/team/eduardo-lujan.webp";
+import dianaMartinezHernandezImg from "../assets/team/diana-martinez-hernandez.webp";
+
 export const leadershipTeam = [
   {
     name: "Tomas Peralta",
     title: "Chief Flight Instructor | Founder",
     subtitle:
-      "Certificates & Ratings: FAA Designated Pilot Examiner, ATP, Commercial ASEL, AMEL, CFI, CFII",
+      "Certificates & Ratings: FAA Designated Pilot Examiner, ATP, Commercial ASEL, AMEL, CFI, CFII, MEI",
     bio: [
-      "Tomas Peralta is the Chief Flight Instructor at Red Arrow Flight Academy, bringing with him over 20 years of experience and an extensive knowledge of aviation. Mr. Peralta fostered a love for flying, thanks in part to his family’s involvement in aviation. His dad, mom, and sister all hold private pilot certificates, so he began his training in 2001 while attending college. He went on to earn his Bachelor of Science in Industrial Engineering from ITESM in Monterrey, Mexico, as well as a Master of Science in Industrial Engineering and an MBA from Georgia Institute of Technology.",
-      "After returning to the El Paso area, Mr. Peralta became a founding member of Red Arrow Flight Academy. He holds an ATP single-engine land certificate, a commercial multi-engine aircraft certificate, and a Cirrus Vision Jet Type Rating. In addition, he is a CFI and CFII. Mr. Peralta has flown and owned a variety of aircraft for personal, training, and corporate flying purposes. Mr. Peralta’s extensive experience and expertise have earned him roles as both a FAASTeam Representative and an ABQ FSDO Designated Pilot Examiner.",
-      "He is also a dedicated warbird enthusiast and serves as a board member at the War Eagles Air Museum, where he shares his passion for aviation history. As an active volunteer, he has assisted with the maintenance and operation of a TF-51 Mustang. Mr. Peralta is also the President of the EAA (Experimental Aircraft Association) 1570 Chapter. In the wintertime, Mr. Peralta is a certified National Ski Patroller and Outdoor Emergency Care instructor. He is often accompanied by his trusty German Shepard sidekick, Belka.",
+      "Tomas Peralta is the Chief Flight Instructor at Red Arrow Flight Academy, bringing with him over 20 years of experience and an extensive knowledge of aviation. Mr. Peralta fostered a love for flying, thanks in part to his family’s involvement in aviation. His dad, mom, and sister all hold private pilot certificates, so he began his training in 2001 while attending college. He went on to earn his Bachelor of Science in Industrial Engineering from ITESM in Monterrey, Mexico, as well as a Master of Science in Industrial Engineering and an MBA from Georgia Institute of Technology",
+      "After returning to the El Paso area, Mr. Peralta became a founding member of Red Arrow Flight Academy. He holds an ATP single-engine land certificate, a commercial multi-engine aircraft certificate, a Cirrus Vision Jet Type Rating, and a Cessna Citation Jet Type Rating. In addition, he is a CFI and CFII. Mr. Peralta has flown and owned a variety of aircraft for personal, training, and corporate flying purposes. Mr. Peralta’s extensive experience and expertise have earned him roles as both a FAASTeam Representative and an ABQ FSDO Designated Pilot Examiner.",
+      "He is also a dedicated warbird enthusiast and serves as a board member at the War Eagles Air Museum, where he shares his passion for aviation history. Tomas regularly takes to the skies in his classic 1946 Globe GC-1 Swift. He also serves on the board of the Amigo Airsho as the Vice President of Air Operations. Mr. Peralta is also the proud President of the EAA (Experimental Aircraft Association) 1570 Chapter. In the wintertime, Mr. Peralta is a certified National Ski Patroller and Outdoor Emergency Care instructor. He is often accompanied by his trusty German Shepard sidekick, Belka.",
     ],
-    image: "/img/our-team/tomas-peralta.webp",
+    image: tomasPeraltaImg,
     alt: "Founder and Owner Tomas Peralta at Red Arrow Flight Academy",
     email: "tomas@flyredarrow.com",
     phone: "(575) 201-6160 ext. 702",
   },
   {
     name: "Elsa Peralta",
-    title: "Administrative Manager",
+    title: "Head of Maintenance",
     subtitle: "Certificates & Ratings: Private Pilot Certificate, ASEL",
     bio: [
       "Elsa carries the torch of her family's passion for flying. Drawing from her rich experiences, she has become a driving force behind the success of Red Arrow Flight Academy. Currently, Elsa holds a Private Pilot Certificate (PPC) for Airplane Single-Engine Land (ASEL), and her thirst for knowledge and skill in aviation continues to soar. She's set her sights on obtaining her instrument rating, an ambition that will further enrich her aviation journey.",
       "Elsa's roots extend into the automotive industry. Her career in quality control, project management, logistics, and general administration has honed her skills in managing complex operations and teams. Her journey of academic excellence culminated in a B.S. in Industrial Engineering from ITESM, a master's in international business from Pepperdine University, and an MBA from EGADE.",
       "One of Elsa's assignments involved a pivotal role at Daimler AG, the parent company of the prestigious Mercedes-Benz. Here, she oversaw the integration of the supply chain system during Daimler AG's merger with Chrysler, showcasing her ability to handle high-stakes endeavors on a global scale. Elsa's multifaceted journey, blending aviation passion with astute leadership and a diverse skill set, exemplifies the power of determination and dedication. Her unwavering commitment to excellence continues to chart new horizons for herself and the institutions she serves.",
     ],
-    image: "/img/our-team/elsa-peralta.webp",
+    image: elsaPeraltaImg,
     alt: "Founder and Owner Elsa Peralta at Red Arrow Flight Academy",
     email: "elsa@flyredarrow.com",
     phone: "(575) 201-6160 ext. 705",
   },
   {
-    name: "Jazmine Anaya",
-    title: "Dispatch Manager",
-    subtitle: "Certificates & Ratings: Student Pilot",
-    bio: [
-      "El Paso native Jazmine Anaya is a born adventurer with an insatiable passion for exploration. Born and raised in El Paso, Texas, Jazmine's heart has always been captivated by the allure of distant horizons and new frontiers.  In her pursuit of wanderlust, Jazmine has taken a remarkable leap into the world of aviation by becoming an integral part of the Red Arrow team as a dispatcher. Here, her dedication and enthusiasm for the skies have found a perfect platform to flourish.",
-      "Jazmine's journey in aviation is marked by her tenacity and ambition. She is a proud recipient of the EAA Chapter 1570 flight training scholarship, a recognition of her unwavering commitment to taking flight. As a student pilot, she is in the process of transforming her dreams of flight into a soaring reality.  Her introduction to the world of aviation represents a pivotal moment in her life, one that promises to open up a world of opportunities and adventures. Jazmine's journey is a testament to the power of following one's passion, even when the path may seem distant and uncertain.",
-      "As she continues to explore the boundless skies, Jazmine Anaya serves as an inspiring example of someone who dares to chase their dreams and embrace the thrilling unknown of aviation. Her story is one of determination, ambition, and the endless possibilities that the world of flight has to offer.",
-    ],
-    image: "/img/our-team/jazmine-anaya.webp",
-    alt: "Dispatch Manager Jazmine Anaya at Red Arrow Flight Academy",
-    email: "janaya@flyredarrow.com",
-    phone: "(575) 201-6160 ext. 701",
-  },
-  {
     name: "Danielle Nelson",
-    title: "Dispatch Manager",
-    subtitle: "Certificates & Ratings: Private Pilot, ASEL",
+    title: "Business Operations Director",
+    subtitle:
+      "Certificates & Ratings: Commercial ASEL, Instrument Rating, Flight Instructor",
     bio: [
-      "Danielle's journey into the world of aviation is a testament to the power of dreams and determination. Graduating high school just this year, she wasted no time in taking the plunge into the aviation industry, making a resounding impact at Red Arrow.  Her journey towards the skies began when she met a U.S. Army helicopter pilot during her junior year. This fateful encounter ignited a spark within her, redirecting her life's course. Initially, Danielle had aspirations to pursue a career in the medical field, but the allure of aviation proved irresistible.",
-      "As a student pilot at Red Arrow, Danielle is taking her first steps toward realizing her dream of becoming a pilot. Her determination to learn and excel in the world of aviation is nothing short of inspiring. She is driven by a deep-seated passion for flight, and there's no looking back on the path she's chosen. Danielle has set her sights on an ambitious goal - to become an instructor right here at Red Arrow once she completes her flight training. Her commitment to passing on her knowledge and love for aviation to future pilots is a testament to her dedication.",
-      "While the exact direction her aviation journey will take her after instruction remains undecided, one thing is certain: Danielle wants to continue flying. Her desire and motivation to achieve her goals shine brightly, and Red Arrow is proud to have her as an integral part of the team. Danielle represents the embodiment of dreams taking flight, and her journey is a source of inspiration for all who share her passion for aviation.",
+      "Danielle’s journey into aviation began shortly after graduating high school in 2023, when she quickly made her mark at Red Arrow. Her passion for flight was sparked during her junior year, after meeting a U.S. Army helicopter pilot, which shifted her focus from a potential medical career to aviation.",
+      "Now a rated pilot with both Private and Instrument ratings, Danielle is on track to earn her Commercial and CFI ratings. Her determination to succeed in aviation is evident in her commitment to continuous learning and growth. Danielle’s goal is to become an instructor at Red Arrow once she completes her training, driven by her desire to share her knowledge and passion for aviation with others.",
+      "While the next steps in her aviation career remain open, Danielle is committed to flying and eager to explore the opportunities that lie ahead. Red Arrow is proud to have her as part of the team, and her journey serves as an inspiring example of dedication and ambition in the aviation field.",
     ],
-    image: "/img/our-team/danielle-nelson.webp",
-    alt: "Dispatch Manager Danielle Nelson at Red Arrow Flight Academy",
+    image: danielleNelsonImg,
+    alt: "Business Operations Director Danielle Nelson at Red Arrow Flight Academy",
     email: "dnelson@flyredarrow.com",
   },
   {
@@ -66,7 +68,7 @@ export const leadershipTeam = [
       "She holds a bachelor of business administration from Baylor University. Vanessa is an active member of several aviation organizations, including Whirly Girls International and The Ninety-Nines. She also serves as the Vice President of the EAA Chapter 1570.",
       "Beyond her professional endeavors, Vanessa's passion for aviation is evident in her pursuits outside the office. Holding certifications as both a private Fixed Wing Pilot and a Helicopter Pilot, she learned to fly Rotary-Wing in an original Vietnam-era OH-6 Loach (MD-500). Her adventurous spirit and a love for aviation and the great outdoors fuel her dedication to preserving aviation history and inspiring the next generation of enthusiasts.",
     ],
-    image: "/img/our-team/placeholder.webp",
+    image: vanessaMartinezImg,
     alt: "Director of Customer Experience Vanessa Martinez at Red Arrow Flight Academy",
     email: "vanessa@flyredarrow.com",
   },
@@ -78,15 +80,46 @@ export const leadershipTeam = [
       "Born to patrol the skies (or at least watch over them from the ground), Belka takes her role as Flight School Guardian very seriously. When she's not busy sniffing out treats or playing fetch with aspiring pilots, you can find her stationed at the entrance, greeting students and staff with her trademark wagging tail and infectious enthusiasm. Belka's responsibilities go beyond just being an adorable greeter.",
       "She also serves as a source of emotional support for students, particularly before nerve-wracking checkrides. With her calming presence and gentle demeanor, Belka has a knack for easing pre-flight jitters and boosting confidence levels.",
     ],
-    image: "/img/our-team/belka.webp",
+    image: belkaImg,
     alt: "Belka at Red Arrow Flight Academy",
+  },
+];
+
+export const dispatchTeam = [
+  {
+    name: "McKayla Anderson",
+    title: "Dispatch",
+    subtitle: "",
+    bio: [
+      "McKayla, a native of Utah now residing in El Paso, Texas, is a dedicated and ambitious individual who values hard work and continuous learning. Although she has yet to fly in an airplane, McKayla has developed a strong passion for aviation and actively seeks opportunities to expand her knowledge in the field. Her fascination with aviation is driven by a deep curiosity about the industry, and she is always exploring ways to better understand its complexities and innovations.",
+      "Outside of her professional pursuits, McKayla enjoys spending quality time with her partner and their dog. She is passionate about a variety of hobbies, including training her dog, amateur gardening, playing the saxophone, and weightlifting. McKayla takes pride in maintaining an active lifestyle and strives to balance personal growth with her professional development, always eager to discover new interests and challenges along the way.",
+    ],
+    image: mckaylaAndersonImg,
+    alt: "Dispatch McKayla Anderson at Red Arrow Flight Academy",
+    email: "",
+    phone: "",
+  },
+  {
+    name: "Andrew Ramirez",
+    title: "Dispatch",
+    subtitle: "",
+    bio: [
+      "Andrew Ramirez was born and raised in El Paso, Texas, a city known for its vibrant culture, strong community spirit, and wide-open skies—something that would later inspire his passion for aviation. Growing up, Andrew developed a deep appreciation for both his hometown’s unique blend of traditions and the sprawling freedom of the desert.",
+      "Before setting his sights on the skies, Andrew spent several years in Chicago as a high school English teacher. In the classroom, he discovered a love for mentorship, helping students find their voices and confidence through language and storytelling. His time as an educator taught him patience, communication, and leadership—skills that he now brings with him as he transitions toward a new chapter in the skies.",
+      "Outside of work, Andrew has always felt most at peace outdoors. Whether it’s hiking through the Franklin Mountains, working on hands-on projects in the backyard, or simply enjoying the quiet of a West Texas sunset, he finds energy and clarity in nature.",
+      "Now, as he pursues a career in aviation, Andrew is driven by the same curiosity and dedication that defined his teaching years. His goal is to combine his love for learning, his steady focus, and his lifelong fascination with flight to build a future that quite literally takes him to new heights.",
+    ],
+    image: andrewRamirezImg,
+    alt: "Dispatch Andrew Ramirez at Red Arrow Flight Academy",
+    email: "",
+    phone: "",
   },
 ];
 
 export const flightTeam = [
   {
     name: "Rob Yadouga",
-    title: "Assistant Chief Flight Instructor",
+    title: "Check Instructor",
     subtitle: "Certificates & Ratings: Commercial ASEL, CFI, CFII, MEI",
     bio: [
       "Born and raised in the sunshine state of Florida, Rob's heart has always belonged to the open skies. His journey through aviation began in the welcoming skies of Georgia, where he learned to master the art of flight. With every takeoff and landing, his passion for aviation soared to new heights.  Rob's unwavering love for the skies led him down the path of becoming an instructor, a role he embraced wholeheartedly. Sharing his knowledge and expertise with aspiring aviators became his mission, and his dedication to the craft of teaching is a testament to his commitment to aviation.",
@@ -94,7 +127,7 @@ export const flightTeam = [
       "In addition to his instructional role, Rob also serves as a professor at El Paso Community College, further contributing to the education and development of future aviation enthusiasts.  Among the many aircraft that have graced his aviation journey, one holds a special place in his heart - N4106C. This aircraft represents not just a machine but a vessel of dreams, adventure, and countless stories written in the skies.",
       "Rob's impressive credentials include CFI, CFII, and MEI ratings, showcasing his mastery of multiple facets of flight. As our Assistant Chief Flight Instructor, he continues to inspire and guide aspiring pilots, nurturing their dreams and shaping the future of aviation. Rob is a steadfast member of the team, and his journey continues to inspire those who follow his flight path.",
     ],
-    image: "/img/our-team/rob-yadouga.webp",
+    image: robYadougaImg,
     alt: "Assistant Chief Flight Instructor Robert Yadouga at Red Arrow Flight Academy",
     email: "",
     phone: "(575) 201-6160 ext. 706",
@@ -110,78 +143,81 @@ export const flightTeam = [
       "Gilbert's passion for aviation extends beyond the cockpit; it is a commitment to shaping the future of the industry. Through his mentorship and guidance, he continues to play a pivotal role in shaping the next wave of skilled and safety-conscious pilots. In his current role as a CFII, Gilbert embodies the values of discipline, professionalism, and a genuine love for the art of flying.",
       "With a career spanning both military and civilian sectors, Gilbert's story is one of resilience, adaptability, and an enduring passion for aviation. Whether soaring through the skies or imparting knowledge on the ground, he remains a beacon of inspiration for those who aspire to reach new heights in the world of aviation.",
     ],
-    image: "/img/our-team/gilberto-rodriguez.webp",
+    image: gilbertoRodriguezImg,
     alt: "Assistant Chief Flight Instructor Gilbert Rodriguez at Red Arrow Flight Academy",
     email: "",
     phone: "(575) 201-6160 ext. 708",
   },
   {
     name: "Shane Lipson",
-    title: "Flight Instructor | Check Instructor",
+    title: "Check Instructor",
     subtitle: "Certificates & Ratings: Commercial ASEL, CFI, CFII",
     bio: [
       "Shane Lipson began flying in 2000 while living in New York City.  His first discovery flight, around the Statue of Liberty, had him hooked into aviation and he quickly progressed through training to become a CFII.  Shortly after the World Trade Center attack in 2001, he joined the Civil Air Patrol as a volunteer pilot.  He became a check pilot and then head of Standardization and Evaluation for Texas Wing after moving back to his hometown of El Paso.",
       "Shane holds an MD Degree from the Paul L Foster School of Medicine and an MSE from the University of Pennsylvania.  He's married with two sons and enjoys teaching others to fly.",
     ],
-    image: "/img/our-team/shane-lipson.webp",
+    image: shaneLipsonImg,
     alt: "CFII Shane Lipson at Red Arrow Flight Academy",
     email: "",
     phone: "(575) 201-6160 ext 707",
   },
   {
-    name: "Jesus Bustamante",
-    title: "Flight Instructor | Check Instructor",
-    subtitle: "Certificates & Ratings: Commercial ASEL, CFI, CFII",
+    name: "David Harris",
+    title: "Flight Instructor",
+    subtitle: "Certificates & Ratings: Commercial ASEL, CFI, AMEL, CFII",
     bio: [
-      "From the age of 10, Jesus found himself captivated by the world of aviation, a fascination that would shape his destiny. It all began with the awe-inspiring spectacle of an airshow, and from that moment on, the sky became his true calling.",
-      "In 2016, he took his first steps into the world of flight, embarking on a journey that would define his future. His aviation education took flight at Cochise College in Douglas, Arizona, where he dedicated himself to honing his skills and mastering the art of flying. In the year 2020, Jesus's dedication reached new heights as he proudly graduated with a bachelor's degree in professional pilot technology. Armed with knowledge, experience, and a heart full of dreams, he stands on the threshold of an exciting aviation career. His aspirations are clear and resolute - to command cargo planes or join the ranks of the airlines.",
-      "For Jesus, the sky is not the limit; it's the beginning of an adventure that he's destined to explore. What propels Jesus forward is his unwavering passion for aviation, a fire that burns brightly within him. With each flight, each new challenge, he is forging a path toward the boundless skies, where his dreams will take flight.",
+      "David's journey began in the alfalfa fields of Logan, Utah, where he was born and raised. Driven by a passion for medicine, he initially pursued a career in healthcare, working in urgent care. However, like many aviators, aviation soon captured his heart. With a shift in career aspirations, David moved to St. Petersburg, Florida, to earn his Private through Commercial Multi-Engine ratings. He then returned home to complete his Certified Flight Instructor (CFI) certification, soaring over the same fields that shaped his roots.",
+      "As an instructor, David’s goal is to share the thrill and joy of aviation while being a steadfast support for his students, especially during the tough moments. He believes that, as aviators, learning never stops—whether you’re a student or a CFI, we’re all continually growing in our craft.",
+      "When David isn’t flying, he enjoys playing the saxophone, unwinding to the smooth sounds of 1930s music, and spending quality time with his partner and their dog, Rambo.",
     ],
-    image: "/img/our-team/jesus-bustamante.webp",
-    alt: "CFII Jesus Bustamante at Red Arrow Flight Academy",
+    image: davidHarrisImg,
+    alt: "CFI David Harris at Red Arrow Flight Academy",
     email: "",
-    phone: "(575) 201-6160 ext. 703",
+    phone: "",
   },
   {
-    name: "Spencer Christian",
+    name: "Jacob Canada",
     title: "Flight Instructor",
-    subtitle: "Certificates & Ratings: Commercial ASEL, CFI",
+    subtitle: "Certificates & Ratings: Commercial ASEL, CFI, AMEL",
     bio: [
-      "Since childhood, Spencer's heart has soared with a deep-seated passion for aviation. His journey through the clouds began in 2012 when he first took flight in the Lone Star State of Texas. Little did he know that these initial experiences would chart a remarkable course for his future. Driven by his aviation dreams, Spencer set his sights on the University of North Dakota's prestigious Aerospace program in North Dakota. There, amidst the northern winds, he honed his skills, gained invaluable knowledge, and immersed himself in the world of aviation.",
-      "This pursuit of excellence culminated in his graduation with a Bachelor of Science in Aerospace Sciences, a testament to his commitment to mastering the art of flight. With his wings of knowledge and a heart brimming with enthusiasm, Spencer eagerly embraces the role of a Certified Flight Instructor (CFI). His desire to impart his aviation wisdom to others reflects his deep-rooted passion for flying, and he thrives on the opportunity to inspire the next generation of aviators.",
-      "But Spencer's dreams extend beyond the classroom and training grounds. His ultimate ambition is to take to the skies alongside warbirds, embracing the historical and heroic narratives that surround these remarkable aircraft. As he embarks on this thrilling journey, Spencer carries with him not just a pilot's license but also the indomitable spirit of an aviator fueled by an unwavering love for aviation.",
+      "Jacob, a proud El Paso native, has always had a deep fascination with flying—particularly thunderstorms and severe weather. Though he never initially planned to become a pilot, his love for watching storms roll across the skies and his childhood dream of reaching space ultimately led him to aviation. In early 2016, encouraged by his family to try an introductory flight, Jacob's passion for flying took off. He earned his Private Pilot License in his senior year of high school—before even obtaining his driver's license.",
+      "Thanks to the Presidential Scholarship, Jacob went on to earn a Bachelor’s degree in Aeronautics and a Minor in Applied Meteorology from Embry-Riddle Aeronautical University in 2022. Now a Certified Flight Instructor (CFI), Jacob shares his passion for the clear skies of El Paso, helping aspiring pilots achieve their dreams.",
+      "Outside of flying, Jacob is captivated by military vehicles and volunteers at the War Eagles Air Museum, where he’s always eager to share his knowledge about the museum’s collection. Currently, Jacob is pursuing his Certified Flight Instructor Instrument (CFII) rating and has his sights set on obtaining a Master's in Meteorology to further combine his love for aviation and weather.",
     ],
-    image: "/img/our-team/spencer-christian.webp",
-    alt: "CFI Spencer Christian at Red Arrow Flight Academy",
+    image: jacobCanadaImg,
+    alt: "CFI Jacob Canada at Red Arrow Flight Academy",
     email: "",
-    phone: "(575) 201-6160 ext. 704",
+    phone: "",
   },
   {
-    name: "Nasir Ibrahim",
+    name: "Eduardo Lujan",
     title: "Flight Instructor",
-    subtitle: "Certificates & Ratings: Commercial ASEL, CFI",
+    subtitle: "Certificates & Ratings: Commercial ASEL, CFI, CFII, and MEI",
     bio: [
-      "Nasir's journey through life has been rooted in the heart of Iowa, where he spent most of his days. However, his aspirations knew no bounds, and he sought to spread his wings far beyond the Hawkeye State.  Opportunity called, and Nasir heeded it by pursuing his flight training in the sunny skies of Florida and the aviation-rich atmosphere of Indiana. These diverse locations became the backdrop for his aviation odyssey, enriching his experience and knowledge of the skies.",
-      "Nasir's initiation into the world of aviation was as a ramp agent for Envoy, where he witnessed the hustle and bustle of aircraft up close. This hands-on exposure only deepened his passion for aviation and set him on a path that he couldn't ignore. Fueled by his unwavering love for the skies, Nasir embraced the role of a flight instructor with enthusiasm. His desire to share his knowledge, experiences, and love for aviation with the next generation of aspiring pilots became his driving force. In the role of an instructor, he found not just a career but a calling.",
-      "Nasir's excitement knows no bounds as he prepares to guide and mentor the future aviators who will follow in his flight path. With his dedication and passion, he is poised to inspire and shape the dreams of those who aspire to soar through the endless blue yonder, just as he did.",
+      "Eduardo is a flight instructor whose journey to the skies is anything but ordinary. After graduating from the El Paso Police Academy in 2012, Eduardo spent the next 12 years serving his community as a dedicated police officer. During that time, he developed an unwavering commitment to safety, attention to detail, and a deep respect for structure and discipline—values that now shape his approach to aviation and flight instruction.",
+      "Though law enforcement was a meaningful career, Eduardo always felt a pull toward the skies. That passion eventually became a calling, leading him to transition full-time into aviation. Today, he brings that same drive and focus into the cockpit, helping students not just learn how to fly, but how to fly well—with confidence, precision, and a mindset grounded in safety.",
+      "Born in California and raised in El Paso, Texas, Eduardo connects easily with students from all backgrounds. He’s known for his calm, encouraging teaching style and his ability to tailor lessons to each student's unique learning pace and goals.",
+      "When he’s not flying or teaching, Eduardo enjoys spending quality time with his wife, their daughter, and their two dogs—usually outdoors or finding new ways to enjoy the Texas sunshine.",
+      "Whether you're just starting your aviation journey or looking to take your skills to the next level, Eduardo is the kind of instructor who will be with you every step of the way.",
     ],
-    image: "/img/our-team/nasir-ibrahim.webp",
-    alt: "CFI Nasir Ibrahim at Red Arrow Flight Academy",
+    image: eduardoLujanImg,
+    alt: "CFI Eduardo Lujan at Red Arrow Flight Academy",
     email: "",
-    phone: "(575) 201-6160 ext. 710",
+    phone: "",
   },
   {
-    name: "Shihran Pathy",
+    name: "Diana Martinez Hernandez",
     title: "Flight Instructor",
-    subtitle: "Certificates & Ratings: Commercial ASEL, AMEL, CFI, CFII",
+    subtitle: "Certificates & Ratings: Commercial ASEL & AMEL, CFI, CFII",
     bio: [
-      "Born and raised in Seattle, Washington, Shirahn has expressed his passion for aviation in many different ways since the age of four. Whether it was with the mechanics of a jet engine explained with a balloon, math’s relation to aircraft and flight, or writing essays about aviation disasters on his own time, he always had a story to share about his love of flying.",
-      "A graduate of Aeronautical Science with flight honors from Embry-Riddle Aeronautical University in Prescott, Arizona, Shirahn holds additional ratings in addition to his CFI such as Commercial Seaplane, Multi-Engine, and CFII ratings. Shirahn believes sharing his knowledge in earnest with someone to get better every day is an important value of a human being.",
-      "Outside of aviation, Shirahn is passionate about the world of Electronic Dance Music. He is an accomplished DJ and continues his passion through performing at various live events across Texas and Washington.",
+      "Diana is a Certified Flight Instructor whose passion for the skies began at a young age. Growing up under the approach path for O'Hare and Midway, she developed a fascination with aviation that stayed with her throughout her life.",
+      "Before transitioning into aviation, Diana built her professional foundation in the healthcare field, where she developed strong communication skills and a strong desire to help others succeed. Although healthcare provided valuable experience, her curiosity for the skies ultimately led her to pursue a career in aviation.",
+      "She completed her flight training in central Oregon, where she developed her flight skills in high altitude and adverse weather conditions while working toward her certifications. Having personally experienced the challenges of changing careers, Diana understands the dedication and perseverance required to achieve success in flight training.",
+      "In her off time, Diana enjoys spending time exploring local trails. She's an avid movie goer and enjoys cooking for friends and family. As a CFI, Diana is committed to guiding students through every stage of their aviation journey with professionalism, patience, and encouragement. She is passionate about helping aspiring pilots build confidence, strengthen decision-making skills, and achieve their goals in a safe and supportive learning environment.",
     ],
-    image: "/img/our-team/shihran-pathy.webp",
-    alt: "CFII Shihran Pathy at Red Arrow Flight Academy",
+    image: dianaMartinezHernandezImg,
+    alt: "CFII Diana Martinez Hernandez at Red Arrow Flight Academy",
     email: "",
-    phone: "(575) 201-6160 ext. 711",
+    phone: "",
   },
 ];

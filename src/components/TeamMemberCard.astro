@@ -1,15 +1,19 @@
 ---
+import { Picture } from "astro:assets";
 const { teamMember } = Astro.props;
 ---
 
 <div
-  class="flex flex-col p-5 gap-5 lg:flex-row my-10 rounded-lg shadow-lg shadow-gray-500 text-black bg-gradient-to-bl from-gray-200 to-gray-300"
+  class="flex flex-col p-5 gap-5 lg:flex-row my-10 rounded-lg shadow-lg shadow-gray-500 text-black bg-linear-to-bl from-gray-200 to-gray-300"
 >
   <div
     class="flex flex-col rounded-lg overflow-hidden gap-3 max-w-md lg:w-64 lg:min-w-64"
   >
-    <img
+    <Picture
       src={teamMember.image}
+      formats={['avif', 'webp']}
+      widths={[256, 512]}
+      sizes="(max-width: 1024px) 448px, 256px"
       class="aspect-square object-cover w-full rounded-lg border-2 border-black bg-white"
       alt={teamMember.alt}
     />

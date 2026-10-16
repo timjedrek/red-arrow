@@ -1,5 +1,5 @@
 ---
-const { image, alt, title, description, reverse = false, note } = Astro.props;
+const { image, alt, title, description, reverse = false, note, link } = Astro.props;
 ---
 
 <div
@@ -21,5 +21,10 @@ const { image, alt, title, description, reverse = false, note } = Astro.props;
       </p>
       <p class="font-semibold mt-3">{note}</p>
     </div>
+    {link && (
+      <a href={link} target="_blank" class="mt-5">
+        <div class="btn-red">Book Now</div>
+      </a>
+    )}
   </div>
 </div>

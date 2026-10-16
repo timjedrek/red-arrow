@@ -28,7 +28,7 @@ const Reviews = () => {
   }, []);
 
   return (
-    <div className="overflow-hidden w-full bg-gradient-to-br from-white to-gray-200 py-10">
+    <div className="overflow-hidden w-full bg-linear-to-br from-white to-gray-200 py-10">
       <h2 className="text-3xl lg:text-4xl font-bold text-center pt-5 px-5">
         What Our Students Say
       </h2>
@@ -36,7 +36,7 @@ const Reviews = () => {
         {duplicatedReviews.map((review, index) => (
           <div
             key={`${review.id}-${index}`}
-            className="flex flex-col gap-2 justify-center min-w-64 p-4 text-center rounded-xl shadow-lg shadow-gray-500 text-black bg-gradient-to-bl from-gray-200 to-gray-300"
+            className="flex flex-col gap-2 justify-center min-w-64 p-4 text-center rounded-xl shadow-lg shadow-gray-500 text-black bg-linear-to-bl from-gray-200 to-gray-300"
           >
             <p className="text-gray-600">{review.text}</p>
             <p className="font-medium">{review.author}</p>

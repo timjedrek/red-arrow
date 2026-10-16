@@ -40,11 +40,11 @@ const BlogNavbar = ({ pathname }) => {
       <div className="bg-black">
         <div className="mx-auto max-w-7xl px-4">
           <div
-            className={`${navBar ? "lg:h-[4.5rem]" : "lg:h-28"} relative flex h-20 items-center justify-between transition-all`}
+            className={`${navBar ? "lg:h-18" : "lg:h-28"} relative flex h-20 items-center justify-between transition-all`}
             id="navbar"
           >
             <div className="flex flex-1 items-center justify-between">
-              <a href="/" className="flex flex-shrink-0 items-center">
+              <a href="/" className="flex shrink-0 items-center">
                 <img
                   src="/red-arrow-logo.webp"
                   alt="Red Arrow Logo"
@@ -83,7 +83,7 @@ const BlogNavbar = ({ pathname }) => {
                     </a>
                   </div>
                   <a
-                    href="/discovery-flight-form"
+                    href="https://app.flightschedulepro.com/DiscoveryFlights/95906da7-add1-4c84-abfc-44228c99c3bc"
                     target="_blank"
                     className="btn-red"
                   >
@@ -142,7 +142,7 @@ const BlogNavbar = ({ pathname }) => {
       </div>
 
       <div
-        className={`${openMobile ? "max-h-[36rem]" : "max-h-0"} overflow-hidden transition-[max-height] duration-300 ease-in-out lg:hidden absolute w-full bg-black -z-10`}
+        className={`${openMobile ? "max-h-144" : "max-h-0"} overflow-hidden transition-[max-height] duration-300 ease-in-out lg:hidden absolute w-full bg-black -z-10`}
         id="mobile-menu"
       >
         <div className="px-4 pb-3 pt-2 flex flex-col">
@@ -156,7 +156,7 @@ const BlogNavbar = ({ pathname }) => {
             Discovery Flight
           </a>
           <a
-            href="/discovery-flight-form"
+            href="https://app.flightschedulepro.com/DiscoveryFlights/95906da7-add1-4c84-abfc-44228c99c3bc"
             target="_blank"
             className="btn-red place-self-center mt-5"
           >

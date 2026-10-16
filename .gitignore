@@ -20,4 +20,4 @@ pnpm-debug.log*
 */.DS_Store/*
 
 .firebase/
-config.bat
+pnpm-lock.yaml
