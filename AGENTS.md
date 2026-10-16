@@ -50,6 +50,13 @@ npm run deploy:hosting  # live: hosting only
   `npm install --prefix functions` before deploying (the functions
   codebase fails trigger analysis otherwise).
 - Dev channel URLs expire after 7 days; redeploy to refresh.
+- **On-demand image optimization does not work on this host.** The Astro
+  `/_image` endpoint returns 500 on Firebase framework-aware hosting (the SSR
+  function has no client dir to read sources from). Any page using `<Picture>`,
+  `<Image>` or `getImage()` must therefore be **prerendered** (`export const
+  prerender = true`) so images are emitted as static `/_astro/*` files — that is
+  why `about/our-team.astro`, `blog/[...slug].astro` and `blog/index.astro` all
+  set it. A plain `<img src={imported.src}>` is also safe (static asset).
 - The contact form is a third-party Jotform embed whose iframe height is set at
   runtime by remote JS (it under-measures by ~16px, so `lg:min-h-[780px]` on the
   iframe stands in as the floor). Any visual-diff baseline containing that

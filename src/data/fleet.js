@@ -1,12 +1,12 @@
-import RedBirdImage from "../../public/img/our-fleet/red-bird.webp";
-import SkittlesImage from "../../public/img/our-fleet/skittles.webp";
-import EchoImage from "../../public/img/our-fleet/echo.webp";
-import A5YXImage from "../../public/img/our-fleet/5yx.webp";
-import WoodstockImage from "../../public/img/our-fleet/woodstock.webp";
-import ChipImage from "../../public/img/our-fleet/chip.webp";
-import DaleImage from "../../public/img/our-fleet/dale.webp";
-import N318OUImage from "../../public/img/our-fleet/n318ou.webp";
-import placeholder from "../../public/image.png";
+import RedBirdImage from "../assets/fleet/red-bird.webp";
+import SkittlesImage from "../assets/fleet/skittles.webp";
+import EchoImage from "../assets/fleet/echo.webp";
+import A5YXImage from "../assets/fleet/5yx.webp";
+import WoodstockImage from "../assets/fleet/woodstock.webp";
+import ChipImage from "../assets/fleet/chip.webp";
+import DaleImage from "../assets/fleet/dale.webp";
+import N318OUImage from "../assets/fleet/n318ou.webp";
+import placeholder from "../assets/placeholder.png";
 
 export const fleet = [
   {

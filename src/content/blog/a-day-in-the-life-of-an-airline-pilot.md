@@ -2,7 +2,7 @@
 title: "A Day in the Life of an Airline Pilot"
 description: "Have you ever wondered what a day in the life of an airline pilot looks like? Adventure and prestige certainly characterize their day to day. Knowing about an airline pilot’s daily life might just suffice in convincing you to become one as soon as possible."
 pubDate: "Sep 21, 2020"
-heroImage: "/a-day-in-the-life-of-an-airline-pilot.webp"
+heroImage: "../../assets/blog/a-day-in-the-life-of-an-airline-pilot.webp"
 author: "Tomas Peralta"
 readingTime: "5 min"
 tags: ["Airline Pilot"]

@@ -2,7 +2,7 @@
 title: "The Important Role of a Designated Pilot Examiner (DPE)"
 description: "A Designated Pilot Examiner (DPE) works on behalf of the Federal Aviation Administration (FAA)  to conduct oral examinations, inflight, and flight simulator practical tests to determine pilot applicant’s eligibility to be issued a Pilot Certificate. It’s up to the DPE to decide whether or not a flight student can become a legitimate pilot."
 pubDate: "Aug 25, 2020"
-heroImage: "/the-important-role-of-a-designated-pilot-examiner-dpe.webp"
+heroImage: "../../assets/blog/the-important-role-of-a-designated-pilot-examiner-dpe.webp"
 author: "Tomas Peralta"
 readingTime: "3 min"
 tags: []

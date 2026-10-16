@@ -2,7 +2,7 @@
 title: "Understanding the Differences Between Part 61 and Part 141 Flight Schools"
 description: "Explore the distinctions between Part 61 and Part 141 flight schools and how Red Arrow Flight Academy provides the best training options for aspiring pilots using the structured Part 141 approach."
 pubDate: "Oct 4, 2024"
-heroImage: "/img/dispatch-manager-jazmine-reading-procedure.webp"
+heroImage: "../../assets/blog/dispatch-manager-jazmine-reading-procedure.webp"
 author: "Tomas Peralta"
 readingTime: "5 min"
 tags:
@@ -20,7 +20,7 @@ tags:
 
 When selecting a flight school, one of the most important decisions you’ll make is whether to pursue training through a Part 61 or Part 141 program. These programs, both governed by the Federal Aviation Administration (FAA), offer distinct training pathways depending on the needs of the student. [Red Arrow Flight Academy](https://www.flyredarrow.com/) operates as a Part 141 school, providing a structured training environment that is ideal for students looking for an efficient, career-focused path to becoming a pilot.
 
-![CFIs at Red Arrow standing next to Cessna](/img/cfis-at-red-arrow-standing-next-to-cessna.webp)
+![CFIs at Red Arrow standing next to Cessna](../../assets/blog/cfis-at-red-arrow-standing-next-to-cessna.webp)
 _CFIs at Red Arrow standing next to a Cessna during training._
 
 ## What is Part 61 Flight Training?
@@ -35,7 +35,7 @@ However, Part 61 schools typically have higher minimum flight hour requirements 
 
 ## What is Part 141 Flight Training?
 
-![Prepping the fleet of Cessnas for flight](/img/prepping-the-fleet-of-cessnas.webp)
+![Prepping the fleet of Cessnas for flight](../../assets/blog/prepping-the-fleet-of-cessnas.webp)
 _Red Arrow staff prepping the fleet of Cessnas for flight training._
 
 Part 141 flight schools follow a structured, FAA-approved curriculum. These programs are ideal for students who are looking for a more regimented and accelerated pathway to their pilot certifications. [Red Arrow Flight Academy](https://www.flyredarrow.com/enrollment), as a Part 141 school, offers a structured environment designed to meet the needs of career-focused students, including those using GI Bill® benefits for their flight training.
@@ -49,7 +49,7 @@ Key features of Part 141 programs include:
 
 ## Why Choose Red Arrow’s Part 141 Program?
 
-![Red Arrow team in the office at headquarters near El Paso, TX](/img/red-arrow-team-in-office-at-headquarters-near-el-paso-tx.webp)
+![Red Arrow team in the office at headquarters near El Paso, TX](../../assets/blog/red-arrow-team-in-office-at-headquarters-near-el-paso-tx.webp)
 _Red Arrow team in the office at headquarters near El Paso, TX, during briefing._
 
 At [Red Arrow Flight Academy](https://www.flyredarrow.com/flight-programs/military-rotor-transition), the Part 141 program offers several distinct advantages, particularly for those who are pursuing aviation as a career or utilizing GI Bill® funding. Red Arrow is uniquely positioned to support military veterans and those transitioning into civilian aviation careers, offering benefits such as:

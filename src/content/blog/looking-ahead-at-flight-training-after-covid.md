@@ -2,7 +2,7 @@
 title: "Looking Ahead at Flight Training after Covid"
 description: "We are aware that the covid 19 pandemic has had a profound impact on your plans. Do not be discouraged. Becoming a pilot has so many benefits. Flight training is essential for you to enjoy them. Although the future of the economy is unforeseeable, the aviation industry will continue to prevail. "
 pubDate: "Oct 13, 2020"
-heroImage: "/looking-ahead-at-flight-training-after-covid.webp"
+heroImage: "../../assets/blog/looking-ahead-at-flight-training-after-covid.webp"
 author: "Suleth Villeda"
 readingTime: "2 min"
 tags: []

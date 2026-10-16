@@ -3,7 +3,7 @@ pubDate: "Jun 7, 2024"
 author: "Tomas Peralta"
 title: "The Vital Role of Flight Simulators at Red Arrow Flight Academy"
 description: "Discover the unmatched benefits of flight simulators in pilot training at Red Arrow Flight Academy. Learn how our state-of-the-art simulators prepare you for a successful career in aviation."
-heroImage: "/cfi-flying-the-redbird-flight-simulator-at-red-arrow-flight-academy.webp"
+heroImage: "../../assets/blog/cfi-flying-the-redbird-flight-simulator-at-red-arrow-flight-academy.webp"
 category: "Pilot Resources"
 readingTime: "2 min"
 tags:

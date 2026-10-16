@@ -10,6 +10,7 @@ const { teamMember } = Astro.props;
     <Picture
       src={teamMember.image}
       formats={['avif', 'webp']}
+      fallbackFormat="webp"
       widths={[256, 512]}
       sizes="448px"
       class="aspect-square object-cover w-full rounded-lg border-2 border-black bg-white"

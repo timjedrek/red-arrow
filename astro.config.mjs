@@ -52,6 +52,9 @@ export default defineConfig({
     "/copy-of-financing": "/resources/financing",
     "/copy-of-faa-testing-center": "/resources/faa-exam-center",
   },
+  image: {
+    layout: "constrained",
+  },
   vite: {
     plugins: [tailwindcss()],
   },

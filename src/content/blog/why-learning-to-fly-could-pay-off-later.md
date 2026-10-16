@@ -2,7 +2,7 @@
 title: "Why Learning to Fly Could Pay Off Later"
 description: "Ensuring that you will have a job after a health and economic crisis like the current Covid-19 crisis is on everyone’s minds right now. Knowing that a professional pilot job is waiting for you at the end of this tunnel is what every pilot is hoping for. Learning to fly right now, logging in as many flight hours as you can, and building a solid foundation of manual and simulated flight skills will open more doors to flying jobs and coveted opportunities for pilots."
 pubDate: "Aug 20, 2020"
-heroImage: "/why-learning-to-fly-could-pay-off-later.webp"
+heroImage: "../../assets/blog/why-learning-to-fly-could-pay-off-later.webp"
 author: "Tomas Peralta"
 readingTime: "3 min"
 tags: []

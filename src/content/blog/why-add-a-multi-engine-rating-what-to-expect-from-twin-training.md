@@ -2,7 +2,7 @@
 title: "Why Add a Multi-Engine Rating? What to Expect From Twin Training"
 description: "Commercial pilots need multi-engine time for airlines, charter, and corporate jobs. Learn what the add-on covers, what the checkride looks like, and how Red Arrow's Accelerated Multi-Engine Rating Program in the Piper Seneca at KDNA works."
 pubDate: "Oct 11 2026"
-heroImage: "/checking-the-fleet.webp"
+heroImage: "../../assets/blog/checking-the-fleet.webp"
 author: "Red Arrow Flight Academy"
 readingTime: "4 min"
 ---
