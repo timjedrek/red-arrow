@@ -2,16 +2,19 @@
   "name": "red-arrow",
   "type": "module",
   "version": "0.0.1",
+  "engines": {
+    "node": "22"
+  },
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "deploy:hosting": "firebase deploy --only hosting",
-    "deploy:functions": "firebase deploy --only functions",
-    "deploy:dev": "firebase hosting:channel:deploy dev",
-    "deploy": "pnpm run deploy:hosting && pnpm run deploy:functions"
+    "deploy:hosting": "mise exec node@22 -- firebase deploy --only hosting",
+    "deploy:functions": "mise exec node@22 -- firebase deploy --only functions",
+    "deploy:dev": "mise exec node@22 -- firebase hosting:channel:deploy dev",
+    "deploy": "npm run deploy:hosting && npm run deploy:functions"
   },
   "dependencies": {
     "@astrojs/alpinejs": "^0.4.0",
@@ -31,7 +34,7 @@
     "astro-icon": "^1.0.2",
     "firebase": "^10.8.0",
     "firebase-admin": "^12.0.0",
-    "firebase-tools": "^14.11.2",
+    "firebase-tools": "^15.34.0",
     "framer-motion": "^11.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
