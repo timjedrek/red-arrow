@@ -30,6 +30,7 @@ const {
         <Picture
           src={heroImage}
           formats={["avif", "webp"]}
+          fallbackFormat="webp"
           widths={[350, 632, 1264]}
           sizes="(max-width: 767px) calc(100vw - 40px), 632px"
           fetchpriority="high"
