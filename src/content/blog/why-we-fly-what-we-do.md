@@ -51,7 +51,7 @@ _The Piper Archer II at Red Arrow Flight Academy, used for Commercial Pilot Lice
 
 The **Cessna 182F**, tail number N318OU, is the powerhouse of our fleet, featuring a 235 HP engine and Garmin 496 avionics. This aircraft is used for more advanced training, particularly for students preparing for high-performance endorsements or complex aircraft operations. The Cessna 182F’s powerful engine and enhanced capabilities make it ideal for scenarios requiring extra performance, such as flying in mountainous terrain or carrying heavier loads.
 
-![Cessna 182F N318OU](/img/n318ou.webp)
+![Cessna 182F N318OU](../../assets/blog/n318ou.webp)
 _The Cessna 182F at Red Arrow Flight Academy offers advanced training with its 235 HP engine, perfect for high-performance endorsements._
 
 ### **Tailoring Training to Your Goals**
